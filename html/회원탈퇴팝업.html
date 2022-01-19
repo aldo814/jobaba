@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Document</title>
+	<!-- 잡아바 css-->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/common.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
+
+	<!--추가 css-->
+	<style>
+/* 회원탈퇴 팝업 */
+.wd800{width: 800px !important;}
+.secessionPop_wrap.modal .modal-body{padding: 0 !important;}
+.secessionPop {background: #003281;padding: 20px;}
+.secessionPop .f18{font-size: 18px}
+.secessionPop .f16{font-size: 16px}
+.secessionPop .f14{font-size: 14px !important}
+.secessionPop  .tlt{text-align: left}
+.secessionPop .bold{font-weight: bold}
+.secessionPop .bar_list li{position: relative;font-size: 16px;margin-top: 5px;padding-left: 10px}
+.secessionPop .bar_list li:nth-child(1){margin-top: 0}
+.secessionPop .bar_list li:before{content: '-';display: block;position: absolute;left: 0;top: 0}
+.secessionPop .blue{color: #003281}
+.secessionPop .logo{display: block;margin: 0 auto 30px auto}
+.secessionPop .top_txt{font-size: 22px;font-weight: bold;color: #fff;}
+.secessionPop .top_txt span{color: #ffef39}
+.secessionPop .top_txt em{color: #ffef39;font-size: 16px;font-weight: 500;font-style: normal;margin-left: 10px}
+.secessionPop .white_box{background: #fff;padding: 30px 20px;margin-top: 20px;border-radius: 15px;border: 5px solid #4d70a7}
+.secessionPop .reason{background: #f3f3f3;border: 1px solid #dbdbdb;padding:  20px}
+
+
+.secessionPop .checks {position: relative;} 
+.secessionPop .checks label{font-weight: 500}
+.secessionPop .checks input[type="checkbox"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip:rect(0,0,0,0); border: 0 }
+.secessionPop .checks input[type="checkbox"] + label { display: inline-block; position: relative; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; } 
+.secessionPop .checks input[type="checkbox"] + label:before {  content: ' '; display: inline-block; width: 21px; height: 21px;  line-height: 21px; margin: -2px 8px 0 0; text-align: center; vertical-align: middle; background: #fff; border: 1px solid #dbdbdb;  } 
+.secessionPop .checks input[type="checkbox"] + label:after{content: '';display: block;background: url(http://jobaba.net/resource/images/web/2022/01/19/1642554484495_0164904531.png) no-repeat;width: 24px;height: 18px;position: absolute;left: 2px;top: 2px;opacity: 0}
+.secessionPop .secessionPop .checks input[type="checkbox"] + label:active:after, 
+.secessionPop .checks input[type="checkbox"]:checked + label:active:after {opacity: 1} 
+.secessionPop .checks input[type="checkbox"]:checked + label:after{ opacity: 1}
+.secessionPop .checks input[type="text"]{background: #fff;border:1px solid #dbdbdb;border-radius: 0;margin-left: 10px;width: calc(100% - 100px)}
+
+
+.secessionPop .checks02 {position: relative;color: #fff;font-size: 16px;} 
+.secessionPop .checks02 label{font-weight: 500}
+.secessionPop .checks02 input[type="checkbox"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip:rect(0,0,0,0); border: 0 }
+.secessionPop .checks02 input[type="checkbox"] + label { display: inline-block; position: relative; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; } 
+.secessionPop .checks02 input[type="checkbox"] + label:before {  content: ' '; display: inline-block; width: 21px; height: 21px;  line-height: 21px; margin: -2px 8px 0 0; text-align: center; vertical-align: middle; border: 2px solid #fff;  } 
+.secessionPop .checks02 input[type="checkbox"] + label:after{content: '';display: block;background: url(http://jobaba.net/resource/images/web/2022/01/19/1642554484495_0164904531.png) no-repeat;width: 24px;height: 18px;position: absolute;left: 2px;top: 2px;opacity: 0}
+.secessionPop .secessionPop .checks02 input[type="checkbox"] + label:active:after, 
+.secessionPop .checks02 input[type="checkbox"]:checked + label:active:after {opacity: 1} 
+.secessionPop .checks02 input[type="checkbox"]:checked + label:after{ opacity: 1}
+.secessionPop .checks02 input[type="text"]{background: #fff;border:1px solid #dbdbdb;border-radius: 0;margin-left: 10px;width: calc(100% - 100px)}
+.secessionPop .btn_wrap{text-align: center;}
+.secessionPop .ssPopBtn{background: #ffef39;max-width: 320px;width: 90%; padding: 10px;font-size: 20px;font-weight: 500;border-radius: 15px}
+
+
+@media all and (max-width:1024px){
+	.wd800{width: 90% !important}
+}
+
+@media all and (max-width:480px){
+	.secessionPop .checks input[type="text"]{width: 100%;display: block;margin-left: 0;margin-top: 5px}
+	.board-view-tp02 tbody tr th{padding-left: 0 !important;text-align: center !important}
+}
+
+
+
+	</style>
+</head>
+
+<body>
+	<div class="modal secessionPop_wrap" style="display: block;">
+		<div class="modal-dialog wd800">
+			<div class="modal-content">
+				<div class="modal-header header-primary">
+					<button type="button" class="close"><span id="_popupClose">×</span></button>
+					<h4 class="modal-title">회원탈퇴</h4>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+
+						<div class="secessionPop">
+							<img src="http://jobaba.net/resource/images/web/2022/01/19/1642554457177_7596137569.png" alt="경기도일자리재단 잡아바" class="logo">
+
+							<p class="top_txt">
+								일자리플랫폼 잡아바 <span>탈퇴 안내</span> <em>회원탈퇴를 신청하기 전에 안내 사항을 꼭 확인해주세요.</em>
+							</p>
+
+							<div class="white_box">
+								<p class="f18 blue bold">탈퇴 후에도 게시판형 서비스에 등록한 게시물은 그대로 남아 있습니다.</p>
+								<ul class="bar_list mgt10">
+									<li>삭제를 원하는 게시글이 있다면 반드시 탈퇴 전 삭제하시기 바랍니다.</li>
+									<li>탈퇴 후에는 회원정보가 삭제되어 본인 여부를 확인할 수 있는 방법이 없어, 게시글을 임의로 삭제해
+										드릴 수 없습니다.</li>
+								</ul>
+
+								<p class="f16 bold mgt30">* 게시판형 서비스</p>
+								<table class="board-view-tp02 mgt10">
+									<caption>게시판형 서비스</caption>
+									<colgroup>
+										<col style="width: 35%">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row" class="f14 tlt pdl20">고객센터 Q&amp;A 게시판
+											</th>
+											<td class="f14">게시판 작성 내용</td>
+										</tr>
+										<tr>
+											<th scope="row" class="f14 tlt pdl20">이벤트 페이지</th>
+											<td class="f14">댓글, 첨부파일 등</td>
+										</tr>
+									</tbody>
+								</table>
+
+
+								<p class="f18 blue bold mgt50">
+									탈퇴 후엔 잡아바 이용내역(취업 활동, 회원 활동)은 모두 삭제됩니다.
+								</p>
+								<ul class="bar_list mgt10">
+									<li> 탈퇴 후에 이용내역 복원은 불가합니다.</li>
+								</ul>
+
+								<p class="f16 bold mgt30">* 이용 내역</p>
+								<table class="board-view-tp02 mgt10">
+									<caption>이용 내역</caption>
+									<colgroup>
+										<col style="width: 35%">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row" class="f14 tlt pdl20">취업 활동
+
+											</th>
+											<td class="f14">
+												<ul class="bar_list">
+													<li class="f14">이력서 내용</li>
+													<li class="f14">입사지원 이력</li>
+													<li class="f14">입사제의 및 추천 이력</li>
+													<li class="f14">온라인 면접 이력</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="f14 tlt pdl20">회원 활동
+
+
+											</th>
+											<td class="f14">
+												<ul class="bar_list">
+													<li class="f14">취업역량강화(취업진단서비스 및 취업지원서비스)이력</li>
+													<li class="f14">직업상담사 상담이력</li>
+													<li class="f14">이벤트 참여이력</li>
+													<li class="f14">1:1 문의내역</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<p class="f18 blue bold mgt50">잡아바와 청년 노동자 지원사업 사이트(마이스터 통장 / 청년 복지포인트 / 청년 연금)는 통합
+									아이디를 사용하므로, 잡아바 탈퇴 후엔 청년 노동자 지원사업 관련 정보도 모두 삭제됩니다.</p>
+
+								<p class="f16 bold mgt30">* 회원탈퇴 사유를 선택해 주세요.</p>
+								<div class="reason mgt10">
+									<ul>
+										<li>  
+										    <div class="checks"> <input type="checkbox" id="ex_chk01"> <label for="ex_chk01" class="f14">정보 부족</label> </div>
+										</li>
+										<li class="mgt10">  
+										    <div class="checks"> <input type="checkbox" id="ex_chk02"> <label for="ex_chk02" class="f14">서비스 이용 불편</label> </div>
+										</li>
+										<li class="mgt10">  
+										    <div class="checks"> <input type="checkbox" id="ex_chk03"> <label for="ex_chk03" class="f14">방문횟수 거의 없음</label> </div>
+										</li>
+										<li class="mgt10">  
+										    <div class="checks"> <input type="checkbox" id="ex_chk04"> <label for="ex_chk04" class="f14">개인정보 및 보안 우려</label> </div>
+										</li>
+										<li class="mgt10">  
+										    <div class="checks"> <input type="checkbox" id="ex_chk05"> <label for="ex_chk05" class="f14">사생활 기록 삭제 목적</label> </div>
+										</li>
+										<li class="mgt10">  
+										    <div class="checks"> <input type="checkbox" id="ex_chk06"> <label for="ex_chk06" class="f14">기타</label>
+										    <input type="text"> </div>
+										</li>
+										
+									</ul>
+								</div>
+							</div>
+							
+							<div class="checks02 mgt20">
+								<input type="checkbox" id="ex_chk07"> <label for="ex_chk07" class="f14">안내 사항을 모두 확인하였으며, 이에 동의합니다.</label>
+							</div>
+							
+							<div class="btn_wrap mgt50">
+								<button type="button" class="ssPopBtn" id="_popupCloseBtn">확인</button>
+								</div>
+						</div>
+
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</body></html>
