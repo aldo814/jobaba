@@ -75,7 +75,7 @@ br{font-family: 'Dotum' !important;}
 .tm_select {width: 60%;position: relative;}
 .tm_select .selected-option{color: #fff;font-size: 26px;padding-bottom: 15px;border-bottom: 1px solid #fff;position: relative;display: block;}
 .tm_select .selected-option:after{content: '';display: block;background: url(../resource/images/thema/220120/bt_arrow.png) no-repeat;width: 28px;height: 16px;position: absolute;right: 0;top: 50%;transform: translateY(-50%)}
-.tm_select .selected-option a{width: calc(100% - 50px);display: block;word-break: keep-all}
+.tm_select .selected-option a{width: calc(100% - 50px);display: block;word-break: keep-all;color: #fff}
 .tm_select ul{display: none;position: absolute;background: #fff;width: 100%;z-index: 55}
 .tm_select ul li{font-size: 18px;padding: 15px 20px;border-bottom: 1px dashed #ddd}
 .tm_select ul li a:hover,
