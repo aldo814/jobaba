@@ -147,6 +147,7 @@ ul.service_area li{height: auto}
 .epmtDiag_link a{margin-left: auto;background: #393939;color: #fff;font-size:14px;padding: 5px 30px;border-radius: 30px;position: relative;bottom: -20px}
 .epmtDiag_link a:after{content: '';display: block;background: url(../images/ncsDiag/ncs_rs02_img.png) no-repeat;width: 274px;height: 141px;position: absolute;bottom: 100%;left: 45%;transform: translateX(-50%)}
 
+.ncsDiag_wrap table {table-layout: fixed}
 
 @media all and (max-width: 1260px){
 	.ncsStep{padding: 20px }
