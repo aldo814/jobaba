@@ -1,0 +1,234 @@
+/* ncs main */
+.tct {text-align: center}
+.trt {text-align: right}
+.tlt {text-align: left}
+.f20 {font-size: 20px}
+.f18 {font-size: 18px}
+.f17 {font-size: 17px}
+.f15 {font-size: 15px}
+.f13 {font-size: 13px}
+.f12 {font-size: 12px}
+.gray5{color: #504f4f} 
+.gray6 {color: #666666}
+.cyan{color: #38bab2}
+.pop_wrap {max-width: 760px;width: 100%;}
+.img_wrap img {max-width: 100%}
+.ncs_box{border: 1px solid #e6e6e6;border-radius: 15px;background: #fff3e3;padding: 30px 25px;}
+.mag_ico{position: relative;padding-left: 40px}
+.mag_ico:before{content: '';display: block;background: url(../images/ncsDiag/mag_ico.png) no-repeat center #222;width: 27px;height: 27px;border-radius: 50%;position: absolute;left: 0;top: 0;}
+.ncs_list {max-width: 366px;margin: 100px auto 0 auto}
+.ncs_list li{display: flex;padding:5px 30px 10px 30px;margin-bottom: 7px;border-bottom: 1px solid #837f7f}
+.ncs_list li strong{margin-right: 30px}
+.kpAll{word-break: keep-all}
+
+
+/* ncs 진단 */
+.ncsStep {display: flex;border-top: 1px solid #e6e6e6;border-bottom: 1px solid #e6e6e6;padding: 30px;justify-content:center;margin-bottom: 50px;align-items: center;}
+.ncsStep  li{font-size: 22px;font-weight: bold;opacity: 0.5;position: relative;cursor: default;display: flex;align-items: center;}
+.ncsStep  li.active{opacity: 1}
+.ncsStep  li:after{content: '';display: inline-flex;background: url(../images/ncsDiag/ncs_arrow.png) no-repeat ;width: 24px;height: 45px;margin: 0 70px}
+.ncsStep  li:last-child:after{display: none}
+
+/* 1. 직종선택 */
+.ncsDiag_occ {display: flex;flex-wrap: wrap}
+.ja_select_area{text-align: center;margin-right: 20px;width: calc(25% - 15px);;cursor: pointer;margin-top: 45px}
+.ja_select_area:nth-child(4n){margin-right: 0}
+.ja_select_area .img{border-radius: 20px;overflow: hidden;display: block;margin-bottom: 10px} 
+.ja_select_area .img img{display: block;width: 100%}
+.radio_style01 label{font-size: 14px;color: #666}
+.ja_select_area .radio_style01 input[type="radio"] + label{justify-content: center;}
+
+/* 라디오 버튼 */
+.radio_style01 input[type="radio"] {position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip:rect(0,0,0,0);border: 0;}
+.radio_style01 input[type="radio"] + label {
+  display:flex;align-items: center;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none
+}
+.radio_style01 input[type="radio"] + label:before {content: '';margin-right: 10px;width: 21px;height: 21px; text-align: center;border: 0;background: #e0e0e0;border-radius: 100%;}
+.radio_style01 input[type="radio"]:checked + label:before { background: #f32656;
+}
+
+/* 직업선택 */
+.n_desc {display: flex;flex-wrap: wrap;}
+.n_desc  > div{width: 25%}
+.n_desc .ncMore{position: relative;padding-right: 30px;display: inline-block;}
+.n_desc .ncMore .radio_style01 input[type="radio"] + label{justify-content: flex-start;}
+
+.mag_btn{background: url(../images/ncsDiag/mag_ico2.png) no-repeat center #222;width: 20px;height: 20px;border-radius: 50%;text-indent: -9999px;}
+
+.n_desc .ncMore button{display: inline-block;position: absolute;right: 0;top: 50%;transform: translateY(-50%)}
+
+/*직업정보 상세 팝업*/
+.bar_list li{position: relative;padding-left: 10px;margin-bottom: 5px;}
+.bar_list li:last-child{margin-bottom: 0}
+.bar_list li:before{content: '-';position: absolute;left: 0;top: 0;}
+.modal.ncs_pop .modal-body .btn.close{margin-bottom: 0;margin-top: 0;height: auto}
+.ncs_pop .modal-content{border-radius: 10px;overflow: hidden}
+.ncs_pop .modal-header.header-primary{background: #07356f !important}
+.modal.mh725 .modal-body{max-height: 726px}
+
+
+/* 직업역량진단 */
+.ncsDiag_wrap .ncsAb_table table{border-top: 0 !important;}
+.ncsAb_table input[type=radio].css-checkbox + label.css-label{width: auto}
+.ncs_tooltip{display: flex;align-items: center;}
+.ncs_tooltip > div{position: relative;display: inline-block;margin-right: 10px}
+.tooltip_text {font-size: 12px;color: #666;background: #f6f7f9;border-radius: 30px;padding: 7px 10px;position: absolute;;left: calc(100% + 35px);top: 0;width: 600px;top: -2px;display: none}
+
+
+/* 직업역량진단결과 */
+.ncs_result{display: flex;background: #f8f8f8 !important;padding: 40px 70px;align-items: center}
+.ncs_result .nt{font-size: 22px;width: 140px;text-align: center;text-align: left}
+.ncs_result .nt .pink{color: #fd486a}
+.ncs_result .nd{width: calc(100% - 140px);text-align: left;word-break: keep-all;font-size: 14px;color: #666}
+.ncs_result .nd strong{color: #000}
+.nrt_detail_wrap {margin-bottom: 20px}
+.nrt_detail:first-child{margin-top: 40px}
+.nrt_detail{display: flex;justify-content: space-between;align-items: flex-start;margin-top: 90px}
+.nrt_detail .talk_box{width: 160px;text-align: center;font-size: 14px;color: #000;font-weight: bold;padding: 25px}
+.nrt_detail > .table_area{width: calc(100% - 190px);padding: 0;margin: 0;}
+.nrt_detail > .table_area .f13{word-break: keep-all}
+.nrt_detail > .table_area table{margin-top: 30px}
+.nrt_detail > .table_area .bar_list li {font-size: 13px;color: #666 !important;font-weight: 500}
+
+ul.service_area li{height: auto}
+.nrt_detail .talk_box.blue{background: #e9f9f6 !important}
+.nrt_detail .talk_box.blue2{background: #e9f3f9}
+.ncs_service_area{display: flex;justify-content: center;margin-top: 0}
+.ncs_service_area .img_area{border-radius: 20px;overflow: hidden}
+.ncs_service_area .img_area img{display: block;}
+.ncs_service_area .ser_stit{height: auto;}
+
+.ja_chart{background: #f8f8f8;border-radius:10px;border: solid 1px #e6e6e6;padding: 40px}
+.ja_chart .graph{position: relative;width: 910px;margin: auto;transform: translateX(120px);height: auto;}
+.ja_chart .bar_area {margin-bottom: 30px}
+.ja_chart  .x-axis {position: absolute;bottom: -30px; display: flex;width: 100%;}
+.ja_chart  .x-axis li{width: 25%;font-size: 14px;color: #666666;text-align: left !important}
+.ja_chart  .x-axis li:after{content: '';display: block;width: 1px;height: 100%;}
+.ja_chart .x-axis-line{display: flex;height: 100%;}
+.ja_chart .x-axis-line li{width: 25%;position: relative;height: 100%;}
+.ja_chart .x-axis-line li:after{content: '';display: block; width: 1px;height: 100%;background: #e3e6f0;position: absolute;border: 0;top: 0;left: 3px}
+
+.ja_chart .bars {width: 100%;margin-left: 3px}
+.ja_chart .axis_wrap{position: relative;}
+.ja_chart .bars .bar-group .bar_area{align-items: baseline;position: relative;height: 30px;}
+.ja_chart .bars .bar-group .txt{position: absolute;left: -210px;text-align: right;width: 180px;font-size: 13px;color: #666}
+.ja_chart .bars .bar-group .more{position: absolute;right: 35px;top: -5px;width:100%;padding: 5px 10px;z-index: 999999;}
+.ja_chart .bars .bar-group .more_txt{display: none;margin-left: 20px;font-size: 13px;color: #fff;position: absolute;z-index: 999;background: #333;border-radius: 30px;padding: 3px 15px;top: 50%;transform: translateY(-50%);max-width: 760px}
+.ja_chart .bars .bar-group .more_btn {background: url(../images/ncsDiag/q_mark.png) no-repeat center #cdcdcd;width: 18px;height: 18px;text-indent: -9999px;display: block;border-radius: 50%}
+.ja_chart .bars .bar{width:calc(100% - 16.5%)}
+.ja_chart .bars .bar > div{height: 10px;margin-bottom: 5px;text-indent: -9999px;animation:chart 1s;}
+.ja_chart .bars .bar .off {opacity: 0.3}
+@keyframes chart {
+	0%{width: 0}
+
+
+}
+.ja_chart .axis_wrap{position: absolute;left: 0;bottom: 0;width: 100%;z-index: -1;height: 100%}
+.ja_chart .legend{display: flex;align-items: center;justify-content: center;margin-bottom: 3.0rem}
+.ja_chart .legend li{margin-right: 30px;display: flex;align-items: center;font-size: 13px;color: #666666;cursor: pointer}
+.ja_chart .legend li span{width: 10px;height: 10px;margin-right: 10px}
+.ja_chart .legend li:last-child{margin-right: 0}
+.ja_chart .legend .lg_gray span{background: #c7c7c7}
+.ja_chart .legend .lg_pink span{background: #fd486a}
+.ja_chart .bars .bar .bar-gray{background: #c7c7c7}
+.ja_chart .bars .bar .bar-pink{background: #fd486a}
+
+
+.epmtDiag_link {display: flex;background: #f8f8f8;border-radius: 15px;padding: 35px 80px;align-items:baseline;margin-top: 100px}
+.epmtDiag_link .txt{display: flex;padding-top: 20px}
+.epmtDiag_link .txt .ltit{background: #fd486a;padding: 5px 20px;border-radius: 30px;font-size: 18px;font-weight: 500;color: #fff;position: relative;top: -20px}
+.epmtDiag_link .txt .ltit:after{content: '';display: block;background: url(../images/ncsDiag/sb_img.png) no-repeat;width: 8px;height: 26px;position: absolute;right: -4px;bottom: 4px}
+.epmtDiag_link .txt  .desc{margin-left: 20px}
+.epmtDiag_link a{margin-left: auto;background: #393939;color: #fff;font-size:14px;padding: 5px 30px;border-radius: 30px;position: relative;bottom: -20px}
+.epmtDiag_link a:after{content: '';display: block;background: url(../images/ncsDiag/ncs_rs02_img.png) no-repeat;width: 274px;height: 141px;position: absolute;bottom: 100%;left: 45%;transform: translateX(-50%)}
+
+
+@media all and (max-width: 1260px){
+	.ncsStep{padding: 20px }
+	.ncsStep li{font-size: 18px}
+	.ncsStep li:after{margin: 0 40px;background-size: 16px;width: 18px;height: 32px}
+	
+	.n_desc > div{width: auto;margin-right: 30px}
+	
+	.tooltip_text{width: 450px;word-break: keep-all}
+	.ja_chart .graph{width: calc(100% - 100px);margin: 0}
+	
+	.epmtDiag_link{padding: 35px 30px;align-items: center}
+	.epmtDiag_link .txt {flex-direction: column;align-items: flex-start;padding-top: 0}
+	.epmtDiag_link .txt .ltit{top: -10px}
+	.epmtDiag_link .txt .desc{margin-left: 0}
+}
+
+@media all and (max-width: 1024px){
+	.mag_ico{text-align: left !important}
+	.ncs_list{margin: 50px auto 0 auto}
+	.nc_btn a{display: block;}
+	.ja_select_area{width: calc(33.333% - 13.333px);}
+	.ja_select_area:nth-child(3n){margin-right: 0}
+	.ja_select_area:nth-child(4n){margin-right: auto}
+	.ncs_tooltip{position: relative;}
+	.ncs_tooltip > div{position: static}
+	.tooltip_text{left: 0;top: 100%;width: 100%;}
+	.ncs_result{padding: 30px}
+	.ncs_result .nt{font-size: 18px;width: 120px}
+	.ncs_result .nd{width:calc(100% - 120px)}
+	.ja_chart .bars .bar-group .more_txt{max-width: 530px}
+	
+	.epmtDiag_link a:after{background-size: 200px;width: 200px;height: 103px}
+	
+}
+
+@media all and (max-width: 768px){
+	.ncsStep{margin-bottom: 20px}
+	.nc_btn a{display: inline-block;}	
+	.ncs_pop .modal-dialog{width: 90%;max-width: 90%;}
+	.n_tit {text-align: left !important}
+	.bar_list li{text-align: left !important}
+	.t_txt_area{float: none;text-align: left !important;display: block !important}
+	.ncsAb_table{margin-top: 0}
+	.nrt_detail{margin-top: 40px}
+	.nrt_detail table{table-layout: fixed}
+	.nrt_detail > .table_area .f13{text-align: left}
+	.nrt_detail{flex-direction: column;}
+	.nrt_detail > .table_area{width: 100%;}
+	.nrt_detail .talk_box{padding: 15px;margin: 0 0 20px 0}
+	.ncs_service_area{flex-direction: column;}
+	.ja_chart{padding: 20px}
+	.ja_chart .graph{width: calc(100% - 45px);margin: 0}
+
+	.epmtDiag_link .txt .ltit{font-size: 15px;}
+	.epmtDiag_link .txt .ltit:after{right: -2px;bottom: 2px}
+}
+
+@media all and (max-width: 640px){
+	.f15 {font-size: 13px}
+	.f17 {font-size: 15px}
+	.f20{font-size: 16px}
+	.ncsStep {padding: 20px 0}
+	.ncsStep li{font-size: 13px;}
+	.ncsStep li:after{background-size: 10px;width: 10px;height: 20px;margin: 0 15px}
+	.ncs_list{max-width: 366px;width: 100%;margin: 30px auto 0 auto}
+	.ncs_list li{padding: 5px 0 10px 0;text-align: left}
+	.ncs_list li strong{margin-right: 10px;}
+	
+	.ja_select_area{width: calc(50% - 10px);margin-top: 30px}
+	.ja_select_area:nth-child(2n){margin-right: 0}
+	.ja_select_area:nth-child(3n){margin-right: auto}
+	
+	.ncs_result{display: block;}
+	.ncs_result .nt{width: 100%;margin-bottom: 10px}
+	.ncs_result .nt br{display: none}
+	.ncs_result .nd{width: 100%;}
+	.ja_chart .graph{width: calc(100% - 50px);margin-left:0;transform: translateX(90px)}
+	.ja_chart .bars .bar-group .txt{width: 70px;left: -100px;word-break: keep-all}
+	.ja_chart .legend {justify-content: flex-end}
+	
+	.epmtDiag_link{flex-direction: column;align-items: center;}
+	.epmtDiag_link a{display: block;margin:100px auto 0 auto}
+	
+}
