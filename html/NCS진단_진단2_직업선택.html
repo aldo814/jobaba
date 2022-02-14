@@ -364,7 +364,10 @@
 			$(this).siblings().find('input').removeProp("checked", "");
 		})
 		
-		function ViewLayer(){document.getElementsByClassName("ncs_pop")[0].style.display='block'
+		var body = $('body');
+		
+		function ViewLayer(){
+			document.getElementsByClassName("ncs_pop")[0].style.display='block'
 		}
 		
 		function CloseLayer(){
