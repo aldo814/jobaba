@@ -11,6 +11,7 @@
 .gray5{color: #504f4f} 
 .gray6 {color: #666666}
 .cyan{color: #38bab2}
+.wd760{max-width: 760px !important;width: 100% !important}
 .pop_wrap {max-width: 760px;width: 100%;}
 .img_wrap img {max-width: 100%}
 .ncs_box{border: 1px solid #e6e6e6;border-radius: 15px;background: #fff3e3;padding: 30px 25px;}
@@ -28,6 +29,13 @@
 .ncsStep  li.active{opacity: 1}
 .ncsStep  li:after{content: '';display: inline-flex;background: url(../images/ncsDiag/ncs_arrow.png) no-repeat ;width: 24px;height: 45px;margin: 0 70px}
 .ncsStep  li:last-child:after{display: none}
+
+
+/* 수정사항 */
+.ncs_Bgpop.ncs_pop .modal-header.header-primary{background: #3f94b9 !important}
+.ncs_Bgpop.ncs_pop .modal-body{background: url(../images/ncsDiag/ncs_pop_bg.png) #eaf3f7 no-repeat right ;max-height: calc(100% - 300px) !important}
+.ncs_Bgpop.ncs_pop  .img_wrap{text-align: center;padding-top:30px;}
+
 
 /* 1. 직종선택 */
 .ncsDiag_occ {display: flex;flex-wrap: wrap}
@@ -67,10 +75,9 @@
 .bar_list li:last-child{margin-bottom: 0}
 .bar_list li:before{content: '-';position: absolute;left: 0;top: 0;}
 .modal.ncs_pop .modal-body .btn.close{margin-bottom: 0;margin-top: 0;height: auto}
-.not_scr{width: 100%;height: 100vh;overflow: hidden}
 .ncs_pop .modal-content{border-radius: 10px;overflow: hidden}
 .ncs_pop .modal-header.header-primary{background: #07356f !important}
-.ncs_pop .modal-dialog{top: 50%;transform: translateY(-50%);}
+.ncs_pop .modal-dialog{top: 50%;transform: translateY(-50%);margin: 0 auto !important}
 .modal.mh725 .modal-body{max-height: 726px}
 
 
