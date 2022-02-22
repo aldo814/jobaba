@@ -39,7 +39,7 @@
 
 /* 1. 직종선택 */
 .ncsDiag_occ {display: flex;flex-wrap: wrap}
-.ja_select_area{text-align: center;margin-right: 20px;width: calc(25% - 15px);;cursor: pointer;margin-top: 45px}
+.ja_select_area{text-align: center;margin-right: 20px;width: calc(25% - 15px);margin-top: 45px}
 .ja_select_area:nth-child(4n){margin-right: 0}
 .ja_select_area .img{border-radius: 20px;overflow: hidden;display: block;margin-bottom: 10px} 
 .ja_select_area .img img{display: block;width: 100%}
@@ -90,7 +90,7 @@
 
 
 /* 직업역량진단결과 */
-.ncs_result{display: flex;background: #f8f8f8 !important;padding: 40px 70px;align-items: center}
+.ncs_result{display: flex;background: #f8f8f8 !important;padding: 40px 70px !important;align-items: center}
 .ncs_result .nt{font-size: 22px;width: 140px;text-align: center;text-align: left}
 .ncs_result .nt .pink{color: #fd486a}
 .ncs_result .nd{width: calc(100% - 140px);text-align: left;word-break: keep-all;font-size: 14px;color: #666}
@@ -184,7 +184,7 @@ ul.service_area li{height: auto}
 	.ncs_tooltip{position: relative;}
 	.ncs_tooltip > div{position: static}
 	.tooltip_text{left: 0;top: 100%;width: 100%;}
-	.ncs_result{padding: 30px}
+	.ncs_result{padding: 30px !important}
 	.ncs_result .nt{font-size: 18px;width: 120px}
 	.ncs_result .nd{width:calc(100% - 120px)}
 	.ja_chart .bars .bar-group .more_txt{max-width: 530px}
