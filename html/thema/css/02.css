@@ -284,6 +284,7 @@ body { font-family: 'Noto Sans KR', sans-serif; }
 	.f22{font-size: 16px}
 	#theme .area01 h2{font-size: 26px}
 	
+	.mb30{margin-bottom: 15px}
 	#theme .area03 .topCont{text-align: center}
 	#theme .area03 .topCont p{text-align: center}
 	#theme .area05 h3:after{display: none}
@@ -296,7 +297,8 @@ body { font-family: 'Noto Sans KR', sans-serif; }
 	#theme .area05 .area05_cont > div .img{width: 100px;height: 100px;}
 	#theme .area05 .area05_cont > div .txt{width: calc(100% - 120px)}
 	#theme .tn_wrap > div .img{width: 90%}
-	#theme .video{width: 90%}
+	#theme .video{width: 90%;}
+	#theme .video video{border: 1px solid #dcdcdc;}
 	#theme .tn_wrap > div .more_view{margin-top: 20px}
 	#theme .tn_wrap > div .more_view a{font-size: 14px}
 
@@ -309,7 +311,6 @@ body { font-family: 'Noto Sans KR', sans-serif; }
 	.f18{font-size: 13px}
 	.f16{font-size: 14px}
 	.mt20{margin-top: 10px}
-	.mb30{margin-bottom: 20px}
 	#theme .area05 h3{font-size: 18px}
 	#theme .area01 .regBox{flex-direction: column}
 	#theme .area01 .regBox > div{width: 100%;margin-bottom: 20px;}
