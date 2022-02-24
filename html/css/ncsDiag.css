@@ -8,7 +8,7 @@
 .f15 {font-size: 15px}
 .f13 {font-size: 13px}
 .f12 {font-size: 12px}
-.gray5{color: #504f4f} 
+.gray5{color: #504f4f}
 .gray6 {color: #666666}
 .cyan{color: #38bab2}
 .wd760{max-width: 760px !important;width: 100% !important}
@@ -39,9 +39,9 @@
 
 /* 1. 직종선택 */
 .ncsDiag_occ {display: flex;flex-wrap: wrap}
-.ja_select_area{text-align: center;margin-right: 20px;width: calc(25% - 15px);margin-top: 45px}
+.ja_select_area{text-align: center;margin-right: 20px;width: calc(25% - 15px);margin-top: 45px;cursor: pointer;}
 .ja_select_area:nth-child(4n){margin-right: 0}
-.ja_select_area .img{border-radius: 20px;overflow: hidden;display: block;margin-bottom: 10px} 
+.ja_select_area .img{border-radius: 20px;overflow: hidden;display: block;margin-bottom: 10px}
 .ja_select_area .img img{display: block;width: 100%}
 .radio_style01 label{font-size: 14px;color: #666}
 .ja_select_area .radio_style01 input[type="radio"] + label{justify-content: center;}
@@ -62,13 +62,14 @@
 
 /* 직업선택 */
 .n_desc {display: flex;flex-wrap: wrap;}
-.n_desc  > div{width: 25%}
+.n_desc  > div{width: calc(25% - 11.25px);margin-right: 15px;word-break: keep-all;}
+.n_desc  > div:nth-child(4){margin-right: 0;}
 .n_desc .ncMore{position: relative;padding-right: 30px;display: inline-block;}
 .n_desc .ncMore .radio_style01 input[type="radio"] + label{justify-content: flex-start;}
 
 .mag_btn{background: url(../images/ncsDiag/mag_ico2.png) no-repeat center #222;width: 20px;height: 20px;border-radius: 50%;text-indent: -9999px;}
 
-.n_desc .ncMore button{display: inline-block;position: absolute;right: 0;top: 50%;transform: translateY(-50%)}
+.n_desc .ncMore button{display: inline-block;position: absolute;right: 0;top: 8px}
 
 /*직업정보 상세 팝업*/
 .bar_list li{position: relative;padding-left: 10px;margin-bottom: 5px;}
@@ -125,7 +126,7 @@ ul.service_area li{height: auto}
 .ja_chart .bars {width: 100%;margin-left: 3px}
 .ja_chart .axis_wrap{position: relative;}
 .ja_chart .bars .bar-group .bar_area{align-items: baseline;position: relative;height: 30px;}
-.ja_chart .bars .bar-group .txt{position: absolute;left: -210px;text-align: right;width: 180px;font-size: 13px;color: #666}
+.ja_chart .bars .bar-group .txt{position: absolute;left: -160px;text-align: right;width: 130px;font-size: 13px;color: #666}
 .ja_chart .bars .bar-group .more{position: absolute;right: 35px;top: -5px;width:100%;padding: 5px 10px;z-index: 999999;}
 .ja_chart .bars .bar-group .more_txt{display: none;margin-left: 20px;font-size: 13px;color: #fff;position: absolute;z-index: 999;background: #333;border-radius: 30px;padding: 3px 15px;top: 50%;transform: translateY(-50%);max-width: 760px}
 .ja_chart .bars .bar-group .more_btn {background: url(../images/ncsDiag/q_mark.png) no-repeat center #cdcdcd;width: 18px;height: 18px;text-indent: -9999px;display: block;border-radius: 50%}
@@ -162,12 +163,12 @@ ul.service_area li{height: auto}
 	.ncsStep{padding: 20px }
 	.ncsStep li{font-size: 18px}
 	.ncsStep li:after{margin: 0 40px;background-size: 16px;width: 18px;height: 32px}
-	
-	.n_desc > div{width: auto;margin-right: 30px}
-	
+
+	.n_desc > div{width: auto;margin-right: 20px}
+	.n_desc > div:nth-child(4n){margin-right: auto}
 	.tooltip_text{width: 450px;word-break: keep-all}
 	.ja_chart .graph{width: calc(100% - 100px);margin: 0}
-	
+
 	.epmtDiag_link{padding: 35px 30px;align-items: center}
 	.epmtDiag_link .txt {flex-direction: column;align-items: flex-start;padding-top: 0}
 	.epmtDiag_link .txt .ltit{top: -10px}
@@ -188,14 +189,14 @@ ul.service_area li{height: auto}
 	.ncs_result .nt{font-size: 18px;width: 120px}
 	.ncs_result .nd{width:calc(100% - 120px)}
 	.ja_chart .bars .bar-group .more_txt{max-width: 530px}
-	
+
 	.epmtDiag_link a:after{background-size: 200px;width: 200px;height: 103px}
-	
+
 }
 
 @media all and (max-width: 768px){
 	.ncsStep{margin-bottom: 20px}
-	.nc_btn a{display: inline-block;}	
+	.nc_btn a{display: inline-block;}
 	.ncs_pop .modal-dialog{width: 90%;max-width: 90%;}
 	.n_tit {text-align: left !important}
 	.bar_list li{text-align: left !important}
@@ -213,6 +214,9 @@ ul.service_area li{height: auto}
 
 	.epmtDiag_link .txt .ltit{font-size: 15px;}
 	.epmtDiag_link .txt .ltit:after{right: -2px;bottom: 2px}
+
+	.n_desc{display: block;}
+	.n_desc > div{text-align: left}
 }
 
 @media all and (max-width: 640px){
@@ -225,20 +229,20 @@ ul.service_area li{height: auto}
 	.ncs_list{max-width: 366px;width: 100%;margin: 30px auto 0 auto}
 	.ncs_list li{padding: 5px 0 10px 0;text-align: left}
 	.ncs_list li strong{margin-right: 10px;}
-	
+
 	.ja_select_area{width: calc(50% - 10px);margin-top: 30px}
 	.ja_select_area:nth-child(2n){margin-right: 0}
 	.ja_select_area:nth-child(3n){margin-right: auto}
-	
+
 	.ncs_result{display: block;}
 	.ncs_result .nt{width: 100%;margin-bottom: 10px}
 	.ncs_result .nt br{display: none}
 	.ncs_result .nd{width: 100%;}
 	.ja_chart .graph{width: calc(100% - 50px);margin-left:0;transform: translateX(90px)}
-	.ja_chart .bars .bar-group .txt{width: 70px;left: -100px;word-break: keep-all}
+	.ja_chart .bars .bar-group .txt{width: 70px;left: -100px;word-break: keep-all;font-size: 11px;}
 	.ja_chart .legend {justify-content: flex-end}
-	
+
 	.epmtDiag_link{flex-direction: column;align-items: center;}
 	.epmtDiag_link a{display: block;margin:100px auto 0 auto}
-	
+
 }
