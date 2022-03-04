@@ -89,7 +89,7 @@ body { font-family: 'Noto Sans KR', sans-serif;}
 
 #theme .area_title02 h3{color: #e941cc;text-align: center;display: flex;flex-direction: column;justify-content: center;align-items: center;font-size: 30px}
 #theme .area_title02 h3 span{color: #fff;background: #e941cc;padding: 5px 10px;margin-bottom: 10px;font-size: 40px}
-#theme .area_title02 ul{max-width: 660px;width: 100%;margin: 50px auto 0 auto}
+#theme .area_title02 ul{max-width: 670px;width: 100%;margin: 50px auto 0 auto}
 #theme .area_title02 ul li{position: relative;padding-left: 60px;font-weight: bold;color: #444;padding-bottom: 15px;border-bottom: 1px solid #cccf;margin-bottom: 20px;position: relative}
 #theme .area_title02 ul li:before{content: '';display: block;background: url(../resource/images/thema/220304/check.png) no-repeat;width: 41px;height: 31px;position: absolute;left: 0;top: 0}
 #theme .area_title02 ul li:last-child{margin-bottom: 0}
