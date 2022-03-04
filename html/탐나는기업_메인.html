@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Document</title>
+	<!-- 잡아바 css-->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/common.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/style.jobInfo.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/style.epmtDiag.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/swiper.min.css">
+	<link rel="stylesheet" href="css/new_desEnt.css">
+
+
+</head>
+
+<body>
+	<div id="page-content">
+		<div class="des_wrap">
+			<!--메인 비쥬얼-->
+			<div class="des_visual">
+				<div class="containerNew">
+					<h2 class="sCoreBold">
+						<span class="sCore">JOBABA</span>
+						탐나는기업관
+					</h2>
+
+					<p class="f18 sCoreBold mt30">“내가 찾는 회사, 나를 찾는 회사”</p>
+					<p class="f16 sCore mt10">
+						경기도내 우수기업을 직접 방문하여 문화, 복지, 업무환경과 <br>
+						현직 직원들의 인터뷰를 통해 기업의 다양한 모습을 소개해 드립니다.
+					</p>
+				</div>
+			</div>
+			<!--//메인 비쥬얼-->
+
+			<!--des_cont-->
+			<div class="des_cont mg50">
+				<div class="containerNew">
+					<div class="des_cont_inner">
+						<div class="des_intro">
+							<h4 class="top">
+								탐나는 신규 기업을 소개합니다.
+							</h4>
+
+							<div class="cont">
+								<div id="intro_slide" class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="video">
+												<video>
+													<source type="video/mp4" src="https://api.wecandeo.com/video/default/BOKNS9AQWrH1a3kNhisXWqAoGbMxOjiiuFjCbWKxwKtJD5VaPHGXMbJ7KGKgfKFPwplFGipd7WMv3b27rE983vAVwieie">
+												</video>
+
+												<div class="vdo_inner">
+													<button class="playBtn">
+														재생
+													</button>
+													<div class="txt">
+														<p class="slogan">반도체 기업의 엄청난 성장, 그 특별한 기업을 소개합니다.</p>
+														<p class="name">㈜앤씨앤</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="des_welfare">
+							<h4 class="top">
+								세상에 이런 복지가?!
+							</h4>
+							<div class="cont">
+
+							</div>
+						</div>
+
+						<div class="des_fair">
+							<h4 class="top">
+								박람회 &amp; 채용관
+							</h4>
+							<div class="cont">
+
+							</div>
+						</div>
+
+
+					</div>
+					<!--//des_cont_inner-->
+				</div>
+				<!--//containerNew-->
+			</div>
+			<!--//des_cont-->
+
+
+		</div>
+	</div>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/swiper.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var mySwiper = new Swiper('#intro_slide', {
+				loop: true,
+				spaceBetween: 10,
+				pagination: {
+					el: '.swiper-pagination'
+				}
+			});
+
+			// 비디오 플레이
+			$('.playBtn').click(function() {
+				$(this).parent().parent().find('video').trigger('play');
+				$(this).parent().parent().find('video').attr('controls', 'controls');
+				$(this).parent().hide();
+			});
+			
+			$('.hover .playBtn').click(function() {
+				$(this).parent().parent().find('video').trigger('pause');
+				$(this).parent().hide();
+				$(this).parent().find('.playBtn').text('시작');
+			});
+			
+			$('.video video').one('pause',function(){
+				$(this).parent().find('.vdo_inner').show();
+			});
+			
+			$('.video video').one('play',function(){
+				$(this).hover(function(){
+					$(this).parent().find('.vdo_inner').show();
+					$(this).parent().find('.vdo_inner').addClass('hover');
+				});
+				
+			});
+			
+		
+
+
+		});
+	</script>
+</body></html>

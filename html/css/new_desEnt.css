@@ -1,0 +1,52 @@
+/*font*/
+@font-face {
+     font-family: 'S-CoreDream-4Regular';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: 'S-CoreDream-6Bold';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+
+
+/* 공통 */
+.sCore{font-family: 'S-CoreDream-4Regular',sans-serif !important;}
+.sCoreBold{font-family: 'S-CoreDream-6Bold',sans-serif !important;}
+.f18 {font-size: 18px;}
+.f16 {font-size: 16px;}
+.mt30{margin-top: 30px}
+.mt10{margin-top: 10px}
+.mg50{margin: 50px 0}
+.des_wrap .swiper-pagination .swiper-pagination-bullet{width: 18px;height: 18px;margin: 0 5px}
+.des_wrap .swiper-pagination .swiper-pagination-bullet-active{background: #00a8cd}
+
+/* 메인 비쥬얼 */
+.des_visual{background: url(../images/desEnt/main_vs.png) no-repeat bottom;background-size: cover;padding: 80px 0 100px 0}
+.des_visual h2{color: #003281;font-size: 50px;}
+.des_visual h2 span{display: block;font-size: 26px;font-weight: 200;letter-spacing: 5px;padding-left: 45px;position: relative;}
+.des_visual h2 span:before{content: '';display: block;background: url(../images/desEnt/mv_ico.png) no-repeat;width: 36px;height: 30px;position: absolute;left: 0;top: 50%;transform: translateY(-50%)}
+
+
+/*des_cont*/
+.des_cont .des_cont_inner{display: flex;justify-content: space-between}
+.des_cont .des_cont_inner > div:nth-child(1){width:calc(42.06% - 40px)}
+.des_cont .des_cont_inner > div:nth-child(2){width:calc(34.92% - 40px)}
+.des_cont .des_cont_inner > div:nth-child(3){width:calc(23.02% - 40px)}
+.des_cont .des_cont_inner .top{font-size: 24px;padding-bottom: 20px;border-bottom: 1px solid #000;margin-bottom: 30px;font-weight: 400}
+.des_cont .des_cont_inner .swiper-wrapper{padding-bottom: 50px}
+.des_cont .des_cont_inner .video{height: 300px;width: 100%;position: relative;border-radius: 20px;background: #ddd;overflow: hidden}
+.des_cont .des_cont_inner .video video{height: 100%;width: 100%;object-fit: fill;}
+.des_cont .des_cont_inner .video .vdo_inner{position: absolute;width: 100%;height: 100%;left: 0;top: 0;background: linear-gradient(180deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.471461716937355) 80%);}
+.des_cont .des_cont_inner .video .playBtn{background: url(../images/desEnt/play_btn.png) no-repeat;width: 42px;height: 42px;text-indent: -9999px;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%)}
+.des_cont .des_cont_inner .video .hover .playBtn{background: url(../images/desEnt/pause_btn.png) no-repeat}
+.des_cont .des_cont_inner .video .txt{position: absolute;bottom: 0;padding: 20px;} 
+.des_cont .des_cont_inner .video .txt .slogan{font-size: 18px;color: #fff;font-weight: 400;margin-bottom: 10px; }
+.des_cont .des_cont_inner .video .txt .name{color: rgba(255, 255, 255, 0.5);font-size: 16px;}
+
+.des_cont .des_cont_inner .swiper-pagination {bottom: 0}
