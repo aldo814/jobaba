@@ -159,10 +159,10 @@ body { font-family: 'Noto Sans KR', sans-serif;}
 #theme .hd_table table{width: 100%;position: absolute;left:-9999px}
 #theme .hd_table th,
 #theme .hd_table td{border: 1px solid #5f79d4;padding: 10px;word-break: keep-all}
-#theme .hd_table thead th{background: #4766d6;color: #fff;font-weight: 100;font-size: 14px;}
+#theme .hd_table thead th{background: #4766d6;color: #fff;font-weight: 100;font-size: 13px;}
 #theme .hd_table th{word-break: keep-all}
-#theme .hd_table tbody th{background: #dae0f7;font-size: 13px;color: #4766d6;text-align: left;}
-#theme .hd_table tbody td{font-size: 13px;word-break: keep-all;line-height: 1.5}
+#theme .hd_table tbody th{background: #dae0f7;font-size: 12px;color: #4766d6;text-align: left;}
+#theme .hd_table tbody td{font-size: 12px;word-break: keep-all;line-height: 1.5}
 
 #theme .area_title09{background: url(../resource/images/thema/220304/section09_bg.png)  no-repeat center bottom;padding-bottom: 730px;position: relative;}
 #theme .area_title09 .logo_top{position: absolute;bottom: 20px;width: calc(100% - 140px);left: 50%;transform: translateX(-50%);}
@@ -280,6 +280,7 @@ body { font-family: 'Noto Sans KR', sans-serif;}
 	#theme .area_title07 .img_wrap{margin-left: 100px}
 
 	#theme .area_title09{background-size: 220px;padding-bottom: 150px}
+	#theme .area_title01{background-size: 1500px}
 }
 
 @media all and (max-width:480px){
@@ -307,13 +308,22 @@ body { font-family: 'Noto Sans KR', sans-serif;}
 	
 	#theme .area_title08 .hd_table {width: 100%;overflow-x: auto}
 	#theme .area_title08 .hd_table table{min-width: 400px;width: auto}
+	
+		#theme .area_title01{background-size: 1000px}
+	#theme .area_title01 .tct{margin-top: -10px}
+	#theme .area_title02 ul li{font-size: 14px;}
+	#theme .arrow_dl dt{font-size: 14px;margin-bottom: 10px}
+	#theme .arrow_dl dd{font-size: 13px}
+	
+	.f30{font-size: 15px}
 }
 
 @media all and (max-width:360px){
 	#theme .ico_area > div > div{width: 90px;height: 90px;font-size: 11px;font-weight: 100}
 	#theme .ico_area > div > div:nth-child(2n){margin-right: 0 !important}
 	
-	.f30{font-size: 15px}
 	
 	#theme .area_title09{background-size: 130px;padding-bottom: 100px}
+	
+		#theme .area_title01{background-size: 900px}
 }
