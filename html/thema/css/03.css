@@ -24,6 +24,7 @@ br{font-family: 'Dotum' !important;}
 body { font-family: 'Noto Sans KR', sans-serif;}
 
 /* 테마 common*/
+#theme {overflow: hidden}
 #theme img{max-width: 100%}
 #theme .blue01{color: #1a6475}
 #theme .blue02{color: #04b5c6}
