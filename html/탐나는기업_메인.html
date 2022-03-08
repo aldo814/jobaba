@@ -1055,6 +1055,7 @@
 			var $slider = $('#intro_slide').slick({
 				slidesToShow: 1,
 				slideToscroll: 1,
+				speed:500,
 				dots: true,
 				arrows: false,
 			});
@@ -1071,10 +1072,10 @@
 
 
 			$('#intro_slide').each(function() {
-				$(this).find('video').find('source ').appendAttr('src', '#t=0.5');
+				$(this).find('video').find('source').appendAttr('src', '#t=0.5');
 			});
 
-			$('#intro_slide').on('afterChange', function(event, slick, currentSlide, nextSlide) {
+			$('#intro_slide').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
 				$('#intro_slide').find('video').trigger('pause')
 			});
 
@@ -1092,6 +1093,7 @@
 			$('#welfare_slide').slick({
 				rows: 2,
 				slidesToShow: 1,
+				speed:500,
 				dots: true,
 				arrows: false,
 			});
@@ -1101,6 +1103,7 @@
 			$('#recom_slide').slick({
 				rows: 2,
 				slidesPerRow: 4,
+				speed:500,
 				infinite: true,
 				dots: true,
 				arrows: false,
@@ -1146,6 +1149,7 @@
 			$('#open_slide').slick({
 				rows: 3,
 				slidesToShow: 1,
+				speed:500,
 				dots: true,
 				arrows: false,
 
@@ -1176,6 +1180,7 @@
 			$('#itv_slide').slick({
 				slidesToShow: 3,
 				slidesToScroll: 3,
+				speed:500,
 				dots: true,
 				arrows: false,
 				responsive: [{
