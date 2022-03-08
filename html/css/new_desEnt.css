@@ -321,7 +321,7 @@
 }
 
 @media all and (max-width:480px){
-	.des_visual p{max-width: calc(100% - 150px)}
+	.des_visual p.f18{max-width: calc(100% - 150px)}
 	.des_visual p br{display: none}
 	.des_visual h2 span{font-size: 14px;margin-bottom: 10px}
 	.f18{font-size: 15px}
