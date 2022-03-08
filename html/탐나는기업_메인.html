@@ -24,6 +24,31 @@
 	<!--추가 css-->
 	<link rel="stylesheet" href="css/new_desEnt.css">
 	
+	<script>
+		$(document).ready(function() {
+			// Set a same-site cookie for first-party contexts
+document.cookie = 'cookie1=value1; SameSite=Lax';
+// Set a cross-site cookie for third-party contexts
+document.cookie = 'cookie2=value2; SameSite=None; Secure';
+			
+			
+			// 모바일 video thumb 추가
+			$.fn.appendAttr = function(attrName, suffix) {
+				this.attr(attrName, function(i, val) {
+					return val + suffix;
+				});
+				return this;
+			};
+			
+			$('#intro_slide').each(function() {
+				$(this).find('video').find('source').appendAttr('src', '#t=0.5');
+			});
+
+
+		});
+			
+	</script>
+	
 
 </head>
 
@@ -61,7 +86,7 @@
 									<div>
 										<div class="video">
 											<video>
-												<source type="video/mp4"  src="https://api.wecandeo.com/video/default/BOKNS9AQWrH1a3kNhisXWqAoGbMxOjiiuFjCbWKxwKtJDvDFKFJ7HfbbKGKgfKFPwplFGipd7WMv3b27rE983vAVwieie#t=0.5">
+												<source type="video/mp4"  src="https://api.wecandeo.com/video/default/BOKNS9AQWrH1a3kNhisXWqAoGbMxOjiiuFjCbWKxwKtJDvDFKFJ7HfbbKGKgfKFPwplFGipd7WMv3b27rE983vAVwieie">
 											</video>
 											<div class="vdo_inner">
 												<button class="playBtn">
@@ -78,7 +103,7 @@
 									<div>
 										<div class="video">
 											<video>
-												<source type="video/mp4"  src="https://api.wecandeo.com/video/default/BOKNS9AQWrH1a3kNhisXWqAoGbMxOjiiuFjCbWKxwKtJDvDFKFJ7HfbbKGKgfKFPwplFGipd7WMv3b27rE983vAVwieie#t=0.5">
+												<source type="video/mp4"  src="https://api.wecandeo.com/video/default/BOKNS9AQWrH1a3kNhisXWqAoGbMxOjiiuFjCbWKxwKtJDvDFKFJ7HfbbKGKgfKFPwplFGipd7WMv3b27rE983vAVwieie">
 											</video>
 											<div class="vdo_inner">
 												<button class="playBtn">
@@ -1310,14 +1335,7 @@
 
 	<script>
 	
-		
-		
 		$(document).ready(function() {
-			// Set a same-site cookie for first-party contexts
-document.cookie = 'cookie1=value1; SameSite=Lax';
-// Set a cross-site cookie for third-party contexts
-document.cookie = 'cookie2=value2; SameSite=None; Secure';
-			
 			// 신규기업 소개 슬라이드
 			var $slider = $('#intro_slide').slick({
 				slidesToShow: 1,
@@ -1328,19 +1346,6 @@ document.cookie = 'cookie2=value2; SameSite=None; Secure';
 			});
 
 		
-			// 모바일 video thumb 추가
-			$.fn.appendAttr = function(attrName, suffix) {
-				this.attr(attrName, function(i, val) {
-					return val + suffix;
-				});
-				return this;
-			};
-			
-//			$('#intro_slide').each(function() {
-//				$(this).find('video').find('source').appendAttr('src', '#t=0.5');
-//			});
-//
-//
 
 
 			$('#intro_slide').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
