@@ -236,11 +236,11 @@
 	
 	/* 메인 비쥬얼 */
 	.des_visual{padding: 50px 0}
-	.des_visual h2{font-size: 30px;}
-	.des_visual h2 span{font-size: 18px;padding-left: 32px}
-	.des_visual h2 span:before{background-size: 26px;width: 26px;height: 23px;top: 0;transform: none;}
+	.des_visual h2{font-size: 22px;}
+	.des_visual h2 span{font-size: 14px;padding-left: 32px;margin-bottom: 5px}
+	.des_visual h2 span:before{background-size: 26px;width: 26px;height: 23px;}
 	.des_visual  .mt30 {margin-top: 10px}
-	.des_cont .des_cont_inner .top{font-size: 20px;padding-bottom: 10px;margin-bottom: 20px;}
+	.des_cont .des_cont_inner .top{font-size: 18px;padding-bottom: 10px;margin-bottom: 20px;}
 	
 	.des_cont .des_cont_inner{display: block;}
 	.des_cont .des_cont_inner > div{width: 100% !important;margin-top: 30px !important;}
