@@ -86,6 +86,8 @@
 .des_wrap .des_sch label{width: 0px;height: 0px;overflow: hidden;text-indent: -9999px;position: absolute;left: -99999px;}
 .des_wrap .des_sch input[type="text"]{width: calc(100% - 50px);font-size: 14px;}
 .des_wrap .des_sch input[type="submit"]{background: url(../images/desEnt/src_ico.png) no-repeat center right transparent;width: 30px ;height: 30px;border: 0;text-indent: -9999px;}
+.des_recom #recom_slide .slick-list   {margin: 0 -10px}
+.des_recom #recom_slide .slick-slide > div > div{padding: 10px}
 .des_recom .item {background: #fff;padding: 30px;border:1px solid #e6e6e6;border-radius: 15px;}
 .des_recom .item  .cate{color: #9f9f9f;font-size: 14px;font-weight: bold;}
 .des_recom .item .name{font-size: 20px;margin: 13px 0}
@@ -96,14 +98,14 @@
 .des_wrap  .like.active{border: 1px solid #ff6163;background: url(../images/desEnt/like_active.png) no-repeat center;}
 .des_recom .cate,
 .des_recom .name{width: 100%;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
-.des_recom  .slick-slide > div > div > div{margin: 10px;}
 
 /* 추천채용공고 */
 .des_open .des_top h3:before{content: '';display: block;background: url(../images/desEnt/open_crt.png) no-repeat;width: 84px;height: 80px;position: absolute;left: 0;bottom: -10px;}
 .des_open .des_top h3 {padding-left: 95px}
 .des_open .item{display: flex;background: #fff;padding: 30px;border:1px solid #e6e6e6;border-radius: 15px;justify-content: space-between}
-.des_open .slick-slide > div > div {margin: 0 -10px}
-.des_open .slick-slide > div > div >div  {margin: 10px}
+.des_open .slick-list   {margin: 0 -10px}
+.des_open .slick-slide > div > div{padding: 10px}
+
 .des_open .item .left_area{width: 330px;}
 .des_open .item .left_area .img{border-radius: 15px;overflow: hidden;border: 1px solid #e6e6e6;margin-bottom: 15px;}
 .des_open .item .left_area .img img {display: block;}
