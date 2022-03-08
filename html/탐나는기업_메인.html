@@ -789,8 +789,8 @@
 								</div>
 							</div>
 						</div>
-						
-						
+
+
 						<div>
 							<div class="item">
 								<div class="left_area">
@@ -862,8 +862,8 @@
 								</div>
 							</div>
 						</div>
-						
-						
+
+
 						<div>
 							<div class="item">
 								<div class="left_area">
@@ -935,7 +935,7 @@
 								</div>
 							</div>
 						</div>
-						
+
 					</div>
 
 
@@ -1049,6 +1049,18 @@
 				arrows: false,
 			});
 
+			// 모바일 video thumb 추가
+			$.fn.appendAttr = function(attrName, suffix) {
+				this.attr(attrName, function(i, val) {
+					return val + suffix;
+				});
+				return this;
+			};
+
+
+			$('#intro_slide').each(function() {
+				$(this).find('video').find('source ').appendAttr('src', '#t=0.5');
+			});
 
 			$('#intro_slide').on('afterChange', function(event, slick, currentSlide, nextSlide) {
 				$('#intro_slide').find('video').trigger('pause')
