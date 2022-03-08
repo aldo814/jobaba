@@ -1311,20 +1311,10 @@
 
 	<script>
 		$(document).ready(function() {
-			// 신규기업 소개 슬라이드
-			var $slider = $('#intro_slide').slick({
-				slidesToShow: 1,
-				slideToscroll: 1,
-				speed: 500,
-				dots: true,
-				arrows: false,
-			});
-
-			// Set a same-site cookie for first-party contexts
+		// Set a same-site cookie for first-party contexts
 			document.cookie = 'cookie1=value1; SameSite=Lax';
 			// Set a cross-site cookie for third-party contexts
 			document.cookie = 'cookie2=value2; SameSite=None; Secure';
-
 
 			// 모바일 video thumb 추가
 			$.fn.appendAttr = function(attrName, suffix) {
@@ -1338,6 +1328,16 @@
 				$(this).find('video').find('source').appendAttr('src', '#t=0.5');
 				$(this).find('video').load();
 			});
+
+			// 신규기업 소개 슬라이드
+			var $slider = $('#intro_slide').slick({
+				slidesToShow: 1,
+				slideToscroll: 1,
+				speed: 500,
+				dots: true,
+				arrows: false,
+			});
+
 
 
 
