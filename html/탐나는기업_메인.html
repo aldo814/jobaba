@@ -18,8 +18,11 @@
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/style.jobInfo.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/style.epmtDiag.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.jobaba.net//resource/bxslider/slick.css">
+	<!-- //잡아바 css-->
+	
+	<!--추가 css-->
 	<link rel="stylesheet" href="css/new_desEnt.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 
 </head>
 
@@ -209,7 +212,7 @@
 			<!--//des_cont-->
 
 			<!-- 추천기업 -->
-			<div class="des_recom bg_gray">
+			<div class="des_recom des_bg_gray">
 				<div class="containerNew">
 					<div class="des_top">
 						<h3>탐나는 추천기업!</h3>
@@ -400,7 +403,7 @@
 			<!-- //추천기업 -->
 
 			<!--추천 채용공고-->
-			<div class="des_open bg_gray">
+			<div class="des_open des_bg_gray">
 				<div class="containerNew">
 					<div class="des_top">
 						<h3>탐나는기업 추천 채용공고!
@@ -1038,8 +1041,11 @@
 			</div>
 		</div>
 	</div>
+	
+	<!--잡아바 js-->
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+	<script src="https://www.jobaba.net//resource/bxslider/slick.js"></script>
+	
 	<script>
 	
 
@@ -1124,7 +1130,7 @@
 			// 관심기업
 			$('.des_recom').each(function() {
 				$(this).find('.like').click(function() {
-					$(this).toggleClass('active');
+					$(this).delay(500).toggleClass('active');
 				});
 			});
 
@@ -1132,7 +1138,7 @@
 			// 추천 채용공고
 			$('.des_open').each(function() {
 				$(this).find('.like').click(function() {
-					$(this).toggleClass('active');
+					$(this).delay(500).toggleClass('active');
 				});
 			});
 

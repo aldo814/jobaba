@@ -24,7 +24,7 @@
 .mt10{margin-top: 10px}
 .mg50{margin: 50px 0}
 .mg60{margin: 60px 0}
-.des_wrap .slick-dots{text-align: center;margin-top: 30px}
+.des_wrap .slick-dots{text-align: center;margin-top: 30px;position: static;}
 .des_wrap .slick-dots li{margin: 0 5px;cursor: pointer;display: inline-block;}
 .des_wrap .slick-dots li button{background: #e5e5e5;border-radius: 50%;width: 18px;height: 18px;text-indent: -9999px;}
 .des_wrap .slick-dots .slick-active button{background: #00a8cd}
@@ -92,7 +92,7 @@
 .des_cont .des_fair .txt  .link{margin-top: 20px;color: #ff6163;font-weight: bold;text-align: right;display: block;font-size: 14px}
 
 /* 탐나는 추천 기업 */
-.bg_gray{background: #f8f8f8;padding: 60px 0;}
+.des_bg_gray{background: #f8f8f8;padding: 60px 0;}
 .des_wrap .des_top{display: flex;justify-content: space-between;align-items: flex-end}
 .des_wrap .des_hr{border: 0;border-top: 1px solid #000;margin: 30px 0}
 .des_wrap .des_top h3{font-size: 24px;font-weight: 500;position: relative;padding-left: 85px}
@@ -243,7 +243,7 @@
 	.des_recom .des_top h3 {padding-left: 65px}
 	.des_wrap .des_sch{padding: 10px 20px}
 	.des_wrap .des_sch input[type="text"]{font-size: 12px}
-	.bg_gray{padding: 40px 0}
+	.des_bg_gray{padding: 40px 0}
 	.des_cont .des_fair .txt .tit{font-size: 16px}
 	.des_cont .des_fair .txt .desc{font-size: 14px;}
 	.des_wrap .des_hr{margin: 20px 0}
