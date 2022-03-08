@@ -29,6 +29,19 @@
 .des_wrap .slick-dots li button{background: #e5e5e5;border-radius: 50%;width: 18px;height: 18px;text-indent: -9999px;}
 .des_wrap .slick-dots .slick-active button{background: #00a8cd}
 
+.des_wrap #intro_slide,
+.des_wrap #welfare_slide,
+.des_wrap #recom_slide,
+.des_wrap #open_slide,
+.des_wrap #itv_slide{opacity: 0; visibility: hidden; transition: opacity 1.5s ease; -webkit-transition: opacity 1.5s ease;}
+
+.des_wrap #intro_slide.slick-initialized,
+.des_wrap #welfare_slide.slick-initialized,
+.des_wrap #recom_slide.slick-initialized,
+.des_wrap #open_slide.slick-initialized,
+.des_wrap #itv_slide.slick-initialized{ visibility: visible; opacity: 1; }
+
+
 /* 메인 비쥬얼 */
 .des_visual{background: url(../images/desEnt/main_vs.png) no-repeat bottom;background-size: cover;padding: 80px 0 100px 0}
 .des_visual h2{color: #003281;font-size: 50px;}
@@ -37,6 +50,10 @@
 
 
 /*des_cont*/
+.des_cont .slick-slide:not(.slick-current) video {
+  visibility: hidden !important;
+}
+
 .des_cont .des_cont_inner{display: flex;justify-content: space-between}
 .des_cont .des_cont_inner > div:nth-child(1){width:calc(42.06% - 40px)}
 .des_cont .des_cont_inner > div:nth-child(2){width:calc(34.92% - 40px)}

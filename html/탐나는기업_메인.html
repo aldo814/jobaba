@@ -1041,13 +1041,19 @@
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
 	<script>
+	
+
 		$(document).ready(function() {
+
 			// 신규기업 소개 슬라이드
 			var $slider = $('#intro_slide').slick({
 				slidesToShow: 1,
+				slideToscroll: 1,
 				dots: true,
 				arrows: false,
 			});
+			
+
 
 			// 모바일 video thumb 추가
 			$.fn.appendAttr = function(attrName, suffix) {
@@ -1178,5 +1184,8 @@
 
 
 		});
+
 	</script>
-</body></html>
+</body>
+
+</html>
