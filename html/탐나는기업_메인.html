@@ -978,11 +978,20 @@
 				dots: true,
 				arrows: false,
 				responsive: [{
-					breakpoint: 768,
-					settings: {
-						slidesToShow: 1
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 1,
+							rows: 2,
+						}
+					},
+					{
+						breakpoint: 640,
+						settings: {
+							slidesToShow: 1,
+							rows: 1,
+						}
 					}
-				}]
+				]
 			});
 
 
@@ -996,7 +1005,8 @@
 				responsive: [{
 					breakpoint: 768,
 					settings: {
-						slidesToShow: 1
+						slidesToShow: 1,
+						slidesToScroll: 1,
 					}
 				}]
 			});
