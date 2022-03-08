@@ -40,7 +40,21 @@
 .des_wrap #recom_slide.slick-initialized,
 .des_wrap #open_slide.slick-initialized,
 .des_wrap #itv_slide.slick-initialized{ visibility: visible; opacity: 1; }
-
+.des_wrap .des_welfare  a:hover .tit,
+.des_wrap .des_welfare  a:active .tit,
+.des_wrap .des_welfare  a:focus .tit,
+.des_recom .item a:hover .name,
+.des_recom .item a:active .name,
+.des_recom .item a:focus .name,
+.des_open .item a:hover .tit,
+.des_open .item a:active .tit,
+.des_open .item a:focus .tit,
+.des_interview .item a:hover .q,
+.des_interview .item a:active .q,
+.des_interview .item a:focus .q,
+.des_interview .item a:hover .a,
+.des_interview .item a:active .a,
+.des_interview .item a:focus .a{text-decoration: underline}
 
 /* 메인 비쥬얼 */
 .des_visual{background: url(../images/desEnt/main_vs.png) no-repeat bottom;background-size: cover;padding: 80px 0 100px 0}
@@ -119,7 +133,8 @@
 /* 추천채용공고 */
 .des_open .des_top h3:before{content: '';display: block;background: url(../images/desEnt/open_crt.png) no-repeat;width: 84px;height: 80px;position: absolute;left: 0;bottom: -10px;}
 .des_open .des_top h3 {padding-left: 95px}
-.des_open .item{display: flex;background: #fff;padding: 30px;border:1px solid #e6e6e6;border-radius: 15px;justify-content: space-between}
+.des_open .item{background: #fff;padding: 30px;border:1px solid #e6e6e6;border-radius: 15px;}
+.des_open .item a{display: flex;justify-content: space-between}
 .des_open .slick-list   {margin: 0 -10px}
 .des_open .slick-slide > div > div{padding: 10px}
 
@@ -200,7 +215,7 @@
 	
 	
 	.des_interview h3 span{display: block;margin-left: 0}
-	.des_open .item{display: block;}
+	.des_open .item a{display: block;}
 	.des_open .item .right_area{width: 100%;}
 	.des_open .item .left_area{width: 100%;display: flex;flex-direction: column-reverse}
 	.des_open .item .left_area .img{max-width: 330px;width: 100%;margin: 15px 0}
