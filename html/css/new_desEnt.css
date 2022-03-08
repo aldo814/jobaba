@@ -23,8 +23,11 @@
 .mt30{margin-top: 30px}
 .mt10{margin-top: 10px}
 .mg50{margin: 50px 0}
-.des_wrap .swiper-pagination .swiper-pagination-bullet{width: 18px;height: 18px;margin: 0 5px}
-.des_wrap .swiper-pagination .swiper-pagination-bullet-active{background: #00a8cd}
+.mg60{margin: 60px 0}
+.des_wrap .slick-dots{text-align: center;margin-top: 30px}
+.des_wrap .slick-dots li{margin: 0 5px;cursor: pointer;display: inline-block;}
+.des_wrap .slick-dots li button{background: #e5e5e5;border-radius: 50%;width: 18px;height: 18px;text-indent: -9999px;}
+.des_wrap .slick-dots .slick-active button{background: #00a8cd}
 
 /* 메인 비쥬얼 */
 .des_visual{background: url(../images/desEnt/main_vs.png) no-repeat bottom;background-size: cover;padding: 80px 0 100px 0}
@@ -39,14 +42,254 @@
 .des_cont .des_cont_inner > div:nth-child(2){width:calc(34.92% - 40px)}
 .des_cont .des_cont_inner > div:nth-child(3){width:calc(23.02% - 40px)}
 .des_cont .des_cont_inner .top{font-size: 24px;padding-bottom: 20px;border-bottom: 1px solid #000;margin-bottom: 30px;font-weight: 400}
-.des_cont .des_cont_inner .swiper-wrapper{padding-bottom: 50px}
-.des_cont .des_cont_inner .video{height: 300px;width: 100%;position: relative;border-radius: 20px;background: #ddd;overflow: hidden}
+.des_cont .des_cont_inner  .des_intro .slick-list {margin: 0 -10px}
+.des_cont .des_cont_inner  .des_intro .slick-slide {margin: 0 10px}
+.des_cont .des_cont_inner .video{height: 343px;width: 100%;position: relative;border-radius: 20px;background: #ddd;overflow: hidden}
 .des_cont .des_cont_inner .video video{height: 100%;width: 100%;object-fit: fill;}
 .des_cont .des_cont_inner .video .vdo_inner{position: absolute;width: 100%;height: 100%;left: 0;top: 0;background: linear-gradient(180deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.471461716937355) 80%);}
 .des_cont .des_cont_inner .video .playBtn{background: url(../images/desEnt/play_btn.png) no-repeat;width: 42px;height: 42px;text-indent: -9999px;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%)}
-.des_cont .des_cont_inner .video .hover .playBtn{background: url(../images/desEnt/pause_btn.png) no-repeat}
+.des_cont .des_cont_inner .video .pause .playBtn{background: url(../images/desEnt/pause_btn.png) no-repeat}
 .des_cont .des_cont_inner .video .txt{position: absolute;bottom: 0;padding: 20px;} 
 .des_cont .des_cont_inner .video .txt .slogan{font-size: 18px;color: #fff;font-weight: 400;margin-bottom: 10px; }
 .des_cont .des_cont_inner .video .txt .name{color: rgba(255, 255, 255, 0.5);font-size: 16px;}
 
-.des_cont .des_cont_inner .swiper-pagination {bottom: 0}
+
+
+.des_cont .des_welfare .tit{font-size: 14px;font-weight: bold;color: #38bab2;margin-bottom: 10px}
+.des_cont .des_welfare .item{padding-bottom: 20px;border-bottom: dotted 1px rgba(0, 0, 0, 0.19);margin-bottom: 20px}
+.des_cont .des_welfare .slick-slide > div:nth-child(2n) .item{border-bottom: 0;margin-bottom: 0;}
+.des_cont .des_welfare  .desc{display: flex;justify-content: space-between;align-items: flex-end}
+.des_cont .des_welfare  .desc ul {width: calc(100% - 160px)}
+.des_cont .des_welfare  .desc ul li{position: relative;font-size: 16px;padding-left: 15px;margin-bottom: 5px;}
+.des_cont .des_welfare  .desc ul li:before{content: '-';position: absolute;top: 0;left: 0;top: 0}
+.des_cont .des_welfare  .desc ul li:last-child{margin-bottom: 0}
+.des_cont .des_welfare  .desc .logo{width: 150px;height: 105px;border-radius: 20px;border: 1px solid #e6e6e6;display: flex;flex-direction: column;align-items: center;justify-content: center}
+.des_cont .des_welfare  .desc .logo img {max-width: 80%;}
+.des_cont .des_fair .img{border-radius: 20px;border: 1px solid #e6e6e6;overflow: hidden;max-width: 250px;}
+.des_cont .des_fair .img img{display: block}
+.des_cont .des_fair .txt{display: flex;flex-direction: column;}
+.des_cont .des_fair .txt .tit {margin: 13px 0;font-size: 20px;font-weight: bold;}
+.des_cont .des_fair .txt .desc{font-size: 15px;color: #787878}
+.des_cont .des_fair .txt .desc li{margin-bottom: 5px;}
+.des_cont .des_fair .txt .desc li:last-child{margin-bottom: 0}
+.des_cont .des_fair .txt  .link{margin-top: 20px;color: #ff6163;font-weight: bold;text-align: right;display: block;font-size: 14px}
+
+/* 탐나는 추천 기업 */
+.bg_gray{background: #f8f8f8;padding: 60px 0;}
+.des_wrap .des_top{display: flex;justify-content: space-between;align-items: flex-end}
+.des_wrap .des_hr{border: 0;border-top: 1px solid #000;margin: 30px 0}
+.des_wrap .des_top h3{font-size: 24px;font-weight: 500;position: relative;padding-left: 85px}
+.des_recom .des_top h3:before{content: '';display: block;background: url(../images/desEnt/recom_crt.png) no-repeat;width: 77px;height: 80px;position: absolute;left: 0;bottom: -10px}
+.des_wrap .des_top a{font-size: 18px;}
+.des_wrap .des_top a strong{font-size: 18px;color: #ff6163}
+.des_wrap .des_sch{position: relative;border: 1px solid #e6e6e6;display: flex;padding: 20px 30px;background: #fff;margin: 25px 0 30px 0 ;justify-content: space-between;}
+.des_wrap .des_sch label{width: 0px;height: 0px;overflow: hidden;text-indent: -9999px;position: absolute;left: -99999px;}
+.des_wrap .des_sch input[type="text"]{width: calc(100% - 50px);font-size: 14px;}
+.des_wrap .des_sch input[type="submit"]{background: url(../images/desEnt/src_ico.png) no-repeat center right transparent;width: 30px ;height: 30px;border: 0;text-indent: -9999px;}
+.des_recom .item {background: #fff;padding: 30px;border:1px solid #e6e6e6;border-radius: 15px;}
+.des_recom .item  .cate{color: #9f9f9f;font-size: 14px;font-weight: bold;}
+.des_recom .item .name{font-size: 20px;margin: 13px 0}
+.des_recom .item .desc{font-size: 16px;color: #787878;text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; word-wrap:break-word; line-height:1.2em; height:2.4em;overflow: hidden}
+.des_recom .item .bottom{display: flex;justify-content: space-between;border-top: 1px dotted #e6e6e6;padding-top: 15px;margin-top: 15px;align-items: center}
+.des_recom .item .bottom .area{font-size: 14px;color: #787878;}
+.des_wrap .like{background: url(../images/desEnt/like.png) no-repeat center;width: 30px;height: 30px;text-indent: -999999999999999999px;border:1px solid #e2e2e2;border-radius: 50%;}
+.des_wrap  .like.active{border: 1px solid #ff6163;background: url(../images/desEnt/like_active.png) no-repeat center;}
+.des_recom .cate,
+.des_recom .name{width: 100%;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.des_recom  .slick-slide > div > div > div{margin: 10px;}
+
+/* 추천채용공고 */
+.des_open .des_top h3:before{content: '';display: block;background: url(../images/desEnt/open_crt.png) no-repeat;width: 84px;height: 80px;position: absolute;left: 0;bottom: -10px;}
+.des_open .des_top h3 {padding-left: 95px}
+.des_open .item{display: flex;background: #fff;padding: 30px;border:1px solid #e6e6e6;border-radius: 15px;justify-content: space-between}
+.des_open .slick-slide > div > div {margin: 0 -10px}
+.des_open .slick-slide > div > div >div  {margin: 10px}
+.des_open .item .left_area{width: 330px;}
+.des_open .item .left_area .img{border-radius: 15px;overflow: hidden;border: 1px solid #e6e6e6;margin-bottom: 15px;}
+.des_open .item .left_area .img img {display: block;}
+.des_open .item .left_area .bottom{display: flex;justify-content: space-between;align-items: center;}
+.des_open .item .left_area .name{font-weight: 500;font-size: 20px;width: calc(100% - 50px)}
+.des_open .item .right_area{width: calc(100% - 370px);}
+.des_open .item .right_area .tit_wrap{display: flex;}
+.des_open .item .right_area .tit_wrap .tit{font-size: 20px;font-weight: 500;margin-left: 10px;width: calc(100% - 60px)}
+.des_open .item .right_area  .cate{font-size: 14px;font-weight: bold;color: #9f9f9f;margin: 15px 0 20px 0}
+.des_open .item .right_area  .etc  span{display: inline-block;font-size: 16px;color: #787878;position: relative;padding-right: 10px;margin-right: 10px;}
+.des_open .item .right_area  .etc  span:after{content: '';display: block;width: 1px;height: 10px;background: #b5b5b5;right: 0;position: absolute;top: 50%;transform: translateY(-50%)}
+.des_open .item .right_area  .etc  span:last-child{margin-right: 0;padding-right: 0}
+.des_open .item .right_area  .etc  span:last-child:after{display: none}
+.des_open .item .right_area .area{margin-top: 5px;max-width: calc(100% - 50px)}
+.des_open .item .right_area .area span{color: #787878;font-size: 16px;display: inline-block;}
+.des_open .item .right_area .area span:after{content: ','}
+.des_open .item .right_area .area span:last-child:after{display: none}
+.des_open .item .right_area .top{position: relative;}
+.des_open .item .right_area .date{font-size: 14px;font-weight: bold;color: #a5a5a5;position: absolute;right: 0;bottom: 0;letter-spacing: 3px}
+.des_open .item .right_area .date.end{color: #ff6163;letter-spacing: 1px}
+.des_open .item .right_area .bottom{padding-top:20px;margin-top: 20px;border-top: 1px dotted #dcdcdc;display: flex;justify-content: space-between;align-items: flex-start}
+.des_open .item .right_area .cert {width: calc(100% - 280px)}
+.des_open .item .right_area .cert  span{display: inline-block;font-size: 12px;color: #565454;background: #c6e7f0;border-radius: 5px;padding: 5px;margin-top: 5px}
+.des_open .item .right_area .support {display: flex;align-items: flex-start;width: 260px;justify-content: flex-end;align-items: center}
+.des_open .item .right_area .support button{font-size: 14px;color: #00a8cd;border-radius: 5px;width: 160px;padding: 7px 10px;font-weight: 500;border: 1px solid #00a8cd}
+.des_open .item .right_area .support button:hover,
+.des_open .item .right_area .support button:active,
+.des_open .item .right_area .support button:focus{background: #00a8cd;color: #fff}
+.des_open .item .right_area .support_ci{margin-right: 15px;}
+.des_open .item .right_area .support_ci span{display:none;}
+.des_open .item .right_area .support_ci span.show{display: block;}
+
+
+/* 인사담당자 인터뷰 */
+.des_interview{margin: 70px 0 60px 0}
+.des_interview .slick-track {display: flex;}
+.des_interview  .slick-track .slick-slide {display: flex;height: auto;}
+.des_interview  .slick-track .slick-slide > div > div{height: 100%;}
+.des_interview h3:before{content: '';display: block;background: url(../images/desEnt/itv_crt.png) no-repeat;width: 74px;height: 80px;position: absolute;left: 0;bottom: 0;}
+.des_interview h3 span{font-size: 16px;display: inline-block;margin-left: 10px;color: #787878;font-weight: 400}
+.des_interview #itv_slide{margin-top: 40px;}
+.des_interview #itv_slide .slick-list{margin:  0 -10px}
+.des_interview #itv_slide .slick-slide{margin:  0 10px}
+.des_interview #itv_slide .item{background: #f8f8f8;padding: 30px;border-radius: 15px;border: 1px solid #e6e6e6;height: 100%;}
+.des_interview #itv_slide .item .name{color: #38bab2;font-size: 14px;font-weight: 500;}
+.des_interview #itv_slide .item .q{font-size: 20px;font-weight: 500;margin: 10px 0 15px 0;word-break: keep-all;line-height: 1.8rem;max-height: 3.6rem;overflow: hidden;text-overflow: ellipsis;display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; word-wrap:break-word; }
+.des_interview #itv_slide .item .q:before{content: 'Q.';display: inline-block;margin-right: 3px}
+.des_interview #itv_slide .item .a{font-size: 16px;color: #787878;word-break: keep-all;text-overflow:ellipsis;overflow: hidden;line-height: 1.8rem;max-height: 3.6rem;overflow: hidden;text-overflow: ellipsis;display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; word-wrap:break-word;}
+.des_interview #itv_slide .item .a:before{content: 'A.';display: inline-block;margin-right: 3px}
+
+.des_goApp{background: url(../images/desEnt/bg_des_goapp.png) no-repeat #0085cc;padding: 50px 0;background-size: cover}
+.des_goApp .containerNew {position: relative;}
+.des_goApp .containerNew:before{content: '';display: block;background: url(../images/desEnt/img_des_goapp.png) no-repeat;width: 279px;height: 276px;position: absolute;left: 0; bottom: -50px;}
+.des_goApp .txt{width: calc(100% - 330px);margin-left: auto}
+.des_goApp .txt h3{color: #fff;position: relative;font-size: 30px;position: relative;padding-left: 63px}
+.des_goApp .txt h3 span{font-size: 15px;color: #ffef39;display: block;margin-bottom: 5px;font-weight: 500}
+.des_goApp .txt h3:before{content: '';display: block;background: url(../images/desEnt/bg_des_ico.png) no-repeat;width: 48px;height: 56px;position: absolute;left: 0;top: 50%;transform: translateY(-50%)}
+.des_goApp .txt p{color: #fff;font-size: 16px;margin-top: 20px}
+.des_goApp .txt a{color: #fff;font-size: 14px;display: block;background: #003281;text-align: center;border-radius: 5px;width: 200px;padding: 8px 10px;position: absolute;right: 0;bottom: 32px}
+
+@media all and (max-width:1260px){
+	.des_cont .des_welfare .tit{margin-bottom: 5px}
+	.des_cont .des_welfare .desc ul li{font-size: 15px;}
+	
+	.des_goApp .txt a{position: static;margin-top: 20px}
+	
+	
+}
+
+@media all and (max-width:1024px){
+	.des_cont .des_cont_inner {flex-wrap: wrap}
+	.des_cont .des_cont_inner > div:nth-child(1),
+	.des_cont .des_cont_inner > div:nth-child(2) {width: calc(50% - 15px)}
+	.des_cont .des_cont_inner > div:nth-child(3){width: 100%;margin-top: 50px}
+	
+	
+	.des_interview h3 span{display: block;margin-left: 0}
+	.des_open .item{display: block;}
+	.des_open .item .right_area{width: 100%;}
+	.des_open .item .left_area{margin-bottom: 20px;width: 100%;}
+	.des_open .item .left_area .img{max-width: 330px;width: 100%;}
+	
+	.des_goApp .containerNew:before{display: none}
+	.des_goApp .txt{width: 100%;text-align: center;}
+	.des_goApp .txt h3{padding-left: 0}
+	.des_goApp .txt h3:before{display:block;position: static;margin: 0 auto 20px auto;transform: none;}
+	.des_goApp .txt a{margin: 20px auto 0 auto}
+}
+
+@media all and (max-width:768px){
+	.mt30 {margin-top: 20px}
+	.f18 {font-size: 16px}
+	.f16 {font-size: 13px}
+	.mg60 {margin: 40px 0}
+	/* 메인 비쥬얼 */
+	.des_visual{padding: 50px 0}
+	.des_visual h2{font-size: 30px;}
+	.des_visual h2 span{font-size: 18px;}
+	
+	.des_cont .des_cont_inner .top{font-size: 20px;padding-bottom: 10px;margin-bottom: 20px;}
+	
+	.des_cont .des_cont_inner{display: block;}
+	.des_cont .des_cont_inner > div{width: 100% !important;margin-top: 30px !important;}
+	.des_cont .des_cont_inner > div:first-child{margin-top: 0 !important}
+	.des_cont .des_cont_inner .video{height: auto;}
+	.des_cont .des_cont_inner .video video{display: block}
+	.des_cont .des_cont_inner .video .txt .slogan{font-size: 14px}
+	.des_cont .des_cont_inner .video .txt .name{font-size: 12px;}
+	.des_cont .des_cont_inner .video .playBtn{background-size: 32px;width: 34px;height: 34px}
+	.des_wrap .slick-dots li button{width: 13px;height: 13px;}
+	
+	.des_wrap .des_top h3{font-size: 20px;}
+	.des_wrap .des_top a{font-size: 14px}
+	.des_wrap .des_top a strong{font-size: 16px}
+	.des_recom .des_top h3:before{background-size: 55px;width: 55px;height: 58px}
+	.des_recom .des_top h3 {padding-left: 65px}
+	.des_wrap .des_sch{padding: 10px 20px}
+	.des_wrap .des_sch input[type="text"]{font-size: 12px}
+	.bg_gray{padding: 40px 0}
+	.des_cont .des_fair .txt .tit{font-size: 16px}
+	.des_cont .des_fair .txt .desc{font-size: 14px;}
+	.des_wrap .des_hr{margin: 20px 0}
+	.des_wrap .des_sch{margin: 20px 0 20px 0}
+	.des_recom .item{padding: 20px}
+	.des_recom .item .cate{font-size: 13px}
+	.des_recom .item .name{font-size: 16px}
+	.des_recom .item .desc{font-size: 14px;}
+	.des_recom .item .bottom .area{font-size: 12px}
+	
+	.des_open .des_top h3:before{background-size: 50px;width: 50px;height: 50px;}
+	.des_open .des_top h3{padding-left: 60px}
+	.des_wrap .des_top h3{padding-left: 60px}
+	.des_wrap .des_top h3:before{background-size: 50px;width: 50px;height: 54px}
+	.des_open .item{padding: 20px}
+	.des_open .item .left_area{margin-bottom: 10px}
+	.des_open .item .right_area .bottom{display: block;}
+	.des_open .item .right_area .cert{width: 100%;margin-bottom: 20px}
+	.des_open .item .right_area .support{width: 100%;}
+	.des_open .item .left_area .name{font-size: 16px}
+	.des_open .item .right_area .cate{margin: 10px 0 10px 0}
+	.des_open .item .right_area .tit_wrap .tit{font-size: 16px}
+	.des_open .item .right_area .cate{font-size: 12px}
+	.des_open .item .right_area .etc span,
+	.des_open .item .right_area .area span{font-size: 12px}
+	.des_open .item .right_area .cert span{font-size: 11px}
+	.des_open .item .right_area .date{font-size: 12px}
+	.des_open .item .right_area .support button{font-size: 13px;max-width: 140px}
+	
+	.des_goApp{padding: 40px 0}
+	.des_goApp .txt h3 span{font-size: 13px}
+	.des_goApp .txt h3{font-size: 20px}
+	.des_goApp .txt p{font-size: 14px}
+	
+	.des_goApp .txt h3:before{background-size: 35px;width: 35px;height: 41px;margin: 0 auto 10px auto}
+	.des_goApp .txt p{font-size: 13px;word-break: keep-all}
+	.des_goApp .txt p br{display: none}
+	.des_goApp .txt a{font-size: 13px;max-width: 150px;width: 100%;}
+	
+	.des_interview #itv_slide .item{padding: 20px}
+	.des_interview #itv_slide .item .name{font-size: 12px}
+	.des_interview #itv_slide .item .q{font-size: 15px}
+	.des_interview #itv_slide .item .a{font-size: 13px}
+	
+	.des_wrap .des_top h3{font-size: 16px;word-break: keep-all}
+	.des_interview h3 span{font-size: 13px}
+	.des_interview #itv_slide .item .q{margin: 5px 0 10px 0}
+}
+
+@media all and (max-width:640px){
+	
+}
+
+@media all and (max-width:480px){
+	.des_cont .des_cont_inner .video .txt{padding: 10px }
+	.des_cont .des_cont_inner .video .txt .slogan{font-size: 13px;}
+	
+	.des_cont .des_welfare .desc .logo{width: 130px;height: 80px;}
+	
+	.des_wrap .des_top a{width: 30px;height: 30px;position: relative;display: block;text-indent: -99999px;}
+	.des_wrap .des_top a:before{content: '';display: block;width: 23px;height: 1px;;background: #999;position: absolute;top: 50%;left: 50%;transform: translateX(-50%)}
+	.des_wrap .des_top a:after{content: '';display: block;width: 1px;height: 23px;;background: #999;position: absolute;top: 50%;left: 50%;transform: translateX(-50%);margin-top: -11.5px}
+}
+
+@media all and (max-width:320px){
+	.des_cont .des_cont_inner .video .txt{display: none}
+	.des_cont .des_welfare .desc{flex-direction: column-reverse;}
+	.des_cont .des_welfare .desc .logo{width: 100%;margin: 10px 0;height: 100px}
+	.des_cont .des_welfare .desc ul{width: 100%;}
+}
