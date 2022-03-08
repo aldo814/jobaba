@@ -227,6 +227,8 @@
 }
 
 @media all and (max-width:768px){
+	
+	.des_wrap .slick-dots{margin-top: 20px}
 	.mt30 {margin-top: 20px}
 	.f18 {font-size: 16px}
 	.f16 {font-size: 13px}
