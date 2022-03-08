@@ -309,6 +309,9 @@
 	.des_interview #itv_slide .item .q{margin: 5px 0 10px 0;line-height: 1.3rem;max-height: 2.6rem}
 	.des_interview #itv_slide .item .a{line-height: 1.3rem;max-height: 2.6rem}
 	
+	.des_cont .des_cont_inner .video{height: 0;padding-bottom: 56.25%}
+	.des_cont .des_cont_inner .video video{position: absolute;left: 0;top: 0;width: 100%;height: 100%;}
+	
 }
 
 @media all and (max-width:640px){
