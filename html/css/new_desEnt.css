@@ -214,6 +214,11 @@
 .des_sub .des_detailWrap .tit{font-size: 15px;font-weight: bold;margin-bottom: 10px}
 .des_sub .des_detailWrap .scr{max-height: 180px;overflow-y: auto;overflow-x: hidden}
 .des_sub .des_detailWrap .scroll-x{display: none}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.scrollbar-outer > .scroll-content.scroll-scrolly_visible{left: 0 !important;}
+	.des_sub .des_detailWrap .scr{padding-right: 30px}
+}
+
 .des_sub .des_detailWrap .scr::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera*/
 }
