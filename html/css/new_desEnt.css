@@ -200,7 +200,7 @@
 
 /* 서브페이지 strat */
 
-.des_sub{background: linear-gradient(180deg, rgba(196,223,255,1) 0%, rgba(255,255,255,1) 55%);;padding-top: 60px;}
+.des_sub{background: linear-gradient(180deg, rgba(196,223,255,1) 0%, rgba(255,255,255,1) 70%);;padding-top: 60px;}
 .des_sub .des_subTit{color:#003281;font-size: 34px;font-weight: bold;display: flex;align-items: baseline;position: relative;padding-left: 60px;}
 .des_sub .des_subTit:before{content: '';display: block;background: url(../images/desEnt/mv_ico02.png) no-repeat;width: 51px;height: 41px;position: absolute;left: 0;top: 50%;transform: translateY(-50%)}
 .des_sub .des_subTit span{font-size: 18px;margin-left: 10px}
@@ -245,12 +245,12 @@ input[type=checkbox]~.text:before{width: 18px;height: 18px;border: 1px solid #dd
 .des_sub .des_com_list .item .left_area{width: 230px;display: flex;flex-direction: column}
 .des_sub .des_com_list .item .img{border-radius: 15px;overflow: hidden;border: 1px solid #e6e6e6;margin-bottom: 15px;}
 .des_sub .des_com_list .item .img img {display: block;}
-.des_sub .des_com_list .item .bottom{display: flex;justify-content: space-between;align-items: center;margin-top: auto}
+.des_sub .des_com_list .item .bottom{display: flex;justify-content: space-between;margin-top: auto}
 .des_sub .des_com_list .item .name{font-weight: 500;font-size: 20px;width: calc(100% - 50px)}
 .des_sub .des_com_list .item .right_area{width: calc(100% - 250px);display: flex;flex-direction: column} 
 .des_sub .des_com_list .item .tit{font-size: 20px;font-weight: 500;overflow: hidden;text-overflow: ellipsis;white-space: nowrap}
 .des_sub .des_com_list .item .desc{font-size: 14px;color: #9f9f9f;font-weight: 500;margin: 10px 0 20px 0; text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;line-height: 1.2rem;height: 3.6rem;overflow: hidden}
-.des_sub .des_com_list  .item .right_area .bottom{margin-top: auto;display: flex;flex-direction: column;align-items: flex-start}
+.des_sub .des_com_list  .item .right_area .bottom{margin-top: auto;display: flex;flex-direction: column;}
 .des_sub .des_com_list   .item .right_area  .etc{margin-bottom: 10px}
 .des_sub  .des_com_list  .item .right_area  .etc  span{display: inline-block;font-size: 14px;color: #787878;position: relative;padding-right: 10px;margin-right: 10px;}
 .des_sub .des_com_list  .item .right_area  .etc  span:after{content: '';display: block;width: 1px;height: 10px;background: #b5b5b5;right: 0;position: absolute;top: 50%;transform: translateY(-50%)}
@@ -404,12 +404,14 @@ input[type=checkbox]~.text:before{width: 18px;height: 18px;border: 1px solid #dd
 	.des_sub .des_detailWrap .tit{font-size: 13px}
 	.des_sub .des_detailWrap{padding: 20px}
 	.des_sub .des_detailWrap .radio input[type=checkbox]~.text{font-size: 12px;}
-	.des_sub .des_detailWrap .scr{max-height: 170px}
+	.des_sub .des_detailWrap .scr{max-height: 130px}
 	
-	.des_sub .des_subTit{font-size: 20px;flex-direction: column}
-	.des_sub .des_subTit span{margin: 5px 0 0 0}
+	.des_sub .des_subTit{font-size: 18px;flex-direction: column}
+	.des_sub .des_subTit span{margin: 5px 0 0 0;font-size: 13px}
 	.des_sub .des_detailWrap .tit{margin-bottom: 0}
 	.des_sub .des_detailWrap .scr{margin-top: 10px}
+	.des_sub .des_detailSearch input[type="text"]{font-size: 13px}
+	.des_sub .des_detailSearch input[type="text"]{padding: 0}
 }
 
 @media all and (max-width:640px){
@@ -432,6 +434,14 @@ input[type=checkbox]~.text:before{width: 18px;height: 18px;border: 1px solid #dd
 	.des_wrap .des_top a{width: 30px;height: 30px;position: relative;display: block;text-indent: -99999px;}
 	.des_wrap .des_top a:before{content: '';display: block;width: 20px;height: 2px;;background: #999;position: absolute;top: 50%;left: 50%;transform: translateX(-50%);margin-top: -1px}
 	.des_wrap .des_top a:after{content: '';display: block;width: 2px;height: 20px;;background: #999;position: absolute;top: 50%;left: 50%;transform: translateX(-50%);margin-top: -10px}
+	
+	.des_cont .des_fair .img{max-width: 100%;}
+	.des_cont .des_fair .img img{width: 100%}
+	.des_open .item .left_area .img{max-width: 100%;}
+	.des_open .item .left_area .img img{width: 100%}
+	
+	.des_sub .des_btn_wrap {text-align: center;}
+	.des_sub .des_btn_wrap button{max-width: 160px;width: calc(50% - 20px);font-size: 13px;padding: 7px 10px}
 }
 
 @media all and (max-width:320px){
