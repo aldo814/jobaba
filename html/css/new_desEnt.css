@@ -399,7 +399,7 @@ input[type=checkbox]~.text:before{width: 18px;height: 18px;border: 1px solid #dd
 	.des_sub .des_detailWrap .tit{font-size: 13px}
 	.des_sub .des_detailWrap{padding: 20px}
 	.des_sub .des_detailWrap .radio input[type=checkbox]~.text{font-size: 12px;}
-	.des_sub .des_detailWrap .scr{max-height: 150px}
+	.des_sub .des_detailWrap .scr{max-height: 135px}
 	
 	.des_sub .des_subTit{font-size: 18px;flex-direction: column}
 	.des_sub .des_subTit span{margin: 5px 0 0 0;font-size: 13px}
