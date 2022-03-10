@@ -233,7 +233,8 @@ input[type=checkbox]~.text:before{width: 18px;height: 18px;border: 1px solid #dd
 .des_sub .des_com_list .item .left_area{width: 230px;display: flex;flex-direction: column}
 .des_sub .des_com_list .item .img{border-radius: 15px;overflow: hidden;border: 1px solid #e6e6e6;margin-bottom: 15px;}
 .des_sub .des_com_list .item .img img {display: block;}
-.des_sub .des_com_list .item .bottom{display: flex;justify-content: space-between;margin-top: auto}
+.des_sub .des_com_list .item .bottom{display: flex;justify-content: space-between;margin-top: auto;}
+.des_sub .des_com_list .item .left_area .bottom{align-items: center}
 .des_sub .des_com_list .item .name{font-weight: 500;font-size: 20px;width: calc(100% - 50px)}
 .des_sub .des_com_list .item .right_area{width: calc(100% - 250px);display: flex;flex-direction: column} 
 .des_sub .des_com_list .item .tit{font-size: 20px;font-weight: 500;overflow: hidden;text-overflow: ellipsis;white-space: nowrap}
@@ -394,17 +395,21 @@ input[type=checkbox]~.text:before{width: 18px;height: 18px;border: 1px solid #dd
 	.des_sub .des_detailWrap .tit{font-size: 13px}
 	.des_sub .des_detailWrap{padding: 20px}
 	.des_sub .des_detailWrap .radio input[type=checkbox]~.text{font-size: 12px;}
-	.des_sub .des_detailWrap .scr{max-height: 130px}
+	.des_sub .des_detailWrap .scr{max-height: 150px}
 	
 	.des_sub .des_subTit{font-size: 18px;flex-direction: column}
 	.des_sub .des_subTit span{margin: 5px 0 0 0;font-size: 13px}
 	.des_sub .des_detailWrap .tit{margin-bottom: 0}
-	.des_sub .des_detailWrap .scr{margin-top: 10px}
+	.des_sub .des_detailWrap .scr{margin-top: 5px}
 	.des_sub .des_detailSearch input[type="text"]{font-size: 13px}
 	.des_sub .des_detailSearch input[type="text"]{padding: 0}
 	
 	.des_sub .des_com_list .item .img{max-width: 100%;width: 100%}
 	.des_sub .des_com_list .item .img  img{width: 100%}
+	
+	.des_sub .des_detailWrap .radio input[type=checkbox]~.text{padding-left: 25px}
+	.des_sub .des_detailWrap .radio input[type=checkbox]~.text:before,
+	.des_sub .des_detailWrap .radio input[type=checkbox] + span::after{width: 15px;height: 15px}
 }
 
 @media all and (max-width:640px){
