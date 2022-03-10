@@ -23,6 +23,7 @@
 	<!-- //잡아바 css-->
 
 	<!--추가 css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.css" />
 	<link rel="stylesheet" href="css/new_desEnt.css">
 
 
@@ -48,7 +49,7 @@
 					<div class="des_detailWrap">
 						<div class="item">
 							<p class="tit">채용분야</p>
-							<ul class="scr">
+							<ul class="scr scrollbar-outer">
 								<li class="radio">
 									<label>
 										<input type="checkbox">
@@ -90,7 +91,7 @@
 
 						<div class="item">
 							<p class="tit">근무지</p>
-							<ul class="scr">
+							<ul class="scr scrollbar-outer">
 								<li class="radio">
 									<label>
 										<input type="checkbox">
@@ -132,7 +133,7 @@
 
 						<div class="item">
 							<p class="tit">학력</p>
-							<ul class="scr">
+							<ul class="scr scrollbar-outer">
 								<li class="radio">
 									<label>
 										<input type="checkbox">
@@ -174,7 +175,7 @@
 
 						<div class="item">
 							<p class="tit">고용형태</p>
-							<ul class="scr">
+							<ul class="scr scrollbar-outer">
 								<li class="radio">
 									<label>
 										<input type="checkbox">
@@ -216,7 +217,7 @@
 
 						<div class="item">
 							<p class="tit">채용구분</p>
-							<ul class="scr">
+							<ul class="scr scrollbar-outer">
 								<li class="radio">
 									<label>
 										<input type="checkbox">
@@ -258,7 +259,7 @@
 
 						<div class="item">
 							<p class="tit">기업인증</p>
-							<ul class="scr">
+							<ul class="scr scrollbar-outer">
 								<li class="radio">
 									<label>
 										<input type="checkbox">
@@ -645,9 +646,12 @@
 	<!--잡아바 js-->
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
 	<script src="https://www.jobaba.net//resource/bxslider/slick.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
 
 	<script>
 		$(document).ready(function() {
+				 $('.des_sub .scr').scrollbar();
+			
 			// 추천 채용공고
 			$('.des_open').each(function() {
 				$(this).find('.like').click(function() {
@@ -656,8 +660,10 @@
 			});
 
 			if ($(window).width() < 640) {
+				$('.des_sub .des_detailWrap .item').find('.tit').next().hide();
+				$('.des_sub .des_detailWrap .item:first').find('.tit').next().show();
 				$('.des_sub .des_detailWrap .tit').click(function() {
-					$(this).next().slideToggle();
+					$(this).next('.scr').slideToggle(300);
 				});
 			}
 

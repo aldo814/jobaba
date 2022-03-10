@@ -20,9 +20,11 @@
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/style.epmtDiag.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://www.jobaba.net//resource/bxslider/slick.css">
+	
 	<!-- //잡아바 css-->
 
 	<!--추가 css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.css" />
 	<link rel="stylesheet" href="css/new_desEnt.css">
 
 
@@ -47,7 +49,7 @@
 					<div class="des_detailWrap">
 						<div class="item">
 							<p class="tit">업무분야</p>
-							<ul class="scr">
+							<ul class="scr scrollbar-outer">
 								<li class="radio">
 									<label>
 										<input type="checkbox">
@@ -88,7 +90,7 @@
 						</div>
 						<div class="item">
 							<p class="tit">지역</p>
-							<ul class="scr">
+							<ul class="scr scrollbar-outer">
 								<li class="radio">
 									<label>
 										<input type="checkbox">
@@ -135,7 +137,7 @@
 						</div>
 						<div class="item">
 							<p class="tit">기업인증</p>
-							<ul class="scr">
+							<ul class="scr scrollbar-outer">
 								<li class="radio">
 									<label>
 										<input type="checkbox">
@@ -345,15 +347,27 @@
 	<!--잡아바 js-->
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
 	<script src="https://www.jobaba.net//resource/bxslider/slick.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
 
 	<script>
 		$(document).ready(function() {
+			 $('.des_sub .scr').scrollbar();
+			
 			// 추천 채용공고
 			$('.des_com_list').each(function() {
 				$(this).find('.like').click(function() {
 					$(this).delay(500).toggleClass('active');
 				});
 			});
+			
+			if ($(window).width() < 640) {
+				$('.des_sub .des_detailWrap .item').find('.tit').next().hide();
+				$('.des_sub .des_detailWrap .item:first').find('.tit').next().show();
+				$('.des_sub .des_detailWrap .tit').click(function() {
+					$(this).next('.scr').slideToggle(300);
+				});
+			}
+
 
 		});
 	</script>

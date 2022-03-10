@@ -212,26 +212,10 @@
 .des_sub .des_detailWrap .item{flex: 1;margin-right: 30px}
 .des_sub .des_detailWrap .item:last-child{margin-right: 0}
 .des_sub .des_detailWrap .tit{font-size: 15px;font-weight: bold;margin-bottom: 10px}
-.des_sub .des_detailWrap .scr{max-height: 180px;overflow-y: auto; scrollbar-arrow-color:#ddd;
- scrollbar-3dlight-color:#f6f6f6;
- scrollbar-darkshadow-color:#f6f6f6;
- scrollbar-face-color:#69c3be;
- scrollbar-hightlight-color:#69c3be;
- scrollbar-shadow-color:#69c3be;
- scrollbar-track-color:#f6f6f6;
--moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	-opera-border-radius:10px;
-	-khtml-border-radius:10px;
- scrollbar-width: thin;
-  scrollbar-color: #69c3be #f6f6f6;
-}
-
-
-.des_sub .des_detailWrap .scr::-webkit-scrollbar {width: 10px;}
-.des_sub .des_detailWrap .scr::-webkit-scrollbar-thumb {background-color: #69c3be;border-radius: 10px;}
-.des_sub .des_detailWrap .scr::-webkit-scrollbar-track {background-color: #f6f6f6; border-radius: 10px;}
-
+.des_sub .des_detailWrap .scr{max-height: 180px;overflow-y: auto; }
+.des_sub .scrollbar-outer > .scroll-element .scroll-element_track{background: #f6f6f6 !important}
+.des_sub .scrollbar-outer > .scroll-element .scroll-bar{background: #69c3be !important}
+.des_sub .scrollbar-outer > .scroll-element:hover .scroll-bar{background: #489d98 !important}
 
 .des_sub .des_detailWrap .radio 
 input[type=checkbox]~.text{padding-left: 30px;position: relative;display: block;}
@@ -396,6 +380,8 @@ input[type=checkbox]~.text:before{width: 18px;height: 18px;border: 1px solid #dd
 	.des_cont .des_cont_inner .video video{position: absolute;left: 0;top: 0;width: 100%;height: 100%;border-radius:20px}
 	.des_cont .des_cont_inner .video .vdo_inner{border-radius:20px}
 	
+	
+	.des_sub{padding-top: 40px}
 	.des_sub .des_com_list .item{flex-direction: column;padding: 20px}
 	.des_sub .des_com_list .item .left_area{;flex-direction: column-reverse;width: 100%;}
 	.des_sub .des_com_list .item .img{max-width: 230px;margin: 15px 0}
@@ -425,6 +411,7 @@ input[type=checkbox]~.text:before{width: 18px;height: 18px;border: 1px solid #dd
 	.des_sub .des_detailWrap .item{width: 100%;margin-right: 0;}
 	.des_sub .des_detailWrap .item:nth-child(2),
 	.des_sub .des_detailWrap .item:nth-child(3){margin-top: 20px;padding-top: 20px;border-top: 1px dotted #e6e6e6}
+	
 }
 
 @media all and (max-width:480px){
