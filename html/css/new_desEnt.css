@@ -412,6 +412,9 @@ input[type=checkbox]~.text:before{width: 18px;height: 18px;border: 1px solid #dd
 	.des_sub .des_detailWrap .scr{margin-top: 10px}
 	.des_sub .des_detailSearch input[type="text"]{font-size: 13px}
 	.des_sub .des_detailSearch input[type="text"]{padding: 0}
+	
+	.des_sub .des_com_list .item .img{max-width: 100%;width: 100%}
+	.des_sub .des_com_list .item .img  img{width: 100%}
 }
 
 @media all and (max-width:640px){
