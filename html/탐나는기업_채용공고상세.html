@@ -176,7 +176,7 @@
 										<span class="text">비정규직</span>
 									</label>
 								</li>
-							
+
 							</ul>
 						</div>
 
@@ -207,7 +207,7 @@
 										<span class="text">외국인 전형</span>
 									</label>
 								</li>
-								
+
 							</ul>
 						</div>
 
@@ -598,8 +598,8 @@
 
 	<script>
 		$(document).ready(function() {
-				 $('.des_sub .scr').scrollbar();
-			
+			$('.des_sub .scr').scrollbar();
+
 			// 추천 채용공고
 			$('.des_open').each(function() {
 				$(this).find('.like').click(function() {
@@ -607,13 +607,24 @@
 				});
 			});
 
-			if ($(window).width() < 640) {
-				$('.des_sub .des_detailWrap .item').find('.tit').next().hide();
-				$('.des_sub .des_detailWrap .item:first').find('.tit').next().show();
-				$('.des_sub .des_detailWrap .tit').click(function() {
-					$(this).next('.scr').slideToggle(0);
-				});
+			function mDetail() {
+				var windowWidth = $(window).width();
+				if (windowWidth <= 640) {
+					$('.des_sub .des_detailWrap .item').find('.tit').next().hide();
+					$('.des_sub .des_detailWrap .item:first').find('.tit').next().show();
+					$('.des_sub .des_detailWrap .tit').click(function() {
+						$(this).next('.scr').slideToggle(0);
+					});
+				} else {
+					$('.des_sub .des_detailWrap .item').find('.tit').next().show();
+					$('.des_sub .des_detailWrap .tit').click(function() {
+						$(this).next('.scr').show();
+					});
+
+				}
 			}
+			mDetail();
+			$(window).resize(mDetail);
 
 
 		});

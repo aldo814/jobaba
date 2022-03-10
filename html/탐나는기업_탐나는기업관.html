@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Document</title>
 	<!-- 잡아바 css-->
-	
+
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/layout.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
@@ -20,7 +20,7 @@
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/style.epmtDiag.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://www.jobaba.net//resource/bxslider/slick.css">
-	
+
 	<!-- //잡아바 css-->
 
 	<!--추가 css-->
@@ -314,31 +314,31 @@
 
 				<!-- paging -->
 				<span class="totalPageCount" style="display: none">40</span>
-					<div id="contents-side">
-						<div class="pagination_wrap">
-							<div class="mo_paging">
-								<p class="active_txt"><span class="cut">1</span> / <span>40</span></p><button onclick="onPaginationLink(2); return false;">다음</button>
-							</div>
-							<ul class="pagination list-paging">
-								<li class="paginate_button end btn_first only-pc"><a href="javascript:vold(0)">&lt;&lt;</a></li>
-								<li class="paginate_button previous btn_prev"><a href="javascript:vold(0)">&lt;</a></li>
-								<li class="paginate_button active list"><a href="javascript:vold(0)">1</a></li>
-								<li class="paginate_button list"><a href="javascript:vold(0)">2</a></li>
-								<li class="paginate_button list"><a href="javascript:vold(0)">3</a></li>
-								<li class="paginate_button list"><a href="javascript:vold(0)">4</a></li>
-								<li class="paginate_button list"><a href="javascript:vold(0)">5</a></li>
-								<li class="paginate_button list"><a href="javascript:vold(0)">6</a></li>
-								<li class="paginate_button list"><a href="javascript:vold(0)">7</a></li>
-								<li class="paginate_button list"><a href="javascript:vold(0)">8</a></li>
-								<li class="paginate_button list"><a href="javascript:vold(0)">9</a></li>
-								<li class="paginate_button list"><a href="javascript:vold(0)">10</a></li>
-								<li class="paginate_button next btn_next"><a href="javascript:vold(0)">&gt;</a></li>
-								<li class="paginate_button end btn_end only-pc"><a href="javascript:vold(0)">&gt;&gt;</a></li>
-
-							</ul>
+				<div id="contents-side">
+					<div class="pagination_wrap">
+						<div class="mo_paging">
+							<p class="active_txt"><span class="cut">1</span> / <span>40</span></p><button onclick="onPaginationLink(2); return false;">다음</button>
 						</div>
+						<ul class="pagination list-paging">
+							<li class="paginate_button end btn_first only-pc"><a href="javascript:vold(0)">&lt;&lt;</a></li>
+							<li class="paginate_button previous btn_prev"><a href="javascript:vold(0)">&lt;</a></li>
+							<li class="paginate_button active list"><a href="javascript:vold(0)">1</a></li>
+							<li class="paginate_button list"><a href="javascript:vold(0)">2</a></li>
+							<li class="paginate_button list"><a href="javascript:vold(0)">3</a></li>
+							<li class="paginate_button list"><a href="javascript:vold(0)">4</a></li>
+							<li class="paginate_button list"><a href="javascript:vold(0)">5</a></li>
+							<li class="paginate_button list"><a href="javascript:vold(0)">6</a></li>
+							<li class="paginate_button list"><a href="javascript:vold(0)">7</a></li>
+							<li class="paginate_button list"><a href="javascript:vold(0)">8</a></li>
+							<li class="paginate_button list"><a href="javascript:vold(0)">9</a></li>
+							<li class="paginate_button list"><a href="javascript:vold(0)">10</a></li>
+							<li class="paginate_button next btn_next"><a href="javascript:vold(0)">&gt;</a></li>
+							<li class="paginate_button end btn_end only-pc"><a href="javascript:vold(0)">&gt;&gt;</a></li>
+
+						</ul>
 					</div>
-				
+				</div>
+
 				<!-- paging -->
 			</div>
 		</div>
@@ -347,27 +347,38 @@
 	<!--잡아바 js-->
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
 	<script src="https://www.jobaba.net//resource/bxslider/slick.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
 
 	<script>
 		$(document).ready(function() {
-			 $('.des_sub .scr').scrollbar();
-			
+			$('.des_sub .scr').scrollbar();
+
 			// 추천 채용공고
 			$('.des_com_list').each(function() {
 				$(this).find('.like').click(function() {
 					$(this).delay(500).toggleClass('active');
 				});
 			});
-			
-			if ($(window).width() < 640) {
-				$('.des_sub .des_detailWrap .item').find('.tit').next().hide();
-				$('.des_sub .des_detailWrap .item:first').find('.tit').next().show();
-				$('.des_sub .des_detailWrap .tit').click(function() {
-					$(this).next('.scr').slideToggle(0);
-				});
-			}
 
+
+			function mDetail() {
+				var windowWidth = $(window).width();
+				if (windowWidth <= 640) {
+					$('.des_sub .des_detailWrap .item').find('.tit').next().hide();
+					$('.des_sub .des_detailWrap .item:first').find('.tit').next().show();
+					$('.des_sub .des_detailWrap .tit').click(function() {
+						$(this).next('.scr').slideToggle(0);
+					});
+				} else {
+					$('.des_sub .des_detailWrap .item').find('.tit').next().show();
+					$('.des_sub .des_detailWrap .tit').click(function() {
+						$(this).next('.scr').show();
+					});
+					
+				}
+			}
+			mDetail();
+			$(window).resize(mDetail);
 
 		});
 	</script>
