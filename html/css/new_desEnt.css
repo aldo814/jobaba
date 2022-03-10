@@ -223,6 +223,8 @@
 	-webkit-border-radius:10px;
 	-opera-border-radius:10px;
 	-khtml-border-radius:10px;
+ scrollbar-width: thin;
+  scrollbar-color: #69c3be #f6f6f6;
 }
 .des_sub .des_detailWrap .scr::-webkit-scrollbar {width: 10px;}
 .des_sub .des_detailWrap .scr::-webkit-scrollbar-thumb {background-color: #69c3be;border-radius: 10px;}
