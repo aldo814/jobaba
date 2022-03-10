@@ -398,7 +398,7 @@ input[type=checkbox]~.text:before{width: 18px;height: 18px;border: 1px solid #dd
 	
 	.des_sub .des_detailWrap .tit{font-size: 13px;padding: 15px 0;margin-bottom: 0}
 	.des_sub .des_detailWrap .item{padding-top: 0 !important;margin-top: 0 !important;}
-	.des_sub .des_detailWrap{padding: 5px 20px 20px 5px}
+	.des_sub .des_detailWrap{padding: 5px 20px 5px 20px}
 	.des_sub .des_detailWrap .radio input[type=checkbox]~.text{font-size: 12px;}
 	.des_sub .des_detailWrap .scr{max-height: 135px;margin-bottom: 10px}
 	
