@@ -212,7 +212,10 @@
 .des_sub .des_detailWrap .item{flex: 1;margin-right: 30px}
 .des_sub .des_detailWrap .item:last-child{margin-right: 0}
 .des_sub .des_detailWrap .tit{font-size: 15px;font-weight: bold;margin-bottom: 10px}
-.des_sub .des_detailWrap .scr{max-height: 180px;overflow-y: auto; }
+.des_sub .des_detailWrap .scr{max-height: 180px;overflow-y: auto; -ms-overflow-style: none; /* IE and Edge */ scrollbar-width: none; /* Firefox */}
+.des_sub .des_detailWrap .scr::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
 .des_sub .scrollbar-outer > .scroll-element .scroll-element_track{background: #f6f6f6 !important}
 .des_sub .scrollbar-outer > .scroll-element .scroll-bar{background: #69c3be !important}
 .des_sub .scrollbar-outer > .scroll-element:hover .scroll-bar{background: #489d98 !important}
