@@ -230,8 +230,8 @@
 .des_detailWrap  .scrollbar-outer > .scroll-element:hover .scroll-bar{background: #489d98 !important}
 
 .des_detailWrap .radio 
-input[type=checkbox]~.text{padding-left: 30px;position: relative;display: block;font-size: 13px;letter-spacing: -1px}
-input[type=checkbox]~.text:before{width: 18px;height: 18px;border: 1px solid #ddd;background: #fbfbfb;border-radius: 0;display: block;position: absolute;left: 0;top: 0;}
+input[type=checkbox]~.text{padding-left: 25px;position: relative;display: block;font-size: 13px;letter-spacing: -1px}
+input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important;border: 1px solid #ddd;background: #fbfbfb;border-radius: 0;display: block;position: absolute;left: 0;top: 1px;}
 .des_detailWrap .radio input[type="checkbox"]:checked ~ .text::before{background: #69c3be url(https://jobaba.net//resource/images/member/ico_check.png) 50% 50% no-repeat;border: 1px solid #21a39b}
 .des_btn_wrap {text-align: right;}
 .des_btn_wrap button{font-size: 14px;color: #fff;width: 160px;border-radius: 5px;padding: 10px}
