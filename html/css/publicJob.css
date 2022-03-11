@@ -56,9 +56,8 @@
 	.jobs-view .jv_table table td,
 	.jobs-view .jv_table table th{border-left: 0;border-right: 0}
 	.jobs-view .jv_table table td{border-top: 0}
-	.jobs-view .jv_table table td:last-child{border-bottom: 0}
+	.jobs-view .jv_table table tr:last-child td:last-child{border-bottom: 0}
 	.jobs-view .jv_table table th{border-top: 0;border-bottom: 0}
-	.jobs-view .jv_table table tr:nth-child(1) th:nth-child(1) {border-top: 1px solid #e6e6e6}
 }
 
 @media all and (max-width:768px){
