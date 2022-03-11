@@ -298,7 +298,7 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_sub .des_subTit:before{background-size: 30px;width: 30px;height: 25px;}
 	
 	.des_detailWrap{flex-wrap: wrap;}
-	.des_detailWrap .item{width: calc(33.333% - 20px);flex: none;margin-top: 40px;border-top: 1px dotted #e6e6e6 }
+	.des_detailWrap .item{width: calc(33.333% - 20px);flex: none;margin-top: 40px;}
 	.des_detailWrap .item:nth-child(3n){margin-right: 0;padding-right: 0;border-right: 0}
 	.des_detailWrap .item:nth-child(1),
 	.des_detailWrap .item:nth-child(2),
@@ -426,7 +426,8 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 }
 
 @media all and (max-width:640px){
-	.des_detailWrap .item{width: 100%;margin-right: 0;border-right: 0;}
+	.des_detailWrap .item{width: 100%;margin-right: 0;border-right: 0;
+	border-top: 1px dotted #e6e6e6 }
 	.des_detailWrap .item:nth-child(2),
 	.des_detailWrap .item:nth-child(3){margin-top: 20px;padding-top: 20px;border-top: 1px dotted #e6e6e6}
 	
