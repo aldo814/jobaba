@@ -1,0 +1,88 @@
+/* 상세보기 */
+.jobs-view{margin-top: 50px}
+.jobs-view .top {display: flex;align-items: flex-start}
+.jobs-view .left_area{display: flex;width: calc(100% - 350px)}
+.jobs-view .top .name{font-size: 24px;font-weight: 300;width: 170px;padding-right: 30px}
+.jobs-view .top .tit{font-size: 24px;font-weight: 500;width: calc(100% - 170px)}
+.jobs-view .top .right_area{margin-left: auto;display: flex;align-items: center;}
+.jobs-view .top .right_area .date{font-size: 12px;padding: 1px 10px;border-radius: 20px;letter-spacing: 2px}
+.jobs-view .top .right_area .date.end{color: #ec004b;border: 1px solid #ec004b;}
+.jobs-view .top .right_area .date.imm{color: #ff6163;border: 1px solid #ff6163}
+.jobs-view .top .right_area .date.ing{color: #000;border: 1px solid #000}
+
+.jobs-view .pink_btn{background: #ff6163;color: #fff;padding: 4px 15px;border-radius: 5px}
+
+.jobs-view .top .right_area .url_list:before{content: '';display: block;width: 1px;height: 20px;background: #ddd;margin: 2px 15px;}
+.jobs-view .top .right_area .url_list{display: flex;}
+.jobs-view .top .right_area .url_list li:first-child{margin-left: 0}
+.jobs-view .top .right_area .url_list li{margin-left: 10px;}
+.jobs-view .top .right_area .url_list li a{display: block;width: 25px;height: 25px;text-indent: -99999px}
+.jobs-view .top .right_area .url_list li .kakao{background: url(../images/publicJob/kakao_ico.png) no-repeat;}
+.jobs-view .top .right_area .url_list li .facebook{background: url(../images/publicJob/facebook_ico.png) no-repeat;}
+.jobs-view .top .right_area .url_list li .message{background: url(../images/publicJob/message_ico.png) no-repeat;}
+.jobs-view .top .right_area .url_list li .copy{background: url(../images/publicJob/url_ico.png) no-repeat;}
+.jobs-view .top .pink_btn{font-size: 13px;margin-left: 20px}
+.jobs-view .jv_table {padding-top: 30px;margin-top: 30px;border-top: 1px solid #000;table-layout: fixed;word-break: break-all}
+.jobs-view .jv_table table{border-collapse: collapse;width: 100%;table-layout: fixed}
+.jobs-view .jv_table table th{text-align: left}
+.jobs-view .jv_table table th,
+.jobs-view .jv_table table td{border: 1px solid #e6e6e6;padding: 10px 20px;font-size: 15px;}
+.jobs-view .jv_table table th {background: #f7f7f7;font-weight: 500}
+.jobs-view .jv_table table td{color: #666}
+.jobs-view .jv_table table strong,
+.jobs-view .jv_table table b{color: #000}
+.jobs-view .down {margin-bottom: 10px;align-items: center;}
+.jobs-view .down a{display: inline-block;position: relative;padding-right: 20px}
+.jobs-view .down:last-child{margin-bottom: 0;}
+.jobs-view .down span{background: url(../images/publicJob/down_ico.png) no-repeat center;width: 10px;height: 12px;text-indent: -9999px;display:block;position: absolute;right: 0;top: 50%;transform: translateY(-50%)}
+.jv_btn{ text-align: center;margin-top: 50px}
+.jv_btn .pink_btn{font-size: 14px;padding: 7px 70px;}
+
+
+@media all and (max-width:1260px){
+	
+}
+
+@media all and (max-width:1024px){
+	.jobs-view .left_area{width: 100%;margin-top: 20px}
+	.jobs-view .top{flex-direction: column-reverse;}
+	.jv_table table,
+	.jv_table tbody,
+	.jv_table tr,
+	.jv_table th,
+	.jv_table td{display: block;}
+	.jobs-view .jv_table{padding-top: 0;border-top: 0}
+	.jobs-view .jv_table table{border-top: 2px solid #000;border-bottom: 2px solid #e6e6e6}
+	.jobs-view .jv_table table td,
+	.jobs-view .jv_table table th{border-left: 0;border-right: 0}
+	.jobs-view .jv_table table td{border-top: 0}
+	.jobs-view .jv_table table td:last-child{border-bottom: 0}
+	.jobs-view .jv_table table th{border-top: 0;border-bottom: 0}
+	.jobs-view .jv_table table tr:nth-child(1) th:nth-child(1) {border-top: 1px solid #e6e6e6}
+}
+
+@media all and (max-width:768px){
+	.jobs-view{margin-top: 30px}
+	.jobs-view .left_area{flex-direction: column;}
+	.jobs-view .top .name{font-size: 18px;width: 100%;margin-bottom: 5px}
+	.jobs-view .top .tit{font-size: 18px;width: 100%;}
+	.jobs-view .jv_table{margin-top: 20px}
+	.jobs-view .jv_table table th,
+	.jobs-view .jv_table table td{font-size: 13px;padding: 10px }
+	.jobs-view .top .pink_btn{margin-left: 10px;font-size: 12px}
+	.jobs-view .top .right_area .url_list:before{margin: 2px 10px}
+	.jobs-view .top .right_area .date{font-size: 11px;padding: 1px 5px;}
+	.jv_btn{margin-top: 30px}
+}
+
+@media all and (max-width:480px){
+	.jobs-view .left_area{margin-top: 10px}
+	.jobs-view .top{position: relative;}
+	.jobs-view .top .right_area .url_list li{margin-left: 5px}
+	.jobs-view .top .right_area .url_list li a{width: 20px;height: 20px;background-size: 100% !important}
+	.jobs-view .top .right_area .date{position: absolute;left: 0;}
+	
+	.jobs-view .top .name{font-size: 15px}
+	.jobs-view .top .tit{font-size: 16px}
+	
+}
