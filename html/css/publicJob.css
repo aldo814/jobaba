@@ -1,4 +1,104 @@
-/* 상세보기 */
+/*font*/
+@font-face {
+     font-family: 'S-CoreDream-4Regular';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: 'S-CoreDream-6Bold';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+
+
+/* 공통 */
+.sCore{font-family: 'S-CoreDream-4Regular',sans-serif !important;}
+.sCoreBold{font-family: 'S-CoreDream-6Bold',sans-serif !important;}
+
+.publicJob_main{background: linear-gradient(180deg, #d5edfd 0%, rgba(255,255,255,1) 60%);;padding-top: 60px;}
+
+.publicJob_main .pjTit01{text-align: center;color: #003281}
+.publicJob_main .pjTit01 h2:before{content: '';display: block;background: url(../images/publicJob/mv_ico.png) no-repeat;width: 54px;height: 44px;margin: 0 auto 10px auto}
+.publicJob_main .pjTit01 h2{font-size: 50px;}
+.publicJob_main .pjTit01 p{font-size: 18px;margin-top: 10px}
+
+.publicJob_main .pjTit02{font-size: 24px;font-weight: 400;position: relative;padding-left: 100px;margin-bottom: 30px}
+.publicJob_main .pj_recom {margin: 100px 0 0 0;position: relative;}
+.publicJob_main .pj_recom .slick-list,
+.publicJob_main .pj_recom .slick-slider{position: static}
+.publicJob_main .pj_recom .pjTit02:before {content: '';display: block;background: url(../images/publicJob/mv_ico02.png) no-repeat;width: 88px;height: 80px;position: absolute;left: 0;bottom: -5px}
+.publicJob_main .pj_recom  .item{height: 100%;display: flex;flex-direction: column;background: #fff;border: 1px solid #e6e6e6;border-radius: 10px;padding: 30px;}
+.publicJob_main .pj_recom  .item .tit{font-size: 20px;font-weight: 500}
+.publicJob_main .pj_recom  .item .desc{font-size: 16px;color: #787878;margin: 10px 0;overflow: hidden;text-overflow: ellipsis;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;line-height: 1.2em;height: 2.4em;}
+.publicJob_main .pj_recom .bottom_wrap{margin-top: auto;text-align: right;}
+.publicJob_main .pj_recom  .item .bottom{display: flex;justify-content: space-between;align-items: center;margin: 20px 0 20px 0}
+.publicJob_main .pj_recom  .item .bottom .etc{width: calc(100% - 70px)}
+.publicJob_main .etc{font-size: 16px;color: #787878;display: flex;flex-wrap: wrap;}
+.publicJob_main .etc span{position: relative;padding-right: 10px;margin-right: 10px}
+.publicJob_main .etc span:after{content: '';display: block;width: 1px;height: 11px;background: #999;position: absolute;right: 0;top: 50%;transform: translateY(-50%)}
+.publicJob_main .etc span:last-child:after{display: none}
+.publicJob_main .date{font-size: 14px;font-weight: bold;letter-spacing: 1px}
+.publicJob_main .pj_recom .slick-track{display: flex;}
+.publicJob_main .pj_recom .slick-track .slick-slide{float: none;height: auto}
+.publicJob_main .pj_recom .slick-track .slick-slide > div {height: 100%}
+.publicJob_main .pj_recom .slick-track .slick-slide > div > div {height: 100%}
+.publicJob_main .date.end{color: #ec004b}
+.publicJob_main .date.imm{color: #ff6163}
+.publicJob_main .date.ing{color: #000}
+.publicJob_main .pj_recom #pj_recomSlide .slick-list{margin: 0 -10px}
+.publicJob_main .pj_recom #pj_recomSlide .slick-slide{margin: 0 10px}
+.publicJob_main .pj_recom .bottom_wrap button{font-size: 14px;color: #fff;font-weight: 500;background: #00a8cd;padding: 10px 40px;border-radius: 5px}
+.publicJob_main .pj_recom .slick-dots{right: 0;bottom: auto;top: 0;text-align: right}
+.publicJob_main .pj_recom li{margin: 0 5px;cursor: pointer;display: inline-block;}
+.publicJob_main .pj_recom li button{background: #e5e5e5;border-radius: 50%;width: 18px;height: 18px;text-indent: -9999px;}
+.publicJob_main .pj_recom .slick-active button{background: #00a8cd}
+
+.publicJob_main .pj_link{border-top: 1px solid #000;padding-top: 30px}
+.publicJob_main .pj_link {display: flex;justify-content: space-between} 
+.publicJob_main .pj_link > div{width: calc(33% - 10px);display: flex;flex-direction: column;background: #fff;border: 1px solid #e6e6e6;border-radius: 10px;padding: 30px;}
+.publicJob_main .pj_link > div span{font-weight: 500}
+.publicJob_main .pj_link > div .txt{font-size: 20px;font-weight: 400;margin-bottom: 20px}
+.publicJob_main .pj_link > div a{font-size: 14px;font-weight: bold;color: #38bab2;margin-top: auto;text-align: right}
+.publicJob_main .pj_link > div:nth-child(1) span{color: #fd851a}
+.publicJob_main .pj_link > div:nth-child(2) span{color: #0971c1}
+.publicJob_main .pj_link > div:nth-child(3) span{color: #fb2f7c}
+.publicJob_main  .pj_calender{background: url(../images/publicJob/pj_calender_bg.png) no-repeat #b4ebe7 bottom center;padding: 50px 0;;margin: 90px 0 0 0}
+.publicJob_main  .pj_calender .cont:before{content: '';display: block;background: url(../images/publicJob/pj_calender_img.png) no-repeat;width: 497px;height: 250px;position: absolute;left: 0;bottom: -50px;}
+.publicJob_main  .pj_calender .cont{width: calc(100% - 550px);margin-left: auto;}
+.publicJob_main  .pj_calender .cont .tit{font-size: 30px;font-weight: bold;color: #035783;margin-bottom: 10px}
+.publicJob_main  .pj_calender .cont .desc{font-size: 16px;color: #3e3e3f;width: calc(100% - 160px)}
+.publicJob_main  .pj_calender button{font-size: 14px;color: #fff;font-weight: 400;background: #00679c;padding: 7px 30px;border-radius: 5px;position: absolute;right: 0;bottom: 0;}
+
+.publicJob_main  .pj_cont {padding: 80px 0 50px 0;;background: #f8f8f8}
+.publicJob_main  .pj_cont .pjTit02:before{content: '';display: block;background: url(../images/publicJob/mv_ico03.png) no-repeat;width: 62px;height: 80px;position: absolute;left: 0;bottom: -5px;}
+.publicJob_main  .pj_cont .pjTit02 {padding-left: 75px}
+.publicJob_main  .pj_cont_list .item{background: #fff;display: flex;padding: 30px;border: 1px solid #e6e6e6;border-radius: 15px;justify-content: space-between;position: relative;overflow: hidden;align-items: center}
+.publicJob_main  .pj_cont_list .item .cate{background: #e5f6fa;font-size: 14px;font-weight: bold;color: #00a8cd;padding: 15px 10px;width: 110px;text-align: center;display: inline-block;position: absolute;left: 0;top: 0;border-radius: 0 0 10px 0}
+.publicJob_main  .pj_cont_list .item .name{font-size: 24px;font-weight: bold;}
+.publicJob_main  .pj_cont_list .left_area{width: 300px;text-align: center;padding-right: 30px;border-right: 1px solid #e6e6e6;}
+.publicJob_main  .pj_cont_list .right_area{width: calc(100% - 330px)}
+
+.publicJob_main .like{background: url(../images/desEnt/like.png) no-repeat center;width: 30px;height: 30px;border:1px solid #e2e2e2;border-radius: 50%;text-indent: 100%;white-space: nowrap;;overflow: hidden}
+.publicJob_main .like.active{border: 1px solid #ff6163;background: url(../images/desEnt/like_active.png) no-repeat center;}
+
+.publicJob_main .pj_cont_list .tit_wrap{display: flex;}
+.publicJob_main .pj_cont_list .tit_wrap .like{margin-right: 10px}
+.publicJob_main .pj_cont_list .tit_wrap .tit{font-size: 20px;font-weight: 500}
+.publicJob_main .pj_cont_list  .item .etc{margin:15px 0 10px 0 }
+.publicJob_main .pj_cont_list .desc{font-size: 14px;color: #565454;width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap}
+
+.publicJob_main .pj_cont_list .btn_wrap button{font-size: 14px;padding: 7px 50px;color: #00a8cd;border: 1px solid #00a8cd;font-weight: 500;border-radius: 5px}
+.publicJob_main .pj_cont_list .btn_wrap button:hover,
+.publicJob_main .pj_cont_list .btn_wrap button:active,
+.publicJob_main .pj_cont_list .btn_wrap button:focus{background: #00a8cd;color: #fff}
+
+{justify-content: space-between}
+
+/* 서브_상세보기 */
 .jobs-view{margin-top: 50px}
 .jobs-view .top {display: flex;align-items: flex-start}
 .jobs-view .left_area{display: flex;width: calc(100% - 350px)}
@@ -44,6 +144,8 @@
 }
 
 @media all and (max-width:1024px){
+	
+	/* 서브_상세보기 */
 	.jobs-view .left_area{width: 100%;margin-top: 20px}
 	.jobs-view .top{flex-direction: column-reverse;}
 	.jv_table table,
@@ -61,6 +163,8 @@
 }
 
 @media all and (max-width:768px){
+	
+	/* 서브_상세보기 */
 	.jobs-view{margin-top: 30px}
 	.jobs-view .left_area{flex-direction: column;}
 	.jobs-view .top .name{font-size: 18px;width: 100%;margin-bottom: 5px}
@@ -75,6 +179,8 @@
 }
 
 @media all and (max-width:480px){
+	
+	/* 서브_상세보기 */
 	.jobs-view .left_area{margin-top: 10px}
 	.jobs-view .top{position: relative;}
 	.jobs-view .top .right_area .url_list li{margin-left: 5px}

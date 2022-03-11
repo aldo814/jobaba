@@ -127,6 +127,8 @@
 .des_recom .item .bottom .area{font-size: 14px;color: #787878;}
 .des_wrap .like{background: url(../images/desEnt/like.png) no-repeat center;width: 30px;height: 30px;border:1px solid #e2e2e2;border-radius: 50%;text-indent: 100%;white-space: nowrap;;overflow: hidden}
 .des_wrap  .like.active{border: 1px solid #ff6163;background: url(../images/desEnt/like_active.png) no-repeat center;}
+
+
 .des_recom .cate,
 .des_recom .name{width: 100%;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
 
@@ -204,39 +206,40 @@
 .des_sub .des_subTit{color:#003281;font-size: 34px;font-weight: bold;display: flex;align-items: baseline;position: relative;padding-left: 60px;}
 .des_sub .des_subTit:before{content: '';display: block;background: url(../images/desEnt/mv_ico02.png) no-repeat;width: 51px;height: 41px;position: absolute;left: 0;top: 50%;transform: translateY(-50%)}
 .des_sub .des_subTit span{font-size: 18px;margin-left: 10px}
-.des_sub .des_detailArea{background: #fff;border-radius: 20px;margin: 30px 0;border: 1px solid #e6e6e6;padding: 30px;}
-.des_sub .des_detailSearch{border-bottom: 1px solid #000;padding-bottom: 10px}
-.des_sub .des_detailSearch label{position: absolute;left: -9999999px;overflow: hidden;width: 1px;height: 1px;} 
-.des_sub .des_detailSearch input[type="text"]{font-size: 16px;padding: 10px 0;}
-.des_sub .des_detailWrap{border-radius: 20px;border: 1px solid #ddd;margin: 30px 0;padding: 30px;display: flex;flex: auto}
-.des_sub .des_detailWrap .item{flex: 1;margin-right: 30px}
-.des_sub .des_detailWrap .item:last-child{margin-right: 0}
-.des_sub .des_detailWrap .tit{font-size: 15px;font-weight: bold;margin-bottom: 10px}
-.des_sub .des_detailWrap .scr{max-height: 180px;overflow-y: auto;overflow-x: hidden}
-.des_sub .des_detailWrap .scroll-x{display: none}
+.des_detailArea{background: #fff;border-radius: 20px;margin: 30px 0;border: 1px solid #e6e6e6;padding: 30px;}
+.des_detailSearch{border-bottom: 1px solid #000;padding-bottom: 10px}
+.des_detailSearch label{position: absolute;left: -9999999px;overflow: hidden;width: 1px;height: 1px;} 
+.des_detailSearch input[type="text"]{font-size: 16px;padding: 10px 0;}
+.des_detailWrap{border-radius: 20px;border: 1px solid #ddd;margin: 30px 0;padding: 30px;display: flex;flex: auto}
+.des_detailWrap .item{flex: 1;margin-right: 15px;border-right: 1px dotted #dcdcdc;padding-right: 15px}
+.des_detailWrap .item:last-child{margin-right: 0;border-right: 0;padding-right: 0}
+.des_detailWrap .tit{font-size: 15px;font-weight: bold;margin-bottom: 10px}
+.des_detailWrap .scr{max-height: 180px;overflow-y: auto;overflow-x: hidden}
+.des_detailWrap .scroll-x{display: none}
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	.scrollbar-outer > .scroll-content.scroll-scrolly_visible{left: 0 !important;}
-	.des_sub .des_detailWrap .scr{padding-right: 30px}
+	.des_detailWrap .scr{padding-right: 30px}
 }
 
-.des_sub .des_detailWrap .scr::-webkit-scrollbar {
+.des_detailWrap .scr::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera*/
 }
-.des_sub .scrollbar-outer > .scroll-element .scroll-element_track{background: #f6f6f6 !important}
-.des_sub .scrollbar-outer > .scroll-element .scroll-bar{background: #69c3be !important}
-.des_sub .scrollbar-outer > .scroll-element:hover .scroll-bar{background: #489d98 !important}
+.des_detailWrap .scrollbar-outer > .scroll-element .scroll-element_track{background: #f6f6f6 !important}
+.des_detailWrap  .scrollbar-outer > .scroll-element .scroll-bar{background: #69c3be !important}
+.des_detailWrap  .scrollbar-outer > .scroll-element:hover .scroll-bar{background: #489d98 !important}
 
-.des_sub .des_detailWrap .radio 
-input[type=checkbox]~.text{padding-left: 30px;position: relative;display: block;}
+.des_detailWrap .radio 
+input[type=checkbox]~.text{padding-left: 30px;position: relative;display: block;font-size: 13px;letter-spacing: -1px}
 input[type=checkbox]~.text:before{width: 18px;height: 18px;border: 1px solid #ddd;background: #fbfbfb;border-radius: 0;display: block;position: absolute;left: 0;top: 0;}
-.des_sub .des_detailWrap .radio input[type="checkbox"]:checked ~ .text::before{background: #69c3be url(https://jobaba.net//resource/images/member/ico_check.png) 50% 50% no-repeat;border: 1px solid #21a39b}
-.des_sub .des_btn_wrap {text-align: right;}
-.des_sub .des_btn_wrap button{font-size: 14px;color: #fff;width: 160px;border-radius: 5px;padding: 10px}
-.des_sub .des_btn_wrap button + button{margin-left: 5px}
-.des_sub .des_btn_wrap .gray_btn{background: #a6a6a6}
-.des_sub .des_btn_wrap .red_btn{background: #ff6163}
+.des_detailWrap .radio input[type="checkbox"]:checked ~ .text::before{background: #69c3be url(https://jobaba.net//resource/images/member/ico_check.png) 50% 50% no-repeat;border: 1px solid #21a39b}
+.des_btn_wrap {text-align: right;}
+.des_btn_wrap button{font-size: 14px;color: #fff;width: 160px;border-radius: 5px;padding: 10px}
+.des_btn_wrap button + button{margin-left: 5px}
+.des_btn_wrap .gray_btn{background: #a6a6a6}
+.des_btn_wrap .red_btn{background: #ff6163}
 
-.des_sub .des_com_list{display: flex;flex-wrap: wrap;}
+.des_com_list{display: flex;flex-wrap: wrap;}
 .des_sub .des_com_list .item{padding: 30px;background: #fff;border-radius: 15px;border: 1px solid #e6e6e6;width: calc(50% - 10px);margin-right: 20px;display: flex;justify-content: space-between;margin-top: 20px}
 .des_sub .des_com_list .item:nth-child(2n){margin-right: 0}
 .des_sub .des_com_list .item .left_area{width: 230px;display: flex;flex-direction: column}
@@ -294,12 +297,12 @@ input[type=checkbox]~.text:before{width: 18px;height: 18px;border: 1px solid #dd
 	.des_sub .des_subTit span{font-size: 14px}
 	.des_sub .des_subTit:before{background-size: 30px;width: 30px;height: 25px;}
 	
-	.des_sub .des_detailWrap{flex-wrap: wrap;}
-	.des_sub .des_detailWrap .item{width: calc(33.333% - 20px);flex: none;margin-top: 20px;padding-top: 20px;;border-top: 1px dotted #e6e6e6}
-	.des_sub .des_detailWrap .item:nth-child(3n){margin-right: 0}
-	.des_sub .des_detailWrap .item:nth-child(1),
-	.des_sub .des_detailWrap .item:nth-child(2),
-	.des_sub .des_detailWrap .item:nth-child(3){margin-top: 0;border-top: 0;padding-top: 0}
+	.des_detailWrap{flex-wrap: wrap;}
+	.des_detailWrap .item{width: calc(33.333% - 20px);flex: none;margin-top: 40px;border-top: 1px dotted #e6e6e6 }
+	.des_detailWrap .item:nth-child(3n){margin-right: 0;padding-right: 0;border-right: 0}
+	.des_detailWrap .item:nth-child(1),
+	.des_detailWrap .item:nth-child(2),
+	.des_detailWrap .item:nth-child(3){margin-top: 0;border-top: 0;padding-top: 0}
 }
 
 @media all and (max-width:768px){
@@ -401,18 +404,18 @@ input[type=checkbox]~.text:before{width: 18px;height: 18px;border: 1px solid #dd
 	.des_sub .des_com_list .item .desc{font-size: 13px}
 	.des_sub .des_com_list .item .right_area .etc{font-size: 12px}
 	
-	.des_sub .des_detailWrap .tit{font-size: 13px;padding: 15px 0;margin-bottom: 0}
-	.des_sub .des_detailWrap .item{padding-top: 0 !important;margin-top: 0 !important;}
-	.des_sub .des_detailWrap{padding: 5px 20px 5px 20px}
-	.des_sub .des_detailWrap .radio input[type=checkbox]~.text{font-size: 12px;}
-	.des_sub .des_detailWrap .scr{max-height: 135px;margin-bottom: 10px}
+	.des_detailWrap .tit{font-size: 13px;padding: 15px 0;margin-bottom: 0}
+	.des_detailWrap .item{padding-top: 0 !important;margin-top: 0 !important;}
+	.des_detailWrap{padding: 5px 20px 5px 20px}
+	.des_detailWrap .radio input[type=checkbox]~.text{font-size: 12px;}
+	.des_detailWrap .scr{max-height: 135px;margin-bottom: 10px}
 	
 	.des_sub .des_subTit{font-size: 18px;flex-direction: column}
 	.des_sub .des_subTit span{margin: 5px 0 0 0;font-size: 13px}
 	.des_sub .des_detailWrap .scr{margin-top: 0}
 	.des_sub .des_detailWrap .item{padding-top: 0;margin-top: 0;}
-	.des_sub .des_detailSearch input[type="text"]{font-size: 13px}
-	.des_sub .des_detailSearch input[type="text"]{padding: 0}
+	.des_detailSearch input[type="text"]{font-size: 13px}
+	.des_detailSearch input[type="text"]{padding: 0}
 	
 	.des_sub .des_com_list .item .img{max-width: 100%;width: 100%}
 	.des_sub .des_com_list .item .img  img{width: 100%}
@@ -423,9 +426,9 @@ input[type=checkbox]~.text:before{width: 18px;height: 18px;border: 1px solid #dd
 }
 
 @media all and (max-width:640px){
-	.des_sub .des_detailWrap .item{width: 100%;margin-right: 0;}
-	.des_sub .des_detailWrap .item:nth-child(2),
-	.des_sub .des_detailWrap .item:nth-child(3){margin-top: 20px;padding-top: 20px;border-top: 1px dotted #e6e6e6}
+	.des_detailWrap .item{width: 100%;margin-right: 0;border-right: 0;}
+	.des_detailWrap .item:nth-child(2),
+	.des_detailWrap .item:nth-child(3){margin-top: 20px;padding-top: 20px;border-top: 1px dotted #e6e6e6}
 	
 }
 
