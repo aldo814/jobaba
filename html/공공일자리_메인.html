@@ -726,12 +726,12 @@
 				if (windowWidth <= 640) {
 					$('.des_detailWrap .item').find('.tit').next().hide();
 					$('.des_detailWrap .item:first').find('.tit').next().show();
-					$('.des_detailWrap .tit').click(function() {
+					$('.des_detailWrap .tit').off('click').on('click', function(){
 						$(this).next('.scr').slideToggle();
 					});
 				} else {
 					$('.des_detailWrap .item').find('.tit').next().show();
-					$('.des_detailWrap .tit').click(function() {
+					$('.des_detailWrap .tit').off('click').on('click', function(){
 						$(this).next('.scr').show();
 					});
 
