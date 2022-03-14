@@ -37,7 +37,7 @@
 .publicJob_main .pj_recom .pjTit02:before {content: '';display: block;background: url(../images/publicJob/mv_ico02.png) no-repeat;width: 88px;height: 80px;position: absolute;left: 0;bottom: -5px}
 .publicJob_main .pj_recom  .item{height: 100%;display: flex;flex-direction: column;background: #fff;border: 1px solid #e6e6e6;border-radius: 10px;padding: 30px;}
 .publicJob_main .pj_recom  .item .tit{font-size: 20px;font-weight: 500}
-.publicJob_main .pj_recom  .item .desc{font-size: 16px;color: #787878;margin: 10px 0;overflow: hidden;text-overflow: ellipsis;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;line-height: 1.2em;height: 2.4em;}
+.publicJob_main .pj_recom  .item .desc{font-size: 16px;color: #787878;margin-top: 10px;overflow: hidden;text-overflow: ellipsis;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;line-height: 1.2em;height: 2.4em;}
 .publicJob_main .pj_recom .bottom_wrap{margin-top: auto;text-align: right;}
 .publicJob_main .pj_recom  .item .bottom{display: flex;justify-content: space-between;align-items: center;margin: 20px 0 20px 0}
 .publicJob_main .pj_recom  .item .bottom .etc{width: calc(100% - 70px)}
