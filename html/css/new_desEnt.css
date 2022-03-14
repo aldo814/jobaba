@@ -436,7 +436,6 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	
 	.des_detailWrap .scr.scroll-wrapper{display: none}
 	.des_detailWrap .item:nth-child(1) .scr.scroll-wrapper{display: block}
-	.des_detailWrap .tit{display: inline-block}
 	
 }
 
