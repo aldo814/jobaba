@@ -210,7 +210,7 @@
 	.publicJob_main .pj_recom li button{width: 13px;height: 13px;}
 	.publicJob_main .pj_recom .item{padding: 20px}
 	.publicJob_main .pj_recom .item .tit{font-size: 16px}
-	.publicJob_main .pj_recom .item .desc{font-size: 13px;height: auto;max-height: 2.4rem}
+	.publicJob_main .pj_recom .item .desc{font-size: 13px;}
 	.publicJob_main .etc{font-size: 12px}
 	.publicJob_main .date{font-size: 12px}
 	.publicJob_main .pj_recom .bottom_wrap button{font-size: 13px;padding: 7px 20px;}
