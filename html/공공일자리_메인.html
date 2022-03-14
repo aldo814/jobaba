@@ -724,15 +724,12 @@
 			function mDetail() {
 				var windowWidth = $(window).width();
 				if (windowWidth <= 640) {
-					$('.des_detailWrap .item').find('.tit').next().hide();
-					$('.des_detailWrap .item:first').find('.tit').next().show();
 					$('.des_detailWrap .tit').click(function() {
-						$(this).next('.scr').slideToggle(0);
+						$(this).parent().find('.scr').slideToggle(0);
 					});
 				} else {
-					$('.des_detailWrap .item').find('.tit').next().show();
 					$('.des_detailWrap .tit').click(function() {
-						$(this).next('.scr').show();
+						$(this).parent().find().next('.scr').show();
 					});
 
 				}

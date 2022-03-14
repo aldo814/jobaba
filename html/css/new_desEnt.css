@@ -431,6 +431,10 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_detailWrap .item:nth-child(2),
 	.des_detailWrap .item:nth-child(3){margin-top: 20px;padding-top: 20px;border-top: 1px dotted #e6e6e6}
 	
+	
+	.des_detailWrap .scr{display: none}
+	.des_detailWrap .item:nth-child(1) .scr{display: block}
+	
 }
 
 @media all and (max-width:480px){
@@ -455,6 +459,7 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	
 	 .des_btn_wrap {text-align: center;}
 	 .des_btn_wrap button{max-width: 160px;width: calc(50% - 20px);font-size: 13px;padding: 7px 10px}
+	
 }
 
 @media all and (max-width:320px){

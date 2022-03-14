@@ -612,19 +612,15 @@
 					$(this).delay(500).toggleClass('active');
 				});
 			});
-
-			function mDetail() {
+function mDetail() {
 				var windowWidth = $(window).width();
 				if (windowWidth <= 640) {
-					$('.des_sub .des_detailWrap .item').find('.tit').next().hide();
-					$('.des_sub .des_detailWrap .item:first').find('.tit').next().show();
-					$('.des_sub .des_detailWrap .tit').click(function() {
-						$(this).next('.scr').slideToggle(0);
+					$('.des_detailWrap .tit').click(function() {
+						$(this).parent().find('.scr').slideToggle(0);
 					});
 				} else {
-					$('.des_sub .des_detailWrap .item').find('.tit').next().show();
-					$('.des_sub .des_detailWrap .tit').click(function() {
-						$(this).next('.scr').show();
+					$('.des_detailWrap .tit').click(function() {
+						$(this).parent().find().next('.scr').show();
 					});
 
 				}
