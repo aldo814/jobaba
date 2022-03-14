@@ -271,4 +271,6 @@
 	.publicJob_main .pj_cont_list .between .etc{width: 100%}
 	.publicJob_main .pj_recom .item .bottom{margin: 0}
 	.publicJob_main .pj_recom .item .bottom{display: block;text-align: left}
+	
+	.publicJob_main .pj_calender .cont .desc{max-width: 250px;margin: auto;width: 100%}
 }
