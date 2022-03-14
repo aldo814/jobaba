@@ -681,10 +681,25 @@
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
 	<script src="https://www.jobaba.net//resource/bxslider/slick.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
-	<script>
+	<script>	
+		function mDetail() {
+				var windowWidth = $(window).width();
+				if (windowWidth <= 640) {
+					$('.des_detailWrap .tit').click(function() {
+						$(this).parent().find('.scr.scroll-wrapper').fadeToggle(0);
+					});
+				} else {
+					$('.des_detailWrap .tit').click(function() {
+						$(this).parent().find().next('.scr.scroll-wrapper').show();
+					});
+
+				}
+			}
+			mDetail();
+			$(window).resize(mDetail);
+		
 		$(document).ready(function() {
 		
-
 			$('.des_detailWrap .scr').scrollbar();
 			
 			//추천기업 슬라이드
@@ -719,22 +734,7 @@
 				});
 			});
 			
-			
-		function mDetail() {
-				var windowWidth = $(window).width();
-				if (windowWidth <= 640) {
-					$('.des_detailWrap .tit').click(function() {
-						$(this).parent().find('.scr.scroll-wrapper').fadeToggle(0);
-					});
-				} else {
-					$('.des_detailWrap .tit').click(function() {
-						$(this).parent().find().next('.scr.scroll-wrapper').show();
-					});
-
-				}
-			}
-			mDetail();
-			$(window).resize(mDetail);
+	
 
 
 
