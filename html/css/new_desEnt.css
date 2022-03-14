@@ -453,8 +453,8 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_open .item .left_area .img{max-width: 100%;}
 	.des_open .item .left_area .img img{width: 100%}
 	
-	.des_sub .des_btn_wrap {text-align: center;}
-	.des_sub .des_btn_wrap button{max-width: 160px;width: calc(50% - 20px);font-size: 13px;padding: 7px 10px}
+	 .des_btn_wrap {text-align: center;}
+	 .des_btn_wrap button{max-width: 160px;width: calc(50% - 20px);font-size: 13px;padding: 7px 10px}
 }
 
 @media all and (max-width:320px){
