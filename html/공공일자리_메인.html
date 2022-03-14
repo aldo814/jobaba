@@ -685,11 +685,11 @@
 		function mDetail() {
 				var windowWidth = $(window).width();
 				if (windowWidth <= 640) {
-					$('.des_detailWrap .tit').click(function() {
+					$('.des_detailWrap .tit').off("click").on("click", function() {
 						$(this).parent().find('.scr.scroll-wrapper').fadeToggle(0);
 					});
 				} else {
-					$('.des_detailWrap .tit').click(function() {
+					$('.des_detailWrap .tit').off("click").on("click", function() {
 						$(this).parent().find().next('.scr.scroll-wrapper').show();
 					});
 
