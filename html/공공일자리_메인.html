@@ -723,14 +723,14 @@
 			function mDetail() {
 				var windowWidth = $(window).width();
 				if (windowWidth <= 640) {
-					$('.publicJob_main .des_detailWrap .item').find('.tit').next().hide();
-					$('.publicJob_main .des_detailWrap .item:first').find('.tit').next().show();
-					$('.publicJob_main .des_detailWrap .tit').click(function() {
+					$('.des_detailWrap .item').find('.tit').next().hide();
+					$('.des_detailWrap .item:first').find('.tit').next().show();
+					$('.des_detailWrap .tit').click(function() {
 						$(this).next('.scr').slideToggle(0);
 					});
 				} else {
-					$('.publicJob_main .des_detailWrap .item').find('.tit').next().show();
-					$('.publicJob_main .des_detailWrap .tit').click(function() {
+					$('.des_detailWrap .item').find('.tit').next().show();
+					$('.des_detailWrap .tit').click(function() {
 						$(this).next('.scr').show();
 					});
 
