@@ -683,30 +683,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
 	<script>
 		$(document).ready(function() {
-			
-			function mDetail() {
-				var windowWidth = $(window).width();
-				if (windowWidth <= 640) {
-					$('.des_detailWrap .item').find('.tit').next().hide();
-					$('.des_detailWrap .item:first').find('.tit').next().show();
-					$('.des_detailWrap .tit').click(function() {
-						$(this).next('.scr').slideToggle(0);
-					});
-				} else {
-					$('.des_detailWrap .item').find('.tit').next().show();
-					$('.des_detailWrap .tit').click(function() {
-						$(this).next('.scr').show();
-					});
-
-				}
-			}
-			mDetail();
-			
-			$(window).resize(mDetail);
+		
 
 			$('.des_detailWrap .scr').scrollbar();
-
-
+			
 			//추천기업 슬라이드
 			$('#pj_recomSlide').slick({
 				slidesToShow: 3,
@@ -740,7 +720,26 @@
 			});
 			
 			
+				
+			function mDetail() {
+				var windowWidth = $(window).width();
+				if (windowWidth <= 640) {
+					$('.des_detailWrap .item').find('.tit').next().hide();
+					$('.des_detailWrap .item:first').find('.tit').next().show();
+					$('.des_detailWrap .tit').click(function() {
+						$(this).next('.scr').slideToggle(0);
+					});
+				} else {
+					$('.des_detailWrap .item').find('.tit').next().show();
+					$('.des_detailWrap .tit').click(function() {
+						$(this).next('.scr').show();
+					});
+
+				}
+			}
+			mDetail();
 			
+			$(window).resize(mDetail);
 
 
 
