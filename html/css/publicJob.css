@@ -87,7 +87,7 @@
 .publicJob_main .like{background: url(../images/desEnt/like.png) no-repeat center;width: 30px;height: 30px;border:1px solid #e2e2e2;border-radius: 50%;text-indent: 100%;white-space: nowrap;;overflow: hidden}
 .publicJob_main .like.active{border: 1px solid #ff6163;background: url(../images/desEnt/like_active.png) no-repeat center;}
 
-.publicJob_main .pj_cont_list .tit_wrap{display: flex;}
+.publicJob_main .pj_cont_list .tit_wrap{display: flex;align-items: center;}
 .publicJob_main .pj_cont_list .tit_wrap .like{margin-right: 10px}
 .publicJob_main .pj_cont_list .tit_wrap .tit{font-size: 20px;font-weight: 500}
 .publicJob_main .pj_cont_list  .item .etc{margin:15px 0 10px 0 }
