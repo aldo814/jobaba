@@ -239,6 +239,8 @@
 	.publicJob_main .pj_cont_list .desc{font-size: 13px}
 	.publicJob_main .pj_cont_list .between .desc{width: calc(100%  - 120px)}
 	.publicJob_main .pj_cont_list .btn_wrap button{font-size: 13px;padding: 7px 30px}
+	
+	.publicJob_main .pjTit02{margin-bottom: 20px}
 }
 
 @media all and (max-width:640px){
