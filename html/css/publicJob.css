@@ -21,6 +21,10 @@
 
 .publicJob_main{background: linear-gradient(180deg, #d6eefc 0%, rgba(255,255,255,1) 20%);;padding-top: 60px;}
 
+.publicJob_main #pj_recomSlide{opacity: 0; visibility: hidden; transition: opacity 1.5s ease; -webkit-transition: opacity 1.5s ease;}
+
+.publicJob_main #pj_recomSlide{ visibility: visible; opacity: 1; }
+
 .publicJob_main .pjTit01{text-align: center;color: #003281}
 .publicJob_main .pjTit01 h2:before{content: '';display: block;background: url(../images/publicJob/mv_ico.png) no-repeat;width: 54px;height: 44px;margin: 0 auto 10px auto}
 .publicJob_main .pjTit01 h2{font-size: 50px;}

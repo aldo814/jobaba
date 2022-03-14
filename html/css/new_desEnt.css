@@ -68,6 +68,8 @@
   visibility: hidden !important;
 }
 
+
+
 .des_cont .des_cont_inner{display: flex;justify-content: space-between}
 .des_cont .des_cont_inner > div:nth-child(1){width:calc(42.06% - 40px)}
 .des_cont .des_cont_inner > div:nth-child(2){width:calc(34.92% - 40px)}
@@ -432,8 +434,9 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_detailWrap .item:nth-child(3){margin-top: 20px;padding-top: 20px;border-top: 1px dotted #e6e6e6}
 	
 	
-	.des_detailWrap .scr{display: none}
-	.des_detailWrap .item:nth-child(1) .scr{display: block}
+	.des_detailWrap .scr.scroll-wrapper{display: none}
+	.des_detailWrap .item:nth-child(1) .scr.scroll-wrapper{display: block}
+	.des_detailWrap .tit{display: inline-block}
 	
 }
 
