@@ -176,7 +176,7 @@
 
 /* 인사담당자 인터뷰 */
 .des_interview{margin: 70px 0 60px 0}
-.des_interview .slick-track {display: flex;}
+.des_interview .slick-track {display: flex;margin: 0}
 .des_interview  .slick-track .slick-slide {display: flex;height: auto;}
 .des_interview  .slick-track .slick-slide > div > div{height: 100%;}
 .des_interview h3:before{content: '';display: block;background: url(../images/desEnt/itv_crt.png) no-repeat;width: 74px;height: 80px;position: absolute;left: 0;bottom: 0;}
