@@ -91,7 +91,7 @@
 .des_cont .des_welfare .tit{font-size: 14px;font-weight: bold;color: #38bab2;margin-bottom: 10px}
 .des_cont .des_welfare .item{padding-bottom: 20px;border-bottom: dotted 1px rgba(0, 0, 0, 0.19);margin-bottom: 20px}
 .des_cont .des_welfare .slick-slide > div:nth-child(2n) .item{border-bottom: 0;margin-bottom: 0;}
-.des_cont .des_welfare  .desc{display: flex;justify-content: space-between;align-items: flex-end}
+.des_cont .des_welfare  .desc{display: flex;justify-content: space-between;}
 .des_cont .des_welfare  .desc ul {width: calc(100% - 160px)}
 .des_cont .des_welfare  .desc ul li{position: relative;font-size: 16px;padding-left: 15px;margin-bottom: 5px;}
 .des_cont .des_welfare  .desc ul li:before{content: '-';position: absolute;top: 0;left: 0;top: 0}
@@ -177,14 +177,15 @@
 /* 인사담당자 인터뷰 */
 .des_interview{margin: 70px 0 60px 0}
 .des_interview .slick-track {display: flex;margin: 0}
-.des_interview  .slick-track .slick-slide {display: flex;height: auto;}
-.des_interview  .slick-track .slick-slide > div > div{height: 100%;}
+.des_interview  .slick-track .slick-slide {display: flex;height: auto;width: 100%}
+.des_interview  .slick-track .slick-slide > div > div{height: 100%;width: 100%}
 .des_interview h3:before{content: '';display: block;background: url(../images/desEnt/itv_crt.png) no-repeat;width: 74px;height: 80px;position: absolute;left: 0;bottom: 0;}
 .des_interview h3 span{font-size: 16px;display: inline-block;margin-left: 10px;color: #787878;font-weight: 400}
 .des_interview #itv_slide{margin-top: 40px;}
 .des_interview #itv_slide .slick-list{margin:  0 -10px}
+.des_interview #itv_slide .slick-slide > div{width: 100%}
 .des_interview #itv_slide .slick-slide{margin:  0 10px}
-.des_interview #itv_slide .item{background: #f8f8f8;padding: 30px;border-radius: 15px;border: 1px solid #e6e6e6;height: 100%;}
+.des_interview #itv_slide .item{background: #f8f8f8;padding: 30px;border-radius: 15px;border: 1px solid #e6e6e6;height: 100%;width: 100%}
 .des_interview #itv_slide .item .name{color: #38bab2;font-size: 14px;font-weight: 500;}
 .des_interview #itv_slide .item .q{font-size: 20px;font-weight: 500;margin: 10px 0 15px 0;word-break: keep-all;line-height: 1.8rem;max-height: 3.6rem;overflow: hidden;text-overflow: ellipsis;display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; word-wrap:break-word; }
 .des_interview #itv_slide .item .q:before{content: 'Q.';display: inline-block;margin-right: 3px}
