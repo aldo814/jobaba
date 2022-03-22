@@ -24,6 +24,7 @@
 .publicJob_main #pj_recomSlide{opacity: 0; visibility: hidden; transition: opacity 1.5s ease; -webkit-transition: opacity 1.5s ease;}
 
 .publicJob_main #pj_recomSlide{ visibility: visible; opacity: 1; }
+.publicJob_main #pj_recomSlide {}
 
 .publicJob_main .pjTit01{text-align: center;color: #003281}
 .publicJob_main .pjTit01 h2:before{content: '';display: block;background: url(../images/publicJob/mv_ico.png) no-repeat;width: 54px;height: 44px;margin: 0 auto 10px auto}
@@ -47,7 +48,7 @@
 .publicJob_main .etc span:last-child{margin-right: 0;padding-right: 0}
 .publicJob_main .etc span:last-child:after{display: none}
 .publicJob_main .date{font-size: 14px;font-weight: bold;letter-spacing: 1px}
-.publicJob_main .pj_recom .slick-track{display: flex;}
+.publicJob_main .pj_recom .slick-track{display: flex;justify-content: flex-start;margin-left: 0;margin-right: 0;}
 .publicJob_main .pj_recom .slick-track .slick-slide{float: none;height: auto}
 .publicJob_main .pj_recom .slick-track .slick-slide > div {height: 100%}
 .publicJob_main .pj_recom .slick-track .slick-slide > div > div {height: 100%}
@@ -62,7 +63,7 @@
 .publicJob_main .pj_recom li button{background: #e5e5e5;border-radius: 50%;width: 18px;height: 18px;text-indent: -9999px;}
 .publicJob_main .pj_recom .slick-active button{background: #00a8cd}
 
-.publicJob_main .pj_link{border-top: 1px solid #000;padding-top: 30px}
+.publicJob_main .pj_link{border-top: 1px solid #000;padding-top: 30px;margin-top: 30px;}
 .publicJob_main .pj_link {display: flex;justify-content: space-between} 
 .publicJob_main .pj_link > div{width: calc(33% - 10px);display: flex;flex-direction: column;background: #fff;border: 1px solid #e6e6e6;border-radius: 10px;padding: 30px;}
 .publicJob_main .pj_link > div span{font-weight: 500}
