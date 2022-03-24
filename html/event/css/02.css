@@ -172,7 +172,7 @@
 #theme .ev_footer .ef_container h3
 { font-family: 'S-CoreDream-5Medium';color: #fff}
 
-#theme .ev_footer .ef_container li{  font-family: 'S-CoreDream-3Light';color: #fff;font-size: 18px}
+#theme .ev_footer .ef_container li{  font-family: 'S-CoreDream-3Light';color: #fff;font-size: 16px}
 #theme .ev_footer .ef_container h3{position: relative;margin-bottom: 40px;padding-left: 85px}
 #theme .ev_footer .ef_container h3:before{content: '';display: block;background: url(../resource/images/eventImg/20220323/jbb_ico02.png) no-repeat;width: 69px;height: 86px;position: absolute;left: 0;top: -40px}
 #theme .ev_footer .ef_container h3 span{color: #ffef39;font-family: 'S-CoreDream-5Medium';}
