@@ -323,7 +323,7 @@
 	#theme .area_title01:after{width: 270px;background-size: 270px;bottom: 0}
 	
 	#theme .img_tit img{max-width: 300px;width: 100%}
-		#theme .theme_bg{background-position: top 00px center}
+		#theme .theme_bg{background-position: top -40px center}
 	#theme .area_title01{padding: 40px 0 180px 0}
 	
 	#theme #gameContainer{zoom:0.5}
@@ -340,13 +340,13 @@
 	
 	#theme .area_title01 .dot_line{font-size: 15px;padding: 20px 0;}
 	
-		#theme #gameContainer .board_start{font-size: 20px}
+		#theme #gameContainer .board_start{font-size: 26px}
 	
 }
 
 @media all and (max-width:400px){
 		#theme #gameContainer{zoom:0.45}
-		#theme .theme_bg{background-position: top 70px center}
+		#theme .theme_bg{background-position: top -20px center}
 	#theme .area_title01{padding: 40px 0 180px 0}
 }
 
@@ -362,5 +362,4 @@
 	#theme .area_title05 .s_gift > div{margin-bottom: 30px}
 	#theme .area_title05 .s_gift > div:last-child{margin-bottom: 0}
 	
-		#theme #gameContainer .board_start{font-size: 16px}
 	}
