@@ -476,7 +476,7 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 
 	.des_open .item{padding:10px}
 	 .des_interview h3 span{display: block;margin-left: 0}
-	.des_open .item .right_area .bottom{margin-top: 20px}
+	.des_open .item .right_area .bottom{margin-top: 5px;padding-top:5px}
 
 	.des_open .item .left_area,
 	.des_sub .des_com_list .item .left_area{width: 125px}
@@ -497,8 +497,8 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_open .item .right_area .bottom{width: calc(100% + 135px);margin-left: -135px}
 	.des_open .item .right_area .etc{width: 100%;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;display: block;}
 	.des_open .item .right_area .etc span{padding-right: 5px;margin-right: 5px}
-	.des_open .item .right_area .area{width: calc(100% - 20px);white-space: nowrap;text-overflow: ellipsis;overflow: hidden}
-	.des_open .item .right_area .area > span{white-space:pre-line}
+	.des_open .item .right_area .area{width: calc(100% - 20px);}
+	.des_open .item .right_area .area > span{white-space: nowrap;text-overflow: ellipsis;overflow: hidden;width:100%}
 	.des_open .item .right_area .date{font-size: 10px}
 	.des_sub .des_com_list .item .img{margin-bottom: 10px;height: 81px}
 	.des_sub .des_com_list .item .right_area .etc  span{font-size: 11px}
@@ -508,7 +508,9 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_sub .des_com_list .item .desc{height: 3.6rem}
 	.des_sub .des_com_list .item{padding: 10px;margin-top: 10px}
 	.des_wrap .des_open  .slick-dots{margin-top: 0}
-
+	.des_open .item .left_area .name{width:calc(100% - 25px);}
+.des_interview{margin:30px 0}
+.des_goApp{padding:30px 0}
 
 
 
