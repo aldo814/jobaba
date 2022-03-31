@@ -167,8 +167,8 @@ br{font-family: 'Dotum' !important;}
 #theme .section06 .cpn_wrap > div{display: flex;justify-content: space-between;margin-bottom: 30px;}
 #theme .section06 .cpn_wrap > div:last-child{margin-bottom: 0}
 #theme .section06 .cpn_wrap > div .iframe_wrap{max-width: 400px;width: 100%}
-#theme .section06 .cpn_wrap > div .iframe{ position: relative;padding-top: 56.25%;width: 100%; height: 0;border-radius: 15px;overflow: hidden}
-#theme .section06 .cpn_wrap > div .iframe iframe{position: absolute;top: 0;left: 0; width: 100%;height: 100%;}
+#theme .section06 .cpn_wrap > div .iframe{ position: relative;padding-top: 56.25%;width: 100%; height: 0}
+#theme .section06 .cpn_wrap > div .iframe iframe{position: absolute;top: 0;left: 0; width: 100%;height: 100%;border-radius: 15px;}
 #theme .section06 .cpn_wrap > div .cont{width: calc(100% - 430px);margin-top: 20px}
 #theme .section06 .cpn_wrap > div .cont .logo{margin-bottom: 10px}
 
@@ -305,7 +305,7 @@ br{font-family: 'Dotum' !important;}
 
 @media all and (max-width:480px){
 	.f22{font-size: 13px}
-	.f18{font-size: 13px}
+	.f18{font-size: 12px}
 	.f30{font-size: 15px}
 	.mg60{margin: 30px 0}
 	.f24{font-size: 16px}
@@ -342,8 +342,8 @@ br{font-family: 'Dotum' !important;}
 	#theme .section04 .flex-item3 >div{width: 100%;margin-bottom: 20px}
 	#theme .section04 .flex-item3 >div:last-child{margin-bottom: 0}
 	
-		#theme .section05 .titCont table th{font-size: 14px}
-	#theme .section05 .titCont table td{font-size: 13px}
+		#theme .section05 .titCont table th{font-size: 12px;padding: 2px 5px;border-radius: 2px solid #ffff}
+	#theme .section05 .titCont table td{font-size: 12px;padding: 5px;word-break: keep-all}
 	
 	#theme .section06 h3{margin-top: 100px}
 	#theme .section06 h3:before{background-size: 150px;width: 150px;height: 110px;top: -115px;}
