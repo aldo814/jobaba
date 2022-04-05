@@ -415,7 +415,7 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_detailSearch input[type="text"]{font-size: 13px}
 	.des_detailSearch input[type="text"]{padding: 0}
 
-	.des_sub .des_com_list .item .name{font-size: 16px;}
+	
 	.des_sub .des_com_list .item .tit{font-size: 16px}
 	.des_sub .des_com_list .item .desc{font-size: 13px}
 	.des_sub .des_com_list .item .right_area .etc{font-size: 12px}
@@ -434,17 +434,30 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_open .item .left_area {width:180px}
 	.des_open .item .left_area .img{height:115px}
 	.des_open .item .right_area{width:calc(100% - 200px)}
-	.des_open .item .right_area .bottom{width: calc(100% + 200px);margin-left: -200px;margin-top: 50px}
-
 	.des_sub .des_com_list .item .left_area{width: 180px;}
 	.des_sub .des_com_list .item  .img{height: 115px}
-	.des_sub .des_com_list .item .right_area{width:calc(100% - 200px)}
-
+	.des_open .item .right_area .tit_wrap .like{margin-right: 10px}
 
 
 	.des_detailWrap .scr.scroll-wrapper{display: none}
 	.des_detailWrap .item:nth-child(1) .scr.scroll-wrapper{display: block}
-
+	
+	
+	.des_open .item{flex-direction: column;}
+	.des_open .item .left_area .img{display: none}
+	.des_open .item .left_area .bottom{justify-content: flex-start}
+	.des_open .item .left_area{width: 100%;}
+	.des_open .item .left_area .name{width: auto;max-width: calc(100% - 50px);padding-right: 10px;color: #888;font-size: 13px}
+	.des_open .item .right_area{width: 100%;margin-top: 10px}
+	.des_sub .des_com_list .item{padding: 15px;margin-top: 10px}
+	.des_sub .des_com_list .item{flex-direction: column;}
+	.des_sub .des_com_list .item .right_area,
+	.des_sub .des_com_list .item .left_area {width: 100%}
+	.des_sub .des_com_list .item .name{font-size: 13px;color: #888}
+	.des_sub .des_com_list .item .bottom{justify-content: flex-start}
+	.des_sub .des_com_list .item .left_area .img{display: none}
+	.des_sub .des_com_list .item .name{width: auto;max-width: calc(100% - 50px);padding-right: 10px}
+	
 
 }
 
@@ -481,36 +494,37 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_open .item .left_area,
 	.des_sub .des_com_list .item .left_area{width: 125px}
 	.des_open .item .right_area,
-	.des_sub .des_com_list .item .right_area{width: calc(100% - 135px)}
+	.des_sub .des_com_list .item .right_area{width: 100%}
 	.des_open .item .right_area{margin-top:10px}
 	.des_open .item .right_area .cert{width: 100%}
 	.des_wrap .like{width:25px;height:25px;background-size:17px;}
 	.des_open .item .left_area .name,
 	.des_open .item .right_area .tit_wrap .tit,
 	.des_sub .des_com_list .item .tit,
-	.des_sub .des_com_list .item .name{font-size:14px}
+	.des_sub .des_com_list .item .name{font-size:13px}
+	.des_open .item .right_area .tit_wrap .tit{margin-left:0;width:calc(100% - 30px)}
 	.des_open .item .right_area .area{margin-top:0}
 	.des_open .item .right_area .cate{margin:5px 0}
 	.des_open .item .right_area .support button{width:auto;font-size:12px;padding:4px 7px}
+	
+	
 	.des_open .item .right_area .cert span,
 	.des_sub .des_com_list .item .right_area .cert span{font-size: 4px;padding: 3px}
-	.des_open .item .right_area .bottom{width: calc(100% + 135px);margin-left: -135px}
-	.des_open .item .right_area .etc{width: 100%;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;display: block;}
-	.des_open .item .right_area .etc span{padding-right: 5px;margin-right: 5px}
 	.des_open .item .right_area .area{width: calc(100% - 20px);}
-	.des_open .item .right_area .area > span{white-space: nowrap;text-overflow: ellipsis;overflow: hidden;width:100%}
 	.des_open .item .right_area .date{font-size: 10px}
 	.des_sub .des_com_list .item .img{margin-bottom: 10px;height: 81px}
 	.des_sub .des_com_list .item .right_area .etc  span{font-size: 11px}
 	.des_sub .des_com_list .item .bottom{margin-top: 0}
 	.des_sub .des_com_list .item .desc{margin: 10px 0 10px 0}
-	.des_sub .des_com_list .item .right_area .cert{width: calc(100% + 135px);margin-left: -135px;margin-top: 15px}
-	.des_sub .des_com_list .item .desc{height: 3.6rem}
+
+	.des_sub .des_com_list .item .desc{max-height: 2.4rem;-webkit-line-clamp:2}
 	.des_sub .des_com_list .item{padding: 10px;margin-top: 10px}
 	.des_wrap .des_open  .slick-dots{margin-top: 0}
-	.des_open .item .left_area .name{width:calc(100% - 25px);}
 .des_interview{margin:30px 0}
 .des_goApp{padding:30px 0}
+	
+	.des_recom #recom_slide .slick-slide > div > div{padding: 5px }
+	.des_recom #recom_slide .slick-list{margin: 0 -5px}
 
 
 
