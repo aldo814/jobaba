@@ -26,7 +26,8 @@
 .mt10{margin-top: 10px}
 .mg50{margin: 50px 0}
 .mg60{margin: 60px 0}
-.des_wrap .slick-dots{text-align: center;margin-top: 30px;position: static;}
+.mg30{margin: 30px 0}
+.des_wrap .slick-dots{text-align: center;margin-top: 20px;position: static;}
 .des_wrap .slick-dots li{margin: 0 5px;cursor: pointer;display: inline-block;}
 .des_wrap .slick-dots li button{background: #e5e5e5;border-radius: 50%;width: 18px;height: 18px;text-indent: -9999px;}
 .des_wrap .slick-dots .slick-active button{background: #00a8cd}
@@ -60,16 +61,18 @@
 
 /* 메인 비쥬얼 */
 .des_visual{background: url('/resource/images/desEnt/main_vs.png') no-repeat bottom;background-size: cover;padding: 40px 0}
-.des_visual h2{color: #003281;font-size: 26px;}
-.des_visual h2 span{display: block;font-size: 20px;font-weight: 200;letter-spacing: 5px;padding-left: 45px;position: relative;}
+.des_visual h2{color: #003281;font-size: 32px;margin-bottom:24px;display:flex;align-items:center}
+.des_visual h2 span{display: inline-block;font-size: 20px;font-weight: 200;letter-spacing: 5px;padding-left: 45px;position: relative;}
 .des_visual h2 span:before{content: '';display: block;background: url('/resource/images/desEnt/mv_ico.png') no-repeat;width: 36px;height: 30px;position: absolute;left: 0;top: 50%;transform: translateY(-50%)}
-.des_visual p{color: #333;margin-top: 15px !important}
+.des_visual p{color: #333;margin-top: 10px !important}
 
 /*des_cont*/
 .des_cont .slick-slide:not(.slick-current) video {
   visibility: hidden !important;
 }
 
+
+.des_cont .slick-dotted.slick-slider{margin-bottom:0}
 .des_cont .des_cont_inner{display: flex;justify-content: space-between}
 .des_cont .des_cont_inner > div:nth-child(1){width:calc(42.06% - 40px)}
 .des_cont .des_cont_inner > div:nth-child(2){width:calc(34.92% - 40px)}
@@ -77,7 +80,7 @@
 .des_cont .des_cont_inner .top{font-size: 24px;padding-bottom: 20px;border-bottom: 1px solid #000;margin-bottom: 30px;font-weight: 400}
 .des_cont .des_cont_inner .des_intro .slick-list {margin: 0 -10px}
 .des_cont .des_cont_inner .des_intro .slick-slide {margin: 0 10px}
-.des_cont .des_cont_inner .video{height: 343px;width: 100%;position: relative;border-radius: 20px;background: #ddd;overflow: hidden}
+.des_cont .des_cont_inner .video{height: 337px;width: 100%;position: relative;border-radius: 20px;background: #ddd;overflow: hidden}
 .des_cont .des_cont_inner .video video{height: 100%;width: 100%;object-fit: fill;}
 .des_cont .des_cont_inner .video .vdo_inner{position: absolute;width: 100%;height: 100%;left: 0;top: 0;background: linear-gradient(180deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.471461716937355) 80%);z-index: 9999}
 .des_cont .des_cont_inner .video .playBtn{background: url('/resource/images/desEnt/play_btn.png') no-repeat;width: 42px;height: 42px;text-indent: -9999px;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%)}
@@ -103,7 +106,7 @@
 .des_cont .des_fair .txt .desc{font-size: 15px;color: #787878;letter-spacing:-0.3px}
 .des_cont .des_fair .txt .desc li{margin-bottom: 5px;}
 .des_cont .des_fair .txt .desc li:last-child{margin-bottom: 0}
-.des_cont .des_fair .txt .link{margin-top: 20px;color: #ff6163;font-weight: bold;text-align: right;display: block;font-size: 14px}
+.des_cont .des_fair .link{color: #ff6163;font-size: 13px}
 
 /* 탐나는 추천 기업 */
 .des_bg_gray{background: #f8f8f8;padding: 60px 0;}
@@ -117,9 +120,9 @@
 .des_wrap .des_sch label{width: 0px;height: 0px;overflow: hidden;text-indent: -9999px;position: absolute;left: -99999px;}
 .des_wrap .des_sch input[type="text"]{width: calc(100% - 50px);font-size: 14px;}
 .des_wrap .des_sch input[type="submit"]{background: url('/resource/images/desEnt/src_ico.png') no-repeat center right transparent;width: 30px ;height: 30px;border: 0;text-indent: -9999px;}
-.des_recom #recom_slide .slick-list  {margin: 0 -10px}
-.des_recom #recom_slide .slick-slide > div > div{padding: 10px}
-.des_recom .item {background: #fff;padding: 30px;border:1px solid #e6e6e6;border-radius: 15px;}
+.des_recom #recom_slide .slick-list  {margin: 0 -5px}
+.des_recom #recom_slide .slick-slide > div > div{padding: 5px}
+.des_recom .item {background: #fff;padding: 20px;border:1px solid #e6e6e6;border-radius: 15px;}
 .des_recom .item .cate{color: #9f9f9f;font-size: 14px;font-weight: bold;}
 .des_recom .item .name{font-size: 20px;margin: 13px 0}
 .des_recom .item .desc{font-size: 16px;color: #787878;text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; word-wrap:break-word; line-height:1.2em; height:2.4em;overflow: hidden}
@@ -129,6 +132,7 @@
 .des_wrap .like.active{border: 1px solid #ff6163;background: url('/resource/images/desEnt/like_active.png') no-repeat center;}
 .des_recom .cate,
 .des_recom .name{width: 100%;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.des_open .item .left_area .logo .long_txt{font-size: 24px}
 
 /* 추천채용공고 */
 .des_detailWrap ul.scr.addDiv > div.radio{margin:0;line-height:1.5}
@@ -138,36 +142,36 @@
 .des_detailWrap li.radio.addDiv > label > .radio label{margin: 8px 0}
 .des_open .des_top h3:before{content: '';display: block;background: url('/resource/images/desEnt/open_crt.png') no-repeat;width: 84px;height: 80px;position: absolute;left: 0;bottom: -10px;}
 .des_open .des_top h3 {padding-left: 95px}
-.des_open .item{background: #fff;padding: 30px;border:1px solid #e6e6e6;border-radius: 15px;display: flex;justify-content: space-between}
-.des_open .slick-list  {margin: 0 -10px}
-.des_open .slick-slide > div > div{padding: 10px}
+.des_open .item{background: #fff;padding: 20px;border:1px solid #e6e6e6;border-radius: 15px;display: flex;justify-content: space-between}
+.des_open .slick-list  {margin: 0 -5px}
+.des_open .slick-slide > div > div{padding: 5px}
 
-.des_open .item .left_area{width: 240px;}
-.des_open .item .left_area .img{border-radius: 15px;overflow: hidden;border: 1px solid #e6e6e6;margin-bottom: 5px;height: 154px;display: flex;flex-direction: column;justify-content: center;align-items: center;}
-.des_open .item .left_area .img img {display: block;width: 100%;height: 100%;}
-
+.des_open .item .left_area{width: 220px;}
+.des_open .item .left_area .logo{overflow: hidden;margin-bottom: 5px;display: flex;flex-direction: column;justify-content: center;align-items: center;height: 100%;}
+.des_open .item .left_area .logo p{font-size: 30px;text-align: center}
 .des_open .item .left_area .bottom{display: flex;justify-content: space-between;align-items: center;}
 .des_open .item .left_area .name{font-weight: 500;font-size: 18px;width: calc(100% - 50px)}
-.des_open .item .right_area{width: calc(100% - 270px);display:flex;flex-direction:column;}
+.des_open .item .right_area{width: calc(100% - 240px);display:flex;flex-direction:column;}
 .des_open .item .right_area .tit_wrap{display: flex;}
-.des_open .item .right_area .tit_wrap .tit{font-size: 20px;font-weight: 500;margin-left: 10px;width: calc(100% - 60px);white-space: nowrap;overflow: hidden;text-overflow: ellipsis; cursor: pointer;}
-.des_open .item .right_area .cate{font-size: 14px;font-weight: bold;color: #9f9f9f;margin: 10px 0 10px 0}
-.des_open .item .right_area .etc{display:flex;flex-wrap:wrap}
-.des_open .item .right_area .etc span{font-size: 16px;color: #787878;position: relative;padding-right: 10px;margin-right: 10px;}
+.des_open .item .right_area .tit_wrap .tit{font-size: 18px;font-weight: 500;width: 100%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis; cursor: pointer;}
+.des_open .item .right_area .cate{font-size: 14px;font-weight: bold;color: #9f9f9f;margin: 5px 0 5px 0}
+.des_open .item .right_area .etc{display:flex;flex-wrap:wrap;width: calc(100% - 180px)}
+.des_open .item .right_area .etc span{font-size: 14px;color: #787878;position: relative;padding-right: 10px;margin-right: 10px;}
 .des_open .item .right_area .etc span:after{content: '';display: block;width: 1px;height: 10px;background: #b5b5b5;right: 0;position: absolute;top: 8px}
 .des_open .item .right_area .etc span:last-child{margin-right: 0;padding-right: 0}
 .des_open .item .right_area .etc span:last-child:after{display: none}
+.des_open .item .right_area button.like{position: absolute;right: 0;bottom: 0;}
 .des_open .item .etc .textNull:after{display:none !important;}
 .des_open .item .etc .textNull {padding-right:0  !important;margin-right:0 !important}
-.des_open .item .right_area .area{margin-top: 5px;max-width: calc(100% - 180px);word-break:keep-all}
-.des_open .item .right_area .area span{color: #787878;font-size: 16px;display: inline-block;}
+.des_open .item .right_area .area{max-width: calc(100% - 180px);word-break:keep-all}
+.des_open .item .right_area .area span{color: #787878;font-size: 14px;display: inline-block;}
 .des_open .item .right_area .area span:after{content: ','}
 .des_open .item .right_area .area span:last-child:after{display: none}
 .des_open .item .right_area .top{position: relative;}
-.des_open .item .right_area .date{font-size: 14px;font-weight: bold;color: #000000;position: absolute;right: 0;bottom: 0;letter-spacing: 3px}
+.des_open .item .right_area .date{font-size: 14px;font-weight: bold;color: #000000;position: absolute;right: 40px;bottom: 5px;letter-spacing: 3px}
 .des_open .item .right_area .date.end{color: #ff6163;letter-spacing: 1px}
 .des_open .item .right_area .date.middle{color: #e69138;letter-spacing: 1px}
-.des_open .item .right_area .bottom{padding-top:15px;margin-top: 15px;border-top: 1px dotted #dcdcdc;display: flex;justify-content: space-between;align-items: flex-start}
+.des_open .item .right_area .bottom{padding-top:10px;margin-top: 10px;border-top: 1px dotted #dcdcdc;display: flex;justify-content: space-between;align-items: flex-start}
 .des_open .item .right_area .cert {width: calc(100% - 280px);display:flex;flex-wrap:wrap;}
 .des_open .item .right_area .cert span{font-size: 12px;color: #565454;background: #c6e7f0;border-radius: 5px;padding: 5px;margin: 5px 3px 0 0}
 .des_open .item .right_area .support {display: flex;align-items: flex-start;width: 260px;justify-content: flex-end;align-items: center}
@@ -190,7 +194,7 @@
 .des_interview #itv_slide .slick-list{margin:  0 -10px}
 .des_interview #itv_slide .slick-slide > div{width: 100%}
 .des_interview #itv_slide .slick-slide{margin:  0 10px}
-.des_interview #itv_slide .item{background: #f8f8f8;padding: 30px;border-radius: 15px;border: 1px solid #e6e6e6;height: 100%;width: 100%}
+.des_interview #itv_slide .item{background: #f8f8f8;padding: 20px;border-radius: 15px;border: 1px solid #e6e6e6;height: 100%;width: 100%}
 .des_interview #itv_slide .item .name{color: #38bab2;font-size: 14px;font-weight: 500;}
 .des_interview #itv_slide .item .q{font-size: 20px;font-weight: 500;margin: 10px 0 15px 0;word-break: keep-all;line-height: 1.8rem;max-height: 3.6rem;overflow: hidden;text-overflow: ellipsis;display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; word-wrap:break-word; }
 .des_interview #itv_slide .item .q:before{content: 'Q.';display: inline-block;margin-right: 3px}
@@ -245,7 +249,7 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 .des_btn_wrap .red_btn{background: #ff6163}
 
 .des_com_list{display: flex;flex-wrap: wrap;}
-.des_sub .des_com_list .item{padding: 30px;background: #fff;border-radius: 15px;border: 1px solid #e6e6e6;width: calc(50% - 10px);margin-right: 20px;display: flex;justify-content: space-between;margin-top: 20px}
+.des_sub .des_com_list .item{padding: 30px;background: #fff;border-radius: 15px;border: 1px solid #e6e6e6;width: calc(50% - 5px);margin-right: 10px;display: flex;justify-content: space-between;margin-bottom: 10px}
 .des_sub .des_com_list .item:nth-child(2n){margin-right: 0}
 .des_sub .des_com_list .item .left_area{width: 230px;display: flex;flex-direction: column}
 .des_sub .des_com_list .item .img{border-radius: 15px;overflow: hidden;border: 1px solid #e6e6e6;margin-bottom: 15px;height: 149px;display: flex;align-items: center;justify-content: center;}
@@ -268,7 +272,7 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 .des_sub .des_com_list  .item .right_area .cert  span{font-size: 12px;color: #565454;background: #c6e7f0;border-radius: 5px;padding: 2px 3px;margin:5px 3px 0 0}
 
 
-.des_sub .des_open .item{margin-bottom: 30px;}
+.des_sub .des_open .item{margin-bottom: 10px;}
 .des_sub .des_open .item:last-child{margin-bottom: 0}
 
 
@@ -280,6 +284,9 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 
 	.des_sub .des_com_list .item{width: 100%;margin-right: 0}
 	.des_sub .des_com_list .item .desc{height: auto;max-height: 3.6rem;}
+
+	.des_open .item .right_area .etc,
+	.des_open .item .right_area .area{max-width: calc(100% - 80px) ;width: 100%;}
 
 
 }
@@ -311,9 +318,17 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_open .item .right_area .bottom{flex-direction: column}
 	.des_open .item .right_area .cert{width: 100%;margin-bottom: 10px}
 	.des_open .item .right_area .support{width: auto;margin-left: auto}
+
+	.des_open .item .left_area{width: 160px;}
+	.des_open .item .left_area .logo p{font-size: 18px;}
+	.des_open .item .left_area .logo .long_txt{font-size: 16px}
+	.des_open .item .right_area{width: calc(100% - 180px)}
+
 }
 
 @media all and (max-width:768px){
+
+	.des_visual{background:#b8d9ff}
 	.des_open .item .right_area .etc span:after{top:5px}
 	.des_wrap .slick-dots{margin-top: 0px}
 	.mt30 {margin-top: 20px}
@@ -322,8 +337,8 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.mg60 {margin: 40px 0}
 
 	/* 메인 비쥬얼 */
-	.des_visual{padding: 50px 0}
-	.des_visual h2{font-size: 22px;}
+	.des_visual{padding: 20px 0}
+	.des_visual h2{font-size: 22px;margin-bottom:15px}
 	.des_visual h2 span{font-size: 14px;padding-left: 32px;margin-bottom: 5px}
 	.des_visual h2 span:before{background-size: 26px;width: 26px;height: 23px;}
 	.des_visual p{word-break: keep-all}
@@ -381,10 +396,9 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 
 	.des_goApp .txt h3:before{background-size: 35px;width: 35px;height: 41px;margin: 0 auto 10px auto}
 	.des_goApp .txt p{font-size: 13px;word-break: keep-all}
-	.des_goApp .txt p br{display: none}
 	.des_goApp .txt a{font-size: 13px;max-width: 150px;width: 100%;}
 
-	.des_interview #itv_slide .item{padding: 20px}
+	.des_interview #itv_slide .item{padding: 15px}
 	.des_interview #itv_slide .item .name{font-size: 12px}
 	.des_interview #itv_slide .item .q{font-size: 15px}
 	.des_interview #itv_slide .item .a{font-size: 13px}
@@ -415,7 +429,7 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_detailSearch input[type="text"]{font-size: 13px}
 	.des_detailSearch input[type="text"]{padding: 0}
 
-	
+
 	.des_sub .des_com_list .item .tit{font-size: 16px}
 	.des_sub .des_com_list .item .desc{font-size: 13px}
 	.des_sub .des_com_list .item .right_area .etc{font-size: 12px}
@@ -423,6 +437,23 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_sub .des_detailWrap .radio input[type=checkbox]~.text{padding-left: 25px}
 	.des_sub .des_detailWrap .radio input[type=checkbox]~.text:before,
 	.des_sub .des_detailWrap .radio input[type=checkbox] + span::after{width: 15px;height: 15px}
+	.des_interview .slick-track,
+	.des_interview .slick-track .slick-slide{display:block;}
+	.des_interview #itv_slide .item{height:auto}
+
+	.des_open .item{flex-direction: column;}
+	.des_open .item .left_area,
+	.des_open .item .right_area{width: 100%;}
+	.des_open .item .left_area .logo{justify-content: flex-start;align-items: flex-start;}
+	.des_open .item .left_area .logo p,
+	.des_open .item .left_area .long_txt p{font-size: 15px !important;text-align: left}
+	.des_open .item .right_area .tit_wrap .tit{width: calc(100% - 40px)}
+	.des_open .item .right_area .date{position: static;}
+	.des_open .item .right_area button.like{top: 0}
+	.des_open .item .right_area .etc, .des_open .item .right_area .area{max-width: 100%}
+
+	.des_detailArea{margin: 20px 0}
+
 }
 
 @media all and (max-width:640px){
@@ -430,43 +461,37 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	border-top: 1px dotted #e6e6e6 }
 	.des_detailWrap .item:nth-child(2),
 	.des_detailWrap .item:nth-child(3){margin-top: 20px;padding-top: 20px;border-top: 1px dotted #e6e6e6}
-
-	.des_open .item .left_area {width:180px}
-	.des_open .item .left_area .img{height:115px}
-	.des_open .item .right_area{width:calc(100% - 200px)}
-	.des_sub .des_com_list .item .left_area{width: 180px;}
-	.des_sub .des_com_list .item  .img{height: 115px}
+	.des_open .item .right_area .tit_wrap{align-items:center}
 	.des_open .item .right_area .tit_wrap .like{margin-right: 10px}
 
 
 	.des_detailWrap .scr.scroll-wrapper{display: none}
 	.des_detailWrap .item:nth-child(1) .scr.scroll-wrapper{display: block}
-	
-	
+
+	.des_open .item .left_area, .des_sub .des_com_list .item .left_area{width:100% }
 	.des_open .item{flex-direction: column;}
 	.des_open .item .left_area .img{display: none}
 	.des_open .item .left_area .bottom{justify-content: flex-start}
 	.des_open .item .left_area{width: 100%;}
 	.des_open .item .left_area .name{width: auto;max-width: calc(100% - 50px);padding-right: 10px;color: #888;font-size: 13px}
-	.des_open .item .right_area{width: 100%;margin-top: 10px}
-	.des_sub .des_com_list .item{padding: 15px;margin-top: 10px}
+	.des_open .item .right_area{width: 100%;}
+	.des_sub .des_com_list .item{padding: 15px;}
 	.des_sub .des_com_list .item{flex-direction: column;}
 	.des_sub .des_com_list .item .right_area,
 	.des_sub .des_com_list .item .left_area {width: 100%}
-	.des_sub .des_com_list .item .name{font-size: 13px;color: #888}
+	.des_sub .des_com_list .item .name a{font-size: 13px;color: #888}
 	.des_sub .des_com_list .item .bottom{justify-content: flex-start}
 	.des_sub .des_com_list .item .left_area .img{display: none}
-	.des_sub .des_com_list .item .name{width: auto;max-width: calc(100% - 50px);padding-right: 10px}
-	
+	.des_sub .des_com_list .item .name{width: auto;max-width: calc(100% - 50px);padding-right: 10px;font-size: 16px}
 
+	.des_interview #itv_slide .item{padding:10px}
 }
 
 @media all and (max-width:480px){
-	.des_visual p.f18{max-width: calc(100% - 150px)}
 	.des_visual p br{display: none}
-	.des_visual h2 span{font-size: 14px;margin-bottom: 10px}
+	.des_visual h2 span{font-size: 13px;margin-bottom: 10px}
 	.f18{font-size: 15px}
-	.des_visual h2{font-size: 22px;}
+	.des_visual h2{font-size: 18px;}
 	.des_cont .des_cont_inner .video .txt{padding: 10px }
 	.des_cont .des_cont_inner .video .txt .slogan{font-size: 13px;}
 
@@ -491,11 +516,8 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	 .des_interview h3 span{display: block;margin-left: 0}
 	.des_open .item .right_area .bottom{margin-top: 5px;padding-top:5px}
 
-	.des_open .item .left_area,
-	.des_sub .des_com_list .item .left_area{width: 125px}
 	.des_open .item .right_area,
 	.des_sub .des_com_list .item .right_area{width: 100%}
-	.des_open .item .right_area{margin-top:10px}
 	.des_open .item .right_area .cert{width: 100%}
 	.des_wrap .like{width:25px;height:25px;background-size:17px;}
 	.des_open .item .left_area .name,
@@ -506,29 +528,40 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_open .item .right_area .area{margin-top:0}
 	.des_open .item .right_area .cate{margin:5px 0}
 	.des_open .item .right_area .support button{width:auto;font-size:12px;padding:4px 7px}
-	
-	
+
+
 	.des_open .item .right_area .cert span,
-	.des_sub .des_com_list .item .right_area .cert span{font-size: 4px;padding: 3px}
+	.des_sub .des_com_list .item .right_area .cert span{font-size: 11px;padding: 3px}
 	.des_open .item .right_area .area{width: calc(100% - 20px);}
 	.des_open .item .right_area .date{font-size: 10px}
 	.des_sub .des_com_list .item .img{margin-bottom: 10px;height: 81px}
 	.des_sub .des_com_list .item .right_area .etc  span{font-size: 11px}
 	.des_sub .des_com_list .item .bottom{margin-top: 0}
-	.des_sub .des_com_list .item .desc{margin: 10px 0 10px 0}
+	.des_sub .des_com_list .item .desc{margin: 5px 0 5px 0}
 
 	.des_sub .des_com_list .item .desc{max-height: 2.4rem;-webkit-line-clamp:2}
-	.des_sub .des_com_list .item{padding: 10px;margin-top: 10px}
+	.des_sub .des_com_list .item{padding: 10px;}
 	.des_wrap .des_open  .slick-dots{margin-top: 0}
 .des_interview{margin:30px 0}
 .des_goApp{padding:30px 0}
-	
+
 	.des_recom #recom_slide .slick-slide > div > div{padding: 5px }
 	.des_recom #recom_slide .slick-list{margin: 0 -5px}
 
+	.des_recom .item{padding:10px}
+	.des_recom .item .cate,
+	.des_recom .item .desc{font-size:13px}
+	.des_recom .item .name{font-size:14px;margin:5px 0}
+	.des_recom .item .bottom{margin-top:10px;padding-top:10px}
+	.des_recom .item .desc{height:auto;min-height:2.4rem}
 
 
+	.des_detailArea{padding:15px}
 
+	.publicJob_main .pj_cont_list .btn_wrap button{padding:5px 30px}
+
+	.des_open .item .left_area .logo p,
+	.des_open .item .left_area .long_txt p{font-size: 14px !important}
 }
 
 @media all and (max-width:320px){
