@@ -191,9 +191,9 @@
 .des_interview h3:before{content: '';display: block;background: url('/resource/images/desEnt/itv_crt.png') no-repeat;width: 74px;height: 80px;position: absolute;left: 0;bottom: 0;}
 .des_interview h3 span{font-size: 16px;display: inline-block;margin-left: 10px;color: #787878;font-weight: 400}
 .des_interview #itv_slide{margin-top: 40px;}
-.des_interview #itv_slide .slick-list{margin:  0 -10px}
+.des_interview #itv_slide .slick-list{margin:  0 -5px}
 .des_interview #itv_slide .slick-slide > div{width: 100%}
-.des_interview #itv_slide .slick-slide{margin:  0 10px}
+.des_interview #itv_slide .slick-slide{margin:  0 5px}
 .des_interview #itv_slide .item{background: #f8f8f8;padding: 20px;border-radius: 15px;border: 1px solid #e6e6e6;height: 100%;width: 100%}
 .des_interview #itv_slide .item .name{color: #38bab2;font-size: 14px;font-weight: 500;}
 .des_interview #itv_slide .item .q{font-size: 20px;font-weight: 500;margin: 10px 0 15px 0;word-break: keep-all;line-height: 1.8rem;max-height: 3.6rem;overflow: hidden;text-overflow: ellipsis;display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; word-wrap:break-word; }
@@ -249,7 +249,7 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 .des_btn_wrap .red_btn{background: #ff6163}
 
 .des_com_list{display: flex;flex-wrap: wrap;}
-.des_sub .des_com_list .item{padding: 30px;background: #fff;border-radius: 15px;border: 1px solid #e6e6e6;width: calc(50% - 5px);margin-right: 10px;display: flex;justify-content: space-between;margin-bottom: 10px}
+.des_sub .des_com_list .item{padding: 20px;background: #fff;border-radius: 15px;border: 1px solid #e6e6e6;width: calc(50% - 5px);margin-right: 10px;display: flex;justify-content: space-between;margin-bottom: 10px}
 .des_sub .des_com_list .item:nth-child(2n){margin-right: 0}
 .des_sub .des_com_list .item .left_area{width: 230px;display: flex;flex-direction: column}
 .des_sub .des_com_list .item .img{border-radius: 15px;overflow: hidden;border: 1px solid #e6e6e6;margin-bottom: 15px;height: 149px;display: flex;align-items: center;justify-content: center;}
@@ -367,7 +367,7 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_cont .des_fair .txt .desc{font-size: 14px;}
 	.des_wrap .des_hr{margin: 20px 0}
 	.des_wrap .des_sch{margin: 20px 0 20px 0}
-	.des_recom .item{padding: 20px}
+	.des_recom .item{padding: 15px}
 	.des_recom .item .cate{font-size: 13px}
 	.des_recom .item .name{font-size: 16px}
 	.des_recom .item .desc{font-size: 14px;}
@@ -377,7 +377,7 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_open .des_top h3{padding-left: 60px}
 	.des_wrap .des_top h3{padding-left: 60px}
 	.des_wrap .des_top h3:before{background-size: 50px;width: 50px;height: 54px}
-	.des_open .item{padding: 20px}
+	.des_open .item{padding: 15px}
 	.des_open .item .right_area .bottom{display: block;}
 	.des_open .item .left_area .name{font-size: 16px}
 	.des_open .item .right_area .tit_wrap .tit{font-size: 16px}
@@ -429,8 +429,8 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_detailSearch input[type="text"]{font-size: 13px}
 	.des_detailSearch input[type="text"]{padding: 0}
 
-
-	.des_sub .des_com_list .item .tit{font-size: 16px}
+	.des_sub .des_com_list .item{padding:20px}
+	.des_sub .des_com_list .item .tit{font-size: 16px;}
 	.des_sub .des_com_list .item .desc{font-size: 13px}
 	.des_sub .des_com_list .item .right_area .etc{font-size: 12px}
 
@@ -484,7 +484,6 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_sub .des_com_list .item .left_area .img{display: none}
 	.des_sub .des_com_list .item .name{width: auto;max-width: calc(100% - 50px);padding-right: 10px;font-size: 16px}
 
-	.des_interview #itv_slide .item{padding:10px}
 }
 
 @media all and (max-width:480px){
@@ -529,6 +528,7 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_open .item .right_area .cate{margin:5px 0}
 	.des_open .item .right_area .support button{width:auto;font-size:12px;padding:4px 7px}
 
+	.des_interview #itv_slide .item{padding:10px}
 
 	.des_open .item .right_area .cert span,
 	.des_sub .des_com_list .item .right_area .cert span{font-size: 11px;padding: 3px}
@@ -548,6 +548,8 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_recom #recom_slide .slick-slide > div > div{padding: 5px }
 	.des_recom #recom_slide .slick-list{margin: 0 -5px}
 
+	.des_recom .item,
+	.des_open .item,
 	.des_recom .item{padding:10px}
 	.des_recom .item .cate,
 	.des_recom .item .desc{font-size:13px}
