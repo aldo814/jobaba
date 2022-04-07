@@ -59,12 +59,16 @@
 .des_interview .item a:active .a,
 .des_interview .item a:focus .a{text-decoration: underline}
 
+
+
 /* 메인 비쥬얼 */
 .des_visual{background: url('/resource/images/desEnt/main_vs.png') no-repeat bottom;background-size: cover;padding: 40px 0}
 .des_visual h2{color: #003281;font-size: 32px;margin-bottom:24px;display:flex;align-items:center}
 .des_visual h2 span{display: inline-block;font-size: 20px;font-weight: 200;letter-spacing: 5px;padding-left: 45px;position: relative;}
 .des_visual h2 span:before{content: '';display: block;background: url('/resource/images/desEnt/mv_ico.png') no-repeat;width: 36px;height: 30px;position: absolute;left: 0;top: 50%;transform: translateY(-50%)}
 .des_visual p{color: #333;margin-top: 10px !important}
+
+ .radio input[type="checkbox"]:active .text{outline: none}
 
 /*des_cont*/
 .des_cont .slick-slide:not(.slick-current) video {
@@ -396,7 +400,7 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 
 	.des_goApp .txt h3:before{background-size: 35px;width: 35px;height: 41px;margin: 0 auto 10px auto}
 	.des_goApp .txt p{font-size: 13px;word-break: keep-all}
-	.des_goApp .txt a{font-size: 13px;max-width: 150px;width: 100%;}
+	.des_goApp .txt a{font-size: 13px;max-width: 160px;width: 100%;}
 
 	.des_interview #itv_slide .item{padding: 15px}
 	.des_interview #itv_slide .item .name{font-size: 12px}
@@ -454,6 +458,9 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 
 	.des_detailArea{margin: 20px 0}
 
+	.des_detailArea{padding:20px}
+
+
 }
 
 @media all and (max-width:640px){
@@ -483,6 +490,11 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_sub .des_com_list .item .bottom{justify-content: flex-start}
 	.des_sub .des_com_list .item .left_area .img{display: none}
 	.des_sub .des_com_list .item .name{width: auto;max-width: calc(100% - 50px);padding-right: 10px;font-size: 16px}
+
+	.des_detailWrap{padding:0px 10px 0px 10px;margin:15px 0}
+	.des_detailWrap .tit{padding:10px}
+
+	.des_sub .des_detailWrap .scr{padding-left:10px}
 
 }
 
@@ -527,8 +539,6 @@ input[type=checkbox]~.text:before{width: 15px !important;height: 15px !important
 	.des_open .item .right_area .area{margin-top:0}
 	.des_open .item .right_area .cate{margin:5px 0}
 	.des_open .item .right_area .support button{width:auto;font-size:12px;padding:4px 7px}
-
-	.des_interview #itv_slide .item{padding:10px}
 
 	.des_open .item .right_area .cert span,
 	.des_sub .des_com_list .item .right_area .cert span{font-size: 11px;padding: 3px}

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Document</title>
+	<!-- 잡아바 css-->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/common.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/style.jobInfo.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery-ui.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/style.epmtDiag.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
+	<!-- //잡아바 css-->
+
+	<!--추가 css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.css" />
+	<link rel="stylesheet" href="css/new_entEmpmn.css">
+
+
+
+</head>
+
+<body>
+	<div class="contents-wrap">
+		<div class="containerNew2 clearfix">
+
+			<link type="text/css" rel="stylesheet" href="/resource/css/app.min.css">
+			<link type="text/css" rel="stylesheet" href="/resource/css/jquery.timepicker.min.css">
+			<script type="text/javascript" charset="utf-8" src="/resource/js/lib/datepicker/bootstrap-datepicker.js"></script>
+			<script type="text/javascript" charset="utf-8" src="/resource/js/lib/timepicker/bootstrap-timepicker.js"></script>
+
+
+			<div class="list-wrap">
+				<div class="category-wrap">
+					<div class="category_area b_t">
+						<p class="s_tit">채용정보</p>
+						<ul>
+							<li class="on">
+								<a href="/empmn/enterpriseEmployList.do">기업채용정보</a>
+							</li>
+							<li>
+								<a href="/empmn/publicJobEmployList.do">공공일자리</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="m_list_bnr swiper-container-initialized swiper-container-horizontal">
+						<ul class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-480px, 0px, 0px);">
+							<li class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 240px;">
+								<a href="" onclick="" target="_blank" title="새창 열림">
+									<img src="https://www.jobaba.net/file/image.do?filePath=oHZkmqUgwFTFxWvHz6/EG8eZ7cE9Z+IId9eOAj4787LhcEP1fxGs+OLIypKVs1i9" alt="">
+								</a>
+							</li>
+							<li class="swiper-slide swiper-slide-duplicate-active swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="0" style="width: 240px;">
+								<a href="" onclick="" target="_blank" title="새창 열림">
+									<img src="https://www.jobaba.net/file/image.do?filePath=oHZkmqUgwFTFxWvHz6/EG8eZ7cE9Z+IId9eOAj4787LhcEP1fxGs+OLIypKVs1i9" alt="">
+								</a>
+							</li>
+							<li class="swiper-slide swiper-slide-duplicate swiper-slide-active swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 240px;">
+								<a href="" onclick="" target="_blank" title="새창 열림">
+									<img src="https://www.jobaba.net/file/image.do?filePath=oHZkmqUgwFTFxWvHz6/EG8eZ7cE9Z+IId9eOAj4787LhcEP1fxGs+OLIypKVs1i9" alt="">
+								</a>
+							</li>
+						</ul>
+						<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span></div>
+						<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+					</div>
+				</div>
+				<form id="empmnFrm" name="empmnFrm" method="post" class="form-horizontal" novalidate="novalidate">
+					<input type="hidden" id="seq" name="seq" value="">
+					<input type="hidden" id="recordCountPerPage" name="recordCountPerPage" value="">
+					<input type="hidden" id="currentPageNo" name="currentPageNo" value="">
+					<input type="hidden" id="myPageYN" name="myPageYN" value="">
+
+					<div class="list_con-wrap clearfix">
+						<h2 class="tit">채용정보</h2>
+
+						<div class="box mgb20" style="letter-spacing: -0.3px">
+							음란성, 폭력성, 명예 훼손, 미풍양속 위반, 불법 정보, 도배, 지적재산권 침해 등의 경우, 사전 통보없이 삭제될 수 있으므로, 참조하시기 바랍니다.
+						</div>
+						<div class="view">
+
+							<input type="hidden" name="expoYn" value="N">
+							<dl>
+								<dt>
+									<span class="f_red" title="필수항목">*</span> 공고제목
+								</dt>
+								<dd>
+									<input type="text" class="comm_input w100p m_wide" id="title" name="title" value="" placeholder="공고명을 입력하세요" title="공고제목">
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									<span class="f_red" title="필수항목">*</span> 모집분야
+								</dt>
+								<!-- 추가 작업영역-->
+								<dd class="recruit_area">
+									<button type="button" class="btn btn_green btn-sm" onclick="javascript:recPop()">모집분야 검색</button>
+									<p class="mgt10" style="display: none">모집분야를 등록해주세요.</p>
+
+									<!--선택완료시-->
+									<div class="add_area" style="display: flex">
+										<p>경영ㆍ사무ㆍ금융ㆍ보험 > 교육ㆍ법률ㆍ복지ㆍ의료ㆍ예술ㆍ방송ㆍ정보통신 등 전문서비스 관리직 > 조사, 인력공급ㆍ
+											알선 및 기타 전문서비스 관리자(부서장) </p>
+										<button type="button" class="del">X</button>
+									</div>
+									<!--선택완료시-->
+
+									<!-- 선택 팝업-->
+									<div class="modal fade in ent_pop ent_select" id="entPop">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header header-primary">
+													<button type="button" class="close" onclick="javascript:closePop()"><span>×</span></button>
+													<h4 class="modal-title">모집분야 검색</h4>
+												</div>
+												<div class="modal-body">
+													<div class="container-fluid">
+														<table class="board-view-tp01">
+															<caption>모집분야검색</caption>
+															<tbody>
+																<tr>
+																	<th class="tlt" colspan="3">모집분야를 검색 또는 선택해주세요.</th>
+																</tr>
+																<tr class="m_ent">
+																	<td>
+																		<ul class="scr scrollbar-outer">
+																			<li class="inp_chk">
+																				<input type="radio" id="check01" name="check_dept1">
+																				<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
+																			</li>
+
+
+																			<li class="inp_chk">
+																				<input type="radio" id="check02" name="check_dept1">
+																				<label for="check02" class="lb_tag">연구 및 공학기술</label>
+																			</li>
+
+																			<li class="inp_chk">
+																				<input type="radio" id="check03" name="check_dept1">
+																				<label for="check03" class="lb_tag">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인</label>
+
+																			</li>
+																			<li class="inp_chk"><input type="radio" id="check04" name="check_dept1">
+																				<label for="check04" class="lb_tag">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인보건ㆍ의료</label>
+																			</li>
+																			<li class="inp_chk">
+																				<input type="radio" id="check05" name="check_dept1">
+																				<label for="check05" class="lb_tag">예술ㆍ디자인ㆍ방송ㆍ스포츠</label>
+																			</li>
+																		</ul>
+																	</td>
+																	<td>
+																		<ul class="scr scrollbar-outer">
+																			<li class="inp_chk">
+																				<input type="radio" id="check06" name="check_dept2">
+																				<label for="check06" class="lb_tag">행정ㆍ경영ㆍ금융ㆍ보험 관리직
+																				</label>
+																			</li>
+
+
+																			<li class="inp_chk">
+																				<input type="radio" id="check07" name="check_dept2">
+																				<label for="check07" class="lb_tag">교육ㆍ법률ㆍ복지ㆍ의료ㆍ예술ㆍ방송ㆍ정보통신 등 전문서비스 관리직
+																				</label>
+																			</li>
+
+																			<li class="inp_chk">
+																				<input type="radio" id="check08" name="check_dept2">
+																				<label for="check08" class="lb_tag">미용ㆍ여행ㆍ숙박ㆍ음식 등 개인서비스 및 영업ㆍ판매ㆍ운송 관리직
+																				</label>
+
+																			</li>
+																			<li class="inp_chk"><input type="radio" id="check09" name="check_dept2">
+																				<label for="check09" class="lb_tag">건설ㆍ채굴ㆍ제조ㆍ생산 관리직
+																				</label>
+																			</li>
+																			<li class="inp_chk">
+																				<input type="radio" id="check10" name="check_dept2">
+																				<label for="check10" class="lb_tag">행정ㆍ경영ㆍ회계ㆍ광고ㆍ상품기획 전문가
+																				</label>
+																			</li>
+																		</ul>
+																	</td>
+																	<td>
+																		<ul class="scr scrollbar-outer">
+																			<li class="inp_chk">
+																				<input type="radio" id="check11" name="check_dept3">
+																				<label for="check11" class="lb_tag">국회의원ㆍ고위공무원 및 공공단체임원
+																				</label>
+																			</li>
+
+
+																			<li class="inp_chk">
+																				<input type="radio" id="check12" name="check_dept3">
+																				<label for="check12" class="lb_tag">기업 고위임원
+																				</label>
+																			</li>
+
+																			<li class="inp_chk">
+																				<input type="radio" id="check13" name="check_dept3">
+																				<label for="check13" class="lb_tag">정부행정 관리자
+																				</label>
+
+																			</li>
+																			<li class="inp_chk"><input type="radio" id="check14" name="check_dept3">
+																				<label for="check14" class="lb_tag">경영지원 관리자
+																				</label>
+																			</li>
+																			<li class="inp_chk">
+																				<input type="radio" id="check15" name="check_dept3">
+																				<label for="check15" class="lb_tag">예술ㆍ디자인ㆍ방송ㆍ스포츠</label>
+																			</li>
+																		</ul>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+
+
+
+													</div>
+
+													<div class="btn_trt">
+														<button type="button" class="btn btn_green">선택</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- //선택 팝업-->
+
+
+								</dd>
+								<!--//추가 작업영역-->
+							</dl>
+							<input type="hidden" id="mngCd" name="mngCd" class="form-control" value="ENT">
+
+							<dl>
+								<dt>
+									<span class="f_red" title="필수항목">*</span> 고용형태
+								</dt>
+								<dd>
+									<div class="ele_inline">
+										<div class="radio radio radio-inline"> <label for="empTpCd1"> <input type="checkbox" id="empTpCd1" name="empTpCd" value="01" title=""> <span class="text"><i></i>정규직</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="empTpCd2"> <input type="checkbox" id="empTpCd2" name="empTpCd" value="02" title=""> <span class="text"><i></i>계약직</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="empTpCd3"> <input type="checkbox" id="empTpCd3" name="empTpCd" value="03" title=""> <span class="text"><i></i>인턴직</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="empTpCd4"> <input type="checkbox" id="empTpCd4" name="empTpCd" value="04" title=""> <span class="text"><i></i>기타/아르바이트</span> </label></div>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									<span class="f_red" title="필수항목">*</span> 접수기간
+								</dt>
+								<dd>
+									<div class="picker_wrap">
+										<div class="input-group">
+											<span class="input-group-addon">
+												<i class="fa fa-calendar"></i>
+											</span>
+											<label for="rqtBgnDe" style="display: none;">접수시작일</label>
+											<input type="text" id="rqtBgnDe" name="rqtBgnDe" class="comm_input datepicker_cnts" data-date-format="dd-mm-yyyy" value="" title="접수기간 시작일" placeholder="yyyy-mm-dd">
+										</div>
+										<div class="input-group">
+											<input type="text" id="rqtBgnHr" name="rqtBgnHr" value="0:00" class="comm_input timepicker_cnts" title="접수기간 시작 시간">
+											<span class="input-group-addon"> <i class="fa fa-clock-o"></i></span>
+										</div>
+										<div class="text-center">~</div>
+										<div class="input-group">
+											<span class="input-group-addon">
+												<i class="fa fa-calendar"></i>
+											</span>
+											<label for="rqtEndDe" style="display: none;">접수종료일</label>
+											<input type="text" id="rqtEndDe" name="rqtEndDe" class="comm_input datepicker_cnts" data-date-format="dd-mm-yyyy" value="" title="접수기간 종료일" placeholder="yyyy-mm-dd">
+										</div>
+										<div class="input-group">
+											<input type="text" style="width: 100px" id="rqtEndHr" name="rqtEndHr" value="23:59" class="comm_input timepicker_cnts" title="접수기간 종료 시간">
+											<span class="input-group-addon"> <i class="fa fa-clock-o"></i></span>
+										</div>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									<span class="f_red" title="필수항목">*</span> 채용구분
+								</dt>
+								<dd>
+									<div class="ele_inline">
+										<div class="radio radio radio-inline"> <label for="careerCd1"> <input type="radio" id="careerCd1" name="careerCd" value="02" title=""> <span class="text"><i></i>신입</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="careerCd2"> <input type="radio" id="careerCd2" name="careerCd" value="03" title=""> <span class="text"><i></i>경력</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="careerCd3"> <input type="radio" id="careerCd3" name="careerCd" value="04" title=""> <span class="text"><i></i>신입/경력</span> </label></div>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									<span class="f_red" title="필수항목">*</span> 채용인원
+								</dt>
+								<dd>
+									<input type="text" id="recrtPrsn" name="recrtPrsn" class="comm_input w30p m_wide" value="" placeholder="채용인원을 입력하세요 ex)10" title="채용인원">
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									<span class="f_red" title="필수항목">*</span> 학력
+								</dt>
+								<dd>
+									<div class="ele_inline">
+										<div class="radio radio radio-inline"> <label for="acdmcrCd1"> <input type="checkbox" id="acdmcrCd1" name="acdmcrCd" value="00" title=""> <span class="text"><i></i>학력무관</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="acdmcrCd2"> <input type="checkbox" id="acdmcrCd2" name="acdmcrCd" value="01" title=""> <span class="text"><i></i>초졸이하</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="acdmcrCd3"> <input type="checkbox" id="acdmcrCd3" name="acdmcrCd" value="02" title=""> <span class="text"><i></i>중졸</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="acdmcrCd4"> <input type="checkbox" id="acdmcrCd4" name="acdmcrCd" value="03" title=""> <span class="text"><i></i>고졸</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="acdmcrCd5"> <input type="checkbox" id="acdmcrCd5" name="acdmcrCd" value="04" title=""> <span class="text"><i></i>대졸(2~3년)</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="acdmcrCd6"> <input type="checkbox" id="acdmcrCd6" name="acdmcrCd" value="05" title=""> <span class="text"><i></i>대졸(4년)</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="acdmcrCd7"> <input type="checkbox" id="acdmcrCd7" name="acdmcrCd" value="06" title=""> <span class="text"><i></i>석사</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="acdmcrCd8"> <input type="checkbox" id="acdmcrCd8" name="acdmcrCd" value="07" title=""> <span class="text"><i></i>박사</span> </label></div>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									생애주기
+								</dt>
+								<dd>
+									<div class="ele_inline">
+										<div class="radio radio radio-inline"> <label for="lfcCd1"> <input type="checkbox" id="lfcCd1" name="lfcCd" value="01" title=""> <span class="text"><i></i>청년(18~34세)</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="lfcCd2"> <input type="checkbox" id="lfcCd2" name="lfcCd" value="02" title=""> <span class="text"><i></i>중년(35~49세)</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="lfcCd3"> <input type="checkbox" id="lfcCd3" name="lfcCd" value="04" title=""> <span class="text"><i></i>장년(50~64세)</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="lfcCd4"> <input type="checkbox" id="lfcCd4" name="lfcCd" value="03" title=""> <span class="text"><i></i>어르신(65세이상)</span> </label></div>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									특화대상
+								</dt>
+								<dd>
+									<div class="ele_inline">
+										<div class="radio radio radio-inline"> <label for="spclzTrgetCd1"> <input type="radio" id="spclzTrgetCd1" name="spclzTrgetCd" value="01" title=""> <span class="text"><i></i>경력단절여성</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="spclzTrgetCd2"> <input type="radio" id="spclzTrgetCd2" name="spclzTrgetCd" value="02" title=""> <span class="text"><i></i>장애인</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="spclzTrgetCd3"> <input type="radio" id="spclzTrgetCd3" name="spclzTrgetCd" value="03" title=""> <span class="text"><i></i>다문화, 새터민</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="spclzTrgetCd4"> <input type="radio" id="spclzTrgetCd4" name="spclzTrgetCd" value="04" title=""> <span class="text"><i></i>저소득층</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="spclzTrgetCd5"> <input type="radio" id="spclzTrgetCd5" name="spclzTrgetCd" value="05" title=""> <span class="text"><i></i>신혼부부</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="spclzTrgetCd6"> <input type="radio" id="spclzTrgetCd6" name="spclzTrgetCd" value="06" title=""> <span class="text"><i></i>다자녀</span> </label></div>
+										<div class="radio radio radio-inline"> <label for="spclzTrgetCd7"> <input type="radio" id="spclzTrgetCd7" name="spclzTrgetCd" value="07" title=""> <span class="text"><i></i>외국인(재외국인)</span> </label></div>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									홈페이지URL
+								</dt>
+								<dd>
+									<input type="text" id="homeUrl" name="homeUrl" class="comm_input w100p m_wide" placeholder="홈페이지 주소를 입력하세요. ex) https://www.naver.com" value="">
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									<span class="f_red" title="필수항목">*</span> 근무지역
+								</dt>
+								<dd>
+									<div class="ele_inline zoneType">
+										<div class="radio checkbox-inline"> <label for="jobAreaCd1"> <input type="checkbox" id="jobAreaCd1" name="jobAreaCd" value="4100" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>경기전체</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd2"> <input type="checkbox" id="jobAreaCd2" name="jobAreaCd" value="4182" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>가평군</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd3"> <input type="checkbox" id="jobAreaCd3" name="jobAreaCd" value="4128" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>고양시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd4"> <input type="checkbox" id="jobAreaCd4" name="jobAreaCd" value="4129" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>과천시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd5"> <input type="checkbox" id="jobAreaCd5" name="jobAreaCd" value="4121" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>광명시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd6"> <input type="checkbox" id="jobAreaCd6" name="jobAreaCd" value="4161" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>광주시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd7"> <input type="checkbox" id="jobAreaCd7" name="jobAreaCd" value="4131" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>구리시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd8"> <input type="checkbox" id="jobAreaCd8" name="jobAreaCd" value="4141" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>군포시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd9"> <input type="checkbox" id="jobAreaCd9" name="jobAreaCd" value="4157" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>김포시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd10"> <input type="checkbox" id="jobAreaCd10" name="jobAreaCd" value="4136" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>남양주시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd11"> <input type="checkbox" id="jobAreaCd11" name="jobAreaCd" value="4125" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>동두천시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd12"> <input type="checkbox" id="jobAreaCd12" name="jobAreaCd" value="4119" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>부천시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd13"> <input type="checkbox" id="jobAreaCd13" name="jobAreaCd" value="4113" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>성남시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd14"> <input type="checkbox" id="jobAreaCd14" name="jobAreaCd" value="4111" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>수원시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd15"> <input type="checkbox" id="jobAreaCd15" name="jobAreaCd" value="4139" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>시흥시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd16"> <input type="checkbox" id="jobAreaCd16" name="jobAreaCd" value="4127" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>안산시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd17"> <input type="checkbox" id="jobAreaCd17" name="jobAreaCd" value="4155" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>안성시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd18"> <input type="checkbox" id="jobAreaCd18" name="jobAreaCd" value="4117" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>안양시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd19"> <input type="checkbox" id="jobAreaCd19" name="jobAreaCd" value="4163" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>양주시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd20"> <input type="checkbox" id="jobAreaCd20" name="jobAreaCd" value="4183" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>양평군</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd21"> <input type="checkbox" id="jobAreaCd21" name="jobAreaCd" value="4167" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>여주시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd22"> <input type="checkbox" id="jobAreaCd22" name="jobAreaCd" value="4180" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>연천군</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd23"> <input type="checkbox" id="jobAreaCd23" name="jobAreaCd" value="4137" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>오산시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd24"> <input type="checkbox" id="jobAreaCd24" name="jobAreaCd" value="4146" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>용인시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd25"> <input type="checkbox" id="jobAreaCd25" name="jobAreaCd" value="4143" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>의왕시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd26"> <input type="checkbox" id="jobAreaCd26" name="jobAreaCd" value="4115" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>의정부시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd27"> <input type="checkbox" id="jobAreaCd27" name="jobAreaCd" value="4150" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>이천시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd28"> <input type="checkbox" id="jobAreaCd28" name="jobAreaCd" value="4148" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>파주시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd29"> <input type="checkbox" id="jobAreaCd29" name="jobAreaCd" value="4122" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>평택시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd30"> <input type="checkbox" id="jobAreaCd30" name="jobAreaCd" value="4165" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>포천시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd31"> <input type="checkbox" id="jobAreaCd31" name="jobAreaCd" value="4145" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>하남시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd32"> <input type="checkbox" id="jobAreaCd32" name="jobAreaCd" value="4159" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>화성시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd33"> <input type="checkbox" id="jobAreaCd33" name="jobAreaCd" value="1100" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>서울특별시</span> </label></div>
+										<div class="radio checkbox-inline"> <label for="jobAreaCd34"> <input type="checkbox" id="jobAreaCd34" name="jobAreaCd" value="2800" title="" onclick="onJobAreaCheck(this);"> <span class="text"><i></i>인천광역시</span> </label></div>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									<span class="f_red" title="필수항목">*</span> 문의처
+								</dt>
+								<dd>
+									<input type="text" id="questnPlc" name="questnPlc" class="comm_input w100p m_wide" value="">
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									<span class="f_red" title="필수항목">*</span> 인사담당자
+								</dt>
+								<dd>
+									<input type="text" id="chgrNm" name="chgrNm" class="comm_input w100p m_wide" value="">
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									<span class="f_red" title="필수항목">*</span> 온라인면접사용
+								</dt>
+								<dd>
+									<div class="ele_inline">
+										<div class="radio radio checkbox-inline"> <label for="onIntrviewCd1"> <input type="radio" id="onIntrviewCd1" name="onIntrviewCd" value="0" title=""> <span class="text"><i></i>사용안함</span> </label></div>
+										<div class="radio radio checkbox-inline"> <label for="onIntrviewCd2"> <input type="radio" id="onIntrviewCd2" name="onIntrviewCd" value="1" title=""> <span class="text"><i></i>VOD 면접</span> </label></div>
+									</div>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt>
+									우대사항
+								</dt>
+								<dd>
+									<input type="text" id="pfCond" name="pfCond" class="comm_input w100p m_wide" placeholder="우대사항을 입력하세요" value="">
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									복리후생
+								</dt>
+								<dd>
+									<input type="text" id="etcWelfare" name="etcWelfare" class="comm_input w100p m_wide" placeholder="복리후생을 입력하세요 ex)기숙자 제공, 석식 제공" value="">
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									<span class="f_red" title="필수항목">*</span> 급여조건
+								</dt>
+								<dd>
+									<input type="text" id="payCond" name="payCond" class="comm_input w100p m_wide" placeholder="급여조건을 입력하세요 ex)월300, 회사 내규" value="">
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									<span class="f_red" title="필수항목">*</span> 노출여부
+								</dt>
+								<dd>
+									<div class="ele_inline">
+										<div class="radio radio checkbox-inline"> <label for="useYn1"> <input type="radio" id="useYn1" name="useYn" value="Y" title=""> <span class="text"><i></i>노출</span> </label></div>
+										<div class="radio radio checkbox-inline"> <label for="useYn2"> <input type="radio" id="useYn2" name="useYn" value="N" title=""> <span class="text"><i></i>비노출</span> </label></div>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									<span class="f_red" title="필수항목">*</span> 추천요청여부
+								</dt>
+								<dd>
+									<div class="ele_inline">
+										<div class="radio radio checkbox-inline"> <label for="recomYn1"> <input type="radio" id="recomYn1" name="recomYn" value="R" title=""> <span class="text"><i></i>추천 요청</span> </label></div>
+										<div class="radio radio checkbox-inline"> <label for="recomYn2"> <input type="radio" id="recomYn2" name="recomYn" value="N" title=""> <span class="text"><i></i>추천 미요청</span> </label></div>
+										<br>
+										※추천요청 시 상담사가 기업에 적합한 인재를 추천해 드립니다.
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									관련태그
+								</dt>
+								<dd>
+									<div class="mem_agree_box agree_user_info">
+										<input type="text" id="keyword" name="keyword" class="comm_input w100p m_wide" placeholder="관련태그를 입력해주세요. ex) #4차산업" maxlength="200" value="">
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									<span class="f_red" title="필수항목">*</span> 상세내용
+								</dt>
+								<dd>
+
+
+
+
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+									첨부파일
+								</dt>
+								<dd>
+									<div style="width:100% margin: 0 auto; text-align:right;">
+										<input type="hidden" id="fileAlias" name="fileAlias" value="UPLOAD192" style="width:150px;">
+										<input type="hidden" id="UPLOAD192_create" name="UPLOAD192_create" value="" style="width:150px;">
+										<input type="hidden" id="UPLOAD192_delete" name="UPLOAD192_delete" value="" style="width:150px;">
+										<button type="button" onclick="UPLOAD192_addFile()" class="btn btn-inverse">파일추가</button> <button type="button" onclick="UPLOAD192_deltFile()" class="btn btn-inverse">파일삭제</button>
+									</div>
+									<div style="width:100%; margin: 0 auto;">
+										<script type="text/javascript">
+											//<![CDATA[
+											//DEXT5UPLOAD.config.Mode				= "download";
+											DEXT5UPLOAD.config.Runtimes = "html5";
+											DEXT5UPLOAD.config.DevelopLangage = "JAVA";
+											DEXT5UPLOAD.config.DialogWindow = parent.window;
+											DEXT5UPLOAD.config.MultiFileSelect = false;
+											DEXT5UPLOAD.config.ButtonBarEdit = "0";
+											DEXT5UPLOAD.config.ButtonBarView = "0";
+
+											DEXT5UPLOAD.config.Width = "100%";
+											DEXT5UPLOAD.config.Height = "100px";
+											DEXT5UPLOAD.config.MaxTotalFileSize = "1GB";
+											DEXT5UPLOAD.config.MaxOneFileSize = "1GB";
+											DEXT5UPLOAD.config.MaxTotalFileCount = "";
+											DEXT5UPLOAD.config.ExtensionAllowOrLimit = "0";
+											var upload = new Dext5Upload("UPLOAD192");
+											//]]>
+										</script>
+										<div id="dext5uploader_holder_UPLOAD192" style="width:100%; height:100px"><iframe id="dext5uploader_frame_UPLOAD192" title="DEXT5Upload UPLOAD192" frameborder="0" src="" style="width: 100%; height: 100%; border-width: 0px;"></iframe></div>
+									</div>
+
+
+									<script type="text/javascript">
+										function UPLOAD192_UploadLoad() {
+											$.ajax({
+												url: "/file/getFileList.do",
+												type: "POST",
+												contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+												dataType: "json",
+												data: {
+													"refrnCd": "UPLOAD192",
+													"refrnSeq": ""
+												},
+												success: (
+													function(obj) {
+														var fileList = obj.fileList;
+														if (fileList != null) {
+															for (var i = 0, nCnt = obj.fileList.length; i < nCnt; i++) {
+																var file = obj.fileList[i];
+																var fileSeq = file.fileSeq;
+																var orgFileNm = file.orgFileNm;
+																var encptFileNm = file.encptFileNm;
+																var flpthNm = ""
+																var flSize = file.flSize;
+
+																DEXT5UPLOAD.AddUploadedFile(fileSeq, orgFileNm, flpthNm, flSize, encptFileNm, "UPLOAD192");
+															}
+														}
+
+													}
+												),
+												error: (
+													function(errMsg) {
+														alert("파일업로드 컨퍼넌트에 에러가 발생하였습니다. 담당자에게 문의하여 주세요.");
+													}
+												)
+											});
+										}
+
+										function UPLOAD192_upload() {
+											DEXT5UPLOAD.Transfer('UPLOAD192');
+										}
+
+										function UPLOAD192_ending() {
+											try {
+												eval("UPLOAD192_complete()");
+											} catch (e) {
+												alert("'UPLOAD192' 업로드 컴퍼넌트의 완료 이벤트가 생성되지 않았습니다.");
+											}
+										}
+
+										function UPLOAD192_addFile() {
+											DEXT5UPLOAD.OpenFileDialog('UPLOAD192');
+										}
+
+										function UPLOAD192_deltFile() {
+											DEXT5UPLOAD.DeleteSelectedFile('UPLOAD192');
+										}
+
+										function UPLOAD192_count() {
+											return DEXT5UPLOAD.GetTotalFileCount('UPLOAD192');
+										}
+									</script>
+
+
+								</dd>
+							</dl>
+
+							<dl style="display: none;">
+								<dt>
+									<span class="f_red" title="필수항목">*</span> 면접질문
+								</dt>
+								<dd>
+
+									<textarea name="intrvQestn" style="visibility: hidden; display: none;"></textarea>
+
+
+
+
+								</dd>
+							</dl>
+						</div>
+
+						<div class="board_btn_btm ac mgt30">
+							<button type="submit" class="btn btn_green btn-lg">저장</button>
+							<button type="button" onclick="onCancel();return false;" class="cancel_btn btn_grey btn-lg">취소</button>
+							<button type="button" class="btn btn_reflesh btn-lg" onclick="onReset();"><span>초기화</span></button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+
+		</div>
+	</div>
+
+	<!--잡아바 js-->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://jobaba.net/resource/js/jquery-ui-1.11.4.js"></script>
+
+
+	<!--추가 js-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
+	<script>
+		// 스크롤 js
+		$(document).ready(function() {
+			$('.scr').scrollbar();
+
+		});
+		
+		
+
+		//팝업
+		function recPop() {
+			$('#entPop').show();
+			 $("html, body").addClass("not_scroll");
+		}
+
+		function closePop() {
+			$('#entPop').hide();
+			$("html, body").removeClass("not_scroll");
+
+		}
+	</script>
+</body></html>
