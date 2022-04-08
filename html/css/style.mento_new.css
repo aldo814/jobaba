@@ -107,6 +107,7 @@ ul,ol,dl{margin:0;list-style:none;padding:0;}
 .new_header{background: url(../images/mento/header_bg.png) #b0f3ff no-repeat center;}
 .new_header .ctain{display: flex;flex-direction: column;align-items: flex-start}
 .new_header h3{font-size: 50px;font-weight: bold;color: #003281;font-family: 'GmarketSansBold';letter-spacing: -3px}
+.new_header p.f20{color: #005db7;font-weight: bold}
 .new_header p{ font-family: 'GmarketSansMedium','Noto Sans KR';}
 .new_header .white_box{background: #fff;padding: 20px;border-radius: 10px;margin: 20px 0}
 
