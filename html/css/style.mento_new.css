@@ -557,5 +557,5 @@ input[type=file] {border: 1px solid #c8c8c8;padding: 4px 0;}
 	.gift_wrap img{margin: 10px 0;max-width: 120px}
 	.review_wrap ul li .txt{margin-top: 5px}
 	.review_wrap ul li > div:first-child{font-size: 13px}
-	.review_wrap ul li .txt{font-size: 12px}
+	.review_wrap ul li .txt > span{font-size: 12px}
 }
