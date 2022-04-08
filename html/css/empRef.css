@@ -33,17 +33,18 @@
 .empRef_wrap .header h3:before{content: '';display: block;background: url(../images/empRef/job_ico.png) no-repeat;width: 89px;height: 64px;position: absolute;left: 0;top: 50%;transform: translateY(-50%)}
 .empRef_wrap .header .bottom{background: #caf1ff;padding: 20px 0;margin-top: 20px}
 .empRef_wrap .header > .containerNew:nth-child(1):after{content: '';display: block;background: url(../images/empRef/top_bg.png) no-repeat;width: 705px;height: 283px;position: absolute;right: -100px;bottom: -90px}
-
+.empRef_wrap .header .f15{font-weight: 500}
+.empRef_wrap .header .f14{font-weight: 400}
 .empRef_wrap .white_box{border: 1px solid #e6e6e6;border-radius: 10px;padding: 30px;;background: #fff}
 .empRef_area .item{margin: 50px 0}
-.empRef_area .item .er_tit{font-size: 24px;font-weight: 400;margin-bottom: 20px}
+.empRef_area .item .er_tit{font-size: 24px;font-weight: 500;margin-bottom: 20px}
 .empRef_area .item .white_box{display: flex;justify-content: space-between}
 .empRef_area .item .white_box > div{display: flex;align-items: flex-start;justify-content: space-between;width: calc(50% - 10px)}
 .empRef_area .item .white_box > div .img{border: 1px solid #dcdcdc;border-radius: 10px;overflow: hidden;width: 160px}
 .empRef_area .item .white_box > div .img img{display: block;}
 .empRef_area .item .white_box > div .txt{width: calc(100% - 180px)}
-.empRef_area .item .white_box .txt .tit{font-weight: 500;}
-.empRef_area .item .white_box .txt .desc{margin: 10px 0}
+.empRef_area .item .white_box .txt .tit{font-weight: 700;}
+.empRef_area .item .white_box .txt .desc{margin: 10px 0;font-weight: 400}
 .empRef_area .item .white_box .txt .desc,
 .empRef_area .item .white_box .txt .go_link{color: #666;transition: all 0.3s}
 .empRef_area .item .white_box .txt .go_link:hover,
@@ -56,7 +57,7 @@
 .empRef_wrap .empRef_way h4{background: #ff4d8c;display: inline-block;color: #fff;font-weight: 400;padding: 15px  40px;border-radius: 0 0 15px 15px;}
 .empRef_wrap .empRef_way .flex-box{margin-top: 40px;display: flex;justify-content: space-between}
 .empRef_wrap .empRef_way .flex-box > div{width: calc(50% - 10px)}
-.empRef_wrap .empRef_way .flex-box .f24{margin-bottom: 15px}
+.empRef_wrap .empRef_way .flex-box .f22{margin-bottom: 15px}
 .empRef_wrap .empRef_way .item01 .step{margin-top: 50px;display: flex;flex-wrap: wrap;border-bottom: 1px solid #e6e6e6;padding-bottom: 20px;margin-bottom: 20px}
 .empRef_wrap .empRef_way .item01 .step > div{width: calc(50% - 15px);margin-right: 30px;position: relative;margin-bottom: 50px}
 .empRef_wrap .empRef_way .item01 .step > div:nth-child(2n){margin-right: 0}
@@ -65,7 +66,7 @@
 .empRef_wrap .empRef_way .item01 .step .num{display: block;width: 47px;height: 47px;display: flex;flex-direction: column;justify-content: center;align-items: center;background: #38bab2;color: #fff;border-radius: 50%;position: absolute;left: 50%;top: -23.5px;transform: translateX(-50%)}
 .empRef_wrap .empRef_way .item01 .step .img{border-radius: 15px;overflow: hidden;margin-bottom: 15px}
 .empRef_wrap .empRef_way .item01 .step .img img{display: block;max-width: 100%;width: 100%}
-.empRef_wrap .empRef_way .item01 .step p{font-weight: 400}
+.empRef_wrap .empRef_way .item01 .step p{font-weight: 600}
 .empRef_wrap .empRef_way .item01 ul li {color: #666}
 .empRef_wrap .empRef_way .item01 .btn_area{margin-top: 30px;display: flex;justify-content: space-between}
 .empRef_wrap .empRef_way .item01 .btn_area .emp_btn{background: #00a8cd;color: #fff;font-size: 16px;padding: 10px;width: calc(50% - 15px);text-align: center;border-radius: 5px;font-weight: 500}
@@ -75,7 +76,7 @@
 .empRef_wrap .empRef_way .apply_area > div:last-child{margin-bottom: 0;border-bottom: 0;padding-bottom: 0}
 .empRef_wrap .empRef_way .apply_area .img{border: 1px solid #e6e6e6;border-radius: 15px;overflow: hidden;width: 250px;}
 .empRef_wrap .empRef_way .apply_area .img img{display: block;width: 100%;height: 100%;}
-.empRef_wrap .empRef_way .apply_area .txt{width: calc(100% - 270px);display: flex;flex-direction: column;font-size: 18px;font-weight: 500}
+.empRef_wrap .empRef_way .apply_area .txt{width: calc(100% - 270px);display: flex;flex-direction: column;font-size: 18px;font-weight: 600}
 .empRef_wrap .empRef_way .apply_area .txt a{margin-top: auto;}
 .empRef_wrap .empRef_way .apply_area .txt a:hover,
 .empRef_wrap .empRef_way .apply_area .txt a:active,
@@ -129,9 +130,14 @@
 	.empRef_area .item{margin: 30px 0}
 	.empRef_area .item .er_tit{font-size: 18px}
 	.empRef_wrap .white_box{padding: 20px}
-	.empRef_area .item .white_box{flex-direction: column;}
-	.empRef_area .item .white_box > div{width: 100%;margin-bottom: 20px}
-	.empRef_area .item .white_box > div:last-child{margin-bottom: 0;border-bottom: 0;padding-bottom: 0}
+		.empRef_area .item .white_box > div{flex-direction: column;justify-content: flex-start;width: calc(50% - 5px)}
+	.empRef_area .item .white_box > div .img{width: 150px;margin: 0 auto
+		 10px auto;}
+	.empRef_area .item .er_tit{text-align: center}
+	.empRef_area .item .white_box > div .txt{width: 100%;text-align: center;}
+	.empRef_area .item .white_box .txt .desc{margin: 5px 0;word-break: keep-all;letter-spacing: -0.5px}
+	.empRef_area .item .white_box .txt .desc br{display: none}
+	
 	
 }
 
@@ -143,7 +149,7 @@
 .f18{font-size: 15px}
 .f19{font-size: 14px}
 .f20{font-size: 14px}
-.f22{font-size: 14px}
+.f22{font-size: 16px}
 .f24{font-size: 20px}
 .f26{font-size: 22px}
 .f28{font-size: 22px}
@@ -176,7 +182,7 @@
 	.f18{font-size: 15px}
 	.f19{font-size: 14px}
 	.f20{font-size: 14px}
-	.f22{font-size: 14px}
+	.f22{font-size: 16px}
 	.f24{font-size: 16px}
 	.f26{font-size: 28px}
 	.f28{font-size: 22px}
@@ -186,14 +192,7 @@
 	.empRef_wrap .header h3{font-size: 20px}
 	.empRef_wrap .white_box{padding: 15px 10px}
 	.empRef_wrap .header p.mt30{margin-top: 10px}
-	.empRef_area .item .white_box > div{margin-bottom: 15px;padding-bottom: 15px;border-bottom: 1px solid #e6e6e6;flex-direction: column;}
-	.empRef_area .item .white_box > div .img{width: 150px;margin: 0 auto
-		 10px auto;}
-	.empRef_area .item .er_tit{text-align: center}
-	.empRef_area .item .white_box > div .txt{width: 100%;text-align: center;}
-	.empRef_area .item .white_box .txt .desc{margin: 5px 0;word-break: keep-all;letter-spacing: -0.5px}
-	.empRef_area .item .white_box .txt .desc br{display: none}
-	
+
 	.empRef_wrap .empRef_way .apply_area:before{background-size: 170px;width: 170px;height: 55px;margin: 0 auto 15px auto}
 	.empRef_wrap .empRef_way .apply_area > div{;padding-bottom: 15px;margin-bottom: 15px}
 	.empRef_wrap .empRef_way .apply_area .img{width: 140px}
