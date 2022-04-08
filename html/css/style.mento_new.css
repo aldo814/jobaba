@@ -127,8 +127,21 @@ ul,ol,dl{margin:0;list-style:none;padding:0;}
 .searchSet button{color: #fff;background: #38bab2;color: #fff;width: 155px;border-radius: 5px;font-size: 16px;font-weight: 500}
 
 .mentoList {display: flex;flex-wrap: wrap;}
-.mentoList > div{background: #fff;border:1px solid #e6e6e6;border-radius: 10px;display: flex;flex-direction: column;align-items: center;text-align: center;width: calc(20% - 8px);margin-right: 10px;margin-bottom: 10px}
+.mentoList > div{background: #fff;border:1px solid #e6e6e6;border-radius: 10px;text-align: center;width: calc(20% - 8px);margin-right: 10px;margin-bottom: 10px;padding: 20px;transition: all 0.3s}
+.mentoList > div a{display: flex;flex-direction: column;align-items: center;}
+.mentoList > div:hover .etc,
+.mentoList > div:active .etc,
+.mentoList > div:focus .etc{text-decoration: underline}
 .mentoList > div:nth-child(5n){margin-right: 0}
+.mentoList .mt_top{font-size: 14px;font-weight: 500;color: #d8d8d8;text-transform: uppercase;letter-spacing: 1.5px}
+.mentoList .mt_top.great_mt{letter-spacing: 0;color: #69c3be}
+.mentoList .company{font-size: 20px;margin: 5px 0}
+.mentoList .dep{font-size: 14px;color: #787878}
+.mentoList .img{width: 140px;height: 140px;overflow: hidden;border-radius: 50%;text-align: center;background: #f3f3f3;margin: 10px 0}
+.mentoList .img img{min-width: 140px;width: 100%;;min-height: 140px;;height: 100%}
+.mentoList .textSet {display: flex;flex-direction: column;width: 100%}
+.mentoList .textSet .name{font-size: 20px;font-weight:400;margin: 5px 0}
+.mentoList .textSet .etc{font-size: 16px;white-space: nowrap;width: 100%;color: #787878;overflow: hidden;text-overflow:ellipsis}
 
 .new_ctain_wrap4{background: url(../images/mento/wrap4_bg.png) #1fbcaf no-repeat;background-size: cover}
 .gift_wrap{display: flex;justify-content: space-between}
@@ -219,22 +232,7 @@ ul,ol,dl{margin:0;list-style:none;padding:0;}
 
 /* 팝업 */
 .mento_set {}
-.mento_set span {display: block;}
-.mento_set .company {font-size: 24px;font-weight: 600;}
-.mento_set .dep {font-size: 15px;color: #222;}
-.mento_set .img {text-align: center;overflow: hidden;width: 130px;height: 130px;border-radius: 50%;margin: 0 auto 18px;}
-.mento_set .img img {min-width: 130px;min-height: 130px;}
-.mento_set .textSet {float: left;width: 235px;text-align: center;font-size: 15px;}
-.mento_set .textSet .mento_info {border: 1px solid #e5e5e5;border-radius: 10px;padding: 20px;}
-.mento_set .textSet .mento_info a {font-size: 16px;color: #fff;background: #155cc6;padding: 10px 20px;}
-.mento_set .textSet .dep {color: #333;}
-.mento_set .textSet .dep2 {color: #666;margin-bottom: 30px;}
-.mento_set .textSet .name {color: #666;padding: 5px 0;font-size: 18px;}
-.mento_set .textSet .name span {color: #333;font-size: 24px;font-weight: 600;display: inline-block;}
-.mento_set .textSet ul {margin-top: 20px;}
-.mento_set .textSet ul li {float: left;width: 50%;text-align: center;}
-.mento_set .textSet ul li a {display: block;padding: 10px 0;border: 1px solid #155cc6;color: #333;font-size: 16px;border-radius: 6px 0 0 6px;}
-.mento_set .textSet ul li:nth-child(2) a {border-left: none;border-radius: 0 6px 6px 0;}
+
 .mento_set .mento_con {float: left;width: calc(100% - 235px);padding-left: 25px;padding-bottom: 25px;color: #666;font-size: 15px;}
 .mento_set .mento_con h2 {color: #333;font-size: 20px;font-weight: 500;padding-left: 20px;position: relative;margin: 15px 0 8px;}
 .mento_set .mento_con h2::before {content: "";display: inline-block;border: 4px solid #155cc6;border-radius: 50%;width: 8px;height: 8px;position: absolute;top: 7px;left: 0;}
@@ -260,6 +258,9 @@ ul,ol,dl{margin:0;list-style:none;padding:0;}
 .mento_set .mento_con .reviewList .infoSet .date {color: #666;font-size: 15px;float: right;}
 .mento_set .mento_con .star_sel .dafault_bg{height:23px}
 .mento_set .mento_con .reviewList .text {}
+
+
+
 
 .review_Set {position: relative;padding-left: 0 !important;}
 .review_Set .btn_Wrap {position: absolute;top: -34px;right: 25px;/*width:65px;*/text-align:center; color: #333;padding: 0 12px;}
@@ -364,6 +365,9 @@ input[type=file] {border: 1px solid #c8c8c8;padding: 4px 0;}
 	
 	
 	.new_ctain_wrap6 .containerNew{background-size: 350px}
+	.mentoList .img{width: 100px;height: 100px}
+	.mentoList .img img{min-width: 100px;min-height: 100px;}
+	.mentoList > div{padding: 15px}
 }
 
 @media screen and (max-width: 768px){
@@ -393,9 +397,6 @@ input[type=file] {border: 1px solid #c8c8c8;padding: 4px 0;}
 	.section{margin: 30px 0}
 	.new_header h3{font-size: 28px}
 	.mt_tit{font-size: 20px}
-	.mentoList > div{width: calc(50% - 5px);}
-	.mentoList > div:nth-child(2n){margin-right: 0}
-	.mentoList > div:nth-child(5n){margin-right: auto}
 	
 	.searchSet select, .searchSet input{height: 40px;padding: 10px;font-size: 13px}
 	.searchSet button{height: 40px;width: 50px;line-height: 40px;font-size: 13px;}
@@ -457,6 +458,14 @@ input[type=file] {border: 1px solid #c8c8c8;padding: 4px 0;}
 	textarea {width:100%; padding:10px 0; }
 
 	.n_popup .pop_header>p {font-size:18px;}
+	
+	
+	/* 멘토링 추가 */
+	.mentoList > div{width: calc(50% - 5px)}
+	.mentoList > div:nth-child(2n){margin-right: 0}
+	.mentoList > div:nth-child(5n){margin-right: auto}
+
+
 
 }
 
@@ -502,6 +511,17 @@ input[type=file] {border: 1px solid #c8c8c8;padding: 4px 0;}
 	.gift_wrap img{max-width: 180px;width: 100%;}
 	
 	.underline{border-bottom: 0;text-decoration: underline}
+	
+	/* 멘토링 추가*/
+	.mentoList > div{padding: 10px;width: calc(50% - 2.5px);margin-right: 5px;margin-bottom: 5px}
+	.mentoList .mt_top,
+	.mentoList .dep,
+	.mentoList .textSet .etc{font-size: 12px}
+	.mentoList .company{font-size: 14px;margin: 3px 0}
+	.mentoList .textSet .name{font-size: 15px;}
+	.mentoList .img{width: 80px;height: 80px}
+	.mentoList .img img{min-width: 80px;min-height: 80px}
+	.mentoList .textSet .name{margin: 3px 0}
 }
 
 
@@ -519,6 +539,11 @@ input[type=file] {border: 1px solid #c8c8c8;padding: 4px 0;}
 .f28{font-size: 22px}
 .f30{font-size: 18px}
 .f32{font-size: 18px}
-	
+	.new_header{background-size: 1100px;background-position: left -100px center}
 	.new_ctain_wrap6 .containerNew{background-size: 200px}
+	
+	.new_ctain_wrap4 .f28{font-size: 16px;}
+	.new_ctain_wrap4 .yellow{word-break: keep-all;max-width: 240px;margin:5px auto}
+	.gift_wrap .left_area{margin-bottom: 10px}
+	.gift_wrap img{margin: 10px 0;max-width: 120px}
 }
