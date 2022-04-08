@@ -238,7 +238,7 @@ ul,ol,dl{margin:0;list-style:none;padding:0;}
 /* 팝업 */
 .mento_set {}
 .review_wrap .review_list{height: 420px !important}
-.review_wrap ul li > div:first-child{max-width: 640px;width: 100%}
+.review_wrap ul li > div:first-child{max-width: 900px;width: 100%}
 
 .mento_set .mento_con {float: left;width: calc(100% - 235px);padding-left: 25px;padding-bottom: 25px;color: #666;font-size: 15px;}
 .mento_set .mento_con h2 {color: #333;font-size: 20px;font-weight: 500;padding-left: 20px;position: relative;margin: 15px 0 8px;}
