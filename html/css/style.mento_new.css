@@ -111,7 +111,7 @@ ul,ol,dl{margin:0;list-style:none;padding:0;}
 .new_header .white_box{background: #fff;padding: 20px;border-radius: 10px;margin: 20px 0}
 
 .new_ctain_wrap2 .flex_wrap{display: flex;justify-content: space-between}
-.new_ctain_wrap2 .flex_wrap > div{width: calc(25% - 40px)}
+.new_ctain_wrap2 .flex_wrap > div{width: calc(25% - 15px)}
 .new_ctain_wrap2 .flex_wrap .img{border: 1px solid #e6e6e6;border-radius: 15px;overflow: hidden;margin-bottom: 15px;}
 .new_ctain_wrap2 .flex_wrap .img img{display: block;width: 100%;height: 100%;}
 .new_ctain_wrap2 .btn_wrap{margin-top: 40px}
