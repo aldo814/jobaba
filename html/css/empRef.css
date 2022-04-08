@@ -41,7 +41,7 @@
 .empRef_area .item .white_box{display: flex;justify-content: space-between}
 .empRef_area .item .white_box > div{display: flex;align-items: flex-start;justify-content: space-between;width: calc(50% - 10px)}
 .empRef_area .item .white_box > div .img{border: 1px solid #dcdcdc;border-radius: 10px;overflow: hidden;width: 160px}
-.empRef_area .item .white_box > div .img img{display: block;}
+.empRef_area .item .white_box > div .img img{display: block;width: 100%}
 .empRef_area .item .white_box > div .txt{width: calc(100% - 180px)}
 .empRef_area .item .white_box .txt .tit{font-weight: 700;}
 .empRef_area .item .white_box .txt .desc{margin: 10px 0;font-weight: 400}
@@ -130,8 +130,8 @@
 	.empRef_area .item{margin: 30px 0}
 	.empRef_area .item .er_tit{font-size: 18px}
 	.empRef_wrap .white_box{padding: 20px}
-		.empRef_area .item .white_box > div{flex-direction: column;justify-content: flex-start;position: relative;padding-bottom: 25px}
-	.empRef_area .item .white_box > div .img{width: 150px;margin: 0 auto
+		.empRef_area .item .white_box > div{flex-direction: column;justify-content: flex-start;position: relative;padding-bottom: 25px;width: calc(50% - 5px)}
+	.empRef_area .item .white_box > div .img{max-width: 160px;width: 100%;margin: 0 auto
 		 10px auto;}
 	.empRef_area .item .er_tit{text-align: center}
 	.empRef_area .item .white_box > div .txt{width: 100%;text-align: center;display: flex;flex-direction: column}
