@@ -17,14 +17,14 @@
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/swiper.min.css">
-	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
-	
+	<link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@ 1.8.1/slick/slick.css">
+
 
 	<!-- //잡아바 css-->
 
 	<!--추가 css-->
-		<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css">
-		
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css">
+
 	<link rel="stylesheet" href="css/style.mento_new.css">
 
 
@@ -931,12 +931,10 @@
 
 	<!--잡아바 js-->
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
-	<script src="https://www.jobaba.net/resource/bxslider/slick.js"></script>
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/swiper.min.js"></script>
-	<script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
 	<script>
-	$(function(){
-		var $listObj = $(".review_list ul");
+		$(function() {
+var $listObj = $(".review_list ul");
 				var $listLi = $(".review_list ul li");
 				var $listLiHeight = null;
 				$(window).on("resize", function(){
@@ -952,62 +950,55 @@
 						$this.css({top:"0px"});
 					});
 				}, 3000);
-			
-	
-		
-		//취업역량강화
-			var jobDesc = new Swiper ('.pa_right', {
-		slidesPerView: 1,
-		spaceBetween: 100,
-		loop: true,
-		pagination: {
-			el: '.pa_area_paging',
-			type: 'fraction',
-			clickable: true
-		},
-		navigation: {
-			nextEl: '.swiper-button-next1',
-			prevEl: '.swiper-button-prev1'
-		},
-	});
-		
-		var windowWidth = $(window).width();
-		if (windowWidth <= 768) {
-			//취업역량강화 프로그램
-		var $slickElement = $('.program_area.pc_hide .pa_area');
+
+			//취업역량강화
+			var jobDesc = new Swiper('.pa_right', {
+				slidesPerView: 1,
+				spaceBetween: 100,
+				loop: true,
+				pagination: {
+					el: '.pa_area_paging',
+					type: 'fraction',
+					clickable: true
+				},
+				navigation: {
+					nextEl: '.swiper-button-next1',
+					prevEl: '.swiper-button-prev1'
+				},
+			});
+
+			var windowWidth = $(window).width();
+			if (windowWidth <= 768) {
+				//취업역량강화 프로그램
+				var $slickElement = $('.program_area.pc_hide .pa_area');
 				$slickElement.slick({
-				infinite: false,
-				slidesToShow: 2,
-				slidesToScroll: 2,
-  				dots: true,
-  				arrows:false
+					infinite: false,
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					dots: true,
+					arrows: false
 				});
-			$('.program_area.pc_hide .pa_area').slick("setPosition");
-			
-		}else{}
-		
-		$(window).resize(function (){
+				$('.program_area.pc_hide .pa_area').slick("setPosition");
+
+			} else {}
+
+			$(window).resize(function() {
 				if (windowWidth <= 768) {
-			//취업역량강화 프로그램
-		var $slickElement = $('.program_area.pc_hide .pa_area');
-				$slickElement.slick({
-				infinite: false,
-				slidesToShow: 2,
-				slidesToScroll: 2,
-  				dots: true,
-  				arrows:false
-				});
-			
-		}else{}
-			
-		})
+					//취업역량강화 프로그램
+					var $slickElement = $('.program_area.pc_hide .pa_area');
+					$slickElement.slick({
+						infinite: false,
+						slidesToShow: 2,
+						slidesToScroll: 2,
+						dots: true,
+						arrows: false
+					});
 
-		
-	});
+				} else {}
 
-	
+			})
 
+
+		});
 	</script>
-</body>
-
-</html>
+</body></html>

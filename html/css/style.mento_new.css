@@ -149,8 +149,8 @@ ul,ol,dl{margin:0;list-style:none;padding:0;}
 .gift_wrap .right_area{text-align: right;align-items: flex-end}
 .gift_wrap .left_area  .white.f16{margin-top: auto;}
 .gift_wrap img{margin: 20px 0 15px 0 }
-.review_wrap {border: none !important;}
-.review_wrapBox {border: none;padding: 30px 0;}
+.review_wrap {border: none !important;padding: 0 !important}
+.review_wrapBox {border: none;}
 .review_wrap .review_list {height: 420px;}
 .review_wrap ul {padding: 0 30px;}
 .review_wrap ul li {border-bottom: 1px solid #d4d4d4;padding: 10px 0;}
@@ -237,7 +237,8 @@ ul,ol,dl{margin:0;list-style:none;padding:0;}
 
 /* 팝업 */
 .mento_set {}
-.review_wrap .review_list{height: 420px}
+.review_wrap .review_list{height: 420px !important}
+.review_wrap ul li > div:first-child{max-width: 640px;width: 100%}
 
 .mento_set .mento_con {float: left;width: calc(100% - 235px);padding-left: 25px;padding-bottom: 25px;color: #666;font-size: 15px;}
 .mento_set .mento_con h2 {color: #333;font-size: 20px;font-weight: 500;padding-left: 20px;position: relative;margin: 15px 0 8px;}
@@ -430,7 +431,7 @@ input[type=file] {border: 1px solid #c8c8c8;padding: 4px 0;}
 	.ctain-fluid.header li .t {font-size: 35px;}
 
 
-	.review_wrap ul li .subject {max-height: 57px;}
+	/*.review_wrap ul li .subject {max-height: 57px;}*/
 
 	.ctain_wrap2 li {width: 50%;padding: 3px;}
 
@@ -465,7 +466,7 @@ input[type=file] {border: 1px solid #c8c8c8;padding: 4px 0;}
 
 	.n_popup .pop_header>p {font-size:18px;}
 	
-	.review_wrap ul li .subject {max-height: 57px;;}
+	/*.review_wrap ul li .subject {max-height: 57px;;}*/
 	
 	
 	/* 멘토링 추가 */
@@ -554,4 +555,6 @@ input[type=file] {border: 1px solid #c8c8c8;padding: 4px 0;}
 	.new_ctain_wrap4 .yellow{word-break: keep-all;max-width: 240px;margin:5px auto}
 	.gift_wrap .left_area{margin-bottom: 10px}
 	.gift_wrap img{margin: 10px 0;max-width: 120px}
+	
+	.review_wrap ul li > div:first-child{font-size: 13px}
 }
