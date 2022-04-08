@@ -555,7 +555,7 @@ input[type=file] {border: 1px solid #c8c8c8;padding: 4px 0;}
 	.new_ctain_wrap4 .yellow{word-break: keep-all;max-width: 240px;margin:5px auto}
 	.gift_wrap .left_area{margin-bottom: 10px}
 	.gift_wrap img{margin: 10px 0;max-width: 120px}
-	
+	.review_wrap ul li .txt{margin-top: 5px}
 	.review_wrap ul li > div:first-child{font-size: 13px}
 	.review_wrap ul li .txt{font-size: 12px}
 }
