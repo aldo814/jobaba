@@ -133,8 +133,8 @@ ul,ol,dl{margin:0;list-style:none;padding:0;}
 .mentoList > div:active .etc,
 .mentoList > div:focus .etc{text-decoration: underline}
 .mentoList > div:nth-child(5n){margin-right: 0}
-.mentoList .mt_top{font-size: 14px;font-weight: 500;color: #d8d8d8;text-transform: uppercase;letter-spacing: 1.5px}
-.mentoList .mt_top.great_mt{letter-spacing: 0;color: #69c3be}
+.mentoList .mt_top{font-size: 14px;font-weight: bold;color: #d8d8d8;text-transform: uppercase;letter-spacing: 1.5px}
+.mentoList .mt_top.great_mt{letter-spacing: 0;color: #69c3be;}
 .mentoList .company{font-size: 20px;margin: 5px 0}
 .mentoList .dep{font-size: 14px;color: #787878}
 .mentoList .img{width: 140px;height: 140px;overflow: hidden;border-radius: 50%;text-align: center;background: #f3f3f3;margin: 10px 0}
