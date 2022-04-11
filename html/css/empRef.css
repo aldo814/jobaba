@@ -40,7 +40,8 @@
 .empRef_area .item .er_tit{font-size: 24px;font-weight: 500;margin-bottom: 20px}
 .empRef_area .item .white_box{display: flex;justify-content: space-between}
 .empRef_area .item .white_box > div{display: flex;align-items: flex-start;justify-content: space-between;width: calc(50% - 10px)}
-.empRef_area .item .white_box > div .img{border: 1px solid #dcdcdc;border-radius: 10px;overflow: hidden;width: 160px}
+.empRef_area .item .white_box > div .img{border-radius: 10px;overflow: hidden;width: 160px}
+.empRef_area .item .white_box > div .img.imgBorder{border: 1px solid #e6e6e6}
 .empRef_area .item .white_box > div .img img{display: block;width: 100%}
 .empRef_area .item .white_box > div .txt{width: calc(100% - 180px)}
 .empRef_area .item .white_box .txt .tit{font-weight: 700;}
