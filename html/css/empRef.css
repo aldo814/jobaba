@@ -135,7 +135,7 @@
 		.empRef_area .item .white_box > div{flex-direction: column;justify-content: flex-start;position: relative;padding-bottom: 25px;width: calc(50% - 5px)}
 	.empRef_area .item .white_box > div .img{max-width: 160px;width: 100%;margin: 0 auto
 		 10px auto;}
-	.empRef_area .item .er_tit{padding-left: 25px;}
+	.empRef_area .item .er_tit{padding-left: 25px;margin-bottom: 10px;}
 	.empRef_area .item .er_tit:before{background-size: 18px;width: 18px;height: 16px;transform: none;top: 4px}
 	.empRef_area .item .white_box > div .txt{width: 100%;text-align: center;display: flex;flex-direction: column}
 	.empRef_area .item .white_box .txt .desc{margin: 5px 0;word-break: keep-all;letter-spacing: -0.5px}
