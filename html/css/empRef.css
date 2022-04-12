@@ -37,7 +37,8 @@
 .empRef_wrap .header .f14{font-weight: 400}
 .empRef_wrap .white_box{border: 1px solid #e6e6e6;border-radius: 10px;padding: 30px;;background: #fff}
 .empRef_area .item{margin: 50px 0}
-.empRef_area .item .er_tit{font-size: 24px;font-weight: bold;margin-bottom: 20px}
+.empRef_area .item .er_tit{font-size: 24px;font-weight: bold;margin-bottom: 20px;position: relative;padding-left: 45px;}
+.empRef_area .item .er_tit:before{content: '';display: block;background: url(../images/empRef/mv_ico.png) no-repeat;width: 36px;height: 30px;position: absolute;left: 0;top: 50%;transform: translateY(-50%)}
 .empRef_area .item .white_box{display: flex;justify-content: space-between}
 .empRef_area .item .white_box > div{display: flex;align-items: flex-start;justify-content: space-between;width: calc(50% - 10px)}
 .empRef_area .item .white_box > div .img{border-radius: 10px;overflow: hidden;width: 160px}
@@ -134,7 +135,8 @@
 		.empRef_area .item .white_box > div{flex-direction: column;justify-content: flex-start;position: relative;padding-bottom: 25px;width: calc(50% - 5px)}
 	.empRef_area .item .white_box > div .img{max-width: 160px;width: 100%;margin: 0 auto
 		 10px auto;}
-	.empRef_area .item .er_tit{text-align: center}
+	.empRef_area .item .er_tit{padding-left: 25px;}
+	.empRef_area .item .er_tit:before{background-size: 18px;width: 18px;height: 16px;transform: none;top: 5px}
 	.empRef_area .item .white_box > div .txt{width: 100%;text-align: center;display: flex;flex-direction: column}
 	.empRef_area .item .white_box .txt .desc{margin: 5px 0;word-break: keep-all;letter-spacing: -0.5px}
 	.empRef_area .item .white_box > div .txt a{margin-top: auto;position: absolute;left: 50%;bottom: 0;transform: translateX(-50%)}
