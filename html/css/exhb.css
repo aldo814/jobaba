@@ -149,11 +149,10 @@
 	.exhb_wrap .exhb_tit{font-size: 16px}
 	.new_company_story_list .items{width: 100%;margin-right: 0}
 	.new_company_story_list .img{display: none;}
-	.new_company_story_list .items .t{height: auto;max-height: 3.2rem}
 	.new_company_story_list .items .prog,
 	.new_company_story_list .items ul li{font-size: 12px}
 	.new_company_story_list .items ul{padding-top: 5px}
-	.new_company_story_list .items .t{font-size: 14px;margin: 3px 0}
+	.new_company_story_list .items .t{font-size: 14px;margin: 5px 0;height: auto;max-height: 2.4rem;line-height: 1.2rem}
 	.exhb_wrap .new_company_story_wrap{padding: 30px 0}
 	.new_company_story_list .items .txt{padding: 10px }
 	.list_search_wrap.sty4 select{width: 80px !important;height: 40px;margin-bottom: 0}
