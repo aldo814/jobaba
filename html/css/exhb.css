@@ -134,14 +134,19 @@
 	.f20{font-size: 14px}
 	.f18{font-size: 13px}
 	.mt10 {margin-top: 5px}
-	.exhb_main .exhb_header .f20{margin-top: 5px}
+	.exhb_main .exhb_header .f20{margin-top: 5px;font-size: 13px}
 	.exhb_main .exhb_header .containerNew{padding: 30px 0}
-	.exhb_main .exhb_header h2{font-size: 20px}
-	.exhb_main .exhb_header .bt .item{padding: 30px 10px}
-	.exhb_main .exhb_header .bt .item01{background-size: 80px; }
-	.exhb_main .exhb_header .bt .item02{background-size: 90px; }
-	.exhb_main .exhb_header .bt .item03{background-size: 90px; }
-	.exhb_main .exhb_header .bt p{width: calc(100% - 110px)}
+	.exhb_main .exhb_header h2{font-size: 18px}
+	.exhb_main .exhb_header .bt .item{padding: 20px 10px}
+	.exhb_main .exhb_header .bt .item01{background-size: 60px; }
+	.exhb_main .exhb_header .bt .item02{background-size: 70px; }
+	.exhb_main .exhb_header .bt .item03{background-size: 70px; }
+	.exhb_main .exhb_header .bt p{width: calc(100% - 100px)}
+	.exhb_main .exhb_header .bt .item01{background-position:  left 30px center}
+	.exhb_main .exhb_header .bt .item02{background-position:  left 30px center}
+	.exhb_main .exhb_header .bt .item03{background-position:  left 30px center}
+	.ex_line{margin: 15px 0}
+	.exhb_wrap .exhb_tit{font-size: 16px}
 	.new_company_story_list .items{width: 100%;margin-right: 0}
 	.new_company_story_list .img{display: none;}
 	.new_company_story_list .items .t{height: auto;max-height: 3.2rem}
