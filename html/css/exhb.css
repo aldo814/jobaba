@@ -21,7 +21,7 @@
 .exhb_main .exhb_header .top{padding-left: 100px}
 .exhb_main .exhb_header h2{color: #fff;text-shadow: 0 1px 6px #13248f;font-size: 50px;letter-spacing: -1px}
 .exhb_main .exhb_header h2 span {color: #ffed01}
-.exhb_main .exhb_header .f20{text-shadow: 0 1px 6px #13248f;line-height: 1.5}
+.exhb_main .exhb_header .f20{text-shadow: 0 1px 6px #13248f;line-height: 1.5;letter-spacing: -0.3px}
 .exhb_main .exhb_header .bt{display: flex;margin-top: 50px;justify-content: space-between}
 .exhb_main .exhb_header .bt .item{width: calc(33.333% - 16.666px);padding: 30px 10px;border-radius: 10px}
 .exhb_main .exhb_header .bt  .item01{background: url(../images/exhb/header_img01.png) no-repeat left 10px center rgba(0, 18, 188, 0.6)}
@@ -115,7 +115,7 @@
 	.exhb_main .exhb_header .bt{margin-top: 20px}
 	.exhb_main .exhb_header .f20{margin-top: 10px}
 	.exhb_wrap .new_company_story_wrap{padding: 40px 0}
-	.exhb_wrap .exhb_tit{font-size: 20px}
+	.exhb_wrap .exhb_tit{font-size: 18px}
 	.ex_line{margin: 20px 0}
 	.list_search_wrap.sty4 select{min-width: inherit!important;width: 100px !important;padding: 10px;background-position: right 10px center;font-size: 13px}
 	.list_search_wrap.sty4 input{padding: 10px;width: calc(100% - 190px);;height: 40px;font-size: 13px}
@@ -132,26 +132,30 @@
 
 @media all and (max-width:480px){
 	.f20{font-size: 14px}
+	.f18{font-size: 13px}
 	.mt10 {margin-top: 5px}
-	.exhb_main .exhb_header h2{font-size: 25px}
+	.exhb_main .exhb_header .f20{margin-top: 5px}
+	.exhb_main .exhb_header .containerNew{padding: 30px 0}
+	.exhb_main .exhb_header h2{font-size: 20px}
 	.exhb_main .exhb_header .bt .item{padding: 30px 10px}
-	.exhb_main .exhb_header .bt .item01{background-size: 100px; }
-	.exhb_main .exhb_header .bt .item02{background-size: 110px; }
-	.exhb_main .exhb_header .bt .item03{background-size: 110px; }
-	.exhb_main .exhb_header .bt p{width: calc(100% - 130px)}
+	.exhb_main .exhb_header .bt .item01{background-size: 80px; }
+	.exhb_main .exhb_header .bt .item02{background-size: 90px; }
+	.exhb_main .exhb_header .bt .item03{background-size: 90px; }
+	.exhb_main .exhb_header .bt p{width: calc(100% - 110px)}
 	.new_company_story_list .items{width: 100%;margin-right: 0}
 	.new_company_story_list .img{display: none;}
 	.new_company_story_list .items .t{height: auto;max-height: 3.2rem}
 	.new_company_story_list .items .prog,
 	.new_company_story_list .items ul li{font-size: 12px}
-	.new_company_story_list .items .t{font-size: 14px;margin: 5px 0}
-	
+	.new_company_story_list .items ul{padding-top: 5px}
+	.new_company_story_list .items .t{font-size: 14px;margin: 3px 0}
+	.exhb_wrap .new_company_story_wrap{padding: 30px 0}
 	.new_company_story_list .items .txt{padding: 10px }
-	.list_search_wrap.sty4 select{width: 80px !important}
+	.list_search_wrap.sty4 select{width: 80px !important;height: 40px;margin-bottom: 0}
 	.list_search_wrap.sty4 .btn_d_reset{width: 60px !important;font-size: 13px}
 	.list_search_wrap.sty4 input{width: calc(100% - 150px)}
 	.new_company_story_list .items{margin-top: 10px}
-	
+	.eh_cst{margin: 30px 0}
 	.eh_cst .eh_cst_cont .item .ico{width: 90px;height: 90px}
 	.eh_cst .eh_cst_cont .item .txt{width: calc(100% - 105px)}
 	.eh_cst .eh_cst_cont .item .txt .tit{font-size: 15px;margin-bottom: 5px}
