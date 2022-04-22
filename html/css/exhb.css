@@ -29,7 +29,7 @@
 .exhb_main .exhb_header .bt  .item01{background: url(../images/exhb/header_img01.png) no-repeat left 10px center rgba(0, 18, 188, 0.6)}
 .exhb_main .exhb_header .bt  .item02{background: url(../images/exhb/header_img02.png) no-repeat left 10px bottom rgba(0, 18, 188, 0.6)}
 .exhb_main .exhb_header .bt  .item03{background: url(../images/exhb/header_img03.png) no-repeat left 10px center rgba(0, 18, 188, 0.6)}
-.exhb_main .exhb_header .bt  p {width: calc(100% - 180px);margin-left: auto;}
+.exhb_main .exhb_header .bt  p {width: calc(100% - 180px);margin-left: auto;word-break: keep-all}
 
 .exhb_wrap .exhb_tit{font-size: 24px;text-align: center;font-weight: 500}
 .ex_line{border: 0;width: 100%;height: 1px;background: #000;margin: 25px 0}
