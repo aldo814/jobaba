@@ -288,6 +288,8 @@
 	.exhb_sub .company_info .ci_cont .bt div:nth-child(1){padding-right: 15px}
 	.exhb_sub .company_info .ci_cont .bt div:nth-child(2){padding-left: 15px}
 	.exhb_sub .company_info .ci_cpn{width: calc(100% - 650px)}
+	
+	.exhb_sub .eh_cst .eh_cst_cont .item .ico{width: 146px;height: 146px}
 }
 
 @media all and (max-width:1024px){
@@ -374,6 +376,7 @@
 	
 	.exhb_wrap .des_wrap .des_sch{width: 100%;max-width: 100%;}
 	.exhb_wrap .open_filter{display: none}
+	.exhb_sub .des_open .item .top .tit_wrap, .exhb_sub .des_open .item .top .cate, .exhb_sub .des_open .item .top .etc, .exhb_sub .des_open .item .top .cert, .exhb_sub .des_open .item .bottom .cert{width: 100%;}
 	
 	/* 채용공고 상세*/
 	.exhb_sub .pd_inner{padding: 40px 0}
@@ -483,6 +486,11 @@
 	.exhb_sub .company_info .ci_cpn .tit p{width: calc(100% - 35px)}
 	.exhb_sub .info_tit{padding-bottom: 15px;margin-bottom: 15px}
 	.exhb_sub .info_tit h3{font-size: 18px}
+	
+	.exhb_sub .eh_cst .eh_cst_cont .item .ico{width: 90px;height: 90px}
+	.exhb_sub  .des_open .item .right_area button.like{top: -5px}
+	.exhb_sub .open_other_list .tit{font-size: 13px}
+	.exhb_sub  .des_open .item .right_area .date.middle{font-size: 13px}
 }
 
 
