@@ -39,6 +39,10 @@
 .list_search_wrap.sty4 input{border-radius: 5px;padding: 15px;font-size: 14px;width: calc(100% - 376px);border: 0 !important}
 .list_search_wrap.sty4 .btn_d_reset{background: #38bab2;border-radius: 5px;color: #fff;font-size: 16px;font-weight: 500;width: 156px !important;}
 
+.exhb_wrap .tag{display: flex;margin-top: 20px;flex-wrap: wrap}
+.exhb_wrap .tag li:before{content: '#';}
+.exhb_wrap .tag li{margin-right: 5px;font-size: 15px;}
+
 .new_company_story_list{display: flex;flex-wrap: wrap;}
 .new_company_story_list .items{width: calc(25% - 15px);margin-right: 20px;margin-top: 20px;background: #fff;border-radius: 10px;overflow: hidden;}
 .new_company_story_list .items:nth-child(4n){margin-right: 0}
@@ -186,11 +190,11 @@
 .exhb_sub .url_list li .copy{background: url(../images/exhb/url_ico.png) no-repeat;}
 .exhb_sub .company_info .ci_cont_view{background: #fff;border-radius: 15px;position: relative;display: flex;}
 
-.exhb_sub .company_info .ci_cont{border-right: 1px solid #e6e6e6;width: 900px;padding-right: 30px}
+.exhb_sub .company_info .ci_cont{border-right: 1px solid #e6e6e6;width: 900px;padding-right: 30px;display: flex;flex-direction: column}
 .exhb_sub .company_info .ci_cont .top{padding-bottom: 20px;padding: 40px 0 20px 30px}
 .exhb_sub .company_info .ci_cont .top .ex_line{margin-bottom: 0}
 .exhb_sub .company_info .ci_cont .top .tit{font-size: 20px;width: calc(100% - 250px);}
-.exhb_sub .company_info .ci_cont .bt{display: flex;padding: 0 30px 40px 30px;}
+.exhb_sub .company_info .ci_cont .bt{display: flex;padding: 0 30px 40px 30px;height: 100%}
 .exhb_sub .company_info .ci_cont .bt div:nth-child(1){width: 60%;border-right: 1px solid rgba(0, 0, 0, 0.2);padding-right: 40px}
 .exhb_sub .company_info .ci_cont .bt div:nth-child(2){width: 40%;padding-left: 40px}
 .exhb_sub .company_info .li_tit{margin-bottom: 25px}
@@ -512,6 +516,7 @@
 	.eh_cst .eh_cst_cont .item .txt .tit{font-size: 14px}
 	
 	.exhb_wrap .des_open .tit_wrap .tit{width: calc(100% - 50px) !important}
+	.exhb_wrap .tag li{font-size: 13px}
 	
 }
 
