@@ -491,10 +491,11 @@
 	.exhb_sub  .des_open .item .right_area button.like{top: -5px}
 	.exhb_sub .open_other_list .tit{font-size: 13px}
 	.exhb_sub  .des_open .item .right_area .date.middle{font-size: 13px}
-	.exhb_sub .open_other_list .item,
+	.exhb_sub .open_other_list .item{padding: 10px}
+	
 	.exhb_sub .border_round,
-	.exhb_sub .company_info .ci_cont_view,
-	.exhb_wrap .onjob_view .view_Detail{padding: 10px}
+	.exhb_wrap .onjob_view .view_Detail,
+	.exhb_sub .company_info .ci_cont_view{padding: 20px}
 	.exhb_wrap .at_cpn_list .txt .desc{height: auto}
 	.exhb_wrap .at_cpn_list .txt .name,
 	.exhb_wrap .at_cpn_list .txt .desc{line-height: 1.2rem;max-height: 2.4rem}
@@ -502,7 +503,7 @@
 	.exhb_wrap .at_cpn_list .slick-track{display: block !important}
 	.exhb_wrap .at_cpn_list .item{height: auto}
 	.exhb_wrap .at_cpn_list .img:not(.logo){height: auto;}
-	.exhb_wrap .at_cpn_list .img:not(.logo) img{height: auto;max-height: 150px}
+	.exhb_wrap .at_cpn_list .img:not(.logo) img{height: auto;max-height: 170px}
 	.exhb_wrap .at_cpn_list .img.logo{height: 80px}
 	.exhb_wrap .at_cpn_list .img.logo img{max-height: 50px}
 	
