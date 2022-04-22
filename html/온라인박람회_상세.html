@@ -42,10 +42,10 @@
 			<div class="containerNew">
 				<ul class="tabs">
 					<li class="active">
-						<a href="#">박람회</a>
+						<a href="javascript:vold(0)">박람회</a>
 					</li>
 					<li>
-						<a href="#">채용공고</a>
+						<a href="javascript:vold(0)">채용공고</a>
 					</li>
 				</ul>
 
@@ -84,18 +84,18 @@
 							</dl>
 						</div>
 					</div>
-					
+
 					<div class="list_wrap">
-							<ul class="list3">
-								<li class="f15">본 행사는 온라인박람회로 비대면 면접을 지원합니다.</li>
-								<li class="f15">면접 진행 전 웹캠과 마이크 정상 여부 체크 또는 스마트폰에서 기능정상 동작여부를
-									체크 후 참여해 주시기 바랍니다.</li>
-							</ul>
-							<ul class="list3">
-								<li class="f15">본 박람회는 잡아바 구직회원, 기업회원을 대상으로 제공하는 서비스 입니다.</li>
-								<li class="f15">기업의 박람회 참가 취소는 담당부서로 연락하시기 바랍니다.</li>
-								<li class="f15">잡아바 기업회원은 채용공고 등록은 MY페이지의 채용공고에서 등록 할 수 있습니다.</li>
-							</ul>
+						<ul class="list3">
+							<li class="f15">본 행사는 온라인박람회로 비대면 면접을 지원합니다.</li>
+							<li class="f15">면접 진행 전 웹캠과 마이크 정상 여부 체크 또는 스마트폰에서 기능정상 동작여부를
+								체크 후 참여해 주시기 바랍니다.</li>
+						</ul>
+						<ul class="list3">
+							<li class="f15">본 박람회는 잡아바 구직회원, 기업회원을 대상으로 제공하는 서비스 입니다.</li>
+							<li class="f15">기업의 박람회 참가 취소는 담당부서로 연락하시기 바랍니다.</li>
+							<li class="f15">잡아바 기업회원은 채용공고 등록은 MY페이지의 채용공고에서 등록 할 수 있습니다.</li>
+						</ul>
 					</div>
 
 
@@ -129,10 +129,10 @@
 					<div class="tab_container">
 						<ul class="tabs">
 							<li class="active">
-								<a href="#seeker">구직자</a>
+								<a href="javascript:vold(0)" rel="seeker">구직자</a>
 							</li>
 							<li>
-								<a href="#company">기업</a>
+								<a href="javascript:vold(0)" rel="company">기업</a>
 							</li>
 						</ul>
 						<div id="seeker" class="tab_contents">
@@ -149,17 +149,18 @@
 								<em class="arrow">다음</em>
 								<div>
 									<span>Step 03</span>
-									<p>공고 등록</p>
+									<p>입사지원</p>
 								</div>
 								<em class="arrow">다음</em>
 								<div>
 									<span>Step 04</span>
-									<p>서류 및 온라인면접</p>
+									<p>온라인면접</p>
 								</div>
 								<em class="arrow">다음</em>
 								<div>
 									<span>Step 05</span>
-									<p>채용 결정</p>
+									<p>결과 확인
+									</p>
 								</div>
 							</div>
 							<p class="trt f15">
@@ -181,24 +182,25 @@
 								<em class="arrow">다음</em>
 								<div>
 									<span>Step 03</span>
-									<p>입사지원</p>
+									<p>공고 등록
+									</p>
 								</div>
 								<em class="arrow">다음</em>
 								<div>
 									<span>Step 04</span>
-									<p>온라인면접</p>
+									<p>서류 및 온라인면접</p>
 								</div>
 								<em class="arrow">다음</em>
 								<div>
 									<span>Step 05</span>
-									<p>결과 확인</p>
+									<p>채용 결정</p>
 								</div>
 							</div>
 							<p class="trt f15">
-								※ 입사지원 후 마이페이지에서 취업증명서 발급이 가능합니다.
+								※ 온라인면접 서비스는 무료로 지원합니다.
 							</p>
 							<div class="btn_wrap mt30">
-								<button type="button" class="eh_btn">
+								<button type="button" class="eh_btn" onClick="openpopup('LayerPopup1')">
 									박람회 참가 신청(기업)
 								</button>
 							</div>
@@ -206,44 +208,45 @@
 					</div>
 				</div>
 				<!--//attend_area-->
-				
+
 				<!--팝업-->
-<div id="LayerPopup1" class="modal fade in" role="dialog" data-seq="10" aria-labelledby="Layer1ModalLabel" style="display: none; padding-right: 0px;">
-	<div class="modal-dialog" role="document" id="viewEntHtml">
-		<form id="exhbEntForm" name="exhbEntForm" method="post" action="/entCntnts/exhb/exhbEntInsert.do">
-			<input type="hidden" id="exhbSeq" name="exhbSeq" value="10">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close btn_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-					<h4 class="modal-title"> 잡아바 온라인채용박람회 참가신청</h4>
-				</div>
-				<div class="modal-body popLayer">
+				<div id="LayerPopup1" class="modal fade in" style="display: none">
+					<div class="modal-dialog" role="document" id="viewEntHtml">
+						<form id="exhbEntForm" name="exhbEntForm" method="post" action="/entCntnts/exhb/exhbEntInsert.do">
+							<input type="hidden" id="exhbSeq" name="exhbSeq" value="10">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close btn_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+									<h4 class="modal-title"> 잡아바 온라인채용박람회 참가신청</h4>
+								</div>
+								<div class="modal-body popLayer">
 
-					<div class="box2">
-						<div class="topTitle">
-							<p class="tit">두바이 에듀테크 박람회 2022</p>
-							<p class="txt">개최 일정 : 0000년 00월 00일 ~ 0000년 00월 00일</p>
-							<p class="txt">주최: 경기도일자리재단</p>
-							<p class="txt">주관: 경기도일자리재단</p>
-							<p class="txt">대상: 잡아바 회원 누구나</p>
-						</div>
+									<div class="box2">
+										<div class="topTitle">
+											<p class="tit">두바이 에듀테크 박람회 2022</p>
+											<p class="txt">개최 일정 : 0000년 00월 00일 ~ 0000년 00월 00일</p>
+											<p class="txt">주최: 경기도일자리재단</p>
+											<p class="txt">주관: 경기도일자리재단</p>
+											<p class="txt">대상: 잡아바 회원 누구나</p>
+										</div>
 
+									</div>
+
+									<ul class="mgt15">
+										<li class="f_red">※ 본 행사는 기업회원만 신청 가능하며, 담당자가 승인 후 참여가 가능합니다.</li>
+										<li class="f_red">※ 박람회 취지에 맞지 않거나, 기업정보가 올바르지 않을 경우 담당자가 반려 할 수 있습니다.</li>
+										<li class="f_red">※ 박람회 참가 신청 전 기업정보를 확인 부탁드립니다.</li>
+									</ul>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn_blue" onclick="fnFrmCheck();">참가신청</button>
+									<button type="button" class="btn btn_grey" data-dismiss="modal" aria-label="Close" onClick="javascript:popHide()">닫기</button>
+								</div>
+							</div>
+						</form>
 					</div>
-
-					<ul class="mgt15">
-						<li class="f_red">※ 본 행사는 기업회원만 신청 가능하며, 담당자가 승인 후 참여가 가능합니다.</li>
-						<li class="f_red">※ 박람회 취지에 맞지 않거나, 기업정보가 올바르지 않을 경우 담당자가 반려 할 수 있습니다.</li>
-						<li class="f_red">※ 박람회 참가 신청 전 기업정보를 확인 부탁드립니다.</li>
-					</ul>
 				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn_blue" onclick="fnFrmCheck();">참가신청</button>
-					<button type="button" class="btn btn_grey" data-dismiss="modal" aria-label="Close">닫기</button>
-				</div>
-			</div>
-		</form></div>
-</div>
-<!--//팝업-->
+				<!--//팝업-->
 			</div>
 			<!--//containerNew-->
 
@@ -354,7 +357,7 @@
 								<img src="images/exhb/%ED%94%84%EB%9D%BC%EC%9E%84%EC%BB%B4%ED%8D%BC%EB%8B%88.png" alt="">
 							</div>
 							<div class="txt">
-								<p class="name">유니텍</p>
+								<p class="name">유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍유니텍</p>
 								<p class="desc">사업시설 관리, 사업 지원 및
 									임대 서비스업</p>
 								<p class="jobPost">
@@ -385,26 +388,41 @@
 					</div>
 
 					<hr class="ex_line">
-					
+
 					<div class="open_filter">
 						<ul>
 							<li class="active">
-								<a href="#">전체(100)</a>
+								<a href="javascript:vold(0)">전체(100)</a>
 							</li>
 							<li>
-								<a href="#">경영ㆍ사무ㆍ금융ㆍ보험직(10)</a>
+								<a href="javascript:vold(0)">경영ㆍ사무ㆍ금융ㆍ보험직(10)</a>
 							</li>
 							<li>
-								<a href="#">연구직 및 공학 기술직(10)</a>
+								<a href="javascript:vold(0)">연구직 및 공학 기술직(10)</a>
 							</li>
 							<li>
-								<a href="#">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방직 및 군인(10)</a>
+								<a href="javascript:vold(0)">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방직 및 군인(10)</a>
 							</li>
 							<li>
-								<a href="#">보건ㆍ의료직(10)</a>
+								<a href="javascript:vold(0)">보건ㆍ의료직(10)</a>
 							</li>
 							<li>
-								<a href="#"></a>
+								<a href="javascript:vold(0)">예술ㆍ디자인ㆍ방송ㆍ스포츠직(10)</a>
+							</li>
+							<li>
+								<a href="javascript:vold(0)">미용ㆍ여행ㆍ숙박ㆍ음식ㆍ경비ㆍ청소직(10)</a>
+							</li>
+							<li>
+								<a href="javascript:vold(0)">영업ㆍ판매ㆍ운전ㆍ운송직(10)</a>
+							</li>
+							<li>
+								<a href="javascript:vold(0)">건설ㆍ채굴직(10)</a>
+							</li>
+							<li>
+								<a href="javascript:vold(0)">설치ㆍ정비ㆍ생산직(10)</a>
+							</li>
+							<li>
+								<a href="javascript:vold(0)">농림어업직(10)</a>
 							</li>
 						</ul>
 					</div>
@@ -423,18 +441,13 @@
 										<button class="like">관심공고 등록</button>
 										<p class="tit">국방사업 소프트웨어 개발자 채용</p>
 									</div>
-									<p class="cate">IT 개발자</p>
+									<p class="cate">경영ㆍ사무ㆍ금융ㆍ보험 > 교육ㆍ법률ㆍ복지ㆍ의료ㆍ예술ㆍ방송ㆍ정보통신 등 전문서비스 관리직 > 조사, 인력공급ㆍ알선 및 기타 전문서비스(부서장)</p>
 									<div class="etc">
 										<span>0000만원</span>
 										<span>정규직</span>
 										<span>신입+경력</span>
 										<span>학력무관</span>
 									</div>
-									<p class="area">
-										<span>수원시</span>
-										<span>양주시</span>
-										<span>의정부시</span>
-									</p>
 									<p class="date end">오늘마감</p>
 
 								</div>
@@ -456,24 +469,6 @@
 									</div>
 
 									<div class="support">
-
-										<div class="support_ci">
-											<!--잡아바-->
-											<span>
-												<img src="images/desEnt/open_crt02.png" alt="잡아바">
-											</span>
-											<!--//잡아바-->
-
-											<!--잡코리아-->
-											<span class="show">
-												<img src="images/desEnt/jobkorea.png" alt="잡코리아">
-											</span>
-											<!--//잡코리아-->
-
-											<span>
-												<img src="images/desEnt/worknet.png" alt="워크넷">
-											</span>
-										</div>
 
 										<button type="button">지원하기</button>
 									</div>
@@ -493,18 +488,13 @@
 										<button class="like">관심공고 등록</button>
 										<p class="tit">국방사업 소프트웨어 개발자 채용</p>
 									</div>
-									<p class="cate">IT 개발자</p>
+									<p class="cate">경영ㆍ사무ㆍ금융ㆍ보험 > 교육ㆍ법률ㆍ복지ㆍ의료ㆍ예술ㆍ방송ㆍ정보통신 등 전문서비스 관리직 > 조사, 인력공급ㆍ알선 및 기타 전문서비스(부서장)</p>
 									<div class="etc">
 										<span>0000만원</span>
-										<span>정규직</span>
+										<span></span>
 										<span>신입+경력</span>
 										<span>학력무관</span>
 									</div>
-									<p class="area">
-										<span>수원시</span>
-										<span>양주시</span>
-										<span>의정부시</span>
-									</p>
 									<p class="date end">오늘마감</p>
 
 								</div>
@@ -527,23 +517,6 @@
 
 									<div class="support">
 
-										<div class="support_ci">
-											<!--잡아바-->
-											<span>
-												<img src="images/desEnt/open_crt02.png" alt="잡아바">
-											</span>
-											<!--//잡아바-->
-
-											<!--잡코리아-->
-											<span class="show">
-												<img src="images/desEnt/jobkorea.png" alt="잡코리아">
-											</span>
-											<!--//잡코리아-->
-
-											<span>
-												<img src="images/desEnt/worknet.png" alt="워크넷">
-											</span>
-										</div>
 
 										<button type="button">지원하기</button>
 									</div>
@@ -563,18 +536,13 @@
 										<button class="like">관심공고 등록</button>
 										<p class="tit">국방사업 소프트웨어 개발자 채용</p>
 									</div>
-									<p class="cate">IT 개발자</p>
+									<p class="cate">경영ㆍ사무ㆍ금융ㆍ보험 > 교육ㆍ법률ㆍ복지ㆍ의료ㆍ예술ㆍ방송ㆍ정보통신 등 전문서비스 관리직 > 조사, 인력공급ㆍ알선 및 기타 전문서비스(부서장)</p>
 									<div class="etc">
 										<span>0000만원</span>
 										<span>정규직</span>
 										<span>신입+경력</span>
 										<span>학력무관</span>
 									</div>
-									<p class="area">
-										<span>수원시</span>
-										<span>양주시</span>
-										<span>의정부시</span>
-									</p>
 									<p class="date end">오늘마감</p>
 
 								</div>
@@ -596,25 +564,6 @@
 									</div>
 
 									<div class="support">
-
-										<div class="support_ci">
-											<!--잡아바-->
-											<span>
-												<img src="images/desEnt/open_crt02.png" alt="잡아바">
-											</span>
-											<!--//잡아바-->
-
-											<!--잡코리아-->
-											<span class="show">
-												<img src="images/desEnt/jobkorea.png" alt="잡코리아">
-											</span>
-											<!--//잡코리아-->
-
-											<span>
-												<img src="images/desEnt/worknet.png" alt="워크넷">
-											</span>
-										</div>
-
 										<button type="button">지원하기</button>
 									</div>
 								</div>
@@ -652,9 +601,9 @@
 				</div>
 			</div>
 			<!-- //추천기업 -->
-			
+
 			<!--온라인 취업컨설팅-->
-			
+
 			<div class="eh_cst">
 				<div class="containerNew">
 					<div class="ov_tit">
@@ -710,7 +659,7 @@
 						</div>
 
 						<div class="item item06">
-							<a href="항목: 전체, 박람회 예정, 박람회 오픈, 박람회 마감">
+							<a href="https://www.jobaba.net/jobInfoNcs/jobInfoNcsMain.do">
 								<span class="ico"></span>
 								<div class="txt">
 									<p class="tit">NCS 직업 역량진단</p>
@@ -721,20 +670,30 @@
 				</div>
 			</div>
 			<!--//온라인 취업컨설팅-->
-			
+
 		</div>
 	</div>
 
 	<!--잡아바 js-->
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
-
 	<script src="https://www.jobaba.net//resource/bxslider/slick.js"></script>
 
 	<!--추가 js-->
 	<!-- ie 흑백처리 -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.gray/1.7.0/js/jquery.gray.min.js" integrity="sha512-hWxc+3vZRDYzIdxyKGOcxIpqumsKijThap3KYw6QODuFzYMh7UGsyMFmVnQAL8hUwxjdQR2OTDUPCoYSSclU+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script>
+			// 팝업
+			function openpopup(id) {
+				event.preventDefault();
+				$("#" + id + "").show();
+			}
+
+			function popHide() {
+				$('.modal').hide();
+			}
+
 		$(document).ready(function() {
+
 			// 탭메뉴
 			// 탭 컨텐츠 숨기기
 			$(".tab_contents").hide();
@@ -752,9 +711,16 @@
 
 			$(".attend_area .tabs li a").click(function() {
 				$(this).parent().parent().parent().parent().find(".tab_contents").hide();
-				var activeTab = $(this).attr("href");
-				$(activeTab).fadeIn();
+				var activeTab = $(this).attr("rel");
+				$("#" + activeTab).fadeIn(200);
 			});
+
+			$('.des_open').each(function() {
+				$(this).find('.like').click(function() {
+					$(this).delay(500).toggleClass('active');
+				});
+			});
+
 
 
 			// 참여기업 슬라이드
@@ -767,13 +733,81 @@
 				slidesToShow: 6,
 				autoplaySpeed: 2000,
 				responsive: [{
-					breakpoint: 1024,
-					settings: {
-						slidesToShow: 4
-					}
-				}]
-
+						breakpoint: 1025,
+						settings: {
+							slidesToShow: 4
+						}
+					},
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 2,
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							slidesToShow: 1,
+							dots: true
+						}
+					},
+				]
 			});
+
+			function mobileOnlySlider() {
+
+
+				$('.eh_cst_cont').slick({
+					autoplay: true,
+					arrows: false,
+					speed: 1000,
+					slidesToShow: 3,
+					autoplaySpeed: 2000,
+					dots: true,
+					responsive: [{
+						breakpoint: 480,
+						settings: {
+							slidesToShow: 1
+						}
+
+					}]
+				});
+
+			}
+
+
+			if (window.innerWidth < 1024) {
+				mobileOnlySlider();
+			}
+
+
+
+			$(window).resize(function(e) {
+				if (window.innerWidth < 1024) {
+
+					if (!$('.eh_cst_cont').hasClass('slick-initialized')) {
+						mobileOnlySlider();
+					}
+
+				} else {
+
+					if ($('.eh_cst_cont').hasClass('slick-initialized')) {
+						$('.eh_cst_cont').slick('unslick');
+					}
+				}
+			});
+
+			// 데이터 빈값일때 class 추가
+			$('.item .etc span:empty').each(function() {
+				$(this).addClass('textNull');
+			});
+
+
+			//filiter click 
+			$('.open_filter a').click(function() {
+				$(this).parent().addClass('active');
+				$(this).parent().siblings().removeClass('active');
+			})
 
 
 		});

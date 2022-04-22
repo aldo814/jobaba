@@ -77,13 +77,13 @@
 					<form name="frm" id="frm" method="post" action="/entCntnts/exhb/exhbList.do">
 						<div class="list_search_wrap sty4">
 							<select class="comm_select" name="year" id="year" title="년도 선택">
-								<option value="">선택</option>
+								<option value="">전체</option>
 
-								<option value="2020">2020년</option>
+								<option>박람회 예정</option>
 
-								<option value="2021">2021년</option>
+								<option>박람회 오픈</option>
 
-								<option value="2022">2022년</option>
+								<option>박람회 마감</option>
 
 							</select>
 							<input type="text" class="sbform" placeholder="검색어를 입력하세요." title="검색어 입력" id="srchTxt" name="srchTxt" value="">
@@ -376,7 +376,7 @@
 			
 			
 			$('.eh_cst_cont').slick({
-				//autoplay: true,
+				autoplay: true,
 				arrows:false,
 				speed: 1000,
 				autoplaySpeed: 2000,
