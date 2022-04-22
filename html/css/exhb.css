@@ -511,6 +511,8 @@
 	.exhb_wrap .des_sub{padding: 30px 0}
 	.eh_cst .eh_cst_cont .item .txt .tit{font-size: 14px}
 	
+	.exhb_wrap .des_open .tit_wrap .tit{width: calc(100% - 50px) !important}
+	
 }
 
 
