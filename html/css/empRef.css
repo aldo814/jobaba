@@ -50,7 +50,7 @@
 .empRef_area .item .white_box > div .txt{width: calc(100% - 180px);display: flex;flex-direction: column;align-items: flex-start;height: 100%}
 .empRef_area .item .white_box .txt .tit{font-weight: 700;}
 .empRef_area .item .white_box .txt .desc{margin: 10px 0;font-weight: 400;color: #666;transition: all 0.3s;}
-.empRef_area .item .white_box .txt .go_link {background: #003281;color: #fff;padding: 5px 10px;border-radius: 5px;margin-top: auto;min-width: 84px}
+.empRef_area .item .white_box .txt .go_link {background: #003281;color: #fff;padding: 5px 10px;border-radius: 5px;margin-top: auto;min-width: 90px}
 .empRef_area .item .white_box .txt .go_link:hover,
 .empRef_area .item .white_box .txt .go_link:active,
 .empRef_area .item .white_box .txt .go_link:focus{text-decoration: underline;}
@@ -209,11 +209,14 @@
 	
 	.empRef_wrap .empRef_way .item01 .step .num{width: 35px;height: 35px;font-size: 14px;top: -17.5px}
 	.empRef_wrap .empRef_way .item01 .btn_area .emp_btn{width: calc(50% - 7.5px)}
-	.empRef_wrap .empRef_way h4{padding: 10px 40px;word-break: keep-all}
+	.empRef_wrap .empRef_way h4{padding: 10px;word-break: keep-all}
 	
 	.empRef_wrap .empRef_way .flex-box{margin-top: 20px}
 	.empRef_wrap .empRef_way .flex-box .f24,
 	.empRef_area .item .er_tit{word-break: keep-all;font-size: 16px}
 	
 	.empRef_wrap .header .bottom{margin-top: 20px}
+	
+	.empRef_wrap .empRef_way .apply_area .txt p{font-size: 13px;margin-bottom: 10px}
+	
 }
