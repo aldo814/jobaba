@@ -134,7 +134,7 @@
 .exhb_wrap .at_cpn{background: url(../images/exhb/sv_bg01.png) no-repeat center;background-size: cover;padding: 50px 0;}
 .exhb_wrap .at_cpn_list{margin-top: 25px;padding-top: 25px;border-top: 1px solid #000;position: relative;}
 .exhb_wrap .at_cpn_list .item{background: #fff;border-radius: 15px;overflow: hidden;height: 100% }
-.exhb_wrap .at_cpn_list .slick-track{display: flex !important;}
+.exhb_wrap .at_cpn_list .slick-track{display: flex !important;margin-left:0;margin-right:0}
 .exhb_wrap .at_cpn_list .slick-list {margin: 0 -10px;}
 .exhb_wrap .at_cpn_list .slick-slide {margin: 0 10px;height: inherit !important;}
 .exhb_wrap .at_cpn_list .slick-slide > div {height: 100%}
