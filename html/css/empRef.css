@@ -176,7 +176,7 @@
 	.empRef_wrap .empRef_way .apply_area:before{background-size: 260px;width: 260px;height: 81px}
 	.empRef_wrap .empRef_way .item01 .step > div{width: calc(50% - 5px);margin-right: 10px;margin-bottom: 30px}
 	.empRef_wrap .empRef_way .item01 .btn_area{margin-top: 20px}
-	.empRef_wrap .empRef_way .item01 .btn_area .emp_btn{font-size: 14px;}
+	.empRef_wrap .empRef_way .item01 .btn_area .emp_btn{font-size: 13px;padding: 6px 10px}
 	.empRef_wrap .empRef_way .apply_area .img{width: 200px}
 	.empRef_wrap .empRef_way .apply_area .txt{width: calc(100% - 220px);font-size: 16px}
 	
