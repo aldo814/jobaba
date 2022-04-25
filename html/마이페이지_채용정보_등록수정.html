@@ -49,7 +49,7 @@
 							</dt>
 							<!-- 추가 작업영역-->
 							<dd class="recruit_area">
-								<button type="button" class="btn btn_green btn-sm">희망직종 검색
+								<button type="button" class="btn btn_green btn-sm"  onclick="javascript:recPop()">희망직종 검색
 								</button>
 								<p class="mgt10" style="display: none">희망직종을 등록해주세요.
 								</p>
@@ -61,12 +61,136 @@
 									<button type="button" class="del">X</button>
 								</div>
 								<!--선택완료시-->
-
 								
 
 							</dd>
 							<!--//추가 작업영역-->
 						</dl>
+						
+								<!-- 선택 팝업-->
+								<div class="modal fade in ent_pop ent_select" id="entPop" style="display: block;">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header header-primary">
+												<button type="button" class="close" onclick="javascript:closePop()"><span>×</span></button>
+												<h4 class="modal-title">모집분야 검색</h4>
+											</div>
+											<div class="modal-body">
+												<div class="container-fluid">
+													<table class="board-view-tp01">
+														<caption>모집분야검색</caption>
+														<tbody>
+															<tr>
+																<th class="tlt" colspan="3">모집분야를 검색 또는 선택해주세요.</th>
+															</tr>
+															<tr class="m_ent">
+																<td>
+																	<ul class="scr scrollbar-outer">
+																		<li class="inp_chk">
+																			<input type="radio" id="check01" name="check_dept1">
+																			<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
+																		</li>
+
+
+																		<li class="inp_chk">
+																			<input type="radio" id="check02" name="check_dept1">
+																			<label for="check02" class="lb_tag">연구 및 공학기술</label>
+																		</li>
+
+																		<li class="inp_chk">
+																			<input type="radio" id="check03" name="check_dept1">
+																			<label for="check03" class="lb_tag">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인</label>
+
+																		</li>
+																		<li class="inp_chk"><input type="radio" id="check04" name="check_dept1">
+																			<label for="check04" class="lb_tag">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인보건ㆍ의료</label>
+																		</li>
+																		<li class="inp_chk">
+																			<input type="radio" id="check05" name="check_dept1">
+																			<label for="check05" class="lb_tag">예술ㆍ디자인ㆍ방송ㆍ스포츠</label>
+																		</li>
+																	</ul>
+																</td>
+																<td>
+																	<ul class="scr scrollbar-outer">
+																		<li class="inp_chk">
+																			<input type="radio" id="check06" name="check_dept2">
+																			<label for="check06" class="lb_tag">행정ㆍ경영ㆍ금융ㆍ보험 관리직
+																			</label>
+																		</li>
+
+
+																		<li class="inp_chk">
+																			<input type="radio" id="check07" name="check_dept2">
+																			<label for="check07" class="lb_tag">교육ㆍ법률ㆍ복지ㆍ의료ㆍ예술ㆍ방송ㆍ정보통신 등 전문서비스 관리직
+																			</label>
+																		</li>
+
+																		<li class="inp_chk">
+																			<input type="radio" id="check08" name="check_dept2">
+																			<label for="check08" class="lb_tag">미용ㆍ여행ㆍ숙박ㆍ음식 등 개인서비스 및 영업ㆍ판매ㆍ운송 관리직
+																			</label>
+
+																		</li>
+																		<li class="inp_chk"><input type="radio" id="check09" name="check_dept2">
+																			<label for="check09" class="lb_tag">건설ㆍ채굴ㆍ제조ㆍ생산 관리직
+																			</label>
+																		</li>
+																		<li class="inp_chk">
+																			<input type="radio" id="check10" name="check_dept2">
+																			<label for="check10" class="lb_tag">행정ㆍ경영ㆍ회계ㆍ광고ㆍ상품기획 전문가
+																			</label>
+																		</li>
+																	</ul>
+																</td>
+																<td>
+																	<ul class="scr scrollbar-outer">
+																		<li class="inp_chk">
+																			<input type="radio" id="check11" name="check_dept3">
+																			<label for="check11" class="lb_tag">국회의원ㆍ고위공무원 및 공공단체임원
+																			</label>
+																		</li>
+
+
+																		<li class="inp_chk">
+																			<input type="radio" id="check12" name="check_dept3">
+																			<label for="check12" class="lb_tag">기업 고위임원
+																			</label>
+																		</li>
+
+																		<li class="inp_chk">
+																			<input type="radio" id="check13" name="check_dept3">
+																			<label for="check13" class="lb_tag">정부행정 관리자
+																			</label>
+
+																		</li>
+																		<li class="inp_chk"><input type="radio" id="check14" name="check_dept3">
+																			<label for="check14" class="lb_tag">경영지원 관리자
+																			</label>
+																		</li>
+																		<li class="inp_chk">
+																			<input type="radio" id="check15" name="check_dept3">
+																			<label for="check15" class="lb_tag">예술ㆍ디자인ㆍ방송ㆍ스포츠</label>
+																		</li>
+																	</ul>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+
+
+
+
+												</div>
+
+												<div class="btn_trt">
+													<button type="button" class="btn btn_green">선택</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- //선택 팝업-->
 					</div>
 
 				</div>
@@ -84,6 +208,18 @@
 		// 스크롤 js
 	$(document).ready(function(){
     $('.scr').scrollbar();
+
+		//팝업
+		function recPop() {
+			$('#entPop').show();
+			 $("html, body").addClass("not_scroll");
+		}
+
+		function closePop() {
+			$('#entPop').hide();
+			$("html, body").removeClass("not_scroll");
+
+		}
 });
 	</script>
 </body></html>
