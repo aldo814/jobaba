@@ -8,12 +8,19 @@
 
 .ent_pop.modal.in .modal-dialog, 
 .ent_pop.modal .modal-dialog{max-width: 1260px !important;width: 100% !important;position: fixed;left: 50%;top: 50%;transform: translate(-50%,-50%);}
-.ent_pop .board-view-tp01 tbody tr th{padding: 10px}
-.ent_select .scr{max-height: 200px}
-.ent_select .scr li{font-size: 14px;line-height: 1.2}
-.ent_select .scr li:last-child{margin-bottom: 0}
-.ent_pop.ent_select .board-view-tp01 tbody tr td{padding:  0  !important}
-.ent_pop.ent_select .scr{padding: 10px 0 8px}
+
+.category-select{border-top: 2px solid #000;border-bottom: 1px solid #e6e6e6}
+.category-select .tit{background: #f5f5f5;padding: 10px;font-size: 16px;color: #000;}
+.category-select .cate-list{border-top: 1px solid #e6e6e6;display: flex;}
+.category-select .cate-list > div{flex: 1  1 }
+.category-select .cate_scr{border: 1px solid #e6e6e6;margin: 20px 0;display: flex;justify-content: space-between;align-items: center;padding: 10px;max-width: 810px;width: 100%;}
+.category-select .cate_scr input{width: calc(100% - 50px)}
+.category-select .cate_scr button{background: url('https://www.jobaba.net//resource/images/desEnt/src_ico.png') no-repeat center right transparent;display: block;width: 20px;height: 20px;text-indent: -9999px;}
+
+.category-select .scr{max-height: 200px}
+.category-select .scr li{font-size: 14px;line-height: 1.2}
+.category-select li:last-child{margin-bottom: 0}
+.category-select .scr{padding: 10px 0 8px}
 .ent_pop.ent_select .btn_trt{text-align: right;margin-top: 10px}
 .ent_pop.ent_select .btn_trt .btn{height: auto !important;padding: 7px  15px!important;width: auto;line-height: 1 !important}
 

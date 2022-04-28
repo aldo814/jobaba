@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/swiper.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/05.css">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<div id="theme" class="container1-full">
+		<div class="tm_bg">
+			<h2 class="sr-only">테마</h2>
+
+		</div>
+	</div>
+	<script>
+		var nav = $('#header'),
+			nav_height = nav.outerHeight();
+
+		$('.quick_tm').find('a').on('click', function() {
+			var $el = $(this),
+				id = $el.attr('href');
+			$('html, body').animate({
+				scrollTop: $(id).offset().top - nav_height
+			}, 500);
+			return false;
+		});
+	</script>
+</body></html>
