@@ -20,9 +20,13 @@
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/style.epmtDiag.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
+
+
+
 	<!-- //잡아바 css-->
 
 	<!--추가 css-->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.css" />
 	<link rel="stylesheet" href="css/new_entEmpmn.css">
 
@@ -128,109 +132,112 @@
 													<div class="container-fluid">
 
 														<div class="category-select">
-														<div class="tit">
-															<p>모집분야를 검색 또는 선택해주세요.</p>
-														</div>
-														<div class="cate_scr">
-															<input type="text" placeholder="직무, 키워드를 입력해주세요.">
-															<button type="button">검색</button>
-														</div>
-														<div class="cate-list">
-															<div class="cate">
-																<ul class="scr scrollbar-outer">
-																	<li class="inp_chk">
-																		<input type="radio" id="check01" name="check_dept1">
-																		<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
-																	</li>
-
-
-																	<li class="inp_chk">
-																		<input type="radio" id="check02" name="check_dept1">
-																		<label for="check02" class="lb_tag">연구 및 공학기술</label>
-																	</li>
-
-																	<li class="inp_chk">
-																		<input type="radio" id="check03" name="check_dept1">
-																		<label for="check03" class="lb_tag">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인</label>
-
-																	</li>
-																	<li class="inp_chk"><input type="radio" id="check04" name="check_dept1">
-																		<label for="check04" class="lb_tag">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인보건ㆍ의료</label>
-																	</li>
-																	<li class="inp_chk">
-																		<input type="radio" id="check05" name="check_dept1">
-																		<label for="check05" class="lb_tag">예술ㆍ디자인ㆍ방송ㆍ스포츠</label>
-																	</li>
-																</ul>
+															<div class="tit">
+																<p>모집분야를 검색 또는 선택해주세요.</p>
 															</div>
-															<div class="cate">
-																<ul class="scr scrollbar-outer">
-																	<li class="inp_chk">
-																		<input type="radio" id="check06" name="check_dept2">
-																		<label for="check06" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
-																	</li>
+															<div class="cate_scr">
+																<input type="text" placeholder="직무, 키워드를 입력해주세요." id="cateScr">
 
-
-																	<li class="inp_chk">
-																		<input type="radio" id="check07" name="check_dept2">
-																		<label for="check07" class="lb_tag">연구 및 공학기술</label>
-																	</li>
-
-																	<li class="inp_chk">
-																		<input type="radio" id="check08" name="check_dept2">
-																		<label for="check08" class="lb_tag">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인</label>
-
-																	</li>
-																	<li class="inp_chk"><input type="radio" id="check09" name="check_dept2">
-																		<label for="check09" class="lb_tag">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인보건ㆍ의료</label>
-																	</li>
-																	<li class="inp_chk">
-																		<input type="radio" id="check10" name="check_dept2">
-																		<label for="check10" class="lb_tag">예술ㆍ디자인ㆍ방송ㆍ스포츠</label>
-																	</li>
-																</ul>
+																<button type="button">검색</button>
 															</div>
-															<div class="cate">
-																<ul class="scr scrollbar-outer">
-																	<li class="inp_chk">
-																		<input type="radio" id="check11" name="check_dept3">
-																		<label for="check11" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
-																	</li>
+															<div class="cate-list">
+																<div class="cate">
+																	<a href="javascript:vold(0)" class="hide">1차 분류</a>
+																	<ul class="scr scrollbar-outer">
+																		<li class="inp_chk">
+																			<input type="radio" id="check01" name="check_dept1">
+																			<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
+																		</li>
 
 
-																	<li class="inp_chk">
-																		<input type="radio" id="check12" name="check_dept3">
-																		<label for="check12" class="lb_tag">연구 및 공학기술</label>
-																	</li>
+																		<li class="inp_chk">
+																			<input type="radio" id="check02" name="check_dept1">
+																			<label for="check02" class="lb_tag">연구 및 공학기술</label>
+																		</li>
 
-																	<li class="inp_chk">
-																		<input type="radio" id="check13" name="check_dept3">
-																		<label for="check13" class="lb_tag">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인</label>
+																		<li class="inp_chk">
+																			<input type="radio" id="check03" name="check_dept1">
+																			<label for="check03" class="lb_tag">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인</label>
 
-																	</li>
-																	<li class="inp_chk"><input type="radio" id="check15" name="check_dept3">
-																		<label for="check15" class="lb_tag">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인보건ㆍ의료</label>
-																	</li>
-																	<li class="inp_chk">
-																		<input type="radio" id="check16" name="check_dept3">
-																		<label for="check16" class="lb_tag">예술ㆍ디자인ㆍ방송ㆍ스포츠</label>
-																	</li>
-																	
-																</ul>
+																		</li>
+																		<li class="inp_chk"><input type="radio" id="check04" name="check_dept1">
+																			<label for="check04" class="lb_tag">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인보건ㆍ의료</label>
+																		</li>
+																		<li class="inp_chk">
+																			<input type="radio" id="check05" name="check_dept1">
+																			<label for="check05" class="lb_tag">예술ㆍ디자인ㆍ방송ㆍ스포츠</label>
+																		</li>
+																	</ul>
+																</div>
+																<div class="cate">
+																	<a href="javascript:vold(0)" class="hide">2차 분류</a>
+																	<ul class="scr scrollbar-outer">
+																		<li class="inp_chk">
+																			<input type="radio" id="check06" name="check_dept2">
+																			<label for="check06" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
+																		</li>
+
+
+																		<li class="inp_chk">
+																			<input type="radio" id="check07" name="check_dept2">
+																			<label for="check07" class="lb_tag">연구 및 공학기술</label>
+																		</li>
+
+																		<li class="inp_chk">
+																			<input type="radio" id="check08" name="check_dept2">
+																			<label for="check08" class="lb_tag">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인</label>
+
+																		</li>
+																		<li class="inp_chk"><input type="radio" id="check09" name="check_dept2">
+																			<label for="check09" class="lb_tag">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인보건ㆍ의료</label>
+																		</li>
+																		<li class="inp_chk">
+																			<input type="radio" id="check10" name="check_dept2">
+																			<label for="check10" class="lb_tag">예술ㆍ디자인ㆍ방송ㆍ스포츠</label>
+																		</li>
+																	</ul>
+																</div>
+																<div class="cate">
+																	<a href="javascript:vold(0)" class="hide">3차 분류</a>
+																	<ul class="scr scrollbar-outer">
+																		<li class="inp_chk">
+																			<input type="radio" id="check11" name="check_dept3">
+																			<label for="check11" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
+																		</li>
+
+
+																		<li class="inp_chk">
+																			<input type="radio" id="check12" name="check_dept3">
+																			<label for="check12" class="lb_tag">연구 및 공학기술</label>
+																		</li>
+
+																		<li class="inp_chk">
+																			<input type="radio" id="check13" name="check_dept3">
+																			<label for="check13" class="lb_tag">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인</label>
+
+																		</li>
+																		<li class="inp_chk"><input type="radio" id="check15" name="check_dept3">
+																			<label for="check15" class="lb_tag">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인보건ㆍ의료</label>
+																		</li>
+																		<li class="inp_chk">
+																			<input type="radio" id="check16" name="check_dept3">
+																			<label for="check16" class="lb_tag">예술ㆍ디자인ㆍ방송ㆍ스포츠</label>
+																		</li>
+
+																	</ul>
+																</div>
 															</div>
 														</div>
-														</div>
-
 													</div>
 
 													<div class="btn_trt">
 														<button type="button" class="btn btn_green">선택</button>
 													</div>
+
 												</div>
 											</div>
 										</div>
-									</div>
-									<!-- //선택 팝업-->
+										<!-- //선택 팝업-->
 
 
 								</dd>
@@ -527,7 +534,6 @@
 											DEXT5UPLOAD.config.ExtensionAllowOrLimit = "0";
 											var upload = new Dext5Upload("UPLOAD192");
 											//]]>
-
 										</script>
 										<div id="dext5uploader_holder_UPLOAD192" style="width:100%; height:100px"><iframe id="dext5uploader_frame_UPLOAD192" title="DEXT5Upload UPLOAD192" frameborder="0" src="" style="width: 100%; height: 100%; border-width: 0px;"></iframe></div>
 									</div>
@@ -593,7 +599,6 @@
 										function UPLOAD192_count() {
 											return DEXT5UPLOAD.GetTotalFileCount('UPLOAD192');
 										}
-
 									</script>
 
 
@@ -628,19 +633,120 @@
 		</div>
 	</div>
 
-	<!--잡아바 js-->
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script type="text/javascript" charset="utf-8" src="https://jobaba.net/resource/js/jquery-ui-1.11.4.js"></script>
-
 
 	<!--추가 js-->
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
 	<script>
 		// 스크롤 js
 		$(document).ready(function() {
-			$('.scr').scrollbar();
+
+			var windowWidth = $(window).width();
+
+			if (windowWidth > 768) {} else {
+				mbCate();
+
+			}
+
+			$(window).resize(function() {
+				if (windowWidth > 768) {} else {
+					mbCate();
+				}
+
+			});
+
+
+
+			function mbCate() {
+				$(".category-select .scr").wrap('<div class="m_select"></div>');
+				$(".category-select .m_select").prepend('<p class="active"></a>');
+
+				$(".category-select .m_select").click(function() {
+					$(this).toggleClass('open')
+				});
+
+
+				var first_show = $(".category-select .m_select li:first").children('label').text();
+				$(".category-select .m_select .active").html(first_show);
+
+				$(".category-select .scr li").click(function() {
+					var selected_value = $(this).children('label').text();
+					var first_li = $(".category-select .m_select .active").html();
+
+					$(".category-select .m_select .active").html(selected_value);
+
+				});
+
+				$(".category-select .scr li input").change(function() {
+					if ($(".category-select .scr li input").is(":checked")) {
+						$(this).parent().parent().parent().removeClass('open')
+					} 
+				});
+
+				$(document).mouseup(function(event) {
+
+					var target = event.target;
+					var select = $(".m_select");
+
+					if (!select.is(target) && select.has(target).length === 0) {
+						select.removeClass("open");
+					}
+
+				});
+
+
+
+			}
+			// 자동완성
+			var availableTags = [
+				"경영ㆍ사무ㆍ금융ㆍ보험직",
+				"연구 및 공학기술",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+				"교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방 및 군인",
+
+			];
+			$("#cateScr").autocomplete({
+				source: availableTags
+			});
+
+
+
+
 
 		});
+
+
+
 
 
 
@@ -655,8 +761,5 @@
 			$("html, body").removeClass("not_scroll");
 
 		}
-
 	</script>
-</body>
-
-</html>
+</body></html>
