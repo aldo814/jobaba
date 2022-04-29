@@ -149,39 +149,6 @@
 																			<input type="radio" id="check01" name="check_dept1">
 																			<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
 																		</li>
-																		<li class="inp_chk">
-																			<input type="radio" id="check01" name="check_dept1">
-																			<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
-																		</li>
-																		<li class="inp_chk">
-																			<input type="radio" id="check01" name="check_dept1">
-																			<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
-																		</li>
-																		<li class="inp_chk">
-																			<input type="radio" id="check01" name="check_dept1">
-																			<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
-																		</li>
-																		<li class="inp_chk">
-																			<input type="radio" id="check01" name="check_dept1">
-																			<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
-																		</li>
-																		<li class="inp_chk">
-																			<input type="radio" id="check01" name="check_dept1">
-																			<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
-																		</li>
-																		<li class="inp_chk">
-																			<input type="radio" id="check01" name="check_dept1">
-																			<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
-																		</li>
-																		<li class="inp_chk">
-																			<input type="radio" id="check01" name="check_dept1">
-																			<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
-																		</li>
-																		<li class="inp_chk">
-																			<input type="radio" id="check01" name="check_dept1">
-																			<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
-																		</li>
-
 
 																		<li class="inp_chk">
 																			<input type="radio" id="check02" name="check_dept1">
@@ -272,7 +239,8 @@
 												</div>
 											</div>
 										</div>
-										<!-- //선택 팝업-->
+									</div>
+									<!-- //선택 팝업-->
 
 
 								</dd>
@@ -686,11 +654,11 @@
 
 			}
 
-			$(window).resize(function(){
+			$(window).resize(function() {
 				if (window.innerWidth < 768) {
 					mbCate();
 					$('.category-select .m_select .scr').scrollbar("destroy");
-					
+
 
 				} else {
 					$(".category-select .m_select").removeClass('m_select');
@@ -702,8 +670,8 @@
 
 
 			function mbCate() {
-				$(".category-select .cate").each(function(){
-				$(this).find('ul,p').wrapAll('<div class="m_select"></div>');
+				$(".category-select .cate").each(function() {
+					$(this).find('ul,p').wrapAll('<div class="m_select"></div>');
 				});
 				$(".category-select .m_select").click(function() {
 					var is_open = $(this).hasClass("open");
