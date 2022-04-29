@@ -148,6 +148,38 @@
 																			<input type="radio" id="check01" name="check_dept1">
 																			<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
 																		</li>
+																		<li class="inp_chk">
+																			<input type="radio" id="check01" name="check_dept1">
+																			<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
+																		</li>
+																		<li class="inp_chk">
+																			<input type="radio" id="check01" name="check_dept1">
+																			<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
+																		</li>
+																		<li class="inp_chk">
+																			<input type="radio" id="check01" name="check_dept1">
+																			<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
+																		</li>
+																		<li class="inp_chk">
+																			<input type="radio" id="check01" name="check_dept1">
+																			<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
+																		</li>
+																		<li class="inp_chk">
+																			<input type="radio" id="check01" name="check_dept1">
+																			<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
+																		</li>
+																		<li class="inp_chk">
+																			<input type="radio" id="check01" name="check_dept1">
+																			<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
+																		</li>
+																		<li class="inp_chk">
+																			<input type="radio" id="check01" name="check_dept1">
+																			<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
+																		</li>
+																		<li class="inp_chk">
+																			<input type="radio" id="check01" name="check_dept1">
+																			<label for="check01" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
+																		</li>
 
 
 																		<li class="inp_chk">
@@ -642,28 +674,33 @@
 		// 스크롤 js
 		$(document).ready(function() {
 
-			var windowWidth = $(window).width();
-
-			if (windowWidth < 768) {
+			if (window.innerWidth < 768) {
 				mbCate();
+				$('.scr').onDestroy();
 			} else {
 
+				$('.scr').scrollbar();
 
 			}
 
-			$(window).resize(function() {
-				if (windowWidth < 768) {
+			window.addEventListener('resize', function() {
+				if (window.innerWidth < 768) {
 					mbCate();
+					$('.category-select .m_select .scr').scrollbar("destroy");
+
 				} else {
+					$(".category-select .m_select").removeClass('m_select');
+					$(".category-select .active").hide();
 
+					$('.scr').scrollbar();
 				}
+			}, false);
 
-			});
 
 
 
 			function mbCate() {
-				$(".category-select .scr").wrap('<div class="m_select"></div>');
+				$(".category-select .cate .scr").wrap('<div class="m_select"></div>');
 				$(".category-select .m_select").prepend('<p class="active"></a>');
 
 				$(".category-select .m_select").click(function() {
