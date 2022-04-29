@@ -3,8 +3,8 @@
 .recruit_area{}
 .recruit_area p{font-size: 14px;color: #555}
 .recruit_area .del{background: url(../images/entEmpmn/del_ico.png) no-repeat center #f5f5f5;text-indent: -9999px;width: 25px;height: 25px;border: 1px solid #dcdcdc}
-.recruit_area .add_area{display: flex;justify-content: space-between;margin-top: 10px;}
-.recruit_area .add_area p{width: calc(100% - 25px);}
+.recruit_area .add_area{display: flex;margin-top: 10px;}
+.recruit_area .add_area p{margin-right: 10px}
 
 .ent_pop.modal.in .modal-dialog, 
 .ent_pop.modal .modal-dialog{max-width: 1260px !important;width: 100% !important;position: fixed;left: 50%;top: 50%;transform: translate(-50%,-50%);}
