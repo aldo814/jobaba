@@ -15,7 +15,7 @@
 .category-select .tit{border-top: 2px solid #000;background: #f5f5f5;padding: 10px;font-size: 16px;color: #000;}
 .category-select .cate-list{border-top: 1px solid #e6e6e6;display: flex;}
 .category-select .cate-list > div{flex: 1  1 }
-.category-select .cate_scr{border: 1px solid #e6e6e6;margin: 20px 0;display: flex;justify-content: space-between;align-items: center;max-width: 810px;width: 100%;}
+.category-select .cate_scr{border: 1px solid #e6e6e6;margin: 20px 0;display: flex;justify-content: space-between;align-items: center;width: 100%;}
 .ui-front{z-index: 999999999999999999999999999 !important}
 .category-select .cate_scr input {width: calc(100% - 50px);padding: 10px}
 .category-select .cate_scr button{background: url('https://www.jobaba.net//resource/images/desEnt/src_ico.png') no-repeat center right transparent;display: block;width: 20px;height: 20px;text-indent: -9999px;margin-right: 10px}
