@@ -142,6 +142,7 @@
 															<div class="cate-list">
 																<div class="cate">
 																	<a href="javascript:vold(0)" class="hide">대분류</a>
+																	<div class="m_select">
 																	<p class="active">대분류를 선택 해주세요.</p>
 																	<ul class="scr scrollbar-outer">
 																		<li class="inp_chk">
@@ -167,9 +168,11 @@
 																			<label for="check05" class="lb_tag">예술ㆍ디자인ㆍ방송ㆍ스포츠</label>
 																		</li>
 																	</ul>
+																	</div>
 																</div>
 																<div class="cate">
 																	<a href="javascript:vold(0)" class="hide">중분류</a>
+																	<div class="m_select">
 																	<p class="active">중분류를 선택 해주세요.</p>
 																	<ul class="scr scrollbar-outer">
 																		<li class="inp_chk">
@@ -196,9 +199,11 @@
 																			<label for="check10" class="lb_tag">예술ㆍ디자인ㆍ방송ㆍ스포츠</label>
 																		</li>
 																	</ul>
+																	</div>
 																</div>
 																<div class="cate">
 																	<a href="javascript:vold(0)" class="hide">소분류</a>
+																	<div class="m_select">
 																	<p class="active">
 																		소분류를 선택 해주세요.
 																	</p>
@@ -228,6 +233,7 @@
 																		</li>
 
 																	</ul>
+																	</div>
 																</div>
 															</div>
 														</div>
@@ -671,9 +677,7 @@
 
 
 			function mbCate() {
-				$(".category-select .cate").each(function() {
-					$(this).find('ul,p').wrapAll('<div class="m_select"></div>');
-				});
+				
 				$(".category-select .m_select").click(function() {
 					var is_open = $(this).hasClass("open");
 					if (is_open) {
