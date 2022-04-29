@@ -143,6 +143,7 @@
 															<div class="cate-list">
 																<div class="cate">
 																	<a href="javascript:vold(0)" class="hide">1차 분류</a>
+																	<p class="active"></p>
 																	<ul class="scr scrollbar-outer">
 																		<li class="inp_chk">
 																			<input type="radio" id="check01" name="check_dept1">
@@ -203,6 +204,7 @@
 																</div>
 																<div class="cate">
 																	<a href="javascript:vold(0)" class="hide">2차 분류</a>
+																	<p class="active"></p>
 																	<ul class="scr scrollbar-outer">
 																		<li class="inp_chk">
 																			<input type="radio" id="check06" name="check_dept2">
@@ -231,6 +233,7 @@
 																</div>
 																<div class="cate">
 																	<a href="javascript:vold(0)" class="hide">3차 분류</a>
+																	<p class="active"></p>
 																	<ul class="scr scrollbar-outer">
 																		<li class="inp_chk">
 																			<input type="radio" id="check11" name="check_dept3">
@@ -683,33 +686,32 @@
 
 			}
 
-			window.addEventListener('resize', function() {
+			$(window).resize(function(){
 				if (window.innerWidth < 768) {
 					mbCate();
 					$('.category-select .m_select .scr').scrollbar("destroy");
+					
 
 				} else {
 					$(".category-select .m_select").removeClass('m_select');
-					$(".category-select .active").hide();
-
 					$('.scr').scrollbar();
 				}
-			}, false);
+			});
 
 
 
 
 			function mbCate() {
-				$(".category-select .cate .scr").wrap('<div class="m_select"></div>');
-				$(".category-select .m_select").prepend('<p class="active"></a>');
-
+				$(".category-select .cate").each(function(){
+				$(this).find('ul,p').wrapAll('<div class="m_select"></div>');
+				});
 				$(".category-select .m_select").click(function() {
 					var is_open = $(this).hasClass("open");
 					if (is_open) {
 						$(this).removeClass("open");
 					} else {
 						$(this).addClass("open");
-						$(this).parent().siblings().find('.m_select ').removeClass("open");
+						$(this).parent().siblings().find('.m_select').removeClass("open");
 					}
 				});
 
