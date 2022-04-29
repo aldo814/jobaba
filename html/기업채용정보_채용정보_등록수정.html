@@ -142,8 +142,8 @@
 															</div>
 															<div class="cate-list">
 																<div class="cate">
-																	<a href="javascript:vold(0)" class="hide">1차 분류</a>
-																	<p class="active"></p>
+																	<a href="javascript:vold(0)" class="hide">대분류</a>
+																	<p class="active">대분류를 선택 해주세요.</p>
 																	<ul class="scr scrollbar-outer">
 																		<li class="inp_chk">
 																			<input type="radio" id="check01" name="check_dept1">
@@ -170,8 +170,8 @@
 																	</ul>
 																</div>
 																<div class="cate">
-																	<a href="javascript:vold(0)" class="hide">2차 분류</a>
-																	<p class="active"></p>
+																	<a href="javascript:vold(0)" class="hide">중분류</a>
+																	<p class="active">중분류를 선택 해주세요.</p>
 																	<ul class="scr scrollbar-outer">
 																		<li class="inp_chk">
 																			<input type="radio" id="check06" name="check_dept2">
@@ -199,8 +199,10 @@
 																	</ul>
 																</div>
 																<div class="cate">
-																	<a href="javascript:vold(0)" class="hide">3차 분류</a>
-																	<p class="active"></p>
+																	<a href="javascript:vold(0)" class="hide">소분류</a>
+																	<p class="active">
+																		소분류를 선택 해주세요.
+																	</p>
 																	<ul class="scr scrollbar-outer">
 																		<li class="inp_chk">
 																			<input type="radio" id="check11" name="check_dept3">
@@ -685,11 +687,7 @@
 
 
 
-				$('.category-select .m_select').each(function() {
-					var first_show = $(this).find('ul').find('li:first').children('label').text();
-					$(this).find('.active').html(first_show);
-
-				});
+		
 
 
 				$(".category-select .scr li").click(function() {
