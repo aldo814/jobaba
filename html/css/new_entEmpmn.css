@@ -58,7 +58,7 @@ a.ui-button:active,
 	.category-select .cate:nth-child(1) .hide{border-top: 0;}
 	.category-select .m_select{position: relative;border: 1px solid #dcdcdc;cursor: pointer;}
 	.category-select .m_select.open ul {display: block;padding: 0}
-	.category-select .active{padding: 10px 20px 10px 10px;background:#fff url('https://www.jobaba.net/resource/images/col-listpluimo.png') no-repeat center right 10px; background-size:10px;}
+	.category-select .active{padding: 10px 30px 10px 10px;background:#fff url('https://www.jobaba.net/resource/images/col-listpluimo.png') no-repeat center right 10px; background-size:10px;}
 	.category-select .cate-list > div{padding: 15px 0;border-bottom: 1px solid #e6e6e6;}
 	.category-select .active label{padding: 0 !important;margin: 0 !important}
 	.category-select .m_select ul {display: none;margin: 0;}
