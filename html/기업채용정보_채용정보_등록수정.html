@@ -174,7 +174,7 @@
 																	<ul class="scr scrollbar-outer">
 																		<li class="inp_chk">
 																			<input type="radio" id="check06" name="check_dept2">
-																			<label for="check06" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
+																			<label for="check06" class="lb_tag">2경영ㆍ사무ㆍ금융ㆍ보험직</label>
 																		</li>
 
 
@@ -202,7 +202,7 @@
 																	<ul class="scr scrollbar-outer">
 																		<li class="inp_chk">
 																			<input type="radio" id="check11" name="check_dept3">
-																			<label for="check11" class="lb_tag">경영ㆍ사무ㆍ금융ㆍ보험직</label>
+																			<label for="check11" class="lb_tag">3경영ㆍ사무ㆍ금융ㆍ보험직</label>
 																		</li>
 
 
@@ -644,14 +644,18 @@
 
 			var windowWidth = $(window).width();
 
-			if (windowWidth > 768) {} else {
+			if (windowWidth < 768) {
 				mbCate();
+			} else {
+				
 
 			}
 
 			$(window).resize(function() {
-				if (windowWidth > 768) {} else {
+				if (windowWidth < 768) {
 					mbCate();
+				} else {
+					
 				}
 
 			});
@@ -667,14 +671,19 @@
 				});
 
 
-				var first_show = $(".category-select .m_select li:first").children('label').text();
-				$(".category-select .m_select .active").html(first_show);
+			
+				$('.category-select .m_select').each(function(){
+					var first_show = $(this).find('ul').find('li:first').children('label').text();
+				$(this).find('.active').html(first_show);
+					
+				});
+				
 
 				$(".category-select .scr li").click(function() {
 					var selected_value = $(this).children('label').text();
 					var first_li = $(".category-select .m_select .active").html();
 
-					$(".category-select .m_select .active").html(selected_value);
+					$(this).parent().parent().find(".active").html(selected_value);
 
 				});
 
