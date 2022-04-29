@@ -672,6 +672,7 @@
 						$(this).removeClass("open");
 					} else {
 						$(this).addClass("open");
+						$(this).parent().siblings().find('.m_select ').removeClass("open");
 					}
 				});
 
