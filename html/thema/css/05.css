@@ -92,6 +92,13 @@ z-index: 1}
 #theme .section01 .white_box .right{width: calc(100% - 540px);text-align: right;padding: 38px 0}
 
 /* vs영역 */
+.layer-open{
+
+overflow:hidden; 
+
+}
+
+
 #theme .balance_area{position: relative;margin: 40px 0;}
 #theme .balance_area .ba_tit {text-align: center;background: #ddd;border-radius: 10px;max-width: 250px;margin:0 auto 30px auto;padding: 25px 15px;text-align: center;line-height: 0;font-size: 22px;border: 2px solid #000;color: #fff}
 #theme .balance_area .ba_wrap{position: relative}
@@ -219,6 +226,8 @@ z-index: 1}
 	#theme .balance_area .evt > a{width:calc(50% - 50px);}
 	#theme .balance_area .evt .txt{margin-top: 13px;word-break: keep-all}
 	#theme .balance_area .ba_tit{margin: 0 auto 20px auto}
+	
+	#theme .balance_area .evt .img img{transition: none;}
 	
 
 
