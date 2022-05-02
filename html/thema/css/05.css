@@ -178,7 +178,7 @@ overflow:hidden;
 
 @media all and (max-width:1260px)
 {
-	#theme .balance_area .active .arrow{top: -40px;background-size: 20px;width: 20px;height: 24px}
+	#theme .balance_area .active .arrow{top: -40px;background-size: 20px;width: 20px;height: 25px}
 	#theme .balance_area .active .arrow.next{right: 10px;}
 	#theme .balance_area .active .arrow.prev{left: 10px}
 }
@@ -192,7 +192,7 @@ overflow:hidden;
 	
 	#theme .balance_area .inCont .logo{max-width: 220px;width: 100%;}
 	#theme .balance_area .inCont .tn_area .desc br{display: none}
-	#theme .balance_area .inCont .top h4{box-shadow: 0 -10px 0 0 #acfaff inset}
+	#theme .balance_area .inCont .top h4{box-shadow: 0 -10px 0 0 #acfaff inset;display: inline-block}
 	#theme .balance_area .inCont .top h4:before{display: none}
 }
 
@@ -269,18 +269,22 @@ overflow:hidden;
 	#theme .balance_area .inCont .tn_area > div{margin-bottom: 20px}
 	#theme .balance_area .inCont .tn_area > div:last-child{margin-bottom: 0}
 	#theme .balance_area .inCont .tn_area > div + div{margin-left: 0}
-	#theme .balance_area .inCont .tn_area .cate{font-size: 12px}
+	#theme .balance_area .inCont .tn_area .cate{font-size: 12px;padding: 2px 5px}
 	#theme .balance_area .inCont .tn_area .name{font-size: 14px}
 	#theme .balance_area .inCont .tn_area .desc{font-size: 13px}
 	
 	#theme .balance_area .white_box {position: fixed;top: 50%;max-width: calc(100% - 80px);box-shadow: 0 0px 100px rgba(0, 0, 0, 0.3)}
+	#theme .balance_area .inCont .tn_area > div{padding-bottom: 20px;border-bottom: 1px dotted #dcdcdc}
+	#theme .balance_area .inCont .tn_area > div:last-child{margin-bottom: 0;padding-bottom: 0;border-bottom: 0}
 	#theme .balance_area .white_box:before{display: none}
 	#theme .balance_area .white_box:nth-child(1).active{left: 50%;transform: translate(-50%,-50%);}
 	#theme .balance_area .white_box:nth-child(2).active{right: 50%;transform: translate(50%,-50%);}
-	#theme .balance_area .white_box .bottom{max-height: calc(100vh - 350px);overflow-y: auto}
+	#theme .balance_area .white_box .bottom .tn_area{max-height:250px;overflow-y: auto}
 	#theme .balance_area .active .arrow {top: 20px}
 	#theme .balance_area .active .arrow.prev{left: -30px}
 	#theme .balance_area .active .arrow.next{right: -30px}
+	#theme .balance_area .inCont .tn_area .desc{margin-top: 0}
+	#theme .balance_area .inCont .tn_area .logo {max-width: 100px;border-radius: 5px}
 }
 
 
