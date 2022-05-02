@@ -178,7 +178,7 @@ overflow:hidden;
 
 @media all and (max-width:1260px)
 {
-	#theme .balance_area .active .arrow{top: -40px;background-size: 20px;width: 20px;height: 22px}
+	#theme .balance_area .active .arrow{top: -40px;background-size: 20px;width: 20px;height: 24px}
 	#theme .balance_area .active .arrow.next{right: 10px;}
 	#theme .balance_area .active .arrow.prev{left: 10px}
 }
