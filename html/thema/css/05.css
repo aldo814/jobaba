@@ -169,8 +169,10 @@ z-index: 1}
 #theme .section07 .vdo_wrap .txt .tit{font-size: 20px;font-weight: bold;margin: 5px 0 10px 0}
 #theme .section07 .vdo_wrap .txt .desc{font-size: 18px;word-break: keep-all}
 
-
-
+@media all and (max-width:1260px)
+{
+	#theme .balance_area .active .arrow{right: 10px;top: calc(50% - 30px);transform: translateY(-50%);background-size: 20px;width: 20px;height: 22px}
+}
 
 @media all and (max-width:966px){
 	#theme .section01 .white_box .left{width: 320px}
@@ -211,7 +213,9 @@ z-index: 1}
 	#theme .balance_area .evt .vs{width: 40px;margin: 0 30px }
 	#theme .balance_area .evt .img{width: 130px;height: 130px}
 	#theme .balance_area .evt > a{width:calc(50% - 50px);}
-	#theme .balance_area .evt .txt{margin-top: 15px;word-break: keep-all}
+	#theme .balance_area .evt .txt{margin-top: 13px;word-break: keep-all}
+	#theme .balance_area .ba_tit{margin: 0 auto 20px auto}
+	
 
 
 }
@@ -255,6 +259,12 @@ z-index: 1}
 	#theme .balance_area .inCont .tn_area .cate{font-size: 12px}
 	#theme .balance_area .inCont .tn_area .name{font-size: 14px}
 	#theme .balance_area .inCont .tn_area .desc{font-size: 13px}
+	
+	#theme .balance_area .white_box {position: fixed;top: 50%;max-width: calc(100% - 60px);}
+	#theme .balance_area .white_box:before{box-shadow: 0 0px 100px rgba(0, 0, 0, 0.3)}
+	#theme .balance_area .white_box:nth-child(1).active{left: 50%;transform: translate(-50%,-50%);}
+	#theme .balance_area .white_box:nth-child(2).active{right: 50%;transform: translate(50%,-50%);}
+	#theme .balance_area .white_box .bottom{max-height: calc(100vh - 350px);overflow-y: auto}
 }
 
 

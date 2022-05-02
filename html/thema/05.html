@@ -938,11 +938,18 @@
 		function openModal(modalname) {
 			document.get
 			$(".balance_area .white_box").removeClass('active');
-
 			$("." + modalname).addClass('active');
-			
+				$('#theme').on('scroll touchmove mousewheel', function(event) {
+				event.preventDefault();
+				event.stopPropagation();
+				return false;
+			});
+
+
 			
 		}
+		
+		
 		$('.evt').click(function(){
 			$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
 		})
@@ -959,6 +966,7 @@
 
 		$('.balance_area .close').click(function() {
 			$('.balance_area .white_box').removeClass('active');
+			$('#theme').off('scroll touchmove mousewheel');
 		});
 
 
