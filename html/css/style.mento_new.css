@@ -58,10 +58,16 @@ ul,ol,dl{margin:0;list-style:none;padding:0;}
      font-weight: normal;
      font-style: normal;
 }
-
+@font-face {
+	font-family: 'S-CoreDream-4Regular';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 .gmk{font-family: 'GmarketSansMedium',sans-serif}
 .gmkb{font-family: 'GmarketSansBold';}
-.score{font-family: 'S-CoreDream-5Medium';}
+.score{font-family: 'S-CoreDream-4Regular';}
+.scoreM{font-family: 'S-CoreDream-5Medium';}
 .scoreB{font-family: 'S-CoreDream-6Bold';}
 .underline{border-bottom: 1px solid #000;}
 .tct{text-align: center}
@@ -145,6 +151,8 @@ ul,ol,dl{margin:0;list-style:none;padding:0;}
 .mentoList .textSet .etc{font-size: 16px;white-space: nowrap;width: 100%;color: #787878;overflow: hidden;text-overflow:ellipsis}
 
 .new_ctain_wrap4{background: url(../images/mento/wrap4_bg.png) #1fbcaf no-repeat;background-size: cover}
+.new_ctain_wrap4 .fw{display: flex;}
+.new_ctain_wrap4 .fw p{text-align: left;margin: 30px 20px 0 0;}
 .gift_wrap{display: flex;justify-content: space-between}
 .gift_wrap > div{flex-direction: column;display: flex;}
 .gift_wrap .right_area{text-align: right;align-items: flex-end}
@@ -358,7 +366,12 @@ input[type=file] {border: 1px solid #c8c8c8;padding: 4px 0;}
 
 
 @media screen and (max-width: 1260px){
+	.new_ctain_wrap4 .f28{font-size:22px;letter-spacing: -0.7px;}
 	.new_ctain_wrap6 .containerNew{background-size: 550px}
+	.new_ctain_wrap4 .fw{display:block}
+	.new_ctain_wrap4 .fw p{margin-right: 0;}
+
+
 }
 
 @media screen and (max-width: 1024px){
@@ -468,6 +481,13 @@ input[type=file] {border: 1px solid #c8c8c8;padding: 4px 0;}
 	.n_popup .pop_header>p {font-size:18px;}
 	
 	/*.review_wrap ul li .subject {max-height: 57px;;}*/
+
+	.gift_wrap{flex-direction: column;}
+	.gift_wrap .left_area .white.f16{margin-top: 10px}
+	.gift_wrap .left_area{align-items: center;margin-bottom: 20px;text-align: center;}
+	.gift_wrap .right_area{align-items: center;text-align: center;}
+	.gift_wrap img{max-width: 70px;width: 100%;}
+	.new_ctain_wrap4 .fw p{text-align: center;margin: 0;}
 	
 	
 	/* 멘토링 추가 */
@@ -514,11 +534,7 @@ input[type=file] {border: 1px solid #c8c8c8;padding: 4px 0;}
 	
 	.new_header .white_box{margin: 10px 0;word-break: keep-all}
 	
-	.gift_wrap{flex-direction: column;}
-	.gift_wrap .left_area .white.f16{margin-top: 10px}
-	.gift_wrap .left_area{align-items: center;margin-bottom: 20px;text-align: center;}
-	.gift_wrap .right_area{align-items: center;text-align: center;}
-	.gift_wrap img{max-width: 180px;width: 100%;}
+
 	
 	.underline{border-bottom: 0;text-decoration: underline}
 	
