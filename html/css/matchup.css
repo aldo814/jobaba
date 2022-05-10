@@ -94,7 +94,7 @@
 .hr_list_top  div.radio{margin-bottom: 0}
 .hr_list_top  input[type=checkbox]~.text:before{top: -3px;}
 
-.hr_list_area .item{border: 1px solid #e6e6e6;padding: 20px;display: flex;justify-content: space-between;margin-bottom: 10px}
+.hr_list_area .item{border: 1px solid #e6e6e6;padding: 20px;display: flex;justify-content: space-between;margin-bottom: 10px;align-items: flex-start}
 .hr_list_area .item:last-child{margin-bottom: 0}
 .hr_list_area .item .left_area{width: 220px;}
 .hr_list_area .item .left_area .career{display: inline-block}
