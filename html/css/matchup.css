@@ -37,11 +37,12 @@
 .matchup_main .hot_hr_cont .item{border: 1px solid #e6e6e6;background: #fff;border-radius: 15px;flex:  1 ;margin-right: 20px;padding: 20px;min-width: 0;}
 .matchup_main .hot_hr_cont .item:last-child{margin-right: 0}
 .matchup_main .hot_hr_cont .item .top{display: flex;align-items: center}
-.matchup_wrap .like{display: block;background: none;background: url(../images/matchup/like_btn_off.png) no-repeat;width: 19px;height: 17px;text-indent: -9999px;}
+.matchup_wrap .like{display: block;background: none;background: url(../images/matchup/like_btn_off.png) no-repeat;width: 19px;height: 17px;text-indent: -999999999999999999999999999px;}
 .matchup_wrap .like.active{background: url(../images/matchup/like_btn.png) no-repeat;}
 .matchup_main .hot_hr_cont .item .top {margin-bottom: 10px}
+.matchup_main .hot_hr_cont .item .top .name_area{width: calc(100% - 100px);display: flex;align-items: center;}
 .matchup_main .hot_hr_cont .item .top .career{margin-left: auto;}
-.matchup_main .hot_hr_cont .item .top .name{max-width: calc(100% - 130px);white-space: nowrap;width: 100%;overflow: hidden;text-overflow: ellipsis;margin-left: 5px}
+.matchup_main .hot_hr_cont .item .top .name{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;margin-left: 5px}
 .matchup_main .career{font-size: 12px;color: #fff;background: #00af5b;border-radius: 3px;padding: 1px 5px}
 
 .matchup_main .career.green{background: #00af5b}
@@ -65,15 +66,16 @@
 .cpn_support .slick-track{margin-left: 0;margin-right: 0}
 .cpn_support .slick-list{margin: 0 -5px }
 .cpn_support .cs_list .slick-slide{margin: 0 5px }
-.cpn_support .cs_list .slick-dots li{margin: 0 5px}
-.cpn_support .cs_list .slick-dots li button{width: 18px;height: 18px;opacity: 1;background: #e5e5e5}
-.cpn_support .cs_list .slick-dots li.slick-active button{background: #00a8cd}
-.cpn_support .slick-dots{position: static;margin-top: 20px}
+.matchup_wrap .slick-dots li{margin: 0 5px}
+.matchup_wrap .slick-dots li button{width: 18px;height: 18px;opacity: 1;background: #e5e5e5}
+.matchup_wrap .slick-dots li.slick-active button{background: #00a8cd}
+.matchup_wrap .slick-dots{position: static;margin-top: 20px}
 /* 인재상세검색 */
 .hr_scr{background: url(../images/matchup/hr_scr_bg.png) no-repeat bottom;background-size: cover}
 .job_detail.des_detailWrap {display: block;}
 .job_detail.des_detailWrap .item_wrap{display: flex;}
 .job_detail.des_detailWrap .tit {text-align: center;}
+
 .hr_scr .bt{display: flex;justify-content:space-between}
 .hr_scr .select_list{width: calc(100% - 350px);display: flex;flex-wrap: wrap;}
 .hr_scr .select_list .item{display: flex;margin:5px 10px 0 0 ;align-items: center;}
@@ -82,7 +84,7 @@
 
 /* 인재 리스트 */
 .matchup_wrap .green_btn{background: #69c3be;font-size: 14px;color:#fff;width: 160px;padding: 10px;border-radius: 5px;}
-.matchup_wrap .gray_btn{background: #a6a6a6;font-size: 14px;color:#fff;width: 74px;padding: 10px;border-radius: 5px;}
+.matchup_sub .gray_btn{background: #a6a6a6;font-size: 14px;color:#fff;width: 74px;padding: 10px;border-radius: 5px;}
 .matchup_wrap select {border: 1px solid #e6e6e6;padding: 5px 50px 5px 15px;font-size: 14px ;color: #787878;letter-spacing: -0.5px; background: url(../images/matchup/select_arrow.png) no-repeat right 15px center;-webkit-appearance:none; /* 크롬 화살표 없애기 */
     -moz-appearance:none; /* 파이어폭스 화살표 없애기 */
     appearance:none /* 화살표 없애기 */;}
@@ -146,10 +148,23 @@
 
 
 @media all and (max-width:1260px){
-    
+    .mtu_header .txt{display: block;text-align: left}
+    .matchup_main .hot_hr_cont .item .top{flex-direction: column-reverse;align-items: flex-start;}
+    .matchup_main .hot_hr_cont .item .top .name_area{width: 100%;}
+    .matchup_main .hot_hr_cont .item .top .career{margin-left: 0;margin-bottom: 5px}
+    .matchup_main .hot_hr_cont .item{margin-right: 15px}
 }
 
 @media all and (max-width:1024px){
+    .mtu_header .containerNew{background-size: 350px;padding: 70px 0}
+    .mtu_header .txt{max-width: calc(100% - 400px)}
+    
+    .hr_scr .bt{display: block;}
+    .hr_scr .select_list{width: 100%;margin-bottom: 20px}
+    
+    .hr_list_area .item .left_area{width: 100px}
+    .hr_list_area .item .right_area{width: calc(100% - 260px - 100px)}
+    
     
 }
 
@@ -158,9 +173,12 @@
     .mg50{margin: 40px 0}
     .mg30{margin: 25px 0}
     .f20 {font-size: 15px}
+    .f16{font-size: 13px}
     
     .mtu_tit{font-size: 20px}
     .mtu_tit02{font-size: 15px;margin-bottom: 10px}
+    .mtu_header .containerNew{padding: 30px 0;background-size: 250px}
+    .mtu_header h3{font-size: 24px}
     
     .matchup_main .hot_hr_cont .desc, .matchup_wrap .etc{font-size: 13px}
     /*--- sub ---*/
@@ -190,12 +208,40 @@
     .matchup_sub .warning .tit{font-size: 14px}
     .matchup_sub .bar_list li{font-size: 13px}
     .matchup_sub .btn_wrap{margin-top: 30px}
-    .matchup_wrap .green_btn,
-    .matchup_wrap .gray_btn{font-size: 13px;padding: 6px;}
-    .matchup_wrap .green_btn{max-width: 120px}
-    .matchup_wrap .gray_btn{max-width: 60px}
+    .matchup_sub .green_btn,
+    .matchup_sub .gray_btn{font-size: 13px;padding: 6px}
+    .matchup_wrap .green_btn{max-width: 120px;font-size: 13px;padding: 6px}
+    .matchup_sub .gray_btn{max-width: 60px}
     .matchup_sub .btn_wrap .gray_btn{float: none;}
     .add_txt span{font-size: 13px;margin-left: 5px}
+    
+    .matchup_main .hot_hr_cont{display: block}
+    .matchup_main .hot_hr_cont .slick-list{margin: 0 -5px}
+    .matchup_main .hot_hr_cont .slick-slide{margin: 0 5px}
+    .matchup_wrap .slick-dots{margin-top: 10px}
+    .matchup_wrap .slick-dots li button{width: 15px;height: 15px}
+    
+    .mtu_header .containerNew{background: none}
+    .mtu_header .txt{max-width: 100%;}
+    .matchup_main .hot_hr_cont .item{padding: 15px}
+    
+    .hr_scr .select_list p{font-size: 12px}
+    
+    .hr_list_top{flex-direction: column;align-items: flex-start}
+    .hr_list_top .right_area{margin-left: auto}
+    
+    .hr_list_area .item{flex-direction: column;}
+    .hr_list_area .item .left_area{width: 100%;display: flex;flex-direction: column-reverse;align-items: flex-start}
+    .hr_list_area .item .top{margin-top: 10px;margin-bottom: 5px}
+    .hr_list_area .item .right_area{width: 100%;margin-bottom: 20px}
+    .matchup_main .desc{font-size: 14px}
+    .hr_list_area .item .etc{font-size: 13px}
+    .cpn_support .cs_list .item .txt{margin-top: 10px}
+    
+    .matchup_wrap select{font-size: 13px;padding: 5px 30px 5px 10px;background-position: right 10px center}
+    
+    
+    
 }
 
 @media all and (max-width:640px){
