@@ -289,7 +289,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
                     <!--//des_detailSearch-->
                     <div class="des_detailWrap">
@@ -456,9 +455,10 @@
                         </div>
                     </div>
                 </div>
+                
+                    </div>
                 <!--//des_detailArea-->
             </div>
-        </div>
         <!--//인재 상세 검색-->
 
 
@@ -666,7 +666,8 @@
         <!--//인재 리스트-->
 
     </div>
-    </div>
+    
+        </div>
 
     <!--잡아바 js-->
     <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
@@ -738,80 +739,82 @@
 
 
 
-            // 모바일 select 변경
-            function mbCate() {
+           
+				// 모바일 select 변경
+				       function mbCate() {
 
-                $(".cate-select-scr .m_select").click(function() {
-                    var is_open = $(this).hasClass("open");
-                    if (is_open) {
-                        $(this).removeClass("open");
-                    } else {
-                        $(this).addClass("open");
-                        $(this).parent().siblings('.m_select').removeClass("open");
-                    }
-                });
+                    $(".cate-select-scr .m_select").click(function() {
+                        var is_open = $(this).hasClass("open");
+                        if (is_open) {
+                            $(this).removeClass("open");
+                        } else {
+                            $(this).addClass("open");
+                            $(this).parent().siblings('.m_select').removeClass("open");
+                        }
+                    });
 
-                $(".cate-select-scr .radio").click(function() {
-                    var selected_value = $(this).find('label').text();
-                    var first_li = $(".cate-select-scr .m_select .active").html();
+                    $(".cate-select-scr .radio").click(function() {
+                        var selected_value = $(this).find('label').text();
+                        var first_li = $(".cate-select-scr .m_select .active").html();
 
-                    $(this).parent().parent().parent().find(".active").html(selected_value);
-                });
+                        $(this).parent().parent().parent().find(".active").html(selected_value);
+                    });
 
-                $(".cate-select-scr  input").change(function() {
-                    if ($(".cate-select-scr  input").is(":checked")) {
-                        $(this).parent().parent().parent().parent().removeClass("open");
-                    }
-                });
+                    $(".cate-select-scr  input").change(function() {
+                        if ($(".cate-select-scr  input").is(":checked")) {
+                            $(this).parent().parent().parent().parent().removeClass("open");
+                        }
+                    });
 
-                $(document).mouseup(function(event) {
-                    var target = event.target;
-                    var select = $(".m_select");
+                    $(document).mouseup(function(event) {
+                        var target = event.target;
+                        var select = $(".m_select");
 
-                    if (!select.is(target) && select.has(target).length === 0) {
-                        select.removeClass("open");
-                    }
-                });
+                        if (!select.is(target) && select.has(target).length === 0) {
+                            select.removeClass("open");
+                        }
+                    });
 
-            }
+                }
 
-            if (window.innerWidth < 768) {
-                mbCate();
-                $('.cate-select-scr .scr').scrollbar("destroy");
-            } else {
-
-                $('.cate-select-scr .scr').scrollbar();
-
-            }
-
-            $(window).resize(function() {
                 if (window.innerWidth < 768) {
                     mbCate();
                     $('.cate-select-scr .scr').scrollbar("destroy");
-
-
                 } else {
-                    $(".cate-select-scr .m_select").removeClass('m_select');
+
                     $('.cate-select-scr .scr').scrollbar();
-                }
-            });
-
-
-            function mDetail() {
-                var windowWidth = $(window).width();
-                if (windowWidth <= 640) {
-                    $('.des_detailWrap .tit').off("click").on("click", function() {
-                        $(this).parent().find('.scr.scroll-wrapper').fadeToggle(0);
-                    });
-                } else {
-                    $('.des_detailWrap .tit').off("click").on("click", function() {
-                        $(this).parent().find().next('.scr.scroll-wrapper').show();
-                    });
 
                 }
-            }
-            mDetail();
-            $(window).resize(mDetail);
+
+                $(window).resize(function() {
+                    if (window.innerWidth < 768) {
+                        mbCate();
+                        $('.cate-select-scr .scr').scrollbar("destroy");
+
+
+                    } else {
+                        $(".cate-select-scr .m_select").removeClass('m_select');
+                        $('.cate-select-scr .scr').scrollbar();
+                    }
+                });
+
+
+            	function mDetail() {
+				var windowWidth = $(window).width();
+				if (windowWidth <= 640) {
+					$('.des_detailWrap .tit').off("click").on("click", function() {
+						$(this).parent().find('.scr.scroll-wrapper').fadeToggle(0);
+					});
+				} else {
+					$('.des_detailWrap .tit').off("click").on("click", function() {
+						$(this).parent().find().next('.scr.scroll-wrapper').show();
+					});
+
+				}
+			}
+			mDetail();
+			$(window).resize(mDetail);
+
 
 
         });

@@ -159,6 +159,7 @@
 .matchup_sub .btn_wrap:after{content: '';display: block;clear: both}
 .matchup_sub .btn_wrap  .gray_btn{float: right}
 
+.hr_scr .active{display:none}
 
 @media all and (max-width:1260px){
     .mtu_header .txt{display: block;text-align: left}
@@ -257,26 +258,27 @@
 
     .hr_scr .select_list span{width: 15px;height: 15px;background-size: 8px}
     .hr_list_area .item{padding: 15px}
-    
-    
-    
-    
+
+
+
+
 
 }
 
 @media all and (max-width:640px){
-    
+
     .hr_scr .job_detail.des_detailWrap .item_wrap{display: block}
     .cate-select-scr .scr.scroll-wrapper{display: block}
     .cate-select-scr .m_select{position: relative;border: 1px solid #dcdcdc;cursor: pointer;}
 	.cate-select-scr .m_select.open .scr {display: block;padding: 0}
-	.cate-select-scr .active{padding: 10px 30px 10px 10px;background:#fff url('https://www.jobaba.net/resource/images/col-listpluimo.png') no-repeat center right 10px; background-size:10px;font-size: 13px}
+	.cate-select-scr .active{padding: 10px 30px 10px 10px;background:#fff url('https://www.jobaba.net/resource/images/col-listpluimo.png') no-repeat center right 10px; background-size:10px;font-size: 13px;display:block}
 	.cate-select-scr .scr .radio{padding: 10px;border-bottom: 1px solid #e6e6e6;}
 	.cate-select-scr .active label{padding: 0 !important;margin: 0 !important}
 	.cate-select-scr .scr  {display: none;margin: 0;}
     .cate-select-scr .hide{display: block;text-indent: 0;font-size: 14px;line-height: 1;margin-bottom: 10px;font-weight: 500}
-    .cate-select-scr .item{margin-bottom: 15px;padding-top: 15px}
+    .cate-select-scr .item{margin-bottom: 15px;padding-top: 15px;padding-right:0}
     .cate-select-scr .item:last-child{}
+
     .cate-select-scr .m_select.open .scr{border-top: 1px solid #e6e6e6}
-    .hr_scr .item div.radio{margin: 0}
+    .hr_scr .job_detail  .item div.radio{margin: 0}
 }
