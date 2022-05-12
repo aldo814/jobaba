@@ -183,7 +183,8 @@
     .matchup_main .hot_hr_cont .slick-list{margin: 0 -5px}
     .matchup_main .hot_hr_cont .slick-slide{margin: 0 5px}
     
-    .matchup_main .hot_hr_cont .item{min-width: 100%;flex:none;width:100%}
+    .matchup_main .hot_hr_cont .item{min-width: 100%;flex:none;width:100%;margin-bottom: 10px}
+    .matchup_main .hot_hr_cont .item:last-child{margin-bottom: 0}
 
 }
 
