@@ -705,20 +705,18 @@
     </div>
 
     <!--잡아바 js-->
-    <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
-    <script src="https://www.jobaba.net//resource/bxslider/slick.js"></script>
+   	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+	<script src="https://www.jobaba.net//resource/bxslider/slick.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
     <script>
         $(document).ready(function() {
             function mobileOnlySlider() {
                 $('.hot_hr_cont').slick({
-                    autoplay: true,
                     arrows: false,
-                    speed: 1000,
-                    autoplaySpeed: 2000,
                     dots: true
                 });
             }
+            
             if (window.innerWidth < 1024) {
                 mobileOnlySlider();
             }
@@ -733,12 +731,8 @@
                     }
 
                 } else {
-                    if ($('.exhb_header .bt').hasClass('slick-initialized')) {
-                        $('.exhb_header .bt').slick('unslick');
-                    }
-
-                    if ($('.eh_cst_cont').hasClass('slick-initialized')) {
-                        $('.eh_cst_cont').slick('unslick');
+                    if ($('.hot_hr_cont .bt').hasClass('slick-initialized')) {
+                        $('.hot_hr_cont .bt').slick('unslick');
                     }
                 }
             });
