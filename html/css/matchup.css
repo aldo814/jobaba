@@ -178,7 +178,10 @@
 
     .hr_list_area .item .left_area{width: 100px}
     .hr_list_area .item .right_area{width: calc(100% - 260px - 100px)}
-
+    
+    .matchup_main .hot_hr_cont{display: block}
+    .matchup_main .hot_hr_cont .slick-list{margin: 0 -5px}
+    .matchup_main .hot_hr_cont .slick-slide{margin: 0 5px}
 
 }
 
