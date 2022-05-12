@@ -705,151 +705,131 @@
     </div>
 
     <!--잡아바 js-->
-   	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
-	<script src="https://www.jobaba.net//resource/bxslider/slick.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+    <script src="https://www.jobaba.net//resource/bxslider/slick.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
     <script>
         $(document).ready(function() {
-            function mobileOnlySlider() {
-                $('.hot_hr_cont').slick({
-                    arrows: false,
-                    dots: true
-                });
-            }
-            
-            if (window.innerWidth < 1024) {
-                mobileOnlySlider();
-            }
-            $(window).resize(function(e) {
-                if (window.innerWidth < 1024) {
-                    if (!$('.hot_hr_cont').hasClass('slick-initialized')) {
-                        mobileOnlySlider();
+
+                    if (window.innerWidth < 1024) {
+                        $('.hot_hr_cont').slick({
+                            arrows: false,
+                            dots: true
+                        });
                     }
 
-                    if (!$('.hot_hr_cont').hasClass('slick-initialized')) {
-                        mobileOnlySlider();
-                    }
+                        $('.like').click(function() {
+                            $(this).toggleClass('active')
+                        });
 
-                } else {
-                    if ($('.hot_hr_cont .bt').hasClass('slick-initialized')) {
-                        $('.hot_hr_cont .bt').slick('unslick');
-                    }
-                }
-            });
+                        $('.cs_list').slick({
+                            slidesToShow: 5,
+                            slidesToScroll: 5,
+                            dots: true,
+                            responsive: [ // 반응형 웹 구현 옵션
+                                {
+                                    breakpoint: 1024, //화면 사이즈 960px
+                                    settings: {
+                                        //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                                        slidesToShow: 4,
+                                        slidesToScroll: 4,
+                                    }
+                                },
+                                {
+                                    breakpoint: 768, //화면 사이즈 768px
+                                    settings: {
+                                        //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                                        slidesToShow: 2,
+                                        slidesToScroll: 2,
+                                    }
+                                }
+                            ],
+                        });
 
-            $('.like').click(function() {
-                $(this).toggleClass('active')
-            });
 
-            $('.cs_list').slick({
-                slidesToShow: 5,
-                slidesToScroll: 5,
-                dots: true,
-                responsive: [ // 반응형 웹 구현 옵션
-                    {
-                        breakpoint: 1024, //화면 사이즈 960px
-                        settings: {
-                            //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
-                            slidesToShow: 4,
-                            slidesToScroll: 4,
+                        $('.matchup_main .scr').scrollbar();
+
+
+
+
+
+
+                        // 모바일 select 변경
+                        function mbCate() {
+
+                            $(".cate-select-scr .m_select").click(function() {
+                                var is_open = $(this).hasClass("open");
+                                if (is_open) {
+                                    $(this).removeClass("open");
+                                } else {
+                                    $(this).addClass("open");
+                                    $(this).parent().siblings('.m_select').removeClass("open");
+                                }
+                            });
+
+                            $(".cate-select-scr .radio").click(function() {
+                                var selected_value = $(this).find('label').text();
+                                var first_li = $(".cate-select-scr .m_select .active").html();
+
+                                $(this).parent().parent().parent().find(".active").html(selected_value);
+                            });
+
+                            $(".cate-select-scr  input").change(function() {
+                                if ($(".cate-select-scr  input").is(":checked")) {
+                                    $(this).parent().parent().parent().parent().removeClass("open");
+                                }
+                            });
+
+                            $(document).mouseup(function(event) {
+                                var target = event.target;
+                                var select = $(".m_select");
+
+                                if (!select.is(target) && select.has(target).length === 0) {
+                                    select.removeClass("open");
+                                }
+                            });
+
                         }
-                    },
-                    {
-                        breakpoint: 768, //화면 사이즈 768px
-                        settings: {
-                            //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
-                            slidesToShow: 2,
-                            slidesToScroll: 2,
+
+                        if (window.innerWidth < 768) {
+                            mbCate();
+                            $('.cate-select-scr .scr').scrollbar("destroy");
+                        } else {
+
+                            $('.cate-select-scr .scr').scrollbar();
+
                         }
-                    }
-                ],
-            });
+
+                        $(window).resize(function() {
+                            if (window.innerWidth < 768) {
+                                mbCate();
+                                $('.cate-select-scr .scr').scrollbar("destroy");
 
 
-            $('.matchup_main .scr').scrollbar();
+                            } else {
+                                $(".cate-select-scr .m_select").removeClass('m_select');
+                                $('.cate-select-scr .scr').scrollbar();
+                            }
+                        });
+
+
+                        function mDetail() {
+                            var windowWidth = $(window).width();
+                            if (windowWidth <= 640) {
+                                $('.des_detailWrap .tit').off("click").on("click", function() {
+                                    $(this).parent().find('.scr.scroll-wrapper').fadeToggle(0);
+                                });
+                            } else {
+                                $('.des_detailWrap .tit').off("click").on("click", function() {
+                                    $(this).parent().find().next('.scr.scroll-wrapper').show();
+                                });
+
+                            }
+                        }
+                        mDetail(); $(window).resize(mDetail);
 
 
 
-
-
-
-            // 모바일 select 변경
-            function mbCate() {
-
-                $(".cate-select-scr .m_select").click(function() {
-                    var is_open = $(this).hasClass("open");
-                    if (is_open) {
-                        $(this).removeClass("open");
-                    } else {
-                        $(this).addClass("open");
-                        $(this).parent().siblings('.m_select').removeClass("open");
-                    }
-                });
-
-                $(".cate-select-scr .radio").click(function() {
-                    var selected_value = $(this).find('label').text();
-                    var first_li = $(".cate-select-scr .m_select .active").html();
-
-                    $(this).parent().parent().parent().find(".active").html(selected_value);
-                });
-
-                $(".cate-select-scr  input").change(function() {
-                    if ($(".cate-select-scr  input").is(":checked")) {
-                        $(this).parent().parent().parent().parent().removeClass("open");
-                    }
-                });
-
-                $(document).mouseup(function(event) {
-                    var target = event.target;
-                    var select = $(".m_select");
-
-                    if (!select.is(target) && select.has(target).length === 0) {
-                        select.removeClass("open");
-                    }
-                });
-
-            }
-
-            if (window.innerWidth < 768) {
-                mbCate();
-                $('.cate-select-scr .scr').scrollbar("destroy");
-            } else {
-
-                $('.cate-select-scr .scr').scrollbar();
-
-            }
-
-            $(window).resize(function() {
-                if (window.innerWidth < 768) {
-                    mbCate();
-                    $('.cate-select-scr .scr').scrollbar("destroy");
-
-
-                } else {
-                    $(".cate-select-scr .m_select").removeClass('m_select');
-                    $('.cate-select-scr .scr').scrollbar();
-                }
-            });
-
-
-            function mDetail() {
-                var windowWidth = $(window).width();
-                if (windowWidth <= 640) {
-                    $('.des_detailWrap .tit').off("click").on("click", function() {
-                        $(this).parent().find('.scr.scroll-wrapper').fadeToggle(0);
                     });
-                } else {
-                    $('.des_detailWrap .tit').off("click").on("click", function() {
-                        $(this).parent().find().next('.scr.scroll-wrapper').show();
-                    });
-
-                }
-            }
-            mDetail();
-            $(window).resize(mDetail);
-
-
-
-        });
     </script>
 </body></html>
