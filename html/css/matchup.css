@@ -70,17 +70,30 @@
 .matchup_wrap .slick-dots li button{width: 18px;height: 18px;opacity: 1;background: #e5e5e5}
 .matchup_wrap .slick-dots li.slick-active button{background: #00a8cd}
 .matchup_wrap .slick-dots{position: static;margin-top: 20px}
+
 /* 인재상세검색 */
 .hr_scr{background: url(../images/matchup/hr_scr_bg.png) no-repeat bottom;background-size: cover}
-.job_detail.des_detailWrap {display: block;}
-.job_detail.des_detailWrap .item_wrap{display: flex;}
-.job_detail.des_detailWrap .tit {text-align: center;}
+.hr_scr .job_detail.des_detailWrap {display: block;margin: 20px 0 15px 0}
+.hr_scr .des_detailWrap{margin:0;padding: 15px}
+.hr_scr .job_detail.des_detailWrap .item_wrap{display: flex;}
+.hr_scr .job_detail.des_detailWrap .tit {text-align: center;}
+.hr_scr .des_detailWrap .scr{max-height: 126px;}
+.hr_scr .item div.radio{margin: 10px 0;line-height: 1.4}
+.hr_scr div.radio span.text{font-size:13px}
 
-.hr_scr .bt{display: flex;justify-content:space-between}
-.hr_scr .select_list{width: calc(100% - 350px);display: flex;flex-wrap: wrap;}
+.hr_scr .bt{display: flex;justify-content:space-between;margin-top: 30px}
+.hr_scr .select_list{width: calc(100% - 350px);}
+
+.hr_scr .select_list ul{display: flex;flex-wrap: wrap;;width: 100%}
 .hr_scr .select_list .item{display: flex;margin:5px 10px 0 0 ;align-items: center;}
-.hr_scr .select_list p {font-size: 14px;color: #666666;}
-.hr_scr .select_list button{background: url(../images/matchup/close_btn.png) no-repeat center #ffd4da;border: 1px solid #ffbdc6;width: 18px;height: 18px;text-indent: -9999px;margin-left: 5px}
+.hr_scr .select_list li {font-size: 14px;color: #666666;}
+.hr_scr .select_list span{background: url(../images/matchup/close_btn.png) no-repeat center #ffd4da;border: 1px solid #ffbdc6;width: 18px;height: 18px;text-indent: -9999px;margin-left: 5px;display: block;}
+
+/* 채용정보 상세 */
+.empmn_scr .des_detailArea{padding:20px}
+.empmn_scr{background: none;}
+.contents-wrap .list-wrap .list_con-wrap .empmn_scr .tit{font-size: 15px;font-weight: normal;margin: 0 auto 10px auto}
+.empmn_scr #desDtl{width: 100%;border: 0 !important}
 
 /* 인재 리스트 */
 .matchup_wrap .green_btn{background: #69c3be;font-size: 14px;color:#fff;width: 160px;padding: 10px;border-radius: 5px;}
@@ -158,14 +171,14 @@
 @media all and (max-width:1024px){
     .mtu_header .containerNew{background-size: 350px;padding: 70px 0}
     .mtu_header .txt{max-width: calc(100% - 400px)}
-    
+
     .hr_scr .bt{display: block;}
     .hr_scr .select_list{width: 100%;margin-bottom: 20px}
-    
+
     .hr_list_area .item .left_area{width: 100px}
     .hr_list_area .item .right_area{width: calc(100% - 260px - 100px)}
-    
-    
+
+
 }
 
 @media all and (max-width:768px){
@@ -174,12 +187,12 @@
     .mg30{margin: 25px 0}
     .f20 {font-size: 15px}
     .f16{font-size: 13px}
-    
+
     .mtu_tit{font-size: 20px}
     .mtu_tit02{font-size: 15px;margin-bottom: 10px}
     .mtu_header .containerNew{padding: 30px 0;background-size: 250px}
     .mtu_header h3{font-size: 24px}
-    
+
     .matchup_main .hot_hr_cont .desc, .matchup_wrap .etc{font-size: 13px}
     /*--- sub ---*/
     .matchup_sub .rs_top{font-size: 18px;margin-bottom: 15px;padding-bottom: 10px;border-width: 2px}
@@ -214,36 +227,56 @@
     .matchup_sub .gray_btn{max-width: 60px}
     .matchup_sub .btn_wrap .gray_btn{float: none;}
     .add_txt span{font-size: 13px;margin-left: 5px}
-    
+
     .matchup_main .hot_hr_cont{display: block}
     .matchup_main .hot_hr_cont .slick-list{margin: 0 -5px}
     .matchup_main .hot_hr_cont .slick-slide{margin: 0 5px}
     .matchup_wrap .slick-dots{margin-top: 10px}
     .matchup_wrap .slick-dots li button{width: 15px;height: 15px}
-    
+
     .mtu_header .containerNew{background: none}
     .mtu_header .txt{max-width: 100%;}
     .matchup_main .hot_hr_cont .item{padding: 15px}
-    
-    .hr_scr .select_list p{font-size: 12px}
-    
+
+    .hr_scr .select_list li{font-size: 12px}
+
     .hr_list_top{flex-direction: column;align-items: flex-start}
     .hr_list_top .right_area{margin-left: auto}
-    
+
     .hr_list_area .item{flex-direction: column;}
     .hr_list_area .item .left_area{width: 100%;display: flex;flex-direction: column-reverse;align-items: flex-start}
     .hr_list_area .item .top{margin-top: 10px;margin-bottom: 5px}
     .hr_list_area .item .right_area{width: 100%;margin-bottom: 20px}
+    .hr_list_area .item .left_area {text-align: center}
     .matchup_main .desc{font-size: 14px}
     .hr_list_area .item .etc{font-size: 13px}
     .cpn_support .cs_list .item .txt{margin-top: 10px}
-    
+    .hr_list_area .item .green_btn{margin: auto}
+
     .matchup_wrap select{font-size: 13px;padding: 5px 30px 5px 10px;background-position: right 10px center}
+
+    .hr_scr .select_list span{width: 15px;height: 15px;background-size: 8px}
+    .hr_list_area .item{padding: 15px}
     
     
     
+    
+
 }
 
 @media all and (max-width:640px){
     
+    .hr_scr .job_detail.des_detailWrap .item_wrap{display: block}
+    .cate-select-scr .scr.scroll-wrapper{display: block}
+    .cate-select-scr .m_select{position: relative;border: 1px solid #dcdcdc;cursor: pointer;}
+	.cate-select-scr .m_select.open .scr {display: block;padding: 0}
+	.cate-select-scr .active{padding: 10px 30px 10px 10px;background:#fff url('https://www.jobaba.net/resource/images/col-listpluimo.png') no-repeat center right 10px; background-size:10px;font-size: 13px}
+	.cate-select-scr .scr .radio{padding: 10px;border-bottom: 1px solid #e6e6e6;}
+	.cate-select-scr .active label{padding: 0 !important;margin: 0 !important}
+	.cate-select-scr .scr  {display: none;margin: 0;}
+    .cate-select-scr .hide{display: block;text-indent: 0;font-size: 14px;line-height: 1;margin-bottom: 10px;font-weight: 500}
+    .cate-select-scr .item{margin-bottom: 15px;padding-top: 15px}
+    .cate-select-scr .item:last-child{}
+    .cate-select-scr .m_select.open .scr{border-top: 1px solid #e6e6e6}
+    .hr_scr .item div.radio{margin: 0}
 }
