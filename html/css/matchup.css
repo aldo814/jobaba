@@ -182,6 +182,8 @@
     .matchup_main .hot_hr_cont{display: block}
     .matchup_main .hot_hr_cont .slick-list{margin: 0 -5px}
     .matchup_main .hot_hr_cont .slick-slide{margin: 0 5px}
+    
+    .matchup_main .hot_hr_cont .item{min-width: inherit;flex:none}
 
 }
 
