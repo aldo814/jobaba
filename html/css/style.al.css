@@ -52,7 +52,7 @@ ul,ol,dl{margin:0;list-style:none;padding:0;}
 .new_fav_wrap .new_fav_item .ico.item04{background: url(../images/aiInterview/2204_ico_fav04.png) no-repeat center #fff;}
 .new_fav_wrap .new_fav_item .ico.item05{background: url(../images/aiInterview/2204_ico_fav05.png) no-repeat center #fff;}
 .new_fav_wrap .new_fav_item .ico.item06{background: url(../images/aiInterview/2204_ico_fav06.png) no-repeat center #fff;}
-.new_fav_wrap .new_fav_item .ico.item07{background:url(../images/aiInterview/2204_ico_fav07.png) no-repeat center , linear-gradient(180deg, rgba(226,85,224,1) 0%, rgba(253,231,152,1) 80%);background-attachment: fixed;}
+.new_fav_wrap .new_fav_item .ico.item07{background:url(../images/aiInterview/2204_ico_fav07.png) no-repeat center , linear-gradient(180deg, rgba(226,85,224,1) 0%, rgba(253,231,152,1) 80%) no-repeat;}
 .new_fav_wrap .add {display: flex;align-items: center;justify-content: center;height: 155px;margin-right: 15px}
 .new_fav_wrap .new_fav_item p {font-size: 22px;text-align: center;color: #010b56;text-shadow: 0 0  5px #fff;line-height:1.2}
 .new_fav_wrap .new_fav_item p span{display: block;margin-top:5px;font-size:18px}
