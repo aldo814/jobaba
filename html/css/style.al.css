@@ -1,5 +1,14 @@
 /*AI 면접 20200702*/
 
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 @font-face {
     font-family: 'GmarketSansMedium';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
@@ -8,6 +17,7 @@
 }
 
 .gmk{font-family: 'GmarketSansMedium','Noto Sans KR';}
+.gmkB{ font-family: 'GmarketSansBold','Noto Sans KR';}
 
 *{font-family: 'Noto Sans KR', sans-serif;box-sizing: border-box;}
 html,body{position:relative;width:100%;height:100%;margin:0;padding:0;}
@@ -30,19 +40,24 @@ ul,ol,dl{margin:0;list-style:none;padding:0;}
 
 
 /* ai 상단 수정 */
-.new_fav_wrap{display: flex;justify-content: center;justify-content: space-between}
-.new_fav_wrap > div{display: flex;flex-direction: column;justify-content: center;align-items: center;}
-.new_fav_wrap > div:last-child{margin-right: 0}
-.new_fav_wrap > div .ico{width: 155px;height: 155px;border-radius: 50%;margin-bottom: 10px;}
-.new_fav_wrap > div .ico.item01{background: url(../images/aiInterview/2204_ico_fav01.png) no-repeat center #fff;}
-.new_fav_wrap > div .ico.item02{background: url(../images/aiInterview/2204_ico_fav02.png) no-repeat center #fff;}
-.new_fav_wrap > div .ico.item03{background: url(../images/aiInterview/2204_ico_fav03.png) no-repeat center #fff;}
-.new_fav_wrap > div .ico.item04{background: url(../images/aiInterview/2204_ico_fav04.png) no-repeat center #fff;}
-.new_fav_wrap > div .ico.item05{background: url(../images/aiInterview/2204_ico_fav05.png) no-repeat center #fff;}
-.new_fav_wrap > div .ico.item06{background: url(../images/aiInterview/2204_ico_fav06.png) no-repeat center #fff;}
-.new_fav_wrap > div p {font-size: 22px;text-align: center;color: #010b56}
-.new_fav_wrap > div p span{display: block;}
-.header .bottom_txt{color: #fff;text-align: center;margin-top: 40px;font-size: 16px}
+.new_fav_wrap{display: flex;justify-content: center;justify-content: space-between;}
+.new_fav_wrap .first{display: flex;}
+.new_fav_wrap .new_fav_item:last-child{margin-right: 0}
+.new_fav_wrap .new_fav_item .ico{width: 155px;height: 155px;border-radius: 50%;margin-bottom: 10px;display: block}
+.new_fav_wrap .new_fav_item {margin-right: 22px}
+.new_fav_wrap .new_fav_item:last-child{margin-right: 0}
+.new_fav_wrap .new_fav_item .ico.item01{background: url(../images/aiInterview/2204_ico_fav01.png) no-repeat center #fff;}
+.new_fav_wrap .new_fav_item .ico.item02{background: url(../images/aiInterview/2204_ico_fav02.png) no-repeat center #fff;}
+.new_fav_wrap .new_fav_item .ico.item03{background: url(../images/aiInterview/2204_ico_fav03.png) no-repeat center #fff;}
+.new_fav_wrap .new_fav_item .ico.item04{background: url(../images/aiInterview/2204_ico_fav04.png) no-repeat center #fff;}
+.new_fav_wrap .new_fav_item .ico.item05{background: url(../images/aiInterview/2204_ico_fav05.png) no-repeat center #fff;}
+.new_fav_wrap .new_fav_item .ico.item06{background: url(../images/aiInterview/2204_ico_fav06.png) no-repeat center #fff;}
+.new_fav_wrap .new_fav_item .ico.item07{background:url(../images/aiInterview/2204_ico_fav07.png) no-repeat center , linear-gradient(180deg, rgba(226,85,224,1) 0%, rgba(253,231,152,1) 80%);background-attachment: fixed;}
+.new_fav_wrap .add {display: flex;align-items: center;justify-content: center;height: 155px;margin-right: 15px}
+.new_fav_wrap .new_fav_item p {font-size: 22px;text-align: center;color: #010b56;text-shadow: 0 0  5px #fff;line-height:1.2}
+.new_fav_wrap .new_fav_item p span{display: block;margin-top:5px;font-size:18px}
+.header .bottom_txt{color: #fff;text-align: center;margin-top: 10px;font-size: 16px}
+.new_fav_wrap .last {display: flex;}
 
 
 
@@ -205,6 +220,23 @@ border:solid 2px #c4c4c4;}
 .swiper-slide.stop_bnr:first-child {margin:0 13px 0 0;}
 
 
+
+@media screen and (max-width: 1260px){
+
+    .new_fav_wrap{display: block;}
+    .new_fav_wrap .first{justify-content: space-evenly}
+    .new_fav_wrap .new_fav_item{margin-right: auto}
+    .new_fav_wrap .new_fav_item .ico{width: 125px;height: 125px}
+    .new_fav_wrap >new_fav_item p{font-size: 18px}
+
+    .new_fav_wrap .last{flex-direction: column;justify-content: center;align-content: center;}
+    .new_fav_wrap .new_fav_item .ico.item07{margin: auto}
+    .new_fav_wrap .add{height: 37px;margin: 30px;width: auto;}
+    .header .bottom_txt{margin-top: 20px}
+
+}
+
+
 @media screen and (max-width: 1080px){
 	.ctain{width:90% !important;}
 	.new_fav_wrap > div .ico{width: 130px;height: 130px}
@@ -224,20 +256,28 @@ border:solid 2px #c4c4c4;}
 	.fav_wrap .fav_item{width:30%;}
 	.swiper-button-prev, .swiper-button-next{display:none;}
 	.swiper-pagination {display:block;}
-	
-	.new_fav_wrap{flex-wrap: wrap;}
-	.new_fav_wrap>div{width: calc(33.333% - 10px);margin-right: 15px;margin-top: 20px}
-	.new_fav_wrap>div:nth-child(3n){margin-right: 0}
-	.new_fav_wrap>div:nth-child(1),
-	.new_fav_wrap>div:nth-child(2),
-	.new_fav_wrap>div:nth-child(3){margin-top: 0}
-	
-	.new_fav_wrap > div p{font-size: 18px}
-	.new_fav_wrap > div p span{font-size: 16px}
-	
+
+	.new_fav_wrap .first{flex-wrap: wrap;}
+	.new_fav_wrap .first > div{width: calc(33.333% - 10px);margin-right: 15px;margin-top: 20px}
+	.new_fav_wrap .first > div:nth-child(3n){margin-right: 0}
+	.new_fav_wrap .first > div:nth-child(1),
+	.new_fav_wrap .first > div:nth-child(2),
+	.new_fav_wrap .first > div:nth-child(3){margin-top: 0}
+
+    .new_fav_wrap .new_fav_item .ico{margin: 0 auto 10px auto !important}
+	.new_fav_wrap .new_fav_item  strong{font-size: 18px;margin-bottom: 5px}
+	.new_fav_wrap .new_fav_item  span{font-size: 14px}
+
 }
 
 @media screen and (max-width: 768px){
+
+
+
+
+    .header .btn_area a + a {margin-top: 10px}
+
+
 	.header_sub {font-size:15px;}
 	.header_txt {font-size:17px;}
 	.sub_text {font-size:17px;}
@@ -323,9 +363,33 @@ border:solid 2px #c4c4c4;}
 	.header .img_tit{max-width: 250px;width: 100%;}
 	.header .img_btn{max-width: 160px;width: 100%;display: block;margin: auto;}
 	.header .img_btn img{width: 100%;display: block;}
-	
+
 	.new_fav_wrap > div .ico{width: 110px;height: 110px}
 	.header .bottom_txt{margin-top: 30px}
+
+
+
+	.header{padding: 30px 0}
+	.header .img_tit{max-width: 200px;}
+	.new_fav_wrap .first .new_fav_item{width: calc(33.333% - 7.5px);margin-right: 5px;margin-top: 10px}
+	.new_fav_wrap .new_fav_item .ico{width: 80px;height: 80px}
+	.new_fav_wrap .new_fav_item .ico.item01{background-size: 33px}
+	.new_fav_wrap .new_fav_item .ico.item02{background-size: 33px}
+	.new_fav_wrap .new_fav_item .ico.item03{background-size: 25px}
+	.new_fav_wrap .new_fav_item .ico.item04{background-size: 30px}
+	.new_fav_wrap .new_fav_item .ico.item05{background-size: 30px}
+	.new_fav_wrap .new_fav_item .ico.item06{background-size: 25px}
+	.new_fav_wrap .new_fav_item .ico.item07{background-size: 25px}
+	.new_fav_wrap .new_fav_item strong{font-size: 15px}
+	.new_fav_wrap .new_fav_item p{font-size: 14px}
+	.new_fav_wrap .new_fav_item p span{font-size: 13px}
+	.header_sub{font-size: 13px;word-break: keep-all}
+	.header_txt{font-size: 15px;word-break: keep-all}
+	.header .bottom_txt{font-size: 13px;margin-top: 20px}
+	.header .btn_area{margin: 25px auto}
+    .new_fav_wrap .add{margin: 15px 0;height: auto;}
+    .new_fav_wrap .add img{width: 20px}
+	.header .img_tit{max-width: 150px}
 
 }
 
@@ -347,25 +411,8 @@ border:solid 2px #c4c4c4;}
 	textarea {width:100%; padding:10px 0;}
 
 	.n_popup .pop_header>p {font-size:18px;}
-	
-	
-	.header{padding: 30px 0}
-	.header .img_tit{max-width: 200px;}
-	.new_fav_wrap > div{width: calc(33.333% - 7.5px);margin-right: 5px;margin-top: 10px}
-	.new_fav_wrap > div .ico{width: 80px;height: 80px}
-	.new_fav_wrap > div .ico.item01{background-size: 33px}
-	.new_fav_wrap > div .ico.item02{background-size: 33px}
-	.new_fav_wrap > div .ico.item03{background-size: 25px}
-	.new_fav_wrap > div .ico.item04{background-size: 30px}
-	.new_fav_wrap > div .ico.item05{background-size: 30px}
-	.new_fav_wrap > div .ico.item06{background-size: 25px}
-	.new_fav_wrap > div p{font-size: 15px}
-	.new_fav_wrap > div p span{font-size: 13px}
-	.header_sub{font-size: 13px;word-break: keep-all}
-	.header_txt{font-size: 15px;word-break: keep-all}
-	.header .bottom_txt{font-size: 13px;margin-top: 20px}
-	.header .btn_area{margin: 25px auto}
-	.header .img_tit{max-width: 150px}
+
+
 	.header_sub{padding: 15px 0 5px 0}
-	
+
 }
