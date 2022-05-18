@@ -1,0 +1,19 @@
+.inte_pop .modal-body{background: url(../images/inte_pop/pop_bg.png) no-repeat center;background-size: cover}
+.inte_pop .modal-body h3{color: #ffed20;text-align: center;font-size: 30px;}
+.inte_pop .modal-body .bg_white{background: #fff;border-radius: 10px;padding: 20px;margin-top: 30px}
+.inte_pop .modal-body .bg_white p{text-align: center;font-size: 14px;color: #30305f;}
+.inte_pop .modal-body .btn_wrap{text-align: center;margin-top: 20px}
+.inte_pop .modal-body .btn_wrap .btn{line-height: 1;font-size: 15px;font-weight: bold;padding: 5px 50px;width: auto;}
+
+
+@media all and (max-width:768px) {
+    .modal.in .modal-dialog, .modal .modal-dialog{max-width: 600px;width: 90%;}
+    .inte_pop .modal-body{padding: 15px 10px}
+    .inte_pop .modal-body .bg_white{padding: 10px;margin-top: 15px}
+    .inte_pop .modal-body h3{font-size: 20px;}
+    .inte_pop .modal-body .bg_white p{font-size: 13px;word-break: keep-all}
+    .inte_pop .modal-body .bg_white p br:not(.mShow){display: none}
+    .inte_pop .modal-body .btn_wrap .btn{padding: 7px 20px;font-size: 13px;height: auto;}
+}
+
+
