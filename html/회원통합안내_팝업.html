@@ -15,7 +15,6 @@
     <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
     <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/layout.css">
     <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
-    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/style.jobInfo.css">
     <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery-ui.css">
     <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/style.epmtDiag.css">
     <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
@@ -65,15 +64,12 @@
                             </dd>
                             <!--//추가 작업영역-->
                         </dl>
+                        
 
                         <!-- 회원통합안내 팝업-->
-                        <div class="modal fade in inte_pop" style="display: block;">
+                        <div class="modal fade in inte_pop n_popup" style="display: block;">
                             <div class="modal-dialog">
                                 <div class="modal-content">
-                                    <div class="modal-header header-primary">
-                                        <button type="button" class="close" onclick="javascript:closePop()"><span>×</span></button>
-                                        <h4 class="modal-title">통합회원 전환 안내</h4>
-                                    </div>
                                     <div class="modal-body ">
                                         <div class="container-fluid">
                                             <h3>통합회원 전환 안내</h3>
@@ -100,8 +96,19 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="n_popup_footer">
+						<div class="pop_today">
+							<label for="popChk0">
+								<input type="checkbox" id="popChk0" class="todayCheck02" name="todayCheck00" value="" title="" style="margin : 6px 5px 0 0;">
+								<span class="text"><i></i>오늘 하루 보지않기</span>
+							</label>
+							<button class="pop_close">닫기</button>
+						</div>
+					</div>
                                 </div>
+                                
                             </div>
+                            
                         </div>
                         <!-- //선택 팝업-->
                     </div>
