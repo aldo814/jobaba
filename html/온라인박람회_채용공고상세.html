@@ -127,14 +127,13 @@
 						</div>
 						<!--//채용조건&근무환경-->
 						<div class="ci_cpn">
-							<div class="logo">
-								<img src="images/exhb/jobaba_logo.png" alt="">
-							</div>
 							<div class="tit des_wrap">
+							<div class="name">
 								<button class="like">관심공고 등록</button>
 								<p>
 									볼로레로지스틱스코리아(주)
 								</p>
+								</div>
 							</div>
 							<h4 class="li_tit"><span>기업정보</span></h4>
 							<dl>
@@ -534,6 +533,13 @@
 		$('.item .etc span:empty').each(function() {
 				$(this).addClass('textNull');
 		});
+            
+            	$('.ci_cpn .name p').each(function() {
+				var content = $(this).text(); 
+				if (content.length > 14) {
+					$(this).addClass('long_txt');
+				};
+			});
 
 
 		});

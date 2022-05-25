@@ -18,6 +18,7 @@
 .mt5{margin-top: 5px}
 .white{color: #fff}
 .gray{color: #666}
+.gray02{color: #999}
 .tct{text-align: center}
 
 /* 온라인채용박람회 메인 */
@@ -81,7 +82,8 @@
 .eh_cst .eh_cst_cont .item .ico{width: 146px;height: 146px;border-radius: 15px;}
 .eh_cst .eh_cst_cont .item .txt{width: calc(100% - 166px);}
 .exhb_sub .eh_cst .eh_cst_cont .item .txt .tit{font-size: 17px;word-break: keep-all;font-weight: 500}
-.exhb_main .eh_cst .eh_cst_cont .item .txt .tit{font-size: 20px;margin-bottom: 5px;word-break: keep-all}
+.exhb_main .eh_cst .eh_cst_cont .item .txt .tit{font-size: 20px;margin-bottom: 5px;word-break: keep-all;font-weight: 500}
+.eh_cst .eh_cst_cont .item  a{color:#010101}
 
 .eh_cst .eh_cst_cont .item .txt .desc{color: #666;font-size: 16px;word-break: keep-all}
 .eh_cst .eh_cst_cont .item.item01 .ico{background: url(/resource/images/exhb/cst_ico01.png) no-repeat center #69c35d;}
@@ -117,7 +119,7 @@
 .exhb_wrap .onjob_view .top{border-bottom: 1px solid #000;padding-bottom: 20px;margin-bottom: 20px}
 .exhb_wrap .ov_tit {text-align: center;}
 .exhb_wrap .ov_tit .tit{font-size: 24px;font-weight: bold;}
-.exhb_wrap .ov_tit .desc{font-size: 18px;color: #666}
+.exhb_wrap .ov_tit .desc{font-size: 18px;color: #666;margin-top:5px}
 .exhb_wrap .onjob_view .txtSet{display: flex;}
 .exhb_wrap .onjob_view .txtSet > div {width: 50%;}
 .exhb_wrap .onjob_view .txtSet > div:nth-child(1){padding-right: 40px}
@@ -136,13 +138,13 @@
 .exhb_wrap .attend_area{margin: 50px 0}
 .exhb_wrap .attend_area .step{display: flex;justify-content: space-between}
 .exhb_wrap .attend_area .tab_content{max-width: 1000px;margin: auto;}
-.exhb_wrap .attend_area .step .arrow{background: url(/resource/images/exhb/ap_arrow.png) no-repeat;width: 26px;height: 38px;;display:flex;text-indent: -9999px}
+.exhb_wrap .attend_area .step .arrow{background: url(/resource/images/exhb/ap_arrow.png) no-repeat;width: 16px;height: 100%;background-size:16px;display:flex;text-indent: -9999px}
 .exhb_wrap .attend_area .step > div:last-child:after{display: none}
 .exhb_wrap .attend_area .step div span{font-size: 16px;display: block;margin-bottom: 5px}
 .exhb_wrap .attend_area .step div  p{font-size: 20px;}
 .exhb_wrap .attend_area .trt{text-align: right;margin-top: 30px;color: #666}
 .exhb_wrap .attend_area .btn_wrap{text-align: center;}
-.exhb_wrap .attend_area .btn_wrap .eh_btn{display: inline-block;font-size: 14px;font-weight: 500;color: #fff;background: #00a8cd;padding: 10px 80px;border-radius: 5px}
+.exhb_wrap .attend_area .btn_wrap .eh_btn{display: inline-block;font-size: 16px;font-weight: 500;color: #fff;background: #00a8cd;padding: 10px 30px;border-radius: 5px;font-weight:bold}
 
 .exhb_wrap .at_cpn{background: url(/resource/images/exhb/sv_bg01.png) no-repeat center;background-size: cover;padding: 50px 0;}
 .exhb_wrap .at_cpn_list{margin-top: 25px;padding-top: 25px;border-top: 1px solid #000;position: relative;}
@@ -229,8 +231,10 @@
 .exhb_sub .company_info .ci_cpn .logo{display: flex;justify-content: center;align-items: center;border: 1px solid #dddddd;width:100%;max-width: 250px;height: 60px;margin:0 auto 10px auto;}
 .exhb_sub .company_info .ci_cpn .logo img {max-width: 90%;max-height: 90%}
 .exhb_sub .company_info .ci_cpn{padding: 30px 30px 40px 30px;width: calc(100% - 900px)}
-.exhb_sub .company_info .ci_cpn .tit{display: flex;justify-content: space-between;margin-bottom: 9px}
-.exhb_sub .company_info .ci_cpn .tit p{width: calc(100% - 40px)}
+.exhb_sub .company_info .ci_cpn .name{height: 71px;justify-content: center;align-items: center;display: flex}
+.exhb_sub .company_info .ci_cpn .tit{display: flex;margin-bottom: 9px;justify-content: center}
+.exhb_sub .company_info .ci_cpn .tit p{margin-left: 5px}
+.exhb_sub .company_info .ci_cpn .tit p.long_txt{font-size: 16px}
 .exhb_sub .company_info .ci_cpn .btn_wrap {margin-top: auto;text-align: center;}
 .exhb_sub .btn_wrap button + button{margin-left: 5px}
 .exhb_sub .exhb_btn{font-size: 14px;padding: 7px 10px;border-radius: 5px;max-width: 160px;width: 100%;}
@@ -338,7 +342,10 @@
 	.exhb_sub .company_info .ci_cont{width: 100%;border-right: 0;padding-right: 0;}
 	.exhb_sub .company_info .ci_cont .top{padding: 0;margin-bottom: 15px}
 	.exhb_sub .company_info .ci_cont .bt{padding: 0}
-	.exhb_sub .company_info .ci_cpn{width: 100%;margin-top: 40px;display: flex;flex-direction: column;padding: 0;;}
+	.exhb_sub .company_info .ci_cpn{width: 100%;margin-top: 40px;display: flex;flex-direction: column;padding: 0;}
+    .exhb_sub .company_info .ci_cpn .tit p{font-size: 16px}
+    .exhb_sub .company_info .ci_cpn .name{height: auto;}
+    .exhb_sub .company_info .ci_cpn .tit{justify-content: flex-start}
 	.exhb_sub .company_info .ci_cpn .logo{margin-left: 0;}
 	.exhb_sub .company_info .ci_cpn .li_tit{order: -1}
 
@@ -413,7 +420,7 @@
 	.exhb_sub .company_info .harf dl{width: 100%;margin-right: 0}
 	.exhb_sub .company_info dl dt,
 	.exhb_sub .company_info dl dd{font-size: 13px}
-	.exhb_sub .company_info .ci_cpn .tit p {font-size: 14px}
+	.exhb_sub .company_info .ci_cpn .tit p {font-size: 14px !important}
 
 	.exhb_sub .exhb_btn{font-size: 13px;max-width: 140px}
 	.exhb_sub .company_info dl dt{width: 75px}
