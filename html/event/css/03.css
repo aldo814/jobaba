@@ -182,7 +182,7 @@
     .comment_wrap .comment_write .cw_wrap > *{padding: 10px;font-size: 14px;}
     .tm_story .pink_btn{margin-top: 20px}
     .tm_story .pink_btn button{font-size: 15px;padding: 5px 20px;border-width: 1px}
-    
+    #theme .check_list li{word-break: keep-all}
 }
 
 @media all and (max-width:768px){
@@ -233,7 +233,7 @@
     #theme .tm_table table th,
     #theme .tm_table table td{font-size: 13px;padding: 5px;word-break: keep-all}
     #theme .leftBg{padding-bottom: 0}
-    #theme .section03 .tm_tit02 .link{position: static;display: block;text-align: right;margin-top: 10px;font-size: 13px}
+    #theme .section03 .tm_tit02 .link{position: static;display: block;text-align: right;margin-top: 20px;font-size: 13px}
     #theme .flex_box{flex-wrap: wrap;}
     #theme .section04 .flex_box .item{width:calc(50% - 10px);margin-right: 20px;}
     #theme .section04 .flex_box .item:nth-child(-n + 2){margin-bottom: 30px;}
