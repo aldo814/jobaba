@@ -59,12 +59,12 @@
 /* 기업지원정책 */
 .cpn_support .cs_list .item .img{border-radius: 15px;overflow: hidden}
 .cpn_support .cs_list .item .img img{width: 100%;height: 100%;}
-.cpn_support .cs_list .item .txt{margin-top: 20px;line-height: 1.3rem;height: 2.6rem;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;
+.cpn_support .cs_list .item .txt{margin-top: 20px;line-height: 1.6rem;height: 3.2rem;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;
   -webkit-line-clamp: 2;-webkit-box-orient: vertical;}
 .cpn_support .cs_list .item .txt,
-.cpn_support .cs_list .item .date{text-align: center;}
-.cpn_support .cs_list .item .date{margin-top: 5px;font-size: 14px;color:#999}
-.cpn_support .cs_list .item .txt{font-size:16px;}
+.cpn_support .cs_list .item .date{text-align:center}
+.cpn_support .cs_list .item .date{margin-top: 5px;font-size: 16px;color:#999;}
+.cpn_support .cs_list .item .txt{font-size:18px;}
 .cpn_support .slick-track{margin-left: 0;margin-right: 0}
 .cpn_support .slick-list{margin: 0 -5px }
 .cpn_support .cs_list .slick-slide{margin: 0 5px }
@@ -180,11 +180,11 @@
 
     .hr_list_area .item .left_area{width: 100px}
     .hr_list_area .item .right_area{width: calc(100% - 260px - 100px)}
-    
+
     .matchup_main .hot_hr_cont{display: block}
     .matchup_main .hot_hr_cont .slick-list{margin: 0 -5px}
     .matchup_main .hot_hr_cont .slick-slide{margin: 0 5px}
-    
+
     .matchup_main .hot_hr_cont .item{min-width: 100%;flex:none;width:100%;margin-bottom: 10px}
     .matchup_main .hot_hr_cont .item:last-child{margin-bottom: 0}
 
