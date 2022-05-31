@@ -1,0 +1,5 @@
+.modal .box3{background: #f1f1f1;border-radius: 10px;padding: 15px 20px;margin-bottom: 20px;font-size: 15px;color: #666;}
+.modal .box3 dl {display: table;table-layout: fixed;width: 100%;}
+.modal .box3 dt, .modal .box2 dd {display: table-cell;}
+.modal .box3 dt {padding-right: 10px;color: #333;font-weight: 600;}
+.modal .box3 dd {color: #666;}
