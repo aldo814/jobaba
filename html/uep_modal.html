@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>기업인적성검사</title>
+	<!-- 잡아바 css-->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/common.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/style.jobInfo.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/style.epmtDiag.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
+	<!-- //잡아바 css-->
+
+	<!--추가 css-->
+	<link rel="stylesheet" href="css/sunrise.css">
+	<link rel="stylesheet" href="css/uep.css">
+    <style>
+        .containerNew2 button{background-color:#fff;border:1px solid #333;color:#333;padding:8px 16px;margin:16px;}
+    </style>
+</head>
+
+<body>
+	<div id="page-content">
+		<div id="uep_wrap">
+            <div class="containerNew2">
+                <button onclick="pop_result_ok = sunrise({target:'#pop_result_ok'})">신청결과_승인</button>
+                <button onclick="pop_result_reject = sunrise({target:'#pop_result_reject'})">신청결과_반려</button>
+                <button onclick="pop_result = sunrise({target:'uep_result.html',ajax:true})">기업인적성검사 결과</button>
+            </div>
+            <div id="pop_result_ok" class="modal_pop" style="display:none">
+                <div class="area_title">
+                    기업인적성검사 신청결과
+                    <div class="close"><button onclick="pop_result_ok.sunrise('closePopup');"><img src="./images/close_23x23_white.png" alt="닫기"></button></div>
+                </div>
+                <div class="area_contents">
+                   귀사가 신청하신 기업인적성검사 서비스가 <strong>승인</strong>되었습니다.<br/>
+                   자세한 이용안내는 유선 또는 메일을 통하여 안내드리도록 하겠습니다.
+                   <div class="area_btn">
+                        <button onclick="pop_result_ok.sunrise('closePopup');">확인</button>
+                   </div>
+                </div>
+            </div>
+            <div id="pop_result_reject" class="modal_pop" style="display:none">
+                <div class="area_title">
+                    기업인적성검사 신청결과
+                    <div class="close"><button onclick="pop_result_reject.sunrise('closePopup');"><img src="./images/close_23x23_white.png" alt="닫기"></button></div>
+                </div>
+                <div class="area_contents">
+                   귀사가 신청하신 기업인적성검사 서비스가 하기의 이유로 <strong>반려</strong>되었습니다.<br/>
+                   <table>
+                        <tr>
+                            <th>반려 사유</th>
+                            <td>기업인적성검사 서비스가 중복 신청되었습니다.</td>
+                        </tr>
+                   </table>
+                   <div class="area_btn">
+                        <button onclick="pop_result_reject.sunrise('closePopup');">확인</button>
+                   </div>
+                </div>
+            </div>
+            <!--div id="pop_result" class="modal_pop">
+                <div class="area_title">
+                    기업인적성검사 결과
+                    <div class="close"><button onclick="pop_result.sunrise('closePopup');"><img src="./images/close_23x23_white.png" alt="닫기"></button></div>
+                </div>
+                <div class="area_contents result">
+                   <iframe src="http://uep.auland.org/auland_exam/result_uep_new.php?intAulandNo=135953&et_idx=290" width="100%" frameborder="0">
+                </div>
+            </div-->
+        </div>
+	<!--잡아바 js-->
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/sunrise.js"></script>
+	<script>	
+		
+	</script>
+</body></html>

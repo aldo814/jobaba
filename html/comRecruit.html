@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>기업채용정보</title>
+	<!-- 잡아바 css-->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/fullcalendar.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery-ui.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/swiper.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/pe-icon-7-stroke.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/adminDetail.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/main/mobile.css">
+    <link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/new/style.css">
+	<!-- //잡아바 css-->
+
+	<!--추가 css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.css" />
+    <link rel="stylesheet" href="css/comRecruit.css">
+</head>
+
+<body>
+<div id="page-content">
+    <div id="comRecruit">
+        <div class="header containerNew">
+            <h2>기업채용정보</h2>
+            <div class="pg_info">당신이 도전할 수 있는 기회, 38만개! 잡아바는 귀하의 성공적인 취업을 응원합니다.</div>
+        </div>
+        <div class="containerNew">
+            <h3><span>HOT</span> 채용정보</h3>
+            <div class="hotrc_wrap">
+                <div>
+                    <div class="comNm">(주) 이파피루스</div>
+                    <div class="rc_tit">2022년 하반기 신입/경력직 공개채용</div>
+                    <div class="rc_info">7000만원 이상 / 정규직 / 학력무관</div>
+                    <hr/>
+                    <div class="rc_date">D-269(~12월 31일)</div>
+                </div>
+                <div>
+                    <div class="comNm">(주) 이파피루스</div>
+                    <div class="rc_tit">2022년 하반기 신입/경력직 공개채용</div>
+                    <div class="rc_info">7000만원 이상 / 정규직 / 학력무관</div>
+                    <hr/>
+                    <div class="rc_date">D-269(~12월 31일)</div>
+                </div>
+                <div>
+                    <div class="comNm">(주) 이파피루스</div>
+                    <div class="rc_tit">2022년 하반기 신입/경력직 공개채용</div>
+                    <div class="rc_info">7000만원 이상 / 정규직 / 학력무관</div>
+                    <hr/>
+                    <div class="rc_date">D-269(~12월 31일)</div>
+                </div>
+                <div>
+                    <div class="comNm">(주) 이파피루스</div>
+                    <div class="rc_tit">2022년 하반기 신입/경력직 공개채용</div>
+                    <div class="rc_info">7000만원 이상 / 정규직 / 학력무관</div>
+                    <hr/>
+                    <div class="rc_date">D-269(~12월 31일)</div>
+                </div>
+            </div>
+        </div>
+        <div class="containerNew">
+            <h3>채용공고 상세 검색</h3>
+            <div class="search_wrap">
+                <input it="text" class="searchbar" placeholder="채용공고명 또는 기관명을 입력해주세요." />
+                <div class="cate_wrap">
+                    <div class="tit">모집분야</div>
+                    <div class="scrollbar-outer">
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" checked="checked"/>
+                                <span class="text"><i></i>경영ㆍ사무ㆍ금융ㆍ보험직</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>연구 및 공학기술</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방직 및 군인</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>보건ㆍ의료직</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>예술ㆍ디자인ㆍ방송ㆍ스포츠직</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>미용ㆍ여행ㆍ숙박ㆍ음식ㆍ경비ㆍ청소직</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>영업ㆍ판매ㆍ운전ㆍ운송직</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>건설ㆍ채굴직</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>설치ㆍ정비ㆍ생산직</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>농림어업직</span>
+                            </label>
+                        </div>
+                        <!-- <ul>
+                            <li><input type="checkbox" id="cate1_1" checked="checked"><label for="cate1_1">경영ㆍ사무ㆍ금융ㆍ보험직</label></li>
+                            <li><input type="checkbox" id="cate1_2"><label for="cate1_2">연구 및 공학기술</label></li>
+                            <li><input type="checkbox" id="cate1_3"><label for="cate1_3">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방직 및 군인</label></li>
+                            <li><input type="checkbox" id="cate1_4"><label for="cate1_4">보건ㆍ의료직</label></li>
+                            <li><input type="checkbox" id="cate1_5"><label for="cate1_5">예술ㆍ디자인ㆍ방송ㆍ스포츠직</label></li>
+                            <li><input type="checkbox" id="cate1_6"><label for="cate1_6">미용ㆍ여행ㆍ숙박ㆍ음식ㆍ경비ㆍ청소직</label></li>
+                            <li><input type="checkbox" id="cate1_7"><label for="cate1_7">영업ㆍ판매ㆍ운전ㆍ운송직</label></li>
+                            <li><input type="checkbox" id="cate1_8"><label for="cate1_8">건설ㆍ채굴직</label></li>
+                            <li><input type="checkbox" id="cate1_9"><label for="cate1_9">설치ㆍ정비ㆍ생산직</label></li>
+                            <li><input type="checkbox" id="cate1_10"><label for="cate1_10">농림어업직</label></li>
+                        </ul> -->
+                    </div>
+                    <div class="scrollbar-outer">
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>의회의원ㆍ고위공무원 및 기업 고위 임원</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>행정ㆍ경영ㆍ금융ㆍ보험 관리자</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>전문서비스 관리자</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>미용ㆍ여행ㆍ숙박ㆍ음식ㆍ경비ㆍ청소 관리자</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>영업ㆍ판매ㆍ운송 관리자</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>건설ㆍ채굴ㆍ제조ㆍ생산 관리자</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>정부ㆍ공공행정 전문가</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>경영ㆍ인사 전문가</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>회계ㆍ세무ㆍ감정 전문가</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>광고ㆍ조사ㆍ상품기획ㆍ행사기획 전문가</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>정부․공공 행정 사무원</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>경영지원 사무원</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>회계ㆍ경리 사무원</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>무역ㆍ운송ㆍ생산ㆍ품질 사무원</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>안내ㆍ고객상담ㆍ통계ㆍ비서ㆍ사무보조 및 기타 사무원</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>금융ㆍ보험 전문가</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>금융ㆍ보험 사무원</span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="text"><i></i>금융ㆍ보험 영업원</span>
+                            </label>
+                        </div>
+                        <!-- <ul>
+                            <li><input type="checkbox" id="cate2_1"><label for="cate2_1">의회의원ㆍ고위공무원 및 기업 고위 임원</label></li>
+                            <li><input type="checkbox" id="cate2_2"><label for="cate2_2">행정ㆍ경영ㆍ금융ㆍ보험 관리자</label></li>
+                            <li><input type="checkbox" id="cate2_3"><label for="cate2_3">전문서비스 관리자</label></li>
+                            <li><input type="checkbox" id="cate2_4"><label for="cate2_4">미용ㆍ여행ㆍ숙박ㆍ음식ㆍ경비ㆍ청소 관리자</label></li>
+                            <li><input type="checkbox" id="cate2_5"><label for="cate2_5">영업ㆍ판매ㆍ운송 관리자</label></li>
+                            <li><input type="checkbox" id="cate2_6"><label for="cate2_6">건설ㆍ채굴ㆍ제조ㆍ생산 관리자</label></li>
+                            <li><input type="checkbox" id="cate2_7"><label for="cate2_7">정부ㆍ공공행정 전문가</label></li>
+                            <li><input type="checkbox" id="cate2_8"><label for="cate2_8">경영ㆍ인사 전문가</label></li>
+                            <li><input type="checkbox" id="cate2_9"><label for="cate2_9">회계ㆍ세무ㆍ감정 전문가</label></li>
+                            <li><input type="checkbox" id="cate2_10"><label for="cate2_10">광고ㆍ조사ㆍ상품기획ㆍ행사기획 전문가</label></li>
+                            <li><input type="checkbox" id="cate2_11"><label for="cate2_11">정부․공공 행정 사무원</label></li>
+                            <li><input type="checkbox" id="cate2_12"><label for="cate2_12">경영지원 사무원</label></li>
+                            <li><input type="checkbox" id="cate2_13"><label for="cate2_13">회계ㆍ경리 사무원</label></li>
+                            <li><input type="checkbox" id="cate2_14"><label for="cate2_14">무역ㆍ운송ㆍ생산ㆍ품질 사무원</label></li>
+                            <li><input type="checkbox" id="cate2_15"><label for="cate2_15">안내ㆍ고객상담ㆍ통계ㆍ비서ㆍ사무보조 및 기타 사무원</label></li>
+                            <li><input type="checkbox" id="cate2_16"><label for="cate2_16">금융ㆍ보험 전문가</label></li>
+                            <li><input type="checkbox" id="cate2_17"><label for="cate2_17">금융ㆍ보험 사무원</label></li>
+                            <li><input type="checkbox" id="cate2_18"><label for="cate2_18">금융ㆍ보험 영업원</label></li>
+                        </ul> -->
+                    </div>
+                    <div class="scrollbar-outer">
+                        <div class="radio">
+                            중분류를 먼저 선택해주세요.
+                        </div>
+                        <!-- <ul>
+                            <li>중분류를 먼저 선택해주세요.</li>
+                        </ul> -->
+                    </div>
+                </div>
+                <div class="cate2_wrap">
+                    <div>
+                        <div class="tit">근무지</div>
+                        <div class="scrollbar-outer">
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" checked="checked"/>
+                                    <span class="text"><i></i>경기전체</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>가평군</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>고양시</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>과천시</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>광명시</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>광주시</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>구리시</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>군포시</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>남양주시</span>
+                                </label>
+                            </div>
+                            <!-- <ul>
+                                <li><input type="checkbox" id="local1" checked="checked"><label for="local1">경기전체</label></li>
+                                <li><input type="checkbox" id="local2"><label for="local2">가평군</label></li>
+                                <li><input type="checkbox" id="local3"><label for="local3">고양시</label></li>
+                                <li><input type="checkbox" id="local4"><label for="local4">과천시</label></li>
+                                <li><input type="checkbox" id="local5"><label for="local5">광명시</label></li>
+                                <li><input type="checkbox" id="local6"><label for="local6">광주시</label></li>
+                                <li><input type="checkbox" id="local7"><label for="local7">구리시</label></li>
+                                <li><input type="checkbox" id="local8"><label for="local8">군포시</label></li>
+                                <li><input type="checkbox" id="local9"><label for="local9">남양주시</label></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tit">학력</div>
+                        <div class="scrollbar-outer">
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>학력무관</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>초졸이하</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>중졸</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>고졸</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>대졸(2~3년)</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>대졸(4년)</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>석사</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>박사</span>
+                                </label>
+                            </div>
+                            <!-- <ul>
+                                <li><input type="checkbox" id="edu1"><label for="edu1">학력무관</label></li>
+                                <li><input type="checkbox" id="edu2"><label for="edu2">초졸이하</label></li>
+                                <li><input type="checkbox" id="edu3"><label for="edu3">중졸</label></li>
+                                <li><input type="checkbox" id="edu4"><label for="edu4">고졸</label></li>
+                                <li><input type="checkbox" id="edu5"><label for="edu5">대졸(2~3년)</label></li>
+                                <li><input type="checkbox" id="edu6"><label for="edu6">대졸(4년)</label></li>
+                                <li><input type="checkbox" id="edu7"><label for="edu7">석사</label></li>
+                                <li><input type="checkbox" id="edu8"><label for="edu8">박사</label></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tit">연봉</div>
+                        <div class="scrollbar-outer">
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>회사내규에 따름</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>2500 만원 이하</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>2500 ~ 3000 만원</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>3000 ~ 4000 만원</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>4000 ~ 5000 만원</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>5000 ~ 6000 만원</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>6000 ~ 7000 만원</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>7000 만원 이상</span>
+                                </label>
+                            </div>
+                            <!-- <ul>
+                                <li><input type="checkbox" id="pay1"><label for="pay1">회사내규에 따름</label></li>
+                                <li><input type="checkbox" id="pay2"><label for="pay2">2500 만원 이하</label></li>
+                                <li><input type="checkbox" id="pay3"><label for="pay3">2500 ~ 3000 만원</label></li>
+                                <li><input type="checkbox" id="pay4"><label for="pay4">3000 ~ 4000 만원</label></li>
+                                <li><input type="checkbox" id="pay5"><label for="pay5">4000 ~ 5000 만원</label></li>
+                                <li><input type="checkbox" id="pay6"><label for="pay6">5000 ~ 6000 만원</label></li>
+                                <li><input type="checkbox" id="pay7"><label for="pay7">6000 ~ 7000 만원</label></li>
+                                <li><input type="checkbox" id="pay8"><label for="pay8">7000 만원 이상</label></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tit">고용형태</div>
+                        <div class="scrollbar-outer">
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>정규직</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>계약직</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>인턴직</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>기타/아르바이트</span>
+                                </label>
+                            </div>
+                            <!-- <ul>
+                                <li><input type="checkbox" id="form1"><label for="form1">정규직</label></li>
+                                <li><input type="checkbox" id="form2"><label for="form2">계약직</label></li>
+                                <li><input type="checkbox" id="form3"><label for="form3">인턴직</label></li>
+                                <li><input type="checkbox" id="form4"><label for="form4">기타/아르바이트</label></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tit">채용구분</div>
+                        <div class="scrollbar-outer">
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>신입</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>경력</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>신입/경력</span>
+                                </label>
+                            </div>
+                            <!-- <ul>
+                                <li><input type="checkbox" id="type1"><label for="type1">신입</label></li>
+                                <li><input type="checkbox" id="type2"><label for="type2">경력</label></li>
+                                <li><input type="checkbox" id="type3"><label for="type3">신입/경력</label></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tit">기업인증</div>
+                        <div class="scrollbar-outer">
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>일자리우수기업</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>경기도유망중소기업</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>경기도여성고용우수기업</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>청년친화강소기업</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text"><i></i>면접수당지급인증기업</span>
+                                </label>
+                            </div>
+                            <!-- <ul>
+                                <li><input type="checkbox" id="cert1"><label for="cert1">일자리우수기업</label></li>
+                                <li><input type="checkbox" id="cert2"><label for="cert2">경기도유망중소기업</label></li>
+                                <li><input type="checkbox" id="cert3"><label for="cert3">경기도여성고용우수기업</label></li>
+                                <li><input type="checkbox" id="cert4"><label for="cert4">청년친화강소기업</label></li>
+                                <li><input type="checkbox" id="cert5"><label for="cert5">면접수당지급인증기업</label></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="choice_wrap">
+                    <div>
+                        <ul class="clearfix">
+                            <li>의회의원ㆍ고위공무원 및 공공단체임원<i class="fa fa-times"></i></li>
+                            <li>행정ㆍ경영ㆍ금융ㆍ보험 관리자<i class="fa fa-times"></i></li>
+                            <li>남양주시<i class="fa fa-times"></i></li>
+                            <li>대졸(4년)<i class="fa fa-times"></i></li>
+                            <li>회사내규에 따름<i class="fa fa-times"></i></li>
+                            <li>정규직<i class="fa fa-times"></i></li>
+                            <li>계약직<i class="fa fa-times"></i></li>
+                            <li>경력<i class="fa fa-times"></i></li>
+                            <li>예술ㆍ디자인ㆍ방송ㆍ스포츠직<i class="fa fa-times"></i></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="javascript:void(0);" class="btn reset">초기화</a>
+                        <a href="javascript:void(0);" class="btn search">검색</a>
+                    </div>
+                </div>
+            </div>
+            <div class="rclist_wrap">
+                <div class="cnt_wrap">
+                    <div class="cnt">채용공고 <span>1,349</span>건</div>
+                    <div>
+                        <input type="checkbox" id="scrap"><label for="scrap">스크랩한 공고</label>
+                        <select>
+                            <option>10개씩 보기</option>
+                            <option selected="selected">20개씩 보기</option>
+                            <option>30개씩 보기</option>
+                            <option>50개씩 보기</option>
+                            <option>100개씩 보기</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rclist">
+                    <div class="item">
+                        <div>삼성전기물산</div>
+                        <div>
+                            <div class="rctit"><button class="like">관심공고 등록</button>국방사업 소프트웨어 개발자 채용</div>
+                            <div class="rcdesc_wrap">
+                                <div>
+                                    <p>조사, 인력공급ㆍ알선 및 기타 전문서비스(부서장)</p>
+                                    <ul class="clearfix">
+                                        <li>0000만원</li>
+                                        <li>정규직</li>
+                                        <li>신입+경력</li>
+                                        <li>학력무관</li>
+                                    </ul>
+                                    <p>하남시, 성남시, 군포시, 수원시, 의왕시, 가평군, 서울특별시, 인천광역시</p>
+                                </div>
+                                <div>D-10</div>
+                            </div>
+                            <div class="cert_wrap">
+                                <div>
+                                    <ul class="clearfix">
+                                        <li>일자리 우수기업</li>
+                                        <li>경기도여성고용우수기업</li>
+                                        <li>경기도유망중소기업</li>
+                                        <li>청년친화강소기업</li>
+                                        <li>면접수당 지급기업</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <span class="source jobaba"></span>
+                                    <a href="javascript:void(0);" class="detail_view">상세보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>오산대학교산학협력단</div>
+                        <div>
+                            <div class="rctit"><button class="like">관심공고 등록</button>[오산대학교] 재직자,실업자 교육훈련 과정 운영 및 협약기업 관리 전담자 구인</div>
+                            <div class="rcdesc_wrap">
+                                <div>
+                                    <p>일반 영업원</p>
+                                    <ul class="clearfix">
+                                        <li>2500 ~ 3000 만원</li>
+                                        <li>계약직</li>
+                                        <li>신입+경력</li>
+                                        <li>대졸(2~3년)</li>
+                                    </ul>
+                                    <p>오산시</p>
+                                </div>
+                                <div>오늘마감</div>
+                            </div>
+                            <div class="cert_wrap">
+                                <div>
+                                    <ul class="clearfix">
+                                        <li>일자리 우수기업</li>
+                                        <li>경기도여성고용우수기업</li>
+                                        <li>경기도유망중소기업</li>
+                                        <li>청년친화강소기업</li>
+                                        <li>면접수당 지급기업</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <span class="source worknet"></span>
+                                    <a href="javascript:void(0);" class="detail_view">상세보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>(주)선한아이디</div>
+                        <div>
+                            <div class="rctit"><button class="like">관심공고 등록</button>파일노리 사업운영본부 정규직원 채용(웹마케팅 기획 및 모니터링)</div>
+                            <div class="rcdesc_wrap">
+                                <div>
+                                    <p>경영ㆍ사무ㆍ금융ㆍ보험직</p>
+                                    <ul class="clearfix">
+                                        <li>연봉 2780만원 ~ 2780만원</li>
+                                        <li>간의 정함이 없는 근로계약/ 파견근로 비희망/ 대체인력채용 비희망</li>
+                                        <li>무관</li>
+                                        <li>학력무관</li>
+                                    </ul>
+                                    <p>경기도 화성시 동탄기흥로 614</p>
+                                </div>
+                                <div>오늘마감</div>
+                            </div>
+                            <div class="cert_wrap">
+                                <div>
+                                    
+                                </div>
+                                <div>
+                                    <span class="source worknet"></span>
+                                    <a href="javascript:void(0);" class="detail_view">상세보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>에스피반도체통신(주)</div>
+                        <div>
+                            <div class="rctit"><button class="like">관심공고 등록</button>[부천]에스피반도체통신(주) 기술그룹 신입 및 경력 사원 모집</div>
+                            <div class="rcdesc_wrap">
+                                <div>
+                                    <p>경영ㆍ사무ㆍ금융ㆍ보험직</p>
+                                    <ul class="clearfix">
+                                        <li>연봉 3200만원</li>
+                                        <li>정규직</li>
+                                        <li>신입</li>
+                                        <li>대졸(4년)</li>
+                                    </ul>
+                                    <p>부천시</p>
+                                </div>
+                                <div>D-4</div>
+                            </div>
+                            <div class="cert_wrap">
+                                <div>
+                                    <ul class="clearfix">
+                                        <li>일자리 우수기업</li>
+                                        <li>경기도유망중소기업</li>
+                                        <li>청년친화강소기업</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <span class="source jobkorea"></span>
+                                    <a href="javascript:void(0);" class="detail_view">상세보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>삼성전기물산</div>
+                        <div>
+                            <div class="rctit"><button class="like">관심공고 등록</button>국방사업 소프트웨어 개발자 채용</div>
+                            <div class="rcdesc_wrap">
+                                <div>
+                                    <p>조사, 인력공급ㆍ알선 및 기타 전문서비스(부서장)</p>
+                                    <ul class="clearfix">
+                                        <li>0000만원</li>
+                                        <li>정규직</li>
+                                        <li>신입+경력</li>
+                                        <li>학력무관</li>
+                                    </ul>
+                                    <p>하남시, 성남시, 군포시, 수원시, 의왕시, 가평군, 서울특별시, 인천광역시</p>
+                                </div>
+                                <div>D-10</div>
+                            </div>
+                            <div class="cert_wrap">
+                                <div>
+                                    <ul class="clearfix">
+                                        <li>일자리 우수기업</li>
+                                        <li>경기도여성고용우수기업</li>
+                                        <li>경기도유망중소기업</li>
+                                        <li>청년친화강소기업</li>
+                                        <li>면접수당 지급기업</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <span class="source jobaba"></span>
+                                    <a href="javascript:void(0);" class="detail_view">상세보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>오산대학교산학협력단</div>
+                        <div>
+                            <div class="rctit"><button class="like">관심공고 등록</button>[오산대학교] 재직자,실업자 교육훈련 과정 운영 및 협약기업 관리 전담자 구인</div>
+                            <div class="rcdesc_wrap">
+                                <div>
+                                    <p>일반 영업원</p>
+                                    <ul class="clearfix">
+                                        <li>2500 ~ 3000 만원</li>
+                                        <li>계약직</li>
+                                        <li>신입+경력</li>
+                                        <li>대졸(2~3년)</li>
+                                    </ul>
+                                    <p>오산시</p>
+                                </div>
+                                <div>오늘마감</div>
+                            </div>
+                            <div class="cert_wrap">
+                                <div>
+                                    <ul class="clearfix">
+                                        <li>일자리 우수기업</li>
+                                        <li>경기도여성고용우수기업</li>
+                                        <li>경기도유망중소기업</li>
+                                        <li>청년친화강소기업</li>
+                                        <li>면접수당 지급기업</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <span class="source worknet"></span>
+                                    <a href="javascript:void(0);" class="detail_view">상세보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>(주)선한아이디</div>
+                        <div>
+                            <div class="rctit"><button class="like">관심공고 등록</button>파일노리 사업운영본부 정규직원 채용(웹마케팅 기획 및 모니터링)</div>
+                            <div class="rcdesc_wrap">
+                                <div>
+                                    <p>경영ㆍ사무ㆍ금융ㆍ보험직</p>
+                                    <ul class="clearfix">
+                                        <li>연봉 2780만원 ~ 2780만원</li>
+                                        <li>간의 정함이 없는 근로계약/ 파견근로 비희망/ 대체인력채용 비희망</li>
+                                        <li>무관</li>
+                                        <li>학력무관</li>
+                                    </ul>
+                                    <p>경기도 화성시 동탄기흥로 614</p>
+                                </div>
+                                <div>오늘마감</div>
+                            </div>
+                            <div class="cert_wrap">
+                                <div>
+                                    
+                                </div>
+                                <div>
+                                    <span class="source worknet"></span>
+                                    <a href="javascript:void(0);" class="detail_view">상세보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>에스피반도체통신(주)</div>
+                        <div>
+                            <div class="rctit"><button class="like">관심공고 등록</button>[부천]에스피반도체통신(주) 기술그룹 신입 및 경력 사원 모집</div>
+                            <div class="rcdesc_wrap">
+                                <div>
+                                    <p>경영ㆍ사무ㆍ금융ㆍ보험직</p>
+                                    <ul class="clearfix">
+                                        <li>연봉 3200만원</li>
+                                        <li>정규직</li>
+                                        <li>신입</li>
+                                        <li>대졸(4년)</li>
+                                    </ul>
+                                    <p>부천시</p>
+                                </div>
+                                <div>D-4</div>
+                            </div>
+                            <div class="cert_wrap">
+                                <div>
+                                    <ul class="clearfix">
+                                        <li>일자리 우수기업</li>
+                                        <li>경기도유망중소기업</li>
+                                        <li>청년친화강소기업</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <span class="source jobkorea"></span>
+                                    <a href="javascript:void(0);" class="detail_view">상세보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="paging_wrap">
+                <ul class="clearfix paging">
+                    <li><</li>
+                    <li><<</li>
+                    <li class="active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>></li>
+                    <li>>></li>
+                </ul>
+                <div class="clearfix mPage">
+                    <button class="disable">이전</button>
+                    <div><strong>1</strong> / 40</div>
+                    <button>다음</button>
+                </div>
+            </div>
+        </div>
+        <div class="consulting_wrap">
+            <div class="containerNew">
+                <h3>잡아바의 특별한 <span>6가지</span> 컨설팅</h3>
+                <div class="cs_desc">성공적인 취업을 위해 잡아바에서 취업컨설팅 프로그램을 <span>무료</span>로 지원하고 있습니다.</div>
+                <div class="consulting">
+                    <div class="clearfix">
+                        <div class="thumb cs1"><span></span></div>
+                        <div class="desc">
+                            <h4>취업진로 진단검사</h4>
+                            <p>나에게 적합한 진로, 직업, 직무를 찾아드립니다.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="thumb cs2"><span></span></div>
+                        <div class="desc">
+                            <h4>자기소개서 컨설팅</h4>
+                            <p>전문 컨설턴트들의 차별화된 첨삭 지도로 심층 컨설팅을 해드립니다.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="thumb cs3"><span></span></div>
+                        <div class="desc">
+                            <h4>AI면접 컨설팅</h4>
+                            <p>AI면접 컨설팅을 통해 완벽한 면접을 준비할 수있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="thumb cs4"><span></span></div>
+                        <div class="desc">
+                            <h4>취업/진로/심리상담 컨설팅</h4>
+                            <p>다양한 심리적 어려움을 겪고 계신분들을 위한 상담서비스를 제공합니다.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="thumb cs5"><span></span></div>
+                        <div class="desc">
+                            <h4>취업 멘토링</h4>
+                            <p>업계 선배들의 취업정보, 업무상담 등 생상한 정보를 얻을 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="thumb cs6"><span></span></div>
+                        <div class="desc">
+                            <h4>NCS 직업 역량진단</h4>
+                            <p>내가 하고자 하는 직무에 필요한 역량이 무엇인지 알고 성공적으로 취업준비하세요.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--잡아바 js-->
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
+<script>	
+    $(document).ready(function(){
+        $('.scrollbar-outer').scrollbar();
+
+        $('.choice_wrap li i').click(function(){
+            $(this).parent('li').remove();
+        });
+        $('.rclist button.like').click(function(){
+            $(this).toggleClass('active');
+        });
+    });
+</script>
+</body></html>

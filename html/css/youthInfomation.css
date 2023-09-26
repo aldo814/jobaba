@@ -1,0 +1,467 @@
+@charset "utf-8";
+
+#youthInformation .innerSection {
+    position: relative;
+    padding: 0 140px;
+    max-width: 1260px;
+    height: 100%;
+    margin: 0 auto;
+}
+#youthInformation article .innerSection .innerWrap {
+    position: relative;
+    padding: 50px 0 25px;
+}
+#youthInformation .informationHader {
+    background: url(../images/submain/bg_youthinformation.png) no-repeat;
+    background-size: cover;
+    height: 320px;
+}
+#youthInformation .informationHader .titWrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+#youthInformation .informationHader .titWrap h2 {
+    color: #fff;
+    font-size: 34px;
+}
+#youthInformation .informationHader .titWrap p {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 18px;
+}
+#youthInformation .informationHader .titWrap::after {
+    content: "";
+    position: absolute;
+    background: url(../images/submain/icon_youth.png) no-repeat;
+    width: 365px;
+    height: 240px;
+    right: 0;
+}
+#youthInformation .titWrap {
+    position: relative;
+}
+#youthInformation .titWrap strong {
+    display: block;
+    margin-bottom: 30px;
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+}
+#youthInformation .titWrap a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #38bab2;
+    font-size: 14px;
+}
+#youthInformation .recommendWrap .slick-list {
+    margin: 0 -20px;
+}
+#youthInformation .recommendWrap .slick-slide {
+    margin: 0 20px;
+    
+}
+#youthInformation .txtWrap strong {
+    display: block;
+    color: #000;
+    font-size: 18px;
+    word-break: keep-all;
+}
+#youthInformation .txtWrap p {
+    color: #666666;
+    font-size: 14px;
+    word-break: keep-all;
+}
+#youthInformation .txtWrap span {
+    display: block;
+    color: #666666;
+    font-size: 14px;
+    word-break: keep-all;
+}
+#youthInformation .thumb {
+    border-radius: 15px;
+    border: 1px solid #eceef2;
+    overflow: hidden;
+}
+#youthInformation .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#youthInformation .recommendList {
+    text-align: center;
+}
+#youthInformation .recommendList .txtWrap strong {
+    margin-top: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#youthInformation .recommendList .txtWrap p {
+    margin-top: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#youthInformation .recommendList .txtWrap span {   
+    margin-top: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#youthInformation .listWrap {
+    display: flex !important;
+    gap: 0 40px;
+}
+#youthInformation .listWrap > div {
+    width: calc((100% - 40px) / 2);
+}
+#youthInformation .listItem.one .thumb {
+    height: 230px;
+}
+#youthInformation .listItem.one .txtWrap strong {
+    margin-top: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#youthInformation .listItem.one .txtWrap span {
+    margin-top: 10px;
+}
+#youthInformation .listItem.two a {
+    display: flex;
+    align-items: center;
+}
+#youthInformation .listItem.two a:first-child {
+    margin-bottom: 20px;
+}
+#youthInformation .listItem.two a .thumb {
+    max-width: 200px;
+    width: 100%;
+    height: 140px;
+    margin-right: 20px;
+}
+#youthInformation .listItem.two .txtWrap span {
+    margin-top: 20px;
+}
+#youthInformation .support {
+    background: #f8f8f8;
+}
+#youthInformation .support .innerSection > div {
+    border-bottom: 1px solid #e4e4e4;
+}
+#youthInformation .supportWrap {
+    position: relative;
+    padding-bottom: 50px;
+}
+#youthInformation .navi {
+    position: absolute;
+    bottom: 26px;
+    right: 0;
+}
+#youthInformation .navi span.prev {
+    margin-right: 48px;
+}
+#youthInformation .navi span {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 18px;
+}
+#youthInformation .slick-dots {
+    display: inline-block !important;
+    width: auto;
+    right: 22px;
+    bottom: 0;
+}
+#youthInformation .slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+#youthInformation .slick-dots li.slick-active {
+    display: inline-block;
+}
+#youthInformation .slick-dots li {
+    width: 36px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    display: none;
+}
+#youthInformation .slick-dots li {
+    width: 36px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    display: none;
+}
+#youthInformation .employment {
+    background: #f8f8f8;
+}
+#youthInformation .employment .innerSection > div {
+    border-bottom: 1px solid #e4e4e4;
+}
+#youthInformation .employmentWrap {
+    position: relative;
+    padding-bottom: 60px;
+}
+#youthInformation .international {
+    background: #f8f8f8;
+}
+#youthInformation .internationalWrap {
+    padding-bottom: 50px;
+}
+#youthInformation .internationalWrap .listWrap > div {
+    width: 100%;
+}
+#youthInformation .internationalWrap .listItem.two a:first-child {
+    margin-bottom: 0;
+}
+#youthInformation .internationalWrap .listItem {
+    display: flex;
+    gap: 0 40px;
+}
+#youthInformation .internationalWrap .listItem a {
+    width: calc((100% - 40px) / 2);
+}
+#youthInformation .customized .innerSection {
+    padding: 0;
+}
+#youthInformation .customizedWrap {
+    padding-bottom: 50px;
+}
+#youthInformation .customized .customizedWrap a {
+    display: block;
+    width: 100%;
+    height: inherit;
+    position: relative;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+}
+#youthInformation .customized .customizedWrap a:hover {
+    border-color: #38bab2;
+    border-width: 2px;
+}
+#youthInformation .customizeList {
+    padding: 8px;
+}
+#youthInformation .customized .customizedWrap .customizeList strong {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}   
+#youthInformation .customized .customizedWrap .customizeList p {
+    margin: 16px 0;
+    min-height: 55px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+#youthInformation .customized .customizedWrap .customizeList span {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#youthInformation .customized .btnWrap {
+    width: 100%;
+    margin: 20px 0 10px;
+    text-align: right;
+}
+#youthInformation .customized .btnWrap a { 
+    color: #31af96;
+    font-size: 14px;
+}
+#youthInformation .searchWrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
+#youthInformation .searchWrap select {
+    border: 1px solid #e2e2e2;
+    font-size: 14px;
+    color: #787878;
+    border-radius: 5px;
+    background: url(https://www.jobaba.net/resource/images/exhb/select_arrow.png) #fafafa no-repeat right 15px center;
+    padding: 7px 10px;
+    height: auto;
+    width: 150px;
+}
+#youthInformation .searchWrap > div {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+#youthInformation .searchWrap > div span {
+    color: #010101;
+    font-size: 14px;
+}
+#youthInformation .searchWrap .customBtn {
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #38bab2;
+    color: #38bab2;
+    font-size: 14px;
+    width: 70px;
+    height: 36px;
+}
+
+@media all and (max-width:1260px) {
+    #youthInformation .innerSection {
+        padding: 0 70px;
+    }
+    #youthInformation .customized .innerSection {
+        padding: 0 10px;
+    }
+}
+@media all and (max-width:1119px) {
+    #youthInformation .informationHader .titWrap::after {
+        width: 250px;
+        height: 162px;
+        background-size: 250px;
+    }
+}
+@media all and (max-width:1024px) {
+    #youthInformation .innerSection {
+        padding: 0 30px;
+    }
+}
+@media all and (max-width:768px){
+    #youthInformation .innerSection {
+        padding: 0 10px;
+    }
+    #youthInformation article .innerSection .innerWrap {
+        padding: 20px 0 25px;
+    }
+    #youthInformation .customized .innerSection .innerWrap {
+        padding: 20px 10px 25px;
+    }
+    #youthInformation .informationHader {
+        height: 220px;
+    }
+    #youthInformation .informationHader .titWrap h2 {
+        font-size: 26px;
+    }
+    #youthInformation .informationHader .titWrap p {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    #youthInformation .titWrap strong {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    #youthInformation .txtWrap strong {
+        font-size: 16px;
+    }
+    #youthInformation .recommendWrap .slick-list {
+        margin: 0 -10px
+    }
+    #youthInformation .recommendWrap .slick-slide {
+        margin: 0 10px;
+    }
+    #youthInformation .recommendList .txtWrap strong {
+        margin-top: 10px;
+    }
+    #youthInformation .recommendList .txtWrap p {
+        margin-top: 4px;
+    }
+    #youthInformation .recommendList .txtWrap span {
+        margin-top: 4px;
+    }
+    #youthInformation .listItem.one .txtWrap strong {
+        margin-top: 20px;
+    }
+    #youthInformation .listWrap {
+        gap: 20px 0;
+        flex-wrap: wrap;
+    }
+    #youthInformation .listWrap > div {
+        width: 100%;
+    }
+    #youthInformation .listItem.two a .thumb {
+        max-width: 160px;
+        height: 120px;
+    }
+    #youthInformation .navi {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
+    #youthInformation .slick-dots {
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #youthInformation .internationalWrap .listItem.two {
+        flex-direction: column;
+        gap: 20px 0;
+    }
+    #youthInformation .internationalWrap .listItem.two a {
+        width: 100%;
+    }
+    #youthInformation .searchWrap .navi {
+        display: none;
+    }
+}
+
+@media all and (max-width:640px){
+    #youthInformation .informationHader .titWrap::after {
+        content: none;
+    }
+    #youthInformation .informationHader .titWrap h2 {
+        font-size: 22px;
+    }
+    #youthInformation .informationHader .titWrap p {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    #youthInformation .recommend .titWrap strong,
+    #youthInformation .customized .titWrap strong {
+        text-align: center;
+    }
+    #youthInformation .titWrap strong {
+        text-align: left;
+    }
+    #youthInformation .customized .customizedWrap a {
+        padding: 10px;
+    }
+    #youthInformation .searchWrap {
+        flex-direction: column;
+        gap: 10px 0;
+    }
+    #youthInformation .searchWrap > div {
+        width: 100%;
+        justify-content: space-between;
+    }
+    #youthInformation .searchWrap select {
+        width: calc(100% - 100px);
+    }
+    #youthInformation .searchWrap .customBtn {
+        width: 100%;
+    }
+    #youthInformation .listItem.two strong {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        word-wrap: break-word;
+    }
+    #youthInformation .listItem.two span {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}

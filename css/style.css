@@ -7,22 +7,23 @@ a{text-decoration:none;color:inherit;}
 .fleft{float:left;}
 .fright{float:right;}
 
-.container{position:realtive;width:1080px;margin:30px auto;}
+.container{position:relative;width:1080px;margin:30px auto;}
 h1{position:relative;font-size:24px;margin:0 auto 20px;}
 	h1 .git{position:absolute;top:0;right:0;}
 	h1 .git a{display:inline-block;padding:5px 13px;background:#333;color:#fff;font-weight:400;font-size:13px;border-radius:8px;}
 .tbl_list{width:100%;border-collapse:collapse;}
 	.tbl_list th, .tbl_list td{padding:8px 5px;}
-.tbl_list thead th{border-top: 1px solid #333;border-bottom: 1px solid #333;font-size: 16px;font-weight: 400;padding: 10px 0}
-	.tbl_list th, .tbl_list td{border-bottom: 1px solid #eee;}
-.tbl_list td{font-size: 14px;color: #777;font-weight: 400}
+	.tbl_list th{background:#e9e9e9;}
+	.tbl_list th, .tbl_list td{border:1px solid #ccc;}
 	.tbl_list tbody tr:nth-child(even){background:#f9f9f9;}
 	.tbl_list td:nth-child(1){text-align:center;width:50px;}
 	.tbl_list td:nth-child(2){text-align:center;width:100px;}
 	.tbl_list td:nth-child(3){padding:8px 13px;}
 	.tbl_list select{padding:3px 8px;}
 
+.kakao_chat{position:fixed;z-index:1000;width:180px;right:20px;bottom:20px;}
 
+/* 괜찮은 중소기업 목록 */
 .board-incruit .item{display: block;position: relative;overflow: hidden;width: 98%;margin: 10px auto 0;padding: 40px 50px;border: 1px solid #ddd;}
 .board-incruit .item .sort {font-size: 14px;}
 .board-incruit .item .title{padding-right: 200px;font-size: 22px;font-weight: 500;}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>법정의무교육</title>
+	<!-- 잡아바 css-->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/common.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/style.jobInfo.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/style.epmtDiag.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
+	<!-- //잡아바 css-->
+
+	<!--추가 css-->
+    <style>
+        .wdi800{width:800px!important;}
+        .req_info{font-size:14px;text-align:right;margin-bottom:8px;}
+        .required{display:inline-block;color:#f06;padding:0 4px;}
+        table.tbl_modal{width:100%;border-collapse:collapse;}
+        table.tbl_modal th{padding:12px 24px;background-color:#f5f5f5;border:1px solid #ccc;text-align:left;font-weight:400;width:160px;}
+        table.tbl_modal td{padding:12px 24px;border:1px solid #ccc;}
+        table.tbl_modal input{border:1px solid #d4d4d4;padding:8px;}
+        table.tbl_modal input.count{text-align:right;width:70px;margin-right:8px;}
+        table.tbl_modal .info{font-size:14px;margin-top:8px;}
+        table.tbl_modal .dn_smp_list{display:inline-block;padding:4px 12px;border:1px solid #38bab2;color:#38bab2;margin-bottom:8px;}
+        table.tbl_modal .dextUpload{color:#999;border:1px solid #f5f5f5;padding:8px;height:120px;}
+        h3{font-size:16px;margin:24px 0 8px;}
+        textarea.agree_ment{border:1px solid #ddd;;background:none;width:100%;}
+        .agree_check{position: relative;}
+        .agree_check label{font-weight:400;font-size:14px;color:#000;}
+        .agree_check input[type="checkbox"]{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;}
+        .agree_check input[type="checkbox"]+label{display:inline-block;position:relative;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;}
+        .agree_check input[type="checkbox"]+label:before{content:'';display:inline-block;width:21px;height:21px;line-height:21px;margin:-2px 8px 0 0;text-align:center;vertical-align:middle;background:#fff;border:1px solid #dbdbdb;}
+        .agree_check input[type="checkbox"]+label:after{content:'';display:block;background:url(http://jobaba.net/resource/images/web/2022/01/19/1642554484495_0164904531.png) no-repeat;width:24px;height:18px;position:absolute;left:2px;top:2px;opacity:0;}
+        .agree_check input[type="checkbox"]+label:active:after, .agree_check input[type="checkbox"]:checked + label:active:after, .agree_check input[type="checkbox"]:checked + label:after{opacity:1}
+        @media all and (max-width:1024px){
+            .wdi800{width: 90% !important}
+        }
+    </style>
+</head>
+
+<body>
+	<div id="LayerPopup1" class="modal fade in" role="dialog" data-usrId= "${usrId}" aria-labelledby="Layer1ModalLabel" style="display:block;">
+        <div class="modal-dialog wdi800" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" id="btnLayerClose_top" class="close btn_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="recommModalLabel">기업법정의무교육 신청</h4>
+                </div>
+                <div class="modal-body popLayer" id="viewRecomReqHtml">
+                    <div class="req_info">
+                        <span class="required">*</span>필수입력사항
+                    </div>
+                    <table class="tbl_modal">
+                        <tbody>
+                        <tr>
+                            <th>이름</th>
+                            <td>OOO</td>
+                        </tr>
+                        <tr>
+                            <th>전화번호</th>
+                            <td>000-0000-0000</td>
+                        </tr>
+                        <tr>
+                            <th>이메일</th>
+                            <td>OOOOO@OOOO.com</td>
+                        </tr>
+                        <tr>
+                            <th>교육신청 인원<span class="required">*</span></th>
+                            <td>
+                                <input type="number" class="count" />명
+                                <div class="info">※ 기업법정의무교육 신청 인원은 최소 5인 이상부터 가능합니다.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>교육 신청자<br/>
+                                리스트 등록<span class="required">*</span></th>
+                            <td>
+                                <a href="javascript:void(0);" class="dn_smp_list">교육신청자 리스트 샘플양식 다운로드</a>
+                                <div class="dextUpload">dextUpload Area : 해당 DIV 삭제 후 삽입</div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <h3>개인정보 수집 및 이용</h3>
+                    <textarea class="agree_ment">1. 경기도일자리재단에서는 「 기업 법정의무교육 」 에 있어 개인을 고유하게 구별하기 위해 부여된 개인식별정보를 포함한 개인정보를 다음과 같이 수집 및 관리하고 있습니다.
+가. 개인정보의 수집ㆍ이용 목적 : 기업 법정의무교육 신청자 등록
+나. 수집하는 개인식별정보 항목 : 성명, 연락처, 생년월일, ID, 휴대폰번호
+                        
+2. 「 기업 법정의무교육 」 을 위해 개인식별정보를 포함한 개인정보가 필요하며, 경기도일자리재단은 「개인정보법」에 따라 기업담당자(신청자)로부터 제공받는 개인정보를 보호하여아 합니다.
+                        
+3. 경기도일자리재단은 개인정보를 처리목적에 필요한 범위에서 적합하게 처리하고 그 목적 외의 용도로 사용하지않습니다.
+                        
+4.  본인은 위의 내용에 따라 「 기업 법정의무교육 」을 위한 개인식별정보를 제공하는데 동의합니다.</textarea>
+                    <div class="agree_check">
+                        <input id="agreement" type="checkbox" /> <label for="agreement">개인정보 수집에 동의합니다.</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn_blue" id="recomBtn">신청</button>
+                    <button type="button" class="btn btn_grey" data-dismiss="modal" aria-label="Close">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!--잡아바 js-->
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+	<script>	
+		
+	</script>
+</body></html>

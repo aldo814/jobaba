@@ -1,0 +1,1165 @@
+@charset "utf-8";
+
+@import url("https://webfontworld.github.io/gangwon/GangwonEduPower.css");
+
+/*
+** layout
+*/
+
+.themaWrap {
+  letter-spacing: -0.5px;
+}
+.themaWrap .innerSection {
+  position: relative;
+  padding: 0 20px;
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+}
+.themaWrap img {
+  object-fit: cover;
+  height: inherit;
+}
+
+/*
+** contents
+*/
+/* 블라인드 채용의 모든 것! */
+.blindEmploymentInfo {
+  padding: 50px 0 0;
+  position: relative;
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209/bg_main.png)
+    top no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.blindEmploymentInfo .mainTitleWrap {
+  text-align: center;
+}
+.blindEmploymentInfo .mainTitleWrap p {
+  color: #fff;
+  font-size: 26px;
+}
+.blindEmploymentInfo .mainTitleWrap strong {
+  color: #fff;
+  font-size: 45px;
+  font-style: italic;
+  text-shadow: 1px 2px 2px #417cd1, 1px -1px 2px #417cd1, -2px -1px 2px #417cd1,
+    2px 0px 2px #417cd1;
+  -webkit-text-stroke: 1px #417cd1;
+  letter-spacing: -2px;
+}
+.blindEmploymentInfo .mainTitleWrap strong > em {
+  color: #fef114;
+  font-style: italic;
+}
+.blindEmploymentInfo .infoWrap {
+  position: relative;
+  bottom: -165px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 35px 20px;
+  max-width: 980px;
+  border: 2px solid #132c51;
+  border-radius: 15px;
+  background: #fff;
+  z-index: 1;
+}
+.blindEmploymentInfo .infoWrap::before {
+  content: "";
+  position: absolute;
+  top: -292px;
+  left: 50%;
+  margin-left: -223.5px;
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209/icon_main.png)
+    center no-repeat;
+  width: 447px;
+  height: 290px;
+}
+.blindEmploymentInfo .blindInfo {
+  margin: 0 auto;
+  padding: 0 0 40px;
+  max-width: 790px;
+  border-bottom: 1px solid #eee;
+}
+.blindEmploymentInfo .blindInfo .titleWrap {
+  text-align: center;
+}
+.blindEmploymentInfo .blindInfo .titleWrap strong {
+  margin: 0 0 30px;
+  position: relative;
+  display: inline-block;
+  color: #000;
+  font-size: 24px;
+  z-index: 1;
+}
+.blindEmploymentInfo .blindInfo .titleWrap strong::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 11px;
+  background: #ffe7cf;
+  z-index: -1;
+}
+.blindEmploymentInfo .blindInfo .titleWrap p {
+  padding-left: 10px;
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
+.blindEmploymentInfo .blindInfo .titleWrap p::before {
+  content: "-";
+  margin-left: -10px;
+}
+.blindEmploymentInfo .blindInfo p > em {
+  color: #ff6000;
+}
+.blindEmploymentInfo .blindInfo ul {
+  margin: 35px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 0 30px;
+}
+.blindEmploymentInfo .blindInfo ul li {
+  padding: 20px 20px 15px;
+  width: calc((100% - 30px) / 2);
+  background: #fff4e9;
+  border-radius: 16px;
+  text-align: center;
+}
+.blindEmploymentInfo .blindInfo ul li .label {
+  padding: 3px 20px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  background: #ff8b0e;
+  border-radius: 15px;
+}
+.blindEmploymentInfo .blindInfo ul li div {
+  margin: 15px 0 0;
+}
+.blindEmploymentInfo .blindInfo strong {
+  color: #ff0000;
+  font-size: 20px;
+}
+.blindEmploymentInfo .blindNecessity {
+  margin: 0 auto;
+  padding: 35px 0 0;
+  max-width: 790px;
+}
+.blindEmploymentInfo .blindNecessity strong {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+}
+.blindEmploymentInfo .blindNecessity strong > em {
+  color: #397ee1;
+}
+.blindEmploymentInfo .blindNecessity ul {
+  margin: 35px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 0 30px;
+}
+.blindEmploymentInfo .blindNecessity ul li {
+  position: relative;
+  padding: 150px 20px 15px;
+  width: calc((100% - 30px) / 2);
+  background: #eef5ff;
+  border-radius: 16px;
+  text-align: center;
+}
+.blindEmploymentInfo .blindNecessity ul li:first-child::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -54.5px;
+  width: 109px;
+  height: 190px;
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209/icon_blind03.png)
+    top no-repeat;
+}
+.blindEmploymentInfo .blindNecessity ul li:last-child::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 80px;
+  margin-left: -54px;
+  width: 108px;
+  height: 96px;
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209/icon_blind04.png)
+    top no-repeat;
+}
+.blindEmploymentInfo .blindNecessity ul li div {
+  margin: 20px 0 0;
+  text-align: left;
+}
+.blindEmploymentInfo .blindNecessity ul li p {
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+.blindEmploymentInfo .blindNecessity ul li p::before {
+  content: "-";
+  margin-left: -10px;
+  margin-right: 5px;
+}
+.blindEmploymentInfo .blindNecessity ul li .label {
+  position: relative;
+  top: -125px;
+  padding: 3px 20px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  background: #397ee1;
+  border-radius: 15px;
+}
+.bannerLink {
+  position: relative;
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209/bg_link.png)
+    bottom no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 475px;
+  text-align: center;
+}
+.bannerLink .linkWrap {
+  padding: 45px 0;
+}
+.bannerLink .innerSection {
+  padding-top: 165px;
+}
+.bannerLink .imageWrap {
+  margin: 0 0 25px;
+}
+.bannerLink p {
+  color: #fff;
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+.bannerLink p > span {
+  font-weight: 700;
+}
+.bannerLink p > em {
+  color: #fef114;
+  font-weight: 700;
+}
+.bannerLink .link {
+  margin-top: 35px;
+  padding-bottom: 10px;
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  border-bottom: 2px solid #fff;
+}
+.bannerLink .link:hover {
+  color: #fef114;
+  border-bottom: 2px solid #fef114;
+}
+/* 블라인드 채용 기업 이야기 */
+.blindEmploymentWrap {
+  padding: 50px 0;
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209/bg_blind.png)
+    center no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.blindEmploymentWrap .blindEmployment {
+  position: relative;
+  padding: 45px 50px 40px;
+  background: #fff;
+  border-radius: 15px;
+  border: 2px solid #132c51;
+  overflow: hidden;
+  z-index: 1;
+}
+.blindEmploymentWrap .blindEmployment::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209/icon_blind02.png)
+    center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 296px;
+  z-index: -1;
+}
+.blindEmploymentWrap .titleWrap strong {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px 0;
+  font-size: 24px;
+}
+.blindEmploymentWrap .titleWrap strong::before {
+  content: "";
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209/icon_blind01.png)
+    center no-repeat;
+  display: block;
+  width: 68px;
+  height: 59px;
+}
+.blindEmploymentWrap .tabMenuList {
+  margin: 35px 0 0;
+}
+.blindEmploymentWrap .tabMenuList ul.tabList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0 15px;
+}
+.blindEmploymentWrap .tabContent > div {
+  display: none;
+}
+.blindEmploymentWrap .tabContent > div.active {
+  display: block;
+}
+.blindEmploymentWrap .tabMenuList ul.tabList li {
+  width: calc((100% - 75px) / 6);
+}
+.blindEmploymentWrap .tabMenuList ul.tabList li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  color: #ababab;
+  font-size: 16px;
+  font-weight: 500;
+  background: #f3f3f3;
+  border-radius: 10px;
+}
+.blindEmploymentWrap .tabMenuList ul.tabList li a.active {
+  background: #397ee1;
+  color: #fff;
+}
+.blindEmploymentWrap .tabMenuList ul.tabList li a.active {
+  background: #397ee1;
+  color: #fff;
+}
+.blindEmploymentWrap .sloganWrap {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid #eee;
+}
+.blindEmploymentWrap .sloganWrap .logoWrap {
+  max-width: 300px;
+}
+.blindEmploymentWrap .sloganWrap .textWrap {
+  display: flex;
+  gap: 0 15px;
+  max-width: 480px;
+}
+.blindEmploymentWrap .sloganWrap .textWrap::before {
+  content: "";
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209/icon_quotes01.png)
+    center no-repeat;
+  min-width: 29px;
+  height: 21px;
+  align-self: self-start;
+}
+.blindEmploymentWrap .sloganWrap .textWrap::after {
+  content: "";
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209/icon_quotes02.png)
+    center no-repeat;
+  min-width: 29px;
+  height: 21px;
+  align-self: self-end;
+}
+.blindEmploymentWrap .sloganWrap .textWrap strong {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.blindEmploymentWrap ul.qnaList {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px 0;
+}
+.blindEmploymentWrap ul.qnaList li .question {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+}
+.blindEmploymentWrap ul.qnaList li .question::before {
+  content: "Q";
+  align-self: baseline;
+  color: #397ee1;
+  font-family: "GangwonEduPower";
+  font-size: 40px;
+  font-weight: 700;
+}
+.blindEmploymentWrap ul.qnaList li .question::after {
+  content: "";
+  align-self: center;
+  width: 0;
+  height: 0;
+  border-top: 15px solid #95b6e7;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: none;
+}
+.blindEmploymentWrap ul.qnaList li.active .question::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: none;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 15px solid #95b6e7;
+}
+.blindEmploymentWrap ul.qnaList li .question > span {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+}
+.blindEmploymentWrap ul.qnaList li.active .answerWrap {
+  display: block;
+}
+.blindEmploymentWrap ul.qnaList li .answerWrap {
+  display: none;
+  margin-top: 20px;
+  margin-left: 45px;
+  padding: 18px 20px;
+  background: #f3f8fb;
+  border-radius: 10px;
+}
+.blindEmploymentWrap .videoWrap {
+  position: relative;
+  margin: 170px auto 0;
+  max-width: 660px;
+}
+.blindEmploymentWrap .videoWrap::after {
+  content: "";
+  position: absolute;
+  top: -123px;
+  left: -84px;
+  width: 303px;
+  height: 259px;
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209/icon_video.png)
+    center no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.blindEmploymentWrap .videoWrap .imageWrap {
+  padding-right: 40px;
+  position: relative;
+  max-width: 100%;
+  height: 346px;
+  overflow: hidden;
+}
+.blindEmploymentWrap .videoWrap .imageWrap > img {
+  width: 100%;
+  border-radius: 30px;
+}
+.blindEmploymentWrap .videoWrap .imageWrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209/bg_video.png)
+    center no-repeat;
+  background-size: cover;
+}
+.blindEmploymentWrap .videoWrap .btnVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -60px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.blindEmploymentWrap .linkWrap {
+  margin: 35px 0 0;
+  text-align: center;
+}
+.blindEmploymentWrap .link {
+  padding-bottom: 10px;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  border-bottom: 2px solid #666;
+}
+.blindEmploymentWrap .link:hover {
+  color: #0061bb;
+  border-bottom: 2px solid #6692cd;
+}
+
+/* 배너 */
+.bannerWrap {
+  position: relative;
+  background: #0085cc;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.bannerWrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209/icon_banner01.png)
+    center no-repeat;
+  width: 218px;
+  height: 200px;
+}
+.bannerWrap::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209/icon_banner03.png)
+    center no-repeat;
+  width: 346px;
+  height: 171px;
+}
+.bannerWrap .innerSection {
+  display: flex;
+  align-items: center;
+}
+.bannerWrap .textWrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+  width: 100%;
+}
+.bannerWrap .textWrap::after {
+  content: "";
+  position: absolute;
+  top: 58%;
+  right: 75px;
+  transform: translateY(-50%);
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209/icon_banner02.png)
+    center no-repeat;
+  width: 260px;
+  height: 184px;
+}
+.bannerWrap .textWrap p {
+  color: #fff;
+  font-size: 26px;
+}
+.bannerWrap .textWrap strong {
+  color: #fff;
+  font-size: 34px;
+}
+.bannerWrap .textWrap strong > span {
+  color: #fef114;
+}
+
+/* 컨설팅 */
+.consultingWrap {
+  padding: 65px 0 50px;
+  background: #bbe2f9
+    url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209/bg_consulting.png)
+    bottom no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.consultingWrap ul.consultingList {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0 45px;
+}
+.consultingWrap ul.consultingList li {
+  width: calc((100% - 135px) / 4);
+}
+.consultingWrap ul.consultingList li > a {
+  padding: 25px 25px 20px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 16px;
+}
+.consultingWrap ul.consultingList li > a:hover {
+  box-shadow: 0 0 0 3px #132c51 inset;
+}
+.consultingWrap ul.consultingList li .textWrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.consultingWrap ul.consultingList li .imageWrap {
+  text-align: center;
+  min-height: 150px;
+}
+.consultingWrap ul.consultingList li .textWrap strong {
+  margin: 20px 0 0;
+  display: inline-block;
+  position: relative;
+  color: #000;
+  font-size: 20px;
+  line-height: 24px;
+  z-index: 1;
+}
+.consultingWrap ul.consultingList li .textWrap strong::after {
+  content: "";
+  width: 0;
+  height: 9px;
+  background: #faf03e;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.consultingWrap ul.consultingList li a:hover .textWrap strong::after {
+  width: 100%;
+}
+.consultingWrap ul.consultingList li .textWrap p {
+  margin: 5px 0 15px;
+  color: #000;
+  font-size: 16px;
+  line-height: 28px;
+}
+.consultingWrap ul.consultingList li .textWrap .link {
+  float: right;
+  padding-bottom: 5px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: italic;
+  border-bottom: 1px solid #666;
+}
+.consultingWrap ul.consultingList li a:hover .textWrap .link {
+  color: #0061bb;
+  border-bottom: 1px solid #6692cd;
+}
+
+@media all and (max-width: 1800px) {
+  .bannerWrap::before {
+    content: none;
+  }
+  .bannerWrap::after {
+    content: none;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .blindEmploymentWrap ul.qnaList li .answerWrap {
+    margin-left: 0;
+  }
+  .consultingWrap ul.consultingList li .textWrap {
+    text-align: center;
+  }
+  .consultingWrap ul.consultingList li .textWrap p {
+    min-height: 90px;
+    word-break: keep-all;
+  }
+  .consultingWrap ul.consultingList {
+    gap: 30px;
+  }
+  .consultingWrap ul.consultingList li {
+    width: calc((100% - 30px) / 2);
+  }
+  /* 블라인드 채용 */
+  .bannerWrap {
+    height: 150px;
+  }
+  .bannerWrap::before {
+    content: none;
+  }
+  .bannerWrap::after {
+    content: none;
+  }
+  .bannerWrap .textWrap::after {
+    right: 0;
+    width: 200px;
+    height: 150px;
+    background-size: contain;
+  }
+  .bannerWrap .textWrap p {
+    font-size: 20px;
+  }
+  .bannerWrap .textWrap strong {
+    font-size: 24px;
+  }
+  .consultingWrap ul.consultingList li .textWrap .link {
+    float: none;
+    display: inline-block;
+  }
+}
+
+@media all and (max-width: 820px) {
+  .blindEmploymentWrap .blindEmployment {
+    padding: 30px 20px;
+  }
+  .blindEmploymentInfo .mainTitleWrap p {
+    font-size: 24px;
+  }
+  .blindEmploymentInfo .mainTitleWrap strong {
+    font-size: 40px;
+  }
+  .blindEmploymentInfo .blindInfo .titleWrap strong {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+  .blindEmploymentInfo .blindInfo .titleWrap p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .blindEmploymentInfo .blindInfo {
+    padding: 0 0 30px;
+  }
+  .blindEmploymentInfo .blindInfo ul {
+    margin: 25px 0 0;
+    gap: 0 20px;
+  }
+  .blindEmploymentInfo .blindInfo ul li {
+    width: calc((100% - 20px) / 2);
+  }
+  .blindEmploymentInfo .blindInfo ul li .label {
+    font-size: 14px;
+  }
+  .blindEmploymentInfo .blindInfo p {
+    font-size: 14px;
+  }
+  .blindEmploymentInfo .blindInfo strong {
+    font-size: 18px;
+  }
+  .blindEmploymentInfo .blindNecessity {
+    padding: 25px 0 0;
+  }
+  .blindEmploymentInfo .blindNecessity strong {
+    font-size: 18px;
+  }
+  .blindEmploymentInfo .blindNecessity ul {
+    margin: 25px 0 0;
+    gap: 0 20px;
+  }
+  .blindEmploymentInfo .blindNecessity ul li {
+    padding: 120px 20px 15px;
+    width: calc((100% - 20px) / 2);
+  }
+  .blindEmploymentInfo .blindNecessity ul li:first-child::before {
+    margin-left: -45px;
+    width: 90px;
+    height: 150px;
+    background-size: contain;
+  }
+  .blindEmploymentInfo .blindNecessity ul li:last-child::before {
+    top: 70px;
+    margin-left: -44px;
+    width: 88px;
+    height: 78px;
+    background-size: contain;
+  }
+  .blindEmploymentInfo .blindNecessity ul li .label {
+    top: -95px;
+    font-size: 14px;
+  }
+  .blindEmploymentInfo .blindNecessity ul li div {
+    margin: 10px 0 0;
+    min-height: 105px;
+  }
+  .blindEmploymentInfo .blindNecessity ul li p {
+    line-height: 24px;
+    font-size: 14px;
+  }
+  .bannerLink {
+    height: 385px;
+  }
+  .bannerLink .linkWrap {
+    padding: 30px 0;
+  }
+  .bannerLink p {
+    font-size: 20px;
+  }
+  .bannerLink .link {
+    margin-top: 20px;
+    padding-bottom: 5px;
+    font-size: 18px;
+  }
+  .blindEmploymentWrap .tabMenuList ul.tabList {
+    gap: 0 10px;
+  }
+  .blindEmploymentWrap .tabMenuList ul.tabList li {
+    width: calc((100% - 60px) / 6);
+  }
+  .blindEmploymentWrap .tabMenuList ul.tabList li a {
+    font-size: 14px;
+    height: 34px;
+  }
+  .blindEmploymentWrap .sloganWrap .logoWrap img {
+    max-height: 100px;
+  }
+  .blindEmploymentWrap .sloganWrap .textWrap {
+    gap: 0 10px;
+    max-width: 450px;
+  }
+  .blindEmploymentWrap .sloganWrap .textWrap strong {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .blindEmploymentWrap ul.qnaList li .question > span {
+    font-size: 16px;
+  }
+  .blindEmploymentWrap ul.qnaList li .question::before {
+    font-size: 30px;
+  }
+  .blindEmploymentWrap ul.qnaList li .answerWrap {
+    font-size: 15px;
+  }
+  .blindEmploymentWrap .videoWrap {
+    margin: 100px auto 0;
+    max-width: 530px;
+  }
+  .blindEmploymentWrap .videoWrap::after {
+    top: -85px;
+    left: -56px;
+    width: 210px;
+    height: 180px;
+  }
+  .blindEmploymentWrap .videoWrap .imageWrap {
+    padding-right: 25px;
+    height: 280px;
+  }
+  .blindEmploymentWrap .videoWrap .imageWrap::after {
+    background-size: contain;
+  }
+  .blindEmploymentWrap .link {
+    padding-bottom: 5px;
+    font-size: 18px;
+  }
+  .consultingWrap ul.consultingList li .textWrap strong {
+    margin: 10px 0 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .consultingWrap ul.consultingList li .textWrap p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    line-height: 24px;
+    min-height: 90px;
+  }
+  .consultingWrap ul.consultingList li .textWrap .link {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 768px) {
+}
+
+@media all and (max-width: 640px) {
+  .blindEmploymentInfo .blindInfo ul {
+    margin: 20px 0 0;
+    gap: 20px 0;
+    flex-direction: column;
+  }
+  .blindEmploymentInfo .blindInfo ul li {
+    padding: 20px 20px 15px;
+    width: 100%;
+  }
+  .blindEmploymentInfo .blindNecessity ul {
+    margin: 20px 0 0;
+    flex-direction: column;
+    gap: 20px 0;
+  }
+  .blindEmploymentInfo .blindNecessity ul li {
+    padding: 120px 20px 15px;
+    width: 100%;
+  }
+  .blindEmploymentInfo .blindNecessity ul li div {
+    margin: 10px 0 0;
+    min-height: 100%;
+  }
+  .blindEmploymentInfo .blindNecessity ul li p {
+    margin-bottom: 0;
+  }
+  .blindEmploymentInfo .blindNecessity ul li:first-child::before {
+    margin-left: -40px;
+    width: 80px;
+    height: 139px;
+    background-size: contain;
+  }
+  .blindEmploymentInfo .blindNecessity ul li:last-child::before {
+    top: 70px;
+    margin-left: -40px;
+    width: 80px;
+    height: 71px;
+    background-size: contain;
+  }
+  .blindEmploymentInfo .blindNecessity ul li .label {
+    top: -100px;
+  }
+  .bannerLink {
+    height: 415px;
+  }
+  .blindEmploymentWrap .tabMenuList ul.tabList {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .blindEmploymentWrap .tabMenuList ul.tabList li {
+    width: calc((100% - 10px) / 3);
+  }
+  .bannerWrap {
+    padding: 30px 0 0;
+    height: 100%;
+  }
+  .bannerWrap .innerSection {
+    align-items: flex-start;
+  }
+  .bannerWrap .textWrap::after {
+    position: static;
+    margin-left: auto;
+    width: 170px;
+    height: 120px;
+    transform: none;
+  }
+  .blindEmploymentWrap .videoWrap .imageWrap {
+    padding-right: 20px;
+    height: 100%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  br.forMobile {
+    display: none;
+  }
+  .blindEmploymentInfo {
+    padding: 30px 0;
+  }
+  .blindEmploymentInfo .mainTitleWrap p {
+    font-size: 20px;
+  }
+  .blindEmploymentInfo .mainTitleWrap strong {
+    font-size: 30px;
+    letter-spacing: -1px;
+  }
+  .blindEmploymentInfo .infoWrap::before {
+    top: -202px;
+    margin-left: -153px;
+    width: 306px;
+    height: 200px;
+    background-size: contain;
+  }
+  .blindEmploymentInfo .infoWrap {
+    bottom: 0;
+    margin-top: 200px;
+    padding: 20px 10px;
+  }
+  .blindEmploymentInfo .blindInfo {
+    padding: 0 0 25px;
+  }
+  .blindEmploymentInfo .blindInfo .titleWrap strong {
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+  .blindEmploymentInfo .blindInfo .titleWrap p {
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .blindEmploymentInfo .blindInfo ul li .label {
+    padding: 2px 12px;
+    font-size: 13px;
+  }
+  .blindEmploymentInfo .blindInfo ul li div {
+    margin: 10px 0 0;
+  }
+  .blindEmploymentInfo .blindInfo p {
+    font-size: 13px;
+  }
+  .blindEmploymentInfo .blindInfo strong {
+    font-size: 16px;
+  }
+  .blindEmploymentInfo .blindNecessity {
+    padding: 20px 0 0;
+  }
+  .blindEmploymentInfo .blindNecessity strong {
+    font-size: 16px;
+  }
+  .blindEmploymentInfo .blindNecessity ul li:first-child::before {
+    margin-left: -40px;
+    width: 80px;
+    height: 139px;
+    background-size: contain;
+  }
+  .blindEmploymentInfo .blindNecessity ul li:last-child::before {
+    top: 70px;
+    margin-left: -40px;
+    width: 80px;
+    height: 71px;
+    background-size: contain;
+  }
+  .blindEmploymentInfo .blindNecessity ul li .label {
+    top: -100px;
+    padding: 2px 12px;
+    font-size: 13px;
+  }
+  .blindEmploymentInfo .blindNecessity ul li p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .bannerLink {
+    height: 100%;
+  }
+  .bannerLink .innerSection {
+    padding-top: 0;
+  }
+  .bannerLink .linkWrap {
+    padding: 30px 0;
+  }
+  .bannerLink .imageWrap {
+    margin: 0 auto 15px;
+    max-width: 300px;
+  }
+  .bannerLink p {
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    word-break: keep-all;
+  }
+  .bannerLink .link {
+    margin-top: 20px;
+    padding-bottom: 5px;
+    font-size: 16px;
+  }
+  .blindEmploymentWrap {
+    padding: 30px 0;
+  }
+  .blindEmploymentWrap .blindEmployment {
+    position: relative;
+    padding: 25px 10px 20px;
+  }
+  .blindEmploymentWrap .blindEmployment::after {
+    height: 140px;
+  }
+  .blindEmploymentWrap .titleWrap strong {
+    gap: 5px 0;
+    font-size: 18px;
+  }
+  .blindEmploymentWrap .titleWrap strong::before {
+    background-size: contain;
+    width: 48px;
+    height: 42px;
+  }
+  .blindEmploymentWrap .tabMenuList {
+    margin: 20px 0 0;
+  }
+  .blindEmploymentWrap .tabMenuList ul.tabList li a {
+    font-size: 13px;
+  }
+  .blindEmploymentWrap .sloganWrap {
+    padding: 20px 0;
+    flex-direction: column;
+    gap: 20px 0;
+  }
+  .blindEmploymentWrap .sloganWrap .textWrap {
+    display: flex;
+    gap: 0 10px;
+    max-width: 480px;
+  }
+  .blindEmploymentWrap .sloganWrap .textWrap::before,
+  .blindEmploymentWrap .sloganWrap .textWrap::after {
+    min-width: 27px;
+    height: 10px;
+    background-size: contain;
+  }
+  .blindEmploymentWrap .sloganWrap .textWrap strong {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .blindEmploymentWrap ul.qnaList {
+    margin: 20px 0;
+    gap: 20px 0;
+  }
+  .blindEmploymentWrap ul.qnaList li .question {
+    gap: 0 5px;
+  }
+  .blindEmploymentWrap ul.qnaList li .question::before {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .blindEmploymentWrap ul.qnaList li .question > span {
+    font-size: 14px;
+  }
+  .blindEmploymentWrap ul.qnaList li.active .question::after {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid #95b6e7;
+  }
+  .blindEmploymentWrap ul.qnaList li .question::after {
+    border-top: 10px solid #95b6e7;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+  }
+  .blindEmploymentWrap ul.qnaList li .answerWrap {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 0;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .blindEmploymentWrap .sloganWrap .logoWrap img {
+    max-height: 80px;
+  }
+  .blindEmploymentWrap .videoWrap::after {
+    top: -57px;
+    left: -39px;
+    width: 144px;
+    height: 123px;
+  }
+  .blindEmploymentWrap .videoWrap {
+    margin: 60px auto 0;
+  }
+  .blindEmploymentWrap .videoWrap .imageWrap > img {
+    border-radius: 15px;
+    height: auto;
+  }
+  .blindEmploymentWrap .videoWrap .btnVideo {
+    max-width: 80px;
+    margin-left: -40px;
+  }
+  .blindEmploymentWrap .link {
+    padding-bottom: 5px;
+    font-size: 16px;
+  }
+  .bannerWrap .textWrap p {
+    font-size: 16px;
+  }
+  .bannerWrap .textWrap strong {
+    font-size: 20px;
+  }
+  .consultingWrap {
+    padding: 30px 0;
+  }
+  .consultingWrap ul.consultingList {
+    gap: 20px;
+  }
+  .consultingWrap ul.consultingList li {
+    width: 100%;
+  }
+  .consultingWrap ul.consultingList li > a {
+    padding: 20px;
+  }
+  .consultingWrap ul.consultingList li .textWrap strong {
+    margin: 10px 0 0;
+    font-size: 16px;
+  }
+  .consultingWrap ul.consultingList li .textWrap p {
+    min-height: 100%;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .consultingWrap ul.consultingList li .textWrap .link {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}

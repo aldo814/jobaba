@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.ev05_inner{max-width: 900px;width: calc(100% - 40px);margin: auto;}
+#event05 * {font-family: 'GmarketSansMedium' !important;}
+#event05 .header{padding: 70px 0 380px 0;background: url(../resource/images/eventImg/20230926/header_bg.png) no-repeat;background-size: cover;position: relative;overflow: hidden}
+#event05 .header:before{content: '';display: block;background: url(../resource/images/eventImg/20230926/header_img01.png) no-repeat;width: 292px;height: 330px;position: absolute;left: 50px;bottom: -10px;}
+#event05 .header:after{content: '';display: block;background: url(../resource/images/eventImg/20230926/header_img02.png) no-repeat;width: 322px;height: 293px;right: 50px;bottom: 0;position: absolute}
+#event05 .header .img_tit{text-align: center;}
+#event05 .header .img_tit img{max-width: 100%}
+.section02{padding: 120px 0 90px 0;position: relative;background: url(../resource/images/eventImg/20230926/se02_bg.png) left -9px top}
+.section02:after{content: '';display: block;background: url(../resource/images/eventImg/20230926/header_img03.png) no-repeat;position: absolute;width: 1916px;height: 363px; left: 50%;top: -363px;transform: translateX(-50%)}
+.section02 h3{font-size: 60px;text-align: center;color: #6e48d1;line-height: 1.8;padding-left: 100px}
+.section02 h3 span{position: relative;background: #fff;border-radius: 50%;padding: 20px 20px;border: 2px solid #000}
+.section02 h3 span:before{content: '';display: block;background: url(../resource/images/eventImg/20230926/se02_tit.png) no-repeat;width: 84px;height: 90px;position: absolute;right: -10px;top: -90px}
+.section02 .gift_box{background: #bfddbb;border-radius: 10px;padding: 90px 40px 50px 40px;position: relative;}
+.section02 .gift_box:before{content: '';display: block;background: url(../resource/images/eventImg/20230926/se02_titbf.png) no-repeat;width: 219px;height: 271px;position: absolute;top: -240px;left: 100px}
+.section02 .gift_box > p{background: #fff;max-width: 630px;text-align: center;padding: 10px;box-sizing: border-box;margin: 40px auto 0 auto;border-radius: 50px;color: #ff0000;font-size: 20px;width: 100%}
+#event05 * .notoSans{font-family: 'Noto Sans KR' !important}
+.section02 .gift_box .flex_box{display: flex;justify-content: space-between;}
+.section02 .gift_box .flex_box .img{width: 240px;height: 240px;border-radius: 50%;background: #fff;border:4px solid #6e48d1;display: flex;justify-content: center;align-items: center;overflow: hidden}
+.section02 .gift_box .flex_box .img img{max-width: 80%;}
+.section02 .gift_box .flex_box .item{position: relative;}
+.section02 .gift_box .flex_box .item:nth-child(2) .img{align-items: flex-end}
+.section02 .gift_box .flex_box  p{text-align: center;font-size: 30px;font-weight: bold;margin-top: 20px;}
+.section02 .gift_box .flex_box .num{background: url(../resource/images/eventImg/20230926/num_bg.png) no-repeat;width: 120px;height: 111px;display: flex;justify-content: center;align-items: center;color: #fff;font-size: 30px;font-weight: bold;position: absolute;right: -5px;top: -60px}
+.section02 .tit_box{background: #bae8df;border-radius: 10px;padding: 90px 60px 60px 60px}
+.section02 .tit_box h4{background: url(../resource/images/eventImg/20230926/se02_titbg.png) no-repeat;width: 295px;height: 116px;display: flex;justify-content: center;align-items: center;font-size: 30px;color: #fff;margin: -160px auto 50px auto;box-sizing: border-box;padding-top: 20px}
+.w620{max-width: 620px;width: 100%}
+.mt150{margin-top: 150px}
+.section02 .tit_box .w620{margin: auto;}
+.section02 .tit_box dl{display: flex;margin-bottom: 10px;align-items: center;font-size: 24px;font-weight: bold}
+.section02 .tit_box dt{background: #6e48d1;color: #fff;padding: 5px;width: 180px;text-align: center;border-radius: 50px;box-sizing: border-box;margin-right: 20px}
+.section02 .tit_box  p{background: #fff;max-width: 630px;text-align: center;padding: 10px;box-sizing: border-box;margin: 40px auto 0 auto;border-radius: 50px;color: #ff0000;font-size: 20px;width: 100%}

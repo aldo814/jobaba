@@ -194,11 +194,9 @@
 					<div class="item">
 						<div class="left_area">
 							<div class="img">
-								<img src="images/desEnt/thumb01.jpg" alt="">
-							</div>
-							<div class="bottom">
-								<p class="name">유니텍</p>
-								<button class="like">관심기업 등록</button>
+							<a href="">
+								<p>로고</p>
+								</a>
 							</div>
 						</div>
 						<div class="right_area">
@@ -351,6 +349,15 @@
 
 	<script>
 		$(document).ready(function() {
+            
+            	// text 글자수
+			$('.des_sub .des_com_list .item .img a p').each(function() {
+				var content = $(this).text(); 
+				if (content.length > 7) {
+					$(this).addClass('long_txt');
+				};
+			});
+            
 			$('.des_sub .scr').scrollbar();
 
 			// 추천 채용공고

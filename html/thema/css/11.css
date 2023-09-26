@@ -1,0 +1,792 @@
+@charset "utf-8";
+
+@import url("https://webfontworld.github.io/gangwon/GangwonEduPower.css");
+
+/*
+** layout
+*/
+
+.themaWrap {
+  letter-spacing: -0.75px;
+}
+.themaWrap .innerSection {
+  position: relative;
+  padding: 0 20px;
+  max-width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+}
+.themaWrap img {
+  object-fit: contain;
+  height: inherit;
+}
+
+/*
+** contents
+*/
+/* 블라인드 채용의 모든 것! */
+.txtBlue {color: #1237c3;} 
+.txtPurple {color: #022888;}
+.txtGreen {color: #1e8c30;}
+.txtOrange {color: #ffb006;}
+.txtCyan {color: #0c5b79;}
+.blindEmploymentInfo {
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2210/thema_bg01.jpg) top no-repeat;
+  width: 100%;
+}
+.blindEmploymentInfo .mainTitleWrap {
+  padding: 0 100px;
+  margin-top: 176px;
+}
+.blindEmploymentInfo .logoWrap {
+  padding-top: 30px;
+  text-align: right;
+}
+.blindEmploymentInfo .mainTitleWrap strong i {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  top: 0;
+  left: 0;
+  width: 257px;
+}
+.blindEmploymentInfo .mainTitleWrap strong::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  width: 375px;
+  height: 238px;
+  background: url(html/thema/https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2210/icon_mainTitleWrap01.png) top no-repeat;
+}
+.blindEmploymentInfo .mainTitleWrap strong i span::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #ff672b;
+  border-radius: 100%;
+}
+.blindEmploymentInfo .mainTitleWrap strong {
+  position: relative;
+  display: block;
+  color: #10385a;
+  font-size: 70px;
+  border-bottom: 5px solid #10385a;
+}
+.blindEmploymentInfo .mainTitleWrap strong em {
+  color: #0f8671;
+}
+.blindEmploymentInfo .mainTitleWrap p {
+  color: #10385a;
+  font-size: 90px;
+  font-weight: bold;
+  text-align: right;
+}
+.blindEmploymentInfo .blindInfo {
+  margin-top: 238px;
+}
+.blindEmploymentInfo .blindInfo .titleWrap {
+  text-align: center;
+}
+.blindEmploymentInfo .blindInfo .titleWrap strong {
+  margin-bottom: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0 10px;
+  font-size: 50px;
+}
+.blindEmploymentInfo .blindInfo .titleWrap strong::before {
+  content: "?";
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #f55045;
+  border-radius: 100%;
+}
+.blindInfo .blindBox {
+  margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  gap: 0 40px;
+}
+.blindInfo .blindBox.reverse {
+  flex-direction: row-reverse;
+}
+.blindInfo .blindBox .imgWrap {
+  min-width: 360px;
+}
+.blindInfo .blindBox .txtWrap {
+  display: flex;
+  gap: 30px 0;
+  flex-direction: column;
+}
+.blindInfo .blindBox .txtWrap p {
+  font-size: 24px;
+  font-weight: 600;
+  word-break: keep-all;
+}
+.blindInfo .blindBanner {
+  margin-top: 80px;
+  background: #8feed4 url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2210/bg_banner.png) center no-repeat;
+  padding: 45px 20px;
+  display: flex;
+  gap: 15px 0;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 15px;
+}
+.blindInfo .blindBanner p {
+  font-size: 24px;
+}
+.blindInfo .blindBanner p > em {
+  font-size: 26px;
+  font-weight: bold;
+}
+.blindInfo .blindBanner .imgbox {
+  margin-bottom: 10px;
+}
+.blindInfo .blindBanner .link {
+  padding-bottom: 10px;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+.blindEmploymentWrap {
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2210/thema_bg02.jpg) top no-repeat;
+  width: 100%;
+}
+.employmentContents.box01 {
+  padding-top: 142px;
+}
+.employmentContents {
+  padding: 40px 0;
+  text-align: center;
+}
+.employmentContents > strong {
+  display: block;
+  color: #fff;
+  font-size: 50px;
+  letter-spacing: -3px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 1px 1px #000, 2px 2px 0px #000, 3px 3px 0px #000, 4px 4px 0px #000;
+}
+.employmentContents .titleWrap {
+  margin: 30px auto;
+  position: relative;
+  padding: 25px 15px;
+  background: #fff;
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  z-index: 1;
+}
+.employmentContents .titleWrap.icon::before {
+  content: "";
+  position: absolute;
+  top: -155px;
+  right: 80px;
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2210/icon_campaign.png) center no-repeat;
+  width: 216px;
+  height: 155px;
+  z-index: -1;
+}
+.employmentContents .titleWrap::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: calc(-50% - 5px);
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border-radius: 20px;
+  z-index: -1;
+}
+.employmentContents > .txtWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+.employmentContents .txtWrap p {
+  font-size: 24px;
+  word-break: keep-all;
+}
+.employmentContents .txtWrap p > em {
+  font-weight: bold;
+}
+.employmentContents .videoWrap {
+  margin-top: 50px;
+}
+.employmentContents .employmentBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.employmentContents .employmentBox .txtWrap {
+  display: flex;
+  gap: 30px 0;
+  flex-direction: column;
+  text-align: left;
+}
+.employmentContents .employmentBox .imgWrap {
+  min-width: 506px;
+}
+.employmentContents.box03 .imgWrap::after {
+  content: "";
+  position: absolute;
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2210/icon_campaign_bg01.png);
+  width: 183px;
+  height: 391px;
+  top: 20px;
+  left: -184px;
+}
+.employmentContents.box03 .imgWrap::before {
+  content: "";
+  position: absolute;
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2210/icon_campaign_bg02.png);
+  width: 224px;
+  height: 425px;
+  top: 90px;
+  right: -226px;
+}
+.employmentContents.box03 .imgWrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 20px;
+  padding: 20px;
+  margin-top: 50px;
+  background: #fff;
+  border: 2px solid #d2e3c6;
+  border-radius: 20px;
+}
+.employmentContents.box03 .imgWrap .imgBox {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 20px) / 2);
+}
+.employmentContents.box03 .imgWrap .imgBox strong {
+  padding: 20px 0 30px;
+  font-size: 20px;
+  color: #0a7f48;
+}
+.employmentContents.box03 .imgWrap P {
+  padding: 0 20px;
+  font-size: 20px;
+  text-align: left;
+  word-break: break-all;
+}
+
+.employmentContents ul.playContents {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px 50px
+}
+.employmentContents ul.playContents li {
+  width: calc((100% - 50px) /2);
+}
+.employmentContents ul.playContents .txtWrap {
+  margin-top: 30px;
+  text-align: left;
+}
+.employmentContents ul.playContents .txtWrap strong {
+  display: block;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;  
+  border-bottom: 3px solid #888888;
+}
+.employmentContents ul.playContents .txtWrap span {
+  margin-left: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #555555;
+}
+.employmentContents ul.playContents .txtWrap .linkBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.employmentContents ul.playContents .txtWrap .linkBox p {
+  font-size: 20px;
+}
+.employmentContents ul.playContents .txtWrap .linkBox a {
+  min-width: 180px;
+  padding: 12px 0;
+  font-size: 18px;
+  text-align: center;
+  background: #0d7539;
+  border-radius: 10px;
+  color: #fff;
+}
+.employmentContents ul.playContents .txtWrap .linkBox a:hover {
+  background: #0061bb;
+}
+.employmentContents ul.findEmployment {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 40px;
+  margin-top: 70px;
+}
+.employmentContents ul.findEmployment li {
+  width: calc((100% - 40px) / 2);
+  padding: 30px 40px;
+  background: #fff;
+  border: 4px solid #d2e3c6;
+  border-radius: 20px;
+}
+.employmentContents ul.findEmployment li span {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #2e6506;
+}
+.employmentContents ul.findEmployment li .imgWrap {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.employmentContents ul.findEmployment li strong {
+  display: block;
+  margin: 30px 0 20px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  border-bottom: 2px solid #6fb63b;
+}
+.employmentContents ul.findEmployment li p {
+  padding: 0 10px;
+  min-height: 108px;
+  font-size: 18px;
+  line-height: 30px;
+  word-break: keep-all;
+}
+.employmentContents ul.findEmployment li .linkWrap a {
+  padding-bottom: 10px;
+  font-size: 18px;
+  color: #000;
+  border-bottom: 1px solid #000;
+  font-weight: bold;
+}
+.employmentContents ul.findEmployment li .linkWrap a:hover {
+  color: #0061bb;
+  border-bottom: 1px solid #6692cd;
+}
+.bannerWrap {
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2210/bannerWrap_bg.png) #31af96 center no-repeat;
+  width: 100%;
+  margin-top: 30px;
+  background-size: cover;
+}
+.bannerWrap .bannerBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+.bannerWrap .bannerBox .txtWrap p {
+  font-size: 24px;
+  color: #ffd201;
+  font-weight: bold;
+}
+.bannerWrap .bannerBox .txtWrap strong {
+  color: #fff;
+  font-size: 40px;
+}
+.bannerWrap .bannerBox .imgWrap {
+  margin-bottom: -24px;
+  margin-right: 50px;
+  z-index: 1;
+}
+
+/* 컨설팅 */
+.consultingWrap {
+  padding-bottom: 70px;
+}
+.consultingWrap ul.consultingList {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0 45px;
+  margin-top: 70px;
+}
+.consultingWrap ul.consultingList li {
+  width: calc((100% - 135px) / 4);
+}
+.consultingWrap ul.consultingList li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 16px;
+  outline: 2px solid #c8c8c8;
+  overflow: hidden;
+}
+.consultingWrap ul.consultingList li > a:hover {
+  outline-color: #132c51;
+  
+}
+.consultingWrap ul.consultingList li .imageWrap {
+  text-align: center;
+  min-height: 150px;
+}
+.consultingWrap ul.consultingList li .textWrap {
+  text-align: center;
+  padding: 0 10px 20px;
+}
+.consultingWrap ul.consultingList li .textWrap strong {
+  margin: 20px 0 0;
+  display: block;
+  position: relative;
+  color: #000;
+  font-size: 20px;
+  line-height: 24px;
+  z-index: 1;
+}
+.consultingWrap ul.consultingList li .textWrap p {
+  margin: 5px 0 15px;
+  color: #000;
+  font-size: 16px;
+  line-height: 28px;
+}
+.consultingWrap ul.consultingList li .textWrap .link {
+  padding-bottom: 5px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: 1px solid #666;
+}
+.consultingWrap ul.consultingList li a:hover .textWrap .link {
+  color: #0061bb;
+  border-bottom: 1px solid #6692cd;
+}
+
+@media all and (max-width: 1800px) {
+  .employmentContents.box03 .imgWrap::after {
+    content: none;
+  }
+  .employmentContents.box03 .imgWrap::before {
+    content: none;
+  }
+}
+
+@media all and (max-width: 1280px) {
+  .blindEmploymentInfo .mainTitleWrap {
+    padding: 0 50px;
+  }
+  .blindEmploymentInfo .mainTitleWrap strong::before {
+    bottom: -48px;
+    right: -70px;
+    transform: scale(0.6);
+  }
+  .employmentContents .titleWrap.icon::before {
+    top: -126px;
+    right: -26px;
+    transform: scale(0.6);
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .blindEmploymentInfo {
+    background-position-y: -216px;
+  }
+  .blindEmploymentInfo .mainTitleWrap {
+    margin-top: 110px;
+  }
+  .blindEmploymentInfo .mainTitleWrap strong {
+    font-size: 50px;
+  }
+  .blindEmploymentInfo .mainTitleWrap strong i {
+    width: 180px;
+  }
+  .blindEmploymentInfo .mainTitleWrap p {
+    font-size: 60px;
+  }
+  .blindEmploymentInfo .blindInfo {
+    margin-top: 140px;
+  }
+  .blindEmploymentInfo .blindInfo .titleWrap strong {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .blindEmploymentInfo .blindInfo .titleWrap strong::before {
+    width: 40px;
+    height: 40px;
+  }
+  .blindInfo .blindBox .txtWrap p {
+    font-size: 20px;
+  }
+  .blindInfo .blindBox.reverse {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .blindInfo .blindBox {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px 0;
+  }
+  .blindInfo .blindBox .imgWrap {
+    min-width: 100%;
+    text-align: center;
+  }
+  .blindInfo .blindBanner p {
+    font-size: 20px;
+  }
+  .blindInfo .blindBanner p > em {
+    font-size: 22px;
+  }
+  .blindInfo .blindBanner .imgbox {
+    transform: scale(0.6);
+  }
+  .blindInfo .blindBanner {
+    padding-top: 10px;
+  }
+  .bannerWrap .bannerBox {
+    flex-direction: column;
+    text-align: center;
+  }
+  .bannerWrap .bannerBox .imgWrap {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  .employmentContents {
+    padding: 20px 0px;
+  }
+  .employmentContents.box01 {
+    padding-top: 50px;
+  }
+  .employmentContents .employmentBox {
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  .employmentContents .employmentBox .imgWrap {
+    min-width: 100%;
+  }
+  .employmentContents .titleWrap {
+    font-size: 20px;
+  }
+  .employmentContents .txtWrap p {
+    font-size: 20px;
+  }
+  .employmentContents ul.playContents .txtWrap strong {
+    font-size: 20px;
+  }
+  .employmentContents ul.playContents .txtWrap .linkBox p {
+    font-size: 16px;
+  }
+  .employmentContents ul.findEmployment li {
+    padding: 20px 20px;
+  }
+  .employmentContents ul.findEmployment li strong {
+    font-size: 20px;
+  }
+  .employmentContents ul.findEmployment li span {
+    font-size: 24px;
+  }
+  .bannerWrap .bannerBox .txtWrap strong {
+    font-size: 30px;
+  }
+  .consultingWrap ul.consultingList li .imageWrap img {
+    width: 100%;
+  }
+  .consultingWrap ul.consultingList li .textWrap {
+    text-align: center;
+  }
+  .consultingWrap ul.consultingList li .textWrap p {
+    min-height: 90px;
+    word-break: keep-all;
+  }
+  .consultingWrap ul.consultingList {
+    gap: 30px;
+  }
+  .consultingWrap ul.consultingList li {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media all and (max-width: 820px) {
+  br.forMobile {
+    display: none;
+  }
+  .blindEmploymentInfo .mainTitleWrap {
+    padding: 0;
+  }
+  .employmentContents.box03 .imgWrap P {
+    padding: 0;
+    font-size: 16px;
+  }
+  .employmentContents > strong {
+    font-size: 30px;
+  }
+  .employmentContents ul.playContents {
+    gap: 30px 25px;
+  }
+  .employmentContents ul.playContents li {
+    width: calc((100% - 25px) /2);
+  }
+  .employmentContents ul.playContents .txtWrap strong {
+    display: flex;
+    flex-direction: column;
+  }
+  .employmentContents ul.playContents .txtWrap span {
+    margin-left: 0;
+  }
+  .employmentContents ul.playContents .txtWrap .linkBox {
+    flex-direction: column;
+  }
+  .employmentContents ul.playContents .txtWrap .linkBox a {
+    min-width: 100%;
+  }
+  .employmentContents ul.playContents .txtWrap .linkBox p {
+    margin-bottom: 10px;
+  }
+  .bannerWrap .bannerBox .txtWrap strong {
+    font-size: 24px;
+  }
+  .consultingWrap ul.consultingList li .textWrap strong {
+    margin: 10px 0 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .consultingWrap ul.consultingList li .textWrap p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    line-height: 24px;
+    min-height: 90px;
+  }
+  .consultingWrap ul.consultingList li .textWrap .link {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .blindInfo .blindBox {
+    margin-top: 10px;
+  }
+  .blindEmploymentInfo .mainTitleWrap strong {
+    font-size: 40px;
+  }
+  .blindEmploymentInfo .mainTitleWrap p {
+    font-size: 40px;
+  }
+  .blindEmploymentInfo .mainTitleWrap strong i {
+    width: 144px;
+  }
+  .blindEmploymentInfo .mainTitleWrap strong i span::after {
+    width: 6px;
+    height: 6px;
+  }
+  .blindEmploymentInfo .mainTitleWrap strong::before {
+    content: none;
+  }
+  .employmentContents .titleWrap.icon::before {
+    content: none;
+  }
+  .employmentContents .txtWrap p {
+    font-size: 16px;
+  }
+  .blindInfo .blindBox .txtWrap p {
+    font-size: 16px;
+  }
+  .employmentContents.box03 .imgWrap .imgBox {
+    width: 100%;
+  }
+  .employmentContents ul.findEmployment li p {
+    font-size: 14px;
+  }
+  .blindInfo .blindBanner {
+    margin-top: 40px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .blindEmploymentInfo {
+    background-position-y: -386px;
+  }
+  .blindEmploymentInfo .logoWrap {
+    padding-top: 10px;
+    width: 50%;
+    margin-left: auto;
+  }
+  .blindEmploymentInfo .mainTitleWrap {
+    margin-top: 40px;
+  }
+  .blindEmploymentInfo .mainTitleWrap strong {
+    font-size: 30px;
+    border-bottom: 2px solid #10385a;
+  }
+  .blindEmploymentInfo .mainTitleWrap p {
+    font-size: 30px;
+  }
+  .blindEmploymentInfo .blindInfo {
+    margin-top: 60px;
+  }
+  .blindEmploymentInfo .blindInfo .titleWrap strong {
+    font-size: 22px;
+  }
+  .blindEmploymentInfo .blindInfo .titleWrap strong::before {
+      width: 30px;
+      height: 30px;
+  }
+  .blindInfo .blindBanner p {
+    font-size: 16px;
+  }
+  .blindInfo .blindBanner p > em {
+    font-size: 18px;
+  }
+  .employmentContents.box03 .imgWrap .imgBox strong {
+    font-size: 16px;
+  }
+  .employmentContents .titleWrap {
+    font-size: 16px;
+  }
+  .employmentContents ul.playContents li {
+    width: 100%;
+  }
+  .employmentContents ul.findEmployment {
+    gap: 20px 0;
+  }
+  .employmentContents ul.findEmployment .linkWrap {
+    margin-bottom: 10px;
+  }
+  .employmentContents ul.findEmployment li {
+    padding: 10px;
+    width: 100%;
+  }
+  .employmentContents ul.findEmployment li p {
+    min-height: auto;
+  }
+}
+
+@media all and (max-width: 480px) {
+
+  .consultingWrap ul.consultingList {
+    gap: 20px;
+  }
+  .consultingWrap ul.consultingList li {
+    width: 100%;
+  }
+  .consultingWrap ul.consultingList li > a {
+    padding: 20px;
+  }
+  .consultingWrap ul.consultingList li .textWrap strong {
+    margin: 10px 0 0;
+    font-size: 16px;
+  }
+  .consultingWrap ul.consultingList li .textWrap p {
+    min-height: 100%;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .consultingWrap ul.consultingList li .textWrap .link {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}

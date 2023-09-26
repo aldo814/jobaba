@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+/*
+** common
+*/
+
+.badge {
+    padding: 2px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 3px;
+}
+.badge.bgLightGray {
+    background: #38bab2 !important;
+    color: #fff;
+}
+
+/*
+** layout
+*/
+
+.myPageWrap {}
+.innerSection {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1260px;
+}
+
+.mypage {
+    display: flex;
+}
+.mypage .leftMenu {
+    width: 260px;
+}
+
+.mypage .rightContents {
+    padding: 0 0 0 60px;
+    width: 1000px;
+}
+
+/* leftmenu */
+.leftMenu {}
+.leftMenu ul.menuList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+.leftMenu ul.menuList > li {
+    color: #222;
+    font-size: 14px;
+}
+.leftMenu ul.menuList > li a {
+    color: #222;
+    font-size: 14px;
+}
+.leftMenu ul.menuList > li > ul.subMenuList > li a {
+    color: #38bab2;
+    font-size: 14px;
+}
+.leftMenu ul.menuList > li > ul.subMenuList > li a::before {
+    content: "";
+    color: #38bab2;
+    font-size: 14px;
+}
+.leftMenu ul.menuList > li > ul.subMenuList > li.on a {
+    font-weight: 700;
+}
+
+
+/*
+** contents
+*/
+
+.resumeWrap > .title {
+    padding: 0 0 10px;
+    display: block;
+    color: #707070;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #000;
+}
+.resumeWrite {
+    margin: 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.resumeWrite p {
+    color: #222;
+    font-size: 14px;
+    font-weight: 600;
+}
+.resumeWrite p > em {
+    color: #ec004b;
+}
+.resumeWrite > button {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    padding: 2px 10px;
+    color: #38bab2;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid #38bab2;
+}
+ul.resumeList {
+    margin: 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+ul.resumeList li {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+/* 대표 이력서 */
+ul.resumeList li.regist {
+    border: 1px solid #38bab2;
+}
+ul.resumeList li.regist .titleWrap .title {
+    max-width: calc(100% - 330px);
+}
+/* 미등록 */
+ul.resumeList li.none {
+    padding: 0;
+    width: 100%;
+    height: 200px;
+}
+ul.resumeList li.none > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+.resumeRegist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    text-align: center;
+}
+.resumeRegist strong {
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+}
+.resumeRegist p {
+    color: #666;
+    font-size: 14px;
+}
+ul.resumeList li .titleWrap {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+}
+ul.resumeList li .titleWrap button {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    padding: 2px 10px;
+    color: #ec004b;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 3px;
+    border: 2px solid #ec004b;
+}
+ul.resumeList li .titleWrap .resume {
+    color: #38bab2;
+    font-size: 16px;
+    font-weight: 700;
+}
+ul.resumeList li .titleWrap .title {
+    display: block;
+    max-width: calc(100% - 200px);
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+ul.resumeList li .infoWrap {
+    margin: 15px 0 0;
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+}
+ul.resumeList li .infoWrap > p {
+    color: #666;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+ul.resumeList li .modifyWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul.resumeList li .location {
+    color: #666;
+    font-size: 14px;
+}
+ul.resumeList li .fileWrap {
+    margin: 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;        
+}
+ul.resumeList li .date {
+    margin-left: auto;
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+}

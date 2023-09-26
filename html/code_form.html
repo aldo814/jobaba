@@ -1,0 +1,177 @@
+//jsp코드
+//111번재 줄 참조(type이 'C' 체크박스인 경우)
+//태그생성 호출 소스
+<tag:code type="C" name="srchAcdmcr" grpCd="UNTACT_09" selected="${searchVO.srchAcdmcr}" event="onclick='addChk(this);'"/>
+
+//완성시 코드
+var srchClCdDivStr = "";
+srchClCdDivStr += "<div class=\"radio\" >";
+srchClCdDivStr += "	<label for=\"srchClCdTemp\" >";
+srchClCdDivStr += "		<input type=\"checkbox\" id=\"srchClCdTemp\" name=\"srchClCd\" value=\"\" title=\"\">";
+srchClCdDivStr += "		<span class=\"text\"><i></i>모집분야 소분류를 선택해주세요.</span>";
+srchClCdDivStr += "	</label>";
+srchClCdDivStr += "</div>";
+$("#srchClCdDiv").html(srchClCdDivStr);
+
+// select box
+if ("S".equals(type)) {
+	html = "<select id=\"" + id + "\" name=\"" + name + "\" title=\"" + title + "\"";
+
+	if (!"".equals(event))
+		html += event;
+	if (!"".equals(cssClass))
+		html += " class=\"" + cssClass + "\"";
+	if (!"".equals(style))
+		html += " style=\"" + style + "\"";
+
+	html += ">";
+
+	if (!"".equals(initial)) {
+		html += "	<option value=\"\"";
+
+		if (selected != null && "".equals(selected))
+			html += " selected";
+
+		html += ">" + initial + "</option>";
+	}
+
+	List<TB_CODE> codeList = getCodeList();
+	if (codeList != null) {
+		Iterator<TB_CODE> it = codeList.iterator();
+		while (it.hasNext()) {
+			TB_CODE tbCmnCd = it.next();
+
+			html += "	<option value=\"" + tbCmnCd.getCmnCd() + "\"" + (tbCmnCd.getCmnCd().equals(selected)?" selected":"") + ">" + tbCmnCd.getCmnNm() + "</option>";
+		}
+	}
+
+	html += "</select>";
+}
+// radio button
+else if ("R".equals(type)) {
+	int nCnt = 1;
+
+	if (!"".equals(initial)) {
+		html = "<div class='radio" + (!"".equals(cssClass2) ? " " + cssClass2 : "") + "'>";
+		html += "	<label for=\"" + id + nCnt + "\"";
+
+		if (!"".equals(cssClass))
+			html += " class=\"" + cssClass + "\"";
+		if (!"".equals(style))
+			html += " style=\"" + style + "\"";
+
+		html += "	>";
+		html += "		<input type=\"radio\" id=\"" + id + nCnt + "\" name=\"" + name + "\" value=\"\" title=\"" + title + "\"";
+
+		if (!"".equals(event))
+			html += event;
+		if (selected != null && "".equals(selected))
+			html += " checked";
+
+		html += " />";
+		html += "		<span class=\"text\"><i></i>" + initial + "</span>";
+		html += "	</label>";
+		html += "</div>";
+
+		nCnt++;
+	}
+
+	List<TB_CODE> codeList = getCodeList();
+	if (codeList != null) {
+		Iterator<TB_CODE> it = codeList.iterator();
+		while (it.hasNext()) {
+			TB_CODE tbCmnCd = it.next();
+
+			html += "<div class='radio" + (!"".equals(cssClass2) ? " " + cssClass2 : "") + "'>";
+			html += "	<label for=\"" + id + nCnt + "\"";
+
+			if (!"".equals(cssClass))
+				html += " class=\"" + cssClass + "\"";
+			if (!"".equals(style))
+				html += " style=\"" + style + "\"";
+
+			html += "	>";
+			html += "		<input type=\"radio\" id=\"" + id + nCnt + "\" name=\"" + name + "\" value=\"" + tbCmnCd.getCmnCd() + "\" title=\"" + title + "\"";
+
+			if (!"".equals(event))
+				html += event;
+			if (tbCmnCd.getCmnCd().equals(selected))
+				html += " checked";
+
+			html += " />";
+			html += "		<span class=\"text\"><i></i>" + tbCmnCd.getCmnNm() + "</span>";
+			html += "	</label>";
+			html += "</div>";
+
+			nCnt++;
+		}
+	}
+}
+// check box
+else if ("C".equals(type)) {
+	int nCnt = 1;
+
+	if (!"".equals(initial)) {
+		html = "<div class='radio" + (!"".equals(cssClass2) ? " " + cssClass2 : "") + "'>";
+		html += "	<label for=\"" + id + nCnt + "\"";
+
+		if (!"".equals(cssClass))
+			html += " class=\"" + cssClass + "\"";
+		if (!"".equals(style))
+			html += " style=\"" + style + "\"";
+
+		html += "	>";
+		html += "		<input type=\"checkbox\" id=\"" + id + nCnt + "\" name=\"" + name + "\" value=\"\" title=\"" + title + "\"";
+
+		if (!"".equals(event))
+			html += event;
+		if (selected != null && "".equals(selected))
+			html += " checked";
+
+		html += " />";
+		html += "		<span class=\"text\"><i></i>" + initial + "</span>";
+		html += "	</label>";
+		html += "</div>";
+
+		nCnt++;
+	}
+
+	List<TB_CODE> codeList = getCodeList();
+	if (codeList != null) {
+		Iterator<TB_CODE> it = codeList.iterator();
+		while (it.hasNext()) {
+			TB_CODE tbCmnCd = it.next();
+
+			html += "<div class='radio" + (!"".equals(cssClass2) ? " " + cssClass2 : "") + "'>";
+			html += "	<label for=\"" + id + nCnt + "\"";
+
+			if (!"".equals(cssClass))
+				html += " class=\"" + cssClass + "\"";
+			if (!"".equals(style))
+				html += " style=\"" + style + "\"";
+
+			html += "	>";
+			html += "		<input type=\"checkbox\" id=\"" + id + nCnt + "\" name=\"" + name + "\" value=\"" + tbCmnCd.getCmnCd() + "\" title=\"" + title + "\"";
+
+			if (!"".equals(event))
+				html += event;
+			/*if (selected.indexOf(tbCmnCd.getCmnCd()) > -1)
+				html += " checked";*/
+
+			String[] selectedArray = selected.split(",");
+
+			for(String selectedCd : selectedArray) {
+
+				if (selectedCd != null && selectedCd.equals(tbCmnCd.getCmnCd()))
+				html += " checked";
+			}
+
+			html += " />";
+			html += "		<span class=\"text\"><i></i>" + tbCmnCd.getCmnNm() + "</span>";
+			html += "	</label>";
+			html += "</div>";
+
+			nCnt++;
+		}
+	}
+}

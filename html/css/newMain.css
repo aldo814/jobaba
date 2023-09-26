@@ -1,0 +1,1120 @@
+#life_cycle h2, #ncs_edu h2, #job_edu h2, #announce h2, #covetous h2, #mov_news h2{position:relative;font-size:24px;font-weight:400;margin:0;}
+#life_cycle h2 a, #ncs_edu h2 a, #job_edu h2 a, #announce h2 a, #covetous h2 a, #mov_news h2 a{position:absolute;top:8px;right:0;font-size:16px;color:#aaa;}
+
+#goto_service{padding:56px 0;background-color:#f9f9f9;}
+    #goto_service .count_wrap{float:right;width:240px;}
+    #goto_service .count_wrap>div+div{margin-top:16px;}
+    #goto_service .count_wrap h4{font-size:15px;font-weight:400;color:#666;}
+    #goto_service .count_wrap span{color:#67c3be;font-size:36px;font-weight:700;display:inline-block;margin-right:4px;}
+    #goto_service .goto_wrap{float:left;width:calc(100% - 300px);}
+    #goto_service .goto_wrap>div{display:flex;justify-content:space-between;}
+    #goto_service .goto_wrap>div a{display:block;flex:1;text-align:center;}
+    #goto_service .goto_wrap>div a:hover, #goto_service .goto_wrap>div a.focus{color:#67c3be;font-weight:700;}
+    #goto_service .goto_wrap>div a span{display:block;width:120px;height:120px;background-color:#fff;border-radius:50%;position:relative;margin:0 auto 12px;}
+    #goto_service .goto_wrap>div a:hover span, #goto_service .goto_wrap>div a:focus span{background-color:rgba(103,195,190,.2);}
+    #goto_service .goto_wrap>div a span::after{
+        content:"";position:absolute;top:24px;left:24px;width:72px;height:72px;background-image:url(../images/newMain/ico_goto_service.png);
+    }
+    #goto_service .goto_wrap>div a.test span::after{background-position:0 0;}
+    #goto_service .goto_wrap>div a.cons span::after{background-position:-72px 0;}
+    #goto_service .goto_wrap>div a.prpr span::after{background-position:-144px 0;}
+    #goto_service .goto_wrap>div a.comp span::after{background-position:-216px 0;}
+    #goto_service .goto_wrap>div a.expo span::after{background-position:-288px 0;}
+    #goto_service .goto_wrap>div a.regi span::after{background-position:-360px 0;}
+
+#person_custom{margin:60px auto 0;display:flex;justify-content:space-between;flex-wrap:wrap;}
+    #person_custom>div{flex:1 1 30%;background-color:#fff;box-shadow:0 0 10px 0 rgba(0,0,0,.07);border:1px solid rgba(0,0,0,.15);border-radius:8px;padding:24px;position:relative;}
+    #person_custom>div+div{margin-left:20px;}
+    #person_custom>div:nth-child(1){flex-basis:48%;background-color:rgba(86,158,247,.15);border-color:rgba(86,158,247,.3);}
+    #person_custom>div:nth-child(2), #person_custom>div:nth-child(3){flex-basis:24%;}
+    #person_custom>div:nth-child(4), #person_custom>div:nth-child(7){margin-left:0;margin-top:20px;}
+    #person_custom>div:nth-child(5), #person_custom>div:nth-child(6), #person_custom>div:nth-child(8), #person_custom>div:nth-child(9){margin-top:20px;}
+    #person_custom h3{position:relative;font-size:20px;font-weight:400;}
+    #person_custom h3 a{position:absolute;top:6px;right:0;font-size:12px;color:#aaa;}
+    #person_custom .dashboard{display:flex;justify-content:space-between;margin:16px 0;padding-bottom:24px;border-bottom:1px solid rgba(86,158,247,.3);}
+    #person_custom .dashboard>div{flex:1;text-align:center;}
+    #person_custom .dashboard>div span{
+        display:inline-block;width:88px;height:88px;background-color:#fff;border-radius:50%;border:1px solid rgba(86,158,247,.3);margin-bottom:8px;
+        font-size:32px;line-height:88px;
+    }
+    #person_custom .recruit_stat span{display:inline-block;font-size:13px;padding:2px 8px;border-radius:4px;color:#fff;margin-right:8px;}
+    #person_custom .recruit_stat span.step1{background-color:rgba(0,50,129,.55);}
+    #person_custom .recruit_stat span.step2{background-color:rgba(0,50,129,.7);}
+    #person_custom .recruit_stat span.step3{background-color:rgba(0,50,129,.85);}
+    #person_custom .recruit_stat span.step4{background-color:rgba(0,50,129,1);}
+    #person_custom .recruit_stat li+li{margin-top:8px;padding-top:8px;border-top:1px dashed rgba(86,158,247,.3);}
+    #person_custom .recruit_stat li a{display:block;width:100%;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+    #person_custom .recomm_company, #person_custom .recomm_policy{width:100%;max-width:253px;margin-top:16px;/*height:290px;overflow:hidden;*/}
+    #person_custom .recomm_company .slick-slide>div+div{margin-top:20px;}
+    #person_custom .recomm_company .slick-slide a{text-align:center;}
+    #person_custom .recomm_company .slick-slide img{display:inline-block;max-height:50px;}
+    #person_custom .recomm_company .slick-slide a .logo{border:1px solid #ddd;border-radius:8px;padding:8px;height:68px;}
+    #person_custom .recomm_company .slick-slide a .comNm{margin:12px 0 0;font-size:20px;}
+    #person_custom .recomm_company .slick-slide a .rc_cnt{font-size:14px;color:#999;}
+    #person_custom .recomm_company .slick-slide a .rc_cnt span{color:#003281;}
+    #person_custom .recomm_company .slick-dots, #person_custom .recomm_policy .slick-dots{bottom:-32px;}
+    #person_custom .recomm_company .slick-dots li, #person_custom .recomm_policy .slick-dots li{width:10px;height:10px;margin:0 4px;}
+    #person_custom .recomm_company .slick-dots li button, #person_custom .recomm_policy .slick-dots li button{opacity:.2;}
+    #person_custom .recomm_company .slick-dots li.slick-active button, #person_custom .recomm_policy .slick-dots li.slick-active button{opacity:.75;background-color:#003281;}
+    #person_custom .recomm_policy .slick-slide a .thumb{position:relative;border:1px solid #ddd;border-radius:8px;overflow:hidden;}
+    #person_custom .recomm_policy .slick-slide a .thumb>img{object-fit:cover;width:100%;height:100%;}
+    #person_custom .recomm_policy .slick-slide a .label{margin:16px 0 8px;font-size:12px;line-height:1.1;}
+    #person_custom .recomm_policy .slick-slide a .label span{display:inline-block;border-width:1px;border-style:solid;border-color:#666;padding:1px 6px 2px;border-radius:10px;}
+    #person_custom .recomm_policy .slick-slide a .label span+span{margin-left:4px;}
+    #person_custom .recomm_policy .slick-slide a .label span.new{color:#38bab2;border-color:#38bab2;}
+    #person_custom .recomm_policy .slick-slide a .label span.dday{color:#ec004b;border-color:#ec004b;}
+    #person_custom .recomm_policy .slick-slide a .poltit{font-size:16px;}
+    #person_custom .recruit_list{margin-top:8px;border:none;}
+    #person_custom .recruit_list li{position:relative;padding-top:8px;}
+    #person_custom .recruit_list li span{position:absolute;right:0;top:12px;font-size:14px;color:#999;line-height:16px;}
+    #person_custom .recruit_list li+li{margin-top:8px;border-top:1px dashed #ccc;}
+    #person_custom .recruit_list li a{display:block;width:100%;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+    #person_custom .recruit_list.nothing li{background-color:#f9f9f9;padding:10px 24px;border-radius:8px;text-align:center;color:#898989;}
+    #person_custom .recruit_list.nothing li .go_guide a{
+        display:inline-block;border:1px solid #38bab2;padding:2px 8px;background-color:#fff;border-radius:4px;color:#38bab2;margin-top:16px;
+    }
+#life_cycle{margin:60px auto 0;}
+    #life_cycle .lc_wrap{margin-top:24px;position:relative;}
+    #life_cycle .lc_wrap .tab{position:absolute;top:0;left:-104px;width:80px;}
+    #life_cycle .lc_wrap .tab span{display:block;text-align:center;border:1px solid #d4d4d4;padding:24px 0;cursor:pointer;}
+    #life_cycle .lc_wrap .tab span+span{border-style:none solid solid;}
+    #life_cycle .lc_wrap .tab span:first-child{border-radius:8px 8px 0 0;}
+    #life_cycle .lc_wrap .tab span:last-child{border-radius:0 0 8px 8px;}
+    #life_cycle .lc_wrap .tab span.active{color:#fff;}
+    #life_cycle .lc_wrap .tab span.active[data-tab='man']{background-color:#38bab2;border-color:#38bab2;}
+    #life_cycle .lc_wrap .tab span.active[data-tab='woman']{background-color:#dc248e;border-color:#dc248e;}
+    #life_cycle .lc_wrap .tab span.active[data-tab='old']{background-color:#205bb4;border-color:#205bb4;}
+    #life_cycle .lc_wrap .tab_cont{display:none;border-style:solid;border-width:3px 1px 1px;border-color:#333 #d4d4d4 #d4d4d4;}
+    #life_cycle .lc_wrap .tab_cont.active{display:flex;}
+    #life_cycle .lc_wrap .tab_cont>div{padding:40px 32px;position:relative;}
+    #life_cycle .lc_wrap .tab_cont>div:nth-child(1){flex-shrink:0;width:360px;border-right:1px solid #d4d4d4;}
+    #life_cycle .lc_wrap .tab_cont>div:nth-child(2){flex-grow:1;}
+    #life_cycle .lc_wrap .tab_cont>div:nth-child(1) h3{position:relative;font-size:28px;font-weight:700;margin-bottom:32px;}
+    #life_cycle .lc_wrap .tab_cont>div:nth-child(1) h3 span{display:block;font-size:14px;font-weight:400;}
+    #life_cycle .lc_wrap .tab_cont>div:nth-child(1) h3 a{font-size:14px;font-weight:400;color:#999;position:absolute;bottom:0;right:0;}
+    #life_cycle .lc_wrap .tab_cont[data-tab='man']>div:nth-child(1) h3{color:#38bab2;}
+    #life_cycle .lc_wrap .tab_cont[data-tab='woman']>div:nth-child(1) h3{color:#dc248e;}
+    #life_cycle .lc_wrap .tab_cont[data-tab='old']>div:nth-child(1) h3{color:#205bb4;}
+    #life_cycle .lc_wrap .tab_cont .pop_tag, #life_cycle .lc_wrap .tab_cont .recomm{font-size:14px;color:#000;}
+    #life_cycle .lc_wrap .tab_cont .pop_tag .tag{margin:8px -4px;}
+    #life_cycle .lc_wrap .tab_cont .pop_tag a{display:inline-block;padding:2px 8px;border:1px solid #e2e2e2;border-radius:4px;color:#666;font-size:14px;margin:4px;}
+    #life_cycle .lc_wrap .tab_cont .pop_tag a:before{content:"#";}
+    #life_cycle .lc_wrap .tab_cont[data-tab='man'] .pop_tag a:hover, #life_cycle .lc_wrap .tab_cont[data-tab='man'] .pop_tag a:focus{border-color:#38bab2;color:#38bab2;}
+    #life_cycle .lc_wrap .tab_cont[data-tab='woman'] .pop_tag a:hover, #life_cycle .lc_wrap .tab_cont[data-tab='man'] .pop_tag a:focus{border-color:#dc248e;color:#dc248e;}
+    #life_cycle .lc_wrap .tab_cont[data-tab='old'] .pop_tag a:hover, #life_cycle .lc_wrap .tab_cont[data-tab='man'] .pop_tag a:focus{border-color:#205bb4;color:#205bb4;}
+    #life_cycle .lc_wrap .tab_cont .recomm{position:absolute;left:32px;bottom:40px;}
+    #life_cycle .lc_wrap .tab_cont .recomm a{display:block;margin-top:8px;border-radius:8px;overflow:hidden;line-height:1;}
+    #life_cycle .lc_wrap .tab_cont .info_wrap1{display:flex;justify-content:space-between;}
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 a{flex:1;}
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 a+a{margin-left:24px;}
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 h3{display:block;font-size:18px;font-weight:400;color:#000;width:100%;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;letter-spacing:-1px;}
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 .badge{display:inline-block;font-size:10px;border:1px solid #ccc;border-radius:16px;padding:2px 8px;margin:4px 0 8px;}
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 .badge.best{border-color:#205bb4;color:#205bb4;}
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 .badge.new{border-color:#38bab2;color:#38bab2;}
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 .badge.hot{border-color:#dc248e;color:#dc248e;}
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 .desc, #life_cycle .lc_wrap .tab_cont .info_wrap1 .date{
+        font-size:14px;color:#999;width:100%;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;margin:4px 0 0;
+    }
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 .thumb{margin-top:8px;border-radius:8px;overflow:hidden;line-height:1;height:140px;}
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 .thumb>img{object-fit:cover;width:100%;height:100%;}    
+    #life_cycle .lc_wrap .tab_cont .info_wrap2{display:flex;justify-content:space-between;flex-wrap:wrap;margin:32px -12px -12px;}
+    #life_cycle .lc_wrap .tab_cont .info_wrap2 a{flex:1 1 40%;margin:12px;display:flex;align-items:center;}
+    #life_cycle .lc_wrap .tab_cont .info_wrap2 a div.thumb{flex-shrink:0;width:150px;height:120px;margin-right:16px;border-radius:8px;overflow:hidden;line-height:1;}
+    #life_cycle .lc_wrap .tab_cont .info_wrap2 a div.thumb>img{object-fit:cover;width:100%;height:100%;}
+    #life_cycle .lc_wrap .tab_cont .info_wrap2 a h3{flex-grow:1;font-weight:400;font-size:18px;color:#000;}
+    #life_cycle .lc_wrap .tab_cont .info_wrap2 a h3 span{display:block;margin-top:8px;font-size:14px;color:#999;}
+#ncs_edu{margin:60px auto 0;}
+    #ncs_edu .ncs_tab_wrap{margin-top:24px;}
+    #ncs_edu .ncs_tab_wrap .tab{text-align:center;}
+    #ncs_edu .ncs_tab_wrap .tab span{display:inline-block;font-size:18px;padding:8px 24px;border:1px solid #d4d4d4;border-radius:32px;cursor:pointer;}
+    #ncs_edu .ncs_tab_wrap .tab span.active{border-color:#38bab2;background-color:#38bab2;color:#fff;}
+    #ncs_edu .ncs_tab_wrap .tab span.active::before{content:"#";}
+    #ncs_edu .ncs_tab_wrap .tab span+span{margin-left:8px;}
+    #ncs_edu .ncs_tab_wrap .tab_cont{/*display:none;*/margin:0 -12px;height:0;overflow:hidden;}
+    #ncs_edu .ncs_tab_wrap .tab_cont.active{/*display:block;*/height:auto;overflow:visible;margin:24px -12px 0;}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div{padding:0 12px;}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box{border:1px solid #d4d4d4;border-radius:8px;overflow:hidden;}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area{font-size:20px;letter-spacing:-1px;text-align:center;padding:56px 0;color:#fff;background-position:50% 50%;background-size:cover;}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu11{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc1_1.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu12{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc1_2.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu13{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc1_3.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu14{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc1_4.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu15{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc1_5.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu16{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc1_6.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu21{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc2_1.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu22{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc2_2.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu23{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc2_3.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu24{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc2_4.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu25{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc2_5.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu31{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc3_1.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu32{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc3_2.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu33{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc3_3.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu34{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc3_4.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu41{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc4_1.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu42{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc4_2.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu43{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc4_3.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu44{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc4_4.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu51{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc5_1.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu52{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc5_2.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu61{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc6_1.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu62{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc7_1.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .lecture{padding:24px;height:184px;}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .lecture a{display:block;font-size:16px;}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .lecture a:hover, #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .lecture a:focus{color:#003281;font-weight:700;}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .lecture a+a{margin-top:12px;}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .lecture a span{display:inline-block;font-size:14px;margin-right:8px;background-color:#003281;color:#fff;padding:2px 8px;border-radius:4px;}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-prev, #ncs_edu .ncs_tab_wrap .tab_cont .slick-next{width:21px;height:41px;background:url(../images/newMain/arrow_slick.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-prev:before, #ncs_edu .ncs_tab_wrap .tab_cont .slick-next:before{content:"";}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-next{background-position:-21px 0;}
+#job_edu{margin:60px auto 0;}
+    #job_edu .job_edu_list{display:flex;justify-content:space-between;margin-top:24px;}
+    #job_edu .job_edu_list>a{flex:1;}
+    #job_edu .job_edu_list>a+a{margin-left:24px;}
+    #job_edu .job_edu_list>a .thumb{border-radius:8px;overflow:hidden;line-height:1;position:relative;height:150px;}
+    #job_edu .job_edu_list>a .thumb>img{object-fit:cover;width:100%;height:100%;}
+    #job_edu .job_edu_list>a .thumb::after{
+        content:"";width:35px;height:35px;background-image:url(https://www.jobaba.net/resource/images/main/play_btn.png);
+        position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+    }
+    #job_edu .job_edu_list>a .badge{margin:16px 0 4px;}
+    #job_edu .job_edu_list>a .badge span{display:inline-block;font-size:12px;padding:2px 8px;border-radius:16px;}
+    #job_edu .job_edu_list>a .badge span+span{margin-left:4px;}
+    #job_edu .job_edu_list>a .badge span:nth-child(1){border:1px solid #333;background-color:#333;color:#fff;}
+    #job_edu .job_edu_list>a .badge span:nth-child(2){border:1px solid #ff835f;color:#ff835f;}
+    #job_edu .job_edu_list>a h3{font-size:20px;font-weight:400;letter-spacing:-1px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;width:100%;display:block;}
+#announce{margin:60px auto 0;display:flex;justify-content:space-between;}
+    #announce>div{flex:1;position:relative;}
+    #announce>div+div{margin-left:32px;}
+    #announce>div .announce_list{width:630px;margin:16px -8px 0;position:relative;}
+    /**/
+    #announce>div .announce_list .slick-slide>div>div {position: relative;padding: 8px;vertical-align: top;}
+    #announce>div .announce_list .slick-slide>div>div .favorite {padding: 15px;position: absolute;top: 20px;right: 20px;width: 16px;height: 15px;background: url(https://www.jobaba.net/resource/images/main/heart_off.png) center no-repeat;z-index: 10;cursor: pointer;}
+    #announce>div .announce_list .slick-slide>div>div .favorite.on {background: url(https://www.jobaba.net/resource/images/main/heart_on.png) center no-repeat;}
+    #announce>div .announce_list .slick-slide>div>div>a {display: block;width: 100%;height: inherit;    position: relative;border: 1px solid #e0e0e0;border-radius: 8px;padding: 20px;}
+    #announce>div .announce_list .slick-slide>div>div>a .com_nm {font-size: 13px;color: #787878;max-width: calc(100% - 24px);}
+    #announce>div .announce_list .slick-slide>div>div>a .job_tit {font-size: 18px;margin: 8px 0 16px;letter-spacing: -1px;height: 52px;text-overflow: ellipsis;overflow: hidden;width: 100%;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;word-wrap: break-word;}
+    #announce>div .announce_list .slick-slide>div>div>a .condition, 
+    #announce>div .announce_list .slick-slide>div>div>a .due_date {font-size: 13px;color: #787878;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;width: 100%;display: block;}
+    #announce>div .announce_list .slick-slide>div>div>a hr {border-style: solid none none;border-width: 1px;border-color: #e6e6e6;margin: 16px 0;}
+    #announce>div .announce_list .slick-slide>div>div:hover>a, 
+    #covetous .covetous_com .slick-slide>div>div:focus>a {border-color: #38bab2;border-width: 2px;}
+    #announce>div .announce_list .slick-dots{display:inline-block!important;width:auto;top:-44px;right:30px;bottom:auto;}
+    #announce>div .announce_list .slick-dots li{width:36px;height:24px;line-height:24px;font-size:14px;letter-spacing:2px;display:none;}
+    #announce>div .announce_list .slick-dots li.slick-active{display:inline-block;}
+    #announce>div .navi{position:absolute;top:6px;right:0;}
+    #announce>div .navi span{display:inline-block;cursor:pointer;font-size:18px;}
+    #announce>div .navi span.prev{margin-right:48px;}
+#covetous{margin:60px auto 0;padding-bottom:20px;}
+    #covetous .covetous_com{margin:24px -8px 0;}
+    #covetous .covetous_com .slick-slide>div>div {position: relative;padding: 0 8px;vertical-align: top;}
+    #covetous .covetous_com .slick-slide>div>div .favorite {padding: 15px;position: absolute;top: 15px;right: 25px;width: 16px;height: 15px;background: url(https://www.jobaba.net/resource/images/main/heart_off.png) center no-repeat;z-index: 10;cursor: pointer;}
+    #covetous .covetous_com .slick-slide>div>div .favorite.on {background: url(https://www.jobaba.net/resource/images/main/heart_on.png) center no-repeat;}
+    #covetous .covetous_com .slick-slide>div>div>a {position: relative;display: block;width: 100%;height: inherit;border: 1px solid #e0e0e0;border-radius: 16px;padding: 20px;height: 230px;}
+    #covetous .covetous_com .slick-slide>div>div>a h3 {font-size: 22px;font-weight: 400;letter-spacing: -1px;margin-bottom: 16px;max-width: calc(100% - 24px);}
+    #covetous .covetous_com .slick-slide>div>div>a p {color: #999;font-size: 14px;}
+    #covetous .covetous_com .slick-slide>div>div>a .logo {position: absolute;bottom: 20px;left: 20px;max-width: 66%;filter: grayscale(100%);opacity: .5;}
+    #covetous .covetous_com .slick-slide>div>div:hover>a .logo, #covetous .covetous_com .slick-slide>div>div:focus>a .logo{opacity:1;filter:grayscale(0%);}
+    #covetous .covetous_com .slick-slide>div>div:hover>a, #covetous .covetous_com .slick-slide>div>div:focus>a {border-color: #38bab2;border-width: 2px;}
+    #covetous .covetous_com .slick-dots, #mov_news .movnews .slick-dots{bottom:-32px;}
+    #covetous .covetous_com .slick-dots li, #mov_news .movnews .slick-dots li{width:12px;height:12px;margin:0 4px;}
+    #covetous .covetous_com .slick-dots li button, #mov_news .movnews .slick-dots li button{opacity:.2;width:12px;height:12px;}
+    #covetous .covetous_com .slick-dots li.slick-active button, #mov_news .movnews .slick-dots li.slick-active button{opacity:.75;background-color:#003281;}
+    #covetous .navi {display: none;}
+#mov_news{margin:60px auto 0;padding-bottom:80px;}    
+    #mov_news h2 a::before{content:"\f16a  ";font-family:'FontAwesome';}
+    #mov_news .movnews{margin:24px -12px 0;}
+    #mov_news .movnews .slick-slide>div>a{padding:0 12px;vertical-align:top;}
+    #mov_news .movnews .slick-slide>div>a .thumb{border-radius:8px;overflow:hidden;line-height:1;position:relative;height:166px}
+    #mov_news .movnews .slick-slide>div>a .thumb>img{object-fit:cover;width:100%;height:100%;}
+    #mov_news .movnews .slick-slide>div>a .thumb::after{
+        content:"";width:35px;height:35px;background-image:url(https://www.jobaba.net/resource/images/main/play_btn.png);
+        position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+    }
+    #mov_news .movnews .slick-slide>div>a h3{font-size:20px;font-weight:400;letter-spacing:-1px;margin:16px 0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;width:100%;}
+    #mov_news .movnews .slick-slide>div>a p{color:#999;font-size:14px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;width:100%;}
+
+@media all and (max-width:1366px){
+    #person_custom>div:nth-child(7),#person_custom>div:nth-child(8),#person_custom>div:nth-child(9){display:none;}/*신청상태 확인용으로 실제 수량에 포함 안됨*/
+    #life_cycle .lc_wrap .tab{position:relative;left:0;margin-top:-64px;width:auto;display:flex;justify-content:flex-end;}
+    #life_cycle .lc_wrap .tab span{width:80px;}
+    #life_cycle .lc_wrap .tab span+span{border-style:solid solid solid none;}
+    #life_cycle .lc_wrap .tab span:first-child{border-radius:8px 0 0 0;}
+    #life_cycle .lc_wrap .tab span:last-child{border-radius:0 8px 0 0;}
+}
+
+@media all and (max-width:1260px){
+    #person_custom>div:nth-child(2), #person_custom>div:nth-child(3){flex-basis:253px;}
+    #person_custom>div:nth-child(1){flex-basis:44%;}
+    #person_custom .recruit_stat li a{width:448px;}
+    #person_custom .recruit_list li a{width:calc(100% - 64px);}
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 a{width:33%;max-width:228px;}
+    #job_edu .job_edu_list>a{width:25%;}
+    #announce>div .announce_list{width:580px;}
+}
+
+@media all and (max-width:1024px){
+    #main_bnr .bnr_tit {display: none;}    
+    #goto_service .containerNew>div{float:none;width:100%;}
+    #goto_service .count_wrap{display:flex;justify-content:space-evenly;margin-bottom:32px;}
+    #goto_service .count_wrap>div+div{margin:0;}
+    #person_custom>div:nth-child(1){flex-basis:60%;}
+    #person_custom>div:nth-child(3){margin-top:20px;margin-left:0;}
+    #person_custom>div:nth-child(4){margin-left:20px;}
+    #person_custom>div:nth-child(5){margin-left:0;}
+    #person_custom .recomm_company{max-width:420px;margin-left:-4px;margin-right:-4px;}
+    #person_custom .recomm_company .slick-slide{margin:0 4px;}
+    #life_cycle .lc_wrap .tab_cont.active{flex-direction:column;}
+    #life_cycle .lc_wrap .tab_cont .recomm{display:none;}
+    #life_cycle .lc_wrap .tab_cont>div:nth-child(1){border-right:none;border-bottom:1px solid #d4d4d4;width:100%;}
+    #ncs_edu .ncs_tab_wrap .tab span{margin:4px;}
+    #ncs_edu .ncs_tab_wrap .tab span+span{margin-left:4px;}
+    #job_edu .job_edu_list>a{max-width:217px;}
+    #announce{flex-direction:column;}
+    #announce>div .announce_list{width:calc(100% + 16px);}
+    #announce>div+div{margin-left:0;margin-top:32px;}
+}
+
+@media all and (max-width:820px){
+    .containerNew {
+        padding: 0 20px;
+        width: 100%;
+    }    
+    #main_bnr .box_dummy {
+        display: none;
+    }    
+    #main_bnr .swiper-button-next {
+        bottom: 15px;
+        left: auto !important;
+        right: 45px;
+    }
+    #main_bnr .swiper-button-prev {
+        bottom: 15px;
+        left: auto;
+        right: 65px;
+    }
+    #main_bnr .swiper-button-pause, #main_bnr .swiper-button-play {
+        bottom: 15px;
+        left: auto;
+        right: 20px;
+    }
+    #main_bnr .swiper-pagination {
+        bottom: 13px;
+        left: auto;
+        right: 90px;
+    }        
+    /* 잡아바 서비스 */
+    #goto_service {
+        padding: 28px 0;
+    }
+    #goto_service .count_wrap h4 {
+        font-size: 16px;
+        letter-spacing: -1px;
+    }
+    #goto_service .count_wrap span {
+        font-size: 36px;
+        letter-spacing: -2px;
+    }
+    #goto_service .goto_wrap>div a {
+        display: block;
+        flex: 1;
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: -1px;
+    }
+    #goto_service .goto_wrap>div a span {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 12px;
+    }
+    #goto_service .goto_wrap>div a span::after {
+        top: 15px;
+        left: 15px;
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+    }
+    #goto_service .goto_wrap>div a.cons span::after {
+        background-position: -50px 0;
+    }
+    #goto_service .goto_wrap>div a.prpr span::after {
+        background-position: -100px 0;
+    }
+    #goto_service .goto_wrap>div a.comp span::after {
+        background-position: -150px 0;
+    }
+    #goto_service .goto_wrap>div a.expo span::after {
+        background-position: -200px 0;
+    }
+    #goto_service .goto_wrap>div a.regi span::after {
+        background-position: -250px 0;
+    }    
+    /* 나의 지원현황 */
+    #person_custom {
+        margin: 30px auto 0;
+    }    
+    #person_custom>div {
+        padding: 15px 20px;
+    }
+    #person_custom>div:nth-child(1) {
+        flex-basis: auto;
+        width: 100%;
+    }    
+    #person_custom>div+div {
+        margin-left: 0;
+    }
+    #person_custom>div:nth-child(2) {
+        margin-top: 10px;
+    }
+    #person_custom>div:nth-child(3) {
+        margin-top: 10px;
+    }
+    #person_custom>div:nth-child(2), #person_custom>div:nth-child(3) {
+        flex-basis: 0;
+        flex: none;
+        width: calc((100% - 10px) / 2);        
+    }        
+    #person_custom>div:nth-child(4) {
+        margin-top: 10px;
+        margin-left: 0;
+        max-width: 49.2%;
+    }
+    #person_custom>div:nth-child(5) {
+        margin-left: 10px;
+        max-width: 49.2%;
+    }    
+    #person_custom>div:nth-child(6) {
+        max-width: 100%;
+    }
+    #person_custom>div:nth-child(5), #person_custom>div:nth-child(6), #person_custom>div:nth-child(8), #person_custom>div:nth-child(9) {
+        margin-top: 10px;
+    }        
+    #person_custom h3 {
+        font-size: 18px;
+        letter-spacing: -1px;
+    }
+    #person_custom .dashboard {
+        margin: 16px 0;
+        padding-bottom: 12px;
+    }
+    #person_custom .dashboard>div span {
+        width: 70px;
+        height: 70px;
+        font-size: 24px;
+        line-height: 70px;
+    }    
+    #person_custom .dashboard>div {
+        font-size: 14px;
+    }    
+    #person_custom .recruit_stat li a {
+        width: auto;
+        font-size: 14px;
+        letter-spacing: -1px;
+    }    
+    #person_custom .recruit_stat span {
+        font-size: 12px;
+    }    
+    #person_custom .recomm_policy .slick-slide a .label {
+        margin: 12px 0 8px;
+    }    
+    #person_custom .recomm_policy .slick-slide a .poltit {
+        width: 100%;
+        height: 40px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        word-break: break-all;
+        line-height: 20px;
+        letter-spacing: -1px;
+    }    
+    #person_custom .recruit_list {
+        margin-top: 8px;
+    }    
+    #person_custom .recruit_list li a {
+        width: calc(100% - 55px);
+        font-size: 14px;
+        letter-spacing: -1px;
+    }
+    #person_custom .recruit_list li span {
+        top: 9px;
+        font-size: 12px;
+    }
+    #person_custom .recomm_company, #person_custom .recomm_policy {
+        max-width: 100%;
+        margin-top: 16px;
+    }
+    #person_custom .recomm_company .slick-slide>div+div {
+        margin-top: 10px;
+    }    
+    #person_custom .recomm_policy .slick-slide a .thumb {
+        max-height: 150px;
+    }        
+    #person_custom .recomm_company .slick-slide a .comNm {
+        margin: 6px 0 0;
+        font-size: 16px;
+        letter-spacing: -1px;
+    }
+    #person_custom .recomm_company .slick-slide a .rc_cnt {
+        font-size: 13px;
+    }
+    /* 일자리 정책/정보 모아보기 */
+    #life_cycle {
+        margin: 30px auto 0;
+    }
+    #life_cycle h2, #ncs_edu h2, #job_edu h2, #announce h2, #covetous h2, #mov_news h2 {
+        font-size: 20px;
+        letter-spacing: -1px;
+    }
+    #life_cycle h2 a, #ncs_edu h2 a, #job_edu h2 a, #announce h2 a, #covetous h2 a, #mov_news h2 a {
+        top: 5px;
+        font-size: 13px;
+    }
+    #life_cycle .lc_wrap .tab span {
+        padding: 12px;
+    }
+    #life_cycle .lc_wrap .tab_cont>div {
+        padding: 20px 15px;
+    }    
+    #life_cycle .lc_wrap .tab_cont>div:nth-child(1) {
+        padding: 20px 15px;
+    }
+    #life_cycle .lc_wrap .tab_cont>div:nth-child(1) h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    #life_cycle .lc_wrap .tab_cont .pop_tag .tag {
+        margin: 8px -4px 0;
+    }
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 a {
+        flex: none;
+        width: calc((100% - 30px) / 3);
+        max-width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 a+a {
+        margin-left: 0;
+    }    
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 .thumb {
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 h3 {
+        font-size: 16px;
+    }
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 .badge {
+        padding: 0 8px;
+        margin: 2px 0 4px;
+    }        
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 .desc, #life_cycle .lc_wrap .tab_cont .info_wrap1 .date {
+        margin: 0;
+        font-size: 13px;
+    }
+    #life_cycle .lc_wrap .tab_cont .info_wrap2 {
+        margin: 20px 0 0;
+        gap: 15px;
+    }
+    #life_cycle .lc_wrap .tab_cont .info_wrap2 a {
+        flex: none;
+        margin: 0;
+        width: calc((100% - 15px) / 2);
+    }    
+    #life_cycle .lc_wrap .tab_cont .info_wrap2 a div.thumb {
+        margin-right: 10px;
+        width: 120px;
+        height: 100px;
+    }
+    #life_cycle .lc_wrap .tab_cont .info_wrap2 a h3 {
+        font-size: 16px;        
+        line-height: 20px;
+        letter-spacing: -1px;
+        width: calc(100% - 130px);
+    }
+    #life_cycle .lc_wrap .tab_cont .info_wrap2 a h3 em {
+        max-height: 42px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        letter-spacing: -1px;
+    }
+    #life_cycle .lc_wrap .tab_cont .info_wrap2 a h3 span {
+        margin-top: 8px;
+        font-size: 13px;
+    }
+    /* NCS역량강화 교육 */
+    #ncs_edu {
+        margin: 30px auto 0;
+    }
+    #ncs_edu .ncs_tab_wrap {
+        margin-top: 12px;
+    }
+    #ncs_edu .ncs_tab_wrap .tab {
+        display: flex;
+        flex-wrap: wrap;        
+        gap: 5px;
+        text-align: left;
+    }
+    #ncs_edu .ncs_tab_wrap .tab span {
+        margin: 0;
+        padding: 5px 15px;
+        font-size: 13px;
+    }
+    #ncs_edu .ncs_tab_wrap .tab span+span {
+        margin-left: 0;
+    }
+    #ncs_edu .ncs_tab_wrap .tab_cont.active {
+        margin: 8px 0 0;
+    }
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div {
+        padding: 0 6px;
+    }    
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area {
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70px;
+        font-size: 16px;
+        line-height: 18px;
+        word-break: keep-all;
+    }
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .lecture {
+        padding: 12px;
+        height: 120px;
+        max-height: 120px;
+        overflow-y: auto;        
+    }
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .lecture a em {
+        display: inline-block;
+        vertical-align: bottom;
+        max-width: calc(100% - 35px);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;        
+    }    
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .lecture a span {
+        padding: 0px 6px;
+        margin-right: 4px;
+        font-size: 10px;
+    }
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .lecture a {
+        font-size: 12px;
+    }
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .lecture a+a {
+        margin-top: 8px;
+    }    
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-prev {
+        left: -20px;
+    }
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-next {
+        right: -20px;
+    }    
+    /* 직업교육 HOT */
+    #job_edu {
+        margin: 30px auto 0px;
+    }
+    #job_edu .job_edu_list {
+        margin-top: 12px;
+        flex-wrap: wrap;        
+        gap: 20px;
+    }
+    #job_edu .job_edu_list>a {
+        flex: none;
+        width: calc((100% - 20px) / 2);
+        max-width: 100%;
+    }    
+    #job_edu .job_edu_list>a+a {
+        margin-left: 0;
+    }
+    #job_edu .job_edu_list>a .badge {
+        margin: 8px 0 4px;
+    }    
+    #job_edu .job_edu_list>a h3 {
+        font-size: 16px;
+    }
+    /* 인기 채용공고 */
+    #announce {
+        margin: 30px auto 0;
+    }
+    #announce>div+div {
+        margin-top: 15px;
+    }
+    #announce>div .announce_list {
+        margin: 8px -8px 0;
+    }
+    #announce>div .announce_list .slick-slide>div>div>a .job_tit {
+        margin: 4px 0 8px;
+    }
+    #announce>div .announce_list .slick-slide>div>div>a hr {
+        margin: 10px 0;
+    }
+    #announce>div .announce_list .slick-dots {
+        top: -30px;
+    }
+    /* 탐나는기업 TOP30 */
+    #covetous {
+        margin: 30px auto 0;
+    }
+    #covetous .covetous_com .slick-slide>div>div>a {
+        padding: 20px;
+        border-radius: 8px;
+        height: 170px;
+    }
+    #covetous .covetous_com .slick-slide>div>div .favorite {
+        top: 18px;
+        right: 20px;
+    }
+    #covetous .covetous_com .slick-slide>div>div>a h3 {
+        font-size: 17px;
+        margin-bottom: 8px;
+        max-width: calc(100% - 24px);
+    }
+    #covetous .covetous_com .slick-slide>div>div>a p {
+        font-size: 13px;
+        height: 38px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        word-break: break-all;
+    }
+    #covetous .covetous_com .slick-slide>div>div>a .logo {
+        margin-top: 12px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        max-width: 55%;
+    }
+    /* 일자리 소식 */
+    #mov_news {
+        margin: 40px auto 0;
+    }
+    #mov_news .movnews {
+        margin: 12px -12px 0;
+    }
+    #mov_news .movnews .slick-slide>div>a {
+        padding: 0 8px;
+    }    
+    #mov_news .movnews .slick-slide>div>a h3 {
+        margin: 10px 0 0;
+        font-size: 16px;
+    }
+    #mov_news .movnews .slick-slide>div>a p {
+        font-size: 13px;
+    }    
+}
+
+@media all and (max-width:768px){
+    #main_bnr .swiper-button-next, #main_bnr .swiper-button-prev {
+        display: block;
+    }
+}
+
+@media all and (max-width:640px){
+    #main_bnr {
+        padding-bottom: 0;
+    }
+    #main_bnr .swiper-pagination {
+        display: none;
+    }
+    #main_bnr .swiper-button-pause, #main_bnr .swiper-button-play {
+        display: none !important;
+    }
+    #main_bnr .swiper-button-next, #main_bnr .swiper-button-prev {
+        display: none;
+    }
+    #person_custom .recomm_company .slick-dots, #person_custom .recomm_policy .slick-dots,
+    #covetous .covetous_com .slick-dots, #mov_news .movnews .slick-dots {
+        bottom: -25px;
+    }
+    #person_custom .recomm_company .slick-dots li, #person_custom .recomm_policy .slick-dots li,
+    #covetous .covetous_com .slick-dots li, #mov_news .movnews .slick-dots li {
+        margin: 0 2px;
+    }
+    #person_custom .recomm_company .slick-dots li button, #person_custom .recomm_policy .slick-dots li button,
+    #person_custom .recomm_company .slick-dots li.slick-active button, #person_custom .recomm_policy .slick-dots li.slick-active button,
+    #covetous .covetous_com .slick-dots li button, #mov_news .movnews .slick-dots li button {
+        width: 8px;
+        height: 8px;
+    }
+    #goto_service {
+        padding: 20px 0 0;
+    }    
+    #goto_service .count_wrap {
+        margin-bottom: 0;
+        justify-content: space-around;
+    }
+    #goto_service .count_wrap>div+div {
+        font-size: 14px;
+    }    
+    #goto_service .count_wrap h4 {
+        font-size: 14px;
+    }
+    #goto_service .count_wrap span {
+        font-size: 28px;
+        letter-spacing: -1px;
+    }    
+    #goto_service .containerNew>div {
+        padding-bottom: 20px;
+    }
+    #goto_service .goto_wrap>div {
+        gap: 12px 8px;
+        flex-wrap: wrap;
+        justify-content: center;        
+    }
+    #goto_service .goto_wrap>div a span {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 6px;
+    }
+    #goto_service .goto_wrap>div a span::after {
+        top: 10px;
+        left: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    #goto_service .goto_wrap>div a.cons span::after {
+        background-position: -40px 0;
+    }
+    #goto_service .goto_wrap>div a.prpr span::after {
+        background-position: -80px 0;
+    }
+    #goto_service .goto_wrap>div a.comp span::after {
+        background-position: -120px 0;
+    }
+    #goto_service .goto_wrap>div a.expo span::after {
+        background-position: -160px 0;
+    }
+    #goto_service .goto_wrap>div a.regi span::after {
+        background-position: -200px 0;
+    }    
+    #goto_service .goto_wrap>div a {
+        flex: none;
+        min-width: calc((100% - 16px) / 3);
+        font-size: 13px;
+    }    
+    /* 나의 지원현황 */
+    #person_custom {
+        margin: 20px auto 0;
+    }
+    #person_custom .dashboard>div {
+        font-size: 13px;
+    }    
+    #person_custom .recruit_stat li a {
+        font-size: 12px;
+    }
+    #person_custom .recruit_stat span {
+        font-size: 10px;
+    }
+    #person_custom>div:nth-child(2), #person_custom>div:nth-child(3) {
+        width: 100%;
+    }
+    #person_custom>div:nth-child(5) {
+        margin-left: 0;
+    }
+    #person_custom>div:nth-child(4),
+    #person_custom>div:nth-child(5) {
+        max-width: 100%;
+    }    
+    #person_custom .recomm_company .slick-slide a .comNm {
+        font-size: 14px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;        
+    }
+    #person_custom .recomm_company .slick-slide a .rc_cnt {
+        font-size: 12px;
+    }    
+    #person_custom .recomm_company, #person_custom .recomm_policy {
+        margin-top: 12px;
+    } 
+    #person_custom .recomm_policy .slick-slide a .poltit {
+        font-size: 14px;
+        line-height: 18px;
+        height: 38px;
+    }
+    #person_custom .recomm_policy .slick-slide {
+        margin: 0 4px;
+    }        
+    #person_custom .recomm_policy .slick-slide a .label {
+        margin: 8px 0 4px;
+    }
+    #person_custom .recomm_policy .slick-slide a .label span+span {
+        margin-left: 0;
+    }    
+    #person_custom .recomm_policy .slick-slide a .label span {
+        padding: 2px 8px;
+        font-size: 10px;
+    }
+    #person_custom>div {
+        padding: 15px;
+    }    
+    #person_custom h3 {
+        font-size: 16px;
+    }
+    #person_custom .recruit_list li a {
+        font-size: 13px;
+    }
+    /* 최신 일자리 정책/정보 모아보기 */
+    #life_cycle {
+        margin: 20px auto 0;
+    }    
+    #life_cycle h2, #ncs_edu h2, #job_edu h2, #announce h2, #covetous h2, #mov_news h2 {
+        font-size: 16px;
+    }
+    #life_cycle .lc_wrap {
+        margin-top: 12px;
+    }    
+    #life_cycle .lc_wrap .tab {
+        margin-top: 0;
+        width: 100%;
+        justify-content: flex-start;    
+    } 
+    #life_cycle .lc_wrap .tab_cont>div {
+        padding: 20px 15px;
+    }    
+    #life_cycle .lc_wrap .tab span {
+        padding: 12px;        
+        width: calc(100% / 3);
+    }      
+    #life_cycle .lc_wrap .tab span {
+        font-size: 14px;
+    }
+    #life_cycle .lc_wrap .tab_cont .pop_tag a {
+        font-size: 12px;
+        margin: 2px;
+    }    
+    #life_cycle .lc_wrap .tab_cont>div {
+        padding: 15px;
+    }
+    #life_cycle .lc_wrap .tab_cont>div:nth-child(1) {
+        padding: 15px;
+    }
+    #life_cycle .lc_wrap .tab_cont>div:nth-child(1) h3 {
+        display: flex;
+        align-items: center;
+        gap: 0 5px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    #life_cycle .lc_wrap .tab_cont>div:nth-child(1) h3 span {
+        font-size: 12px;
+    }    
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 {
+        gap: 8px;
+        padding-bottom: 20px;
+    }    
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 a {
+        width: calc((100% - 8px) / 2);
+    }
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 a:last-child {
+        width: 100%;
+    }
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 .thumb {
+        height: 100px;
+    }    
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 h3 {
+        font-size: 14px;
+    }    
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 .desc, #life_cycle .lc_wrap .tab_cont .info_wrap1 .date {
+        font-size: 12px;
+    }
+    #life_cycle .lc_wrap .tab_cont .info_wrap2 {
+        margin: 0;
+        gap: 8px;
+    }
+    #life_cycle .lc_wrap .tab_cont .info_wrap2 a {
+        flex-direction: column;
+        width: calc((100% - 8px) / 2);
+    }
+    #life_cycle .lc_wrap .tab_cont .info_wrap2 a div.thumb {
+        margin-right: 0;
+        margin-bottom: 8px;
+        width: 100%;
+        height: 100px;
+    }
+    #life_cycle .lc_wrap .tab_cont .info_wrap2 a h3 {
+        width: 100%;
+    }
+    #life_cycle .lc_wrap .tab_cont .info_wrap2 a h3 em {
+        font-size: 14px;
+        line-height: 18px;
+        max-height: 40px;
+    }    
+    /* NCS역량강화 교육 */
+    #ncs_edu {
+        margin: 20px auto 0;
+    }    
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div {
+        padding: 0 4px;
+    }
+    #ncs_edu .ncs_tab_wrap .tab span {
+        padding: 4px 10px;
+        font-size: 12px;
+    }    
+    /* 직업교육 HOT */
+    #job_edu {
+        margin: 20px auto 0px;
+    }    
+    #job_edu .job_edu_list {
+        margin-top: 12px;
+        gap: 12px 8px;
+    }
+    #job_edu .job_edu_list>a {
+        width: calc((100% - 8px) / 2);
+    }
+    #job_edu .job_edu_list>a .thumb {
+        height: 140px;
+    }        
+    #job_edu .job_edu_list>a .badge {
+        margin: 4px 0;
+    }
+    #job_edu .job_edu_list>a .badge span+span {
+        margin-left: 0;
+    }    
+    #job_edu .job_edu_list>a .badge span {
+        font-size: 10px;
+        padding: 0 6px;
+    }
+    #job_edu .job_edu_list>a h3 {
+        font-size: 14px;
+    }    
+    /* 인기채용공고 */
+    #announce {
+        margin: 20px auto 0;
+    }
+    #announce>div .navi {
+        top: -2px;
+    }
+    #announce>div .announce_list .slick-dots {
+        top: -35px;
+    }
+    #announce>div .announce_list .slick-dots li {
+        line-height: 20px;
+        font-size: 12px;
+    }    
+    #announce>div+div {
+        margin-top: 10px;
+    }
+    #announce>div .announce_list .slick-slide>div>div {
+        padding: 4px;
+    }
+    #announce>div .announce_list .slick-slide>div>div .favorite {
+        top: 13px;
+        right: 8px;
+    }
+    #announce>div .announce_list .slick-slide>div>div>a {
+        padding: 15px 10px;
+    }
+    #announce>div .announce_list .slick-slide>div>div>a .com_nm {
+        max-width: calc(100% - 20px);
+        font-size: 12px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    #announce>div .announce_list .slick-slide>div>div>a .job_tit {
+        margin: 8px 0;
+        height: 38px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    #announce>div .announce_list .slick-slide>div>div>a .condition, 
+    #announce>div .announce_list .slick-slide>div>div>a .due_date {
+        font-size: 12px;
+    }
+    #announce>div .announce_list .slick-slide>div>div>a hr {
+        margin: 10px 0;
+    }
+    /* 탐나는 기업 TOP30 */
+    #covetous {
+        margin: 20px auto 0;
+    }
+    #covetous .covetous_com .slick-slide>div>div>a {
+        padding: 15px 10px;
+        height: 140px;
+    }
+    #covetous .covetous_com .slick-slide>div>div .favorite {
+        top: 11px;
+        right: 12px;
+    }
+    #covetous .covetous_com .slick-slide>div>div>a h3 {
+        max-width: calc(100% - 20px);
+        font-size: 14px;
+        line-height: 18px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    #covetous .covetous_com .slick-slide>div>div>a p {
+        font-size: 12px;
+        height: 36px;
+    }
+    #covetous .covetous_com .slick-slide>div>div>a .logo {
+        margin-top: 0;
+    }
+    #covetous .covetous_com .slick-dots {
+        bottom: -32px;        
+        margin: 0 auto;
+    }    
+    #covetous .covetous_com .slick-dots li {
+        display: none;
+    }
+    #covetous .covetous_com .slick-dots li button {
+        width: auto;
+    }
+    #covetous .covetous_com .slick-dots li.slick-active {
+        display: inline-block;
+        width: auto;
+        font-size: 12px;
+        line-height: 20px;
+    }     
+    #covetous .navi {
+        display: block;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        margin-left: -45px;
+        max-width: 90px;
+    }
+    #covetous .navi span {
+        display: inline-block;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    #covetous .navi span.prev {
+        margin-right: 48px;
+    }
+    /* 일자리 소식 */
+    #mov_news {
+        margin: 30px auto 0;
+    }
+    #mov_news .movnews .slick-slide>div>a {
+        padding: 0 4px;
+    }
+    #mov_news .movnews .slick-slide>div>a .thumb {
+        height: 140px;
+    }
+    #mov_news .movnews .slick-slide>div>a h3 {
+        margin: 8px 0 0;
+        font-size: 14px;
+    }        
+    #mov_news .movnews .slick-slide>div>a p {
+        font-size: 12px;
+    }
+}
+
+
+
+
+    

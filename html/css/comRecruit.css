@@ -1,0 +1,203 @@
+#comRecruit{background:linear-gradient(180deg, #d6eefc 0%, rgba(255,255,255,.2));padding-top: 60px;background-size:100% 440px;background-repeat:no-repeat;}
+    #comRecruit .header{margin-bottom:88px;}
+    #comRecruit h2{font-size:50px;color:#003281;text-align:center;}
+    #comRecruit h2::before{content:"";background:url(../images/publicJob/mv_ico.png) no-repeat;display:block;width:54px;height:44px;margin:0 auto 10px;}
+    #comRecruit h3{font-size:24px;}
+    #comRecruit h3 span{color:#fe1822;}
+    #comRecruit .pg_info{font-size:18px;color:#003281;text-align:center;margin-top:16px;}
+    
+    #comRecruit .hotrc_wrap{display:flex;margin:20px 0 60px;flex-wrap:wrap;}
+    #comRecruit .hotrc_wrap>div{flex:1;border:1px solid #e6e6e6;border-radius:10px;padding:18px;background:#fff;}
+    #comRecruit .hotrc_wrap>div:hover, #comRecruit .hotrc_wrap>div:focus{border:2px solid #38bab2;box-shadow:2px 2px 3px 1px rgba(0,0,0,.15);}
+    #comRecruit .hotrc_wrap>div+div{margin-left:16px;}
+    #comRecruit .hotrc_wrap .comNm{font-size:13px;color:#787878;font-weight:700;width:264px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+    #comRecruit .hotrc_wrap .rc_tit{font-size:17px;font-weight:700;margin:4px 0 12px;width:264px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+    #comRecruit .hotrc_wrap .rc_info, #comRecruit .hotrc_wrap .rc_date{font-size:13px;color:#787878;word-spacing:-.5px;width:200px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+    #comRecruit .hotrc_wrap hr{border-style:solid none none;border-width:1px;border-color:#e6e6e6;margin:16px 0;}
+
+    #comRecruit .search_wrap{border:1px solid #e6e6e6;border-radius:10px;padding:24px;background:#fff;margin:20px 0 40px;}
+    #comRecruit .search_wrap .searchbar{
+        border-style:none none solid;border-width:1px;border-color:#333;padding:16px 8px;width:100%;font-size:16px;
+        margin-bottom:24px;overflow:hidden;
+    }
+    #comRecruit .search_wrap .cate_wrap, #comRecruit .search_wrap .cate2_wrap{display:flex;border:1px solid #ddd;border-radius:10px;flex-wrap:wrap;overflow:hidden;}
+    #comRecruit .search_wrap .cate2_wrap{margin-top:16px;}
+    #comRecruit .search_wrap .cate_wrap>div, #comRecruit .search_wrap .cate2_wrap>div{flex-grow:1;}
+    #comRecruit .search_wrap .cate_wrap>div:nth-child(1){flex-shrink:0;width:100%;}
+    #comRecruit .search_wrap .cate_wrap>div+div, #comRecruit .search_wrap .cate2_wrap>div+div{border-left:1px solid #ddd;}
+    #comRecruit .search_wrap .cate_wrap>div:nth-child(2){border-left:none;}
+    #comRecruit .search_wrap .cate_wrap>div:nth-child(2), #comRecruit .search_wrap .cate_wrap>div:nth-child(3), #comRecruit .search_wrap .cate_wrap>div:nth-child(4), 
+    #comRecruit .search_wrap .cate2_wrap>div .scrollbar-outer{
+        height:160px;overflow-y:scroll;
+    }
+    #comRecruit .search_wrap .cate_wrap .tit, #comRecruit .search_wrap .cate2_wrap .tit{
+        background-color:#f6f6f6;color:#000;font-size:15px;padding:12px 0;text-align:center;font-weight:700;
+    }
+    #comRecruit .search_wrap ul{margin:8px;}
+    #comRecruit .search_wrap ul li{font-size:14px;color:#999;letter-spacing:-.5px;}
+    #comRecruit .search_wrap ul li+li{margin-top:4px;}
+    #comRecruit .search_wrap .choice_wrap{display:flex;margin-top:16px;}
+    #comRecruit .search_wrap .choice_wrap > div:nth-child(1){flex-grow:1;}
+    #comRecruit .search_wrap .choice_wrap > div:nth-child(2){flex-shrink:0;width:260px;text-align:right;}
+    #comRecruit .search_wrap .choice_wrap ul{margin:0;}
+    #comRecruit .search_wrap .choice_wrap ul li+li{margin:0 20px 4px 0;}
+    #comRecruit .search_wrap .choice_wrap li{float:left;margin:0 20px 4px 0;}
+    #comRecruit .search_wrap .choice_wrap li i{color:#ccc;cursor:pointer;font-size:14px;margin-left:4px;}
+    #comRecruit .search_wrap .choice_wrap li i:hover, #comRecruit .search_wrap .choice_wrap li i:focus{color:#ff6163;}
+    #comRecruit .search_wrap .choice_wrap .btn{display:inline-block;font-size:16px;padding:10px;min-width:120px;color:#fff;text-align:center;border-radius:3px;height:auto;border:none;}
+    #comRecruit .search_wrap .choice_wrap .btn.reset{background:#a6a6a6;}
+    #comRecruit .search_wrap .choice_wrap .btn.search{background:#ff6163;margin-left:4px;}
+
+    #comRecruit .rclist_wrap .cnt_wrap{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid #333;margin-bottom:20px;}
+    #comRecruit .rclist_wrap .cnt_wrap .cnt{font-size:24px;}
+    #comRecruit .rclist_wrap .cnt_wrap .cnt span{font-weight:700;color:#ff6163;}
+    #comRecruit .rclist_wrap .cnt_wrap select{
+        margin-left:16px;padding:4px 32px 4px 8px;border:1px solid #a6a6a6;border-radius:3px;
+        background:#fff url(../images/comRecruit/bg_select.png) no-repeat calc(100% - 7px) 50%;
+    }
+    #comRecruit .rclist_wrap .rclist .item{display:flex;border:1px solid #ccc;border-radius:10px;padding:24px;justify-content:space-between;align-items:center;}
+    #comRecruit .rclist_wrap .rclist > div.item + div.item{margin-top:20px;}
+    #comRecruit .rclist_wrap .rclist .item > div:nth-child(1){flex-shrink:0;width:200px;text-align:center;font-size:24px;font-weight:700;color:#333;}
+    #comRecruit .rclist_wrap .rclist .item > div:nth-child(2){flex-grow:1;margin-left:32px;}
+    #comRecruit .rclist_wrap .rclist .item button.like{
+        background:url(../images/desEnt/like.png) no-repeat 50% 55%;width:30px;height:30px;border:1px solid #e2e2e2;border-radius:50%;
+        text-indent:100%;white-space:nowrap;overflow:hidden;margin-right:10px;
+    }
+    #comRecruit .rclist_wrap .rclist .item button.like.active{border-color:#ff6163;background:url(../images/desEnt/like_active.png) no-repeat 50% 55%;}
+    #comRecruit .rclist_wrap .rclist .item .rctit{font-size:20px;font-weight:700;}
+    #comRecruit .rclist_wrap .rclist .item .rcdesc_wrap{display:flex;justify-content:space-between;align-items:flex-end;padding:16px 0;border-bottom:1px dashed #ccc;}
+    #comRecruit .rclist_wrap .rclist .item .rcdesc_wrap > div:nth-child(1){flex-grow:1;color:#787878;font-size:14px;line-height:1.8;}
+    #comRecruit .rclist_wrap .rclist .item .rcdesc_wrap > div:nth-child(2){flex-shrink:0;width:200px;text-align:right;font-size:14px;font-weight:700;color:#ff6163;}
+    #comRecruit .rclist_wrap .rclist .item .rcdesc_wrap > div:nth-child(1) li{float:left;}
+    #comRecruit .rclist_wrap .rclist .item .rcdesc_wrap > div:nth-child(1) li + li{margin-left:10px;padding-left:10px;position:relative;}
+    #comRecruit .rclist_wrap .rclist .item .rcdesc_wrap > div:nth-child(1) li + li::before{
+        content:"|";margin-right:10px;font-size:10px;color:#d4d4d4;position:absolute;top:2px;left:0;
+    }
+    #comRecruit .rclist_wrap .rclist .item .cert_wrap{display:flex;justify-content:space-between;padding:16px 0 0;}
+    #comRecruit .rclist_wrap .rclist .item .cert_wrap > div:nth-child(1){flex-grow:1;}
+    #comRecruit .rclist_wrap .rclist .item .cert_wrap > div:nth-child(2){flex-shrink:0;width:200px;text-align:right;}
+    #comRecruit .rclist_wrap .rclist .item .cert_wrap li{float:left;font-size:12px;color:#565656;background-color:#c6e7f0;padding:4px 8px;border-radius:4px;margin-bottom:4px;}
+    #comRecruit .rclist_wrap .rclist .item .cert_wrap li+li{margin-left:4px;}
+    #comRecruit .rclist_wrap .rclist .item .cert_wrap .source{
+        display:inline-block;width:31px;height:22px;background-repeat:no-repeat;background-size:contain;background-position:100% 50%;
+    }
+    #comRecruit .rclist_wrap .rclist .item .cert_wrap .source.jobaba{background-image:url(https://www.jobaba.net/resource/images/ico_jobaba.gif);}
+    #comRecruit .rclist_wrap .rclist .item .cert_wrap .source.worknet{background-image:url(https://www.jobaba.net/resource/images/ico_worknet.gif);}
+    #comRecruit .rclist_wrap .rclist .item .cert_wrap .source.jobkorea{background-image:url(https://www.jobaba.net/resource/images/ico_jobkorea.gif);}
+    #comRecruit .rclist_wrap .rclist .item .cert_wrap .detail_view{
+        display:inline-block;border:1px solid #38bab2;color:#38bab2;background-color:#fff;font-size:15px;font-weight:700;padding:8px 32px;border-radius:4px;margin-left:8px;
+    }
+    #comRecruit .rclist_wrap .rclist .item .cert_wrap .detail_view:hover, #comRecruit .rclist_wrap .rclist .item .cert_wrap .detail_view:hover{
+        color:#fff;background-color:#38bab2;
+    }
+    #comRecruit .paging_wrap{text-align:center;margin:32px 0 60px;}
+    #comRecruit .paging_wrap ul{display:inline-block;}
+    #comRecruit .paging_wrap ul li{float:left;cursor:pointer;color:#333;padding:4px;}
+    #comRecruit .paging_wrap ul li+li{margin-left:24px;}
+    #comRecruit .paging_wrap ul li.active{color:#000;border-bottom:2px solid #000;font-weight:700;}
+    #comRecruit .paging_wrap .mPage{display:none;}
+
+    #comRecruit .consulting_wrap{background-color:#f4f9ff;padding:60px 0;}
+    #comRecruit .consulting_wrap h3, #comRecruit .consulting_wrap .cs_desc{text-align:center;}
+    #comRecruit .consulting_wrap .cs_desc{font-size:18px;color:#666;padding:16px 0 40px;border-bottom:1px solid #333;margin-bottom:30px;}
+    #comRecruit .consulting_wrap .cs_desc span{display:inline-block;color:#fff;background-color:#ff6163;padding:0 4px;margin-right:2px;border-radius:4px;}
+    #comRecruit .consulting_wrap .consulting{display:flex;flex-wrap:wrap;}
+    #comRecruit .consulting_wrap .consulting > div{flex:1 1 30%;margin:16px 0;}
+    #comRecruit .consulting_wrap .consulting .thumb{float:left;width:145px;height:145px;padding:35px;border-radius:16px;}
+    #comRecruit .consulting_wrap .consulting .thumb span{display:inline-block;width:75px;height:75px;background-image:url(../images/comRecruit/ico_consulting.png);}
+    #comRecruit .consulting_wrap .consulting .thumb.cs1{background-color:#69c35d;}
+    #comRecruit .consulting_wrap .consulting .thumb.cs2{background-color:#28c895;}
+    #comRecruit .consulting_wrap .consulting .thumb.cs3{background-color:#ff6473;}
+    #comRecruit .consulting_wrap .consulting .thumb.cs4{background-color:#ffbb00;}
+    #comRecruit .consulting_wrap .consulting .thumb.cs5{background-color:#3c7cff;}
+    #comRecruit .consulting_wrap .consulting .thumb.cs6{background-color:#fa9449;}
+    #comRecruit .consulting_wrap .consulting .thumb.cs1 span{background-position:0 0;}
+    #comRecruit .consulting_wrap .consulting .thumb.cs2 span{background-position:-75px 0;}
+    #comRecruit .consulting_wrap .consulting .thumb.cs3 span{background-position:-150px 0;}
+    #comRecruit .consulting_wrap .consulting .thumb.cs4 span{background-position:0 -75px;}
+    #comRecruit .consulting_wrap .consulting .thumb.cs5 span{background-position:-75px -75px;}
+    #comRecruit .consulting_wrap .consulting .thumb.cs6 span{background-position:-150px -75px;}
+    #comRecruit .consulting_wrap .consulting .desc{float:left;margin-left:16px;width:calc(100% - 185px);}
+    #comRecruit .consulting_wrap .consulting .desc h4{color:#000;font-size:20px;margin:16px 0 8px;}
+    #comRecruit .consulting_wrap .consulting .desc p{font-size:15px;color:#666;}
+
+.scrollbar-outer > .scroll-element .scroll-element_track{background:#fff;}
+.scrollbar-outer > .scroll-element .scroll-bar{background:#e7e7e7;}
+.scrollbar-outer > .scroll-element.scroll-y{width:8px;}
+.scrollbar-outer > .scroll-element .scroll-element_outer, .scrollbar-outer > .scroll-element .scroll-element_track, .scrollbar-outer > .scroll-element .scroll-bar{border-radius:0;}
+.scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer{width:6px;}
+input[type="checkbox"]+label{display:inline-block;position:relative;padding-left:24px;font-size:14px;color:#333;}
+input[type="checkbox"]+label::after{
+    content:"";width:16px;height:16px;background:#fdfdfd;border:1px solid #ddd;position:absolute;left:0;top:1px;border-radius:3px;
+}
+input[type="checkbox"]:checked+label::after{
+    content:"✔";font-size:12px;line-height:16px;background:#38bab2;color:#fff;border-color:#38bab2;text-align:center;
+}
+    #comRecruit .search_wrap .radio{margin:10px 8px;font-size:14px;color:#999;}
+    #comRecruit .search_wrap .radio+.radio{margin-top:14px;}
+    #comRecruit .search_wrap .radio span{font-size:14px;color:#333;padding-left:24px;}
+    #comRecruit .search_wrap .radio input[type="checkbox"]+span::before{
+        content:"";width:16px;height:16px;background:#fdfdfd;border:1px solid #ddd;position:absolute;left:0;top:1px;border-radius:3px;
+    }
+    #comRecruit .search_wrap .radio input[type="checkbox"]:checked+span::before{
+        content:"✔";font-size:12px;line-height:16px;background:#38bab2;color:#fff;border-color:#38bab2;text-align:center;font-weight:400;
+    }
+
+@media all and (max-width:1024px){
+    #comRecruit .hotrc_wrap>div{flex:1 1 40%;}
+    #comRecruit .hotrc_wrap>div+div:nth-child(3){margin-left:0;margin-top:16px;}
+    #comRecruit .hotrc_wrap>div+div:nth-child(4){margin-top:16px;}
+    #comRecruit .rclist_wrap .rclist .item > div:nth-child(1){width:160px;font-size:20px;}
+    #comRecruit .consulting_wrap .consulting > div{flex:1 1 40%;}
+    #comRecruit .consulting_wrap .consulting .thumb{width:125px;height:125px;padding:25px;}
+    #comRecruit .consulting_wrap .consulting .desc{width:calc(100% - 165px);}
+}
+
+@media all and (max-width:820px){
+    #comRecruit .search_wrap .cate_wrap>div:nth-child(4){border-left:none;border-top:1px solid #ddd;}
+    #comRecruit .search_wrap .cate2_wrap>div{flex:1 1 30%;}
+    #comRecruit .search_wrap .cate2_wrap>div:nth-child(4){border-left:none;}
+    #comRecruit .search_wrap .cate2_wrap>div:nth-child(4), #comRecruit .search_wrap .cate2_wrap>div:nth-child(5), #comRecruit .search_wrap .cate2_wrap>div:nth-child(6){
+        border-top:1px solid #ddd;
+    }
+}
+
+@media all and (max-width:768px){
+    #comRecruit .search_wrap .cate_wrap{flex-direction:column;}
+    #comRecruit .search_wrap .cate_wrap>div:nth-child(3){border-left:none;border-top:1px solid #ddd;}
+    #comRecruit .rclist_wrap .rclist .item > div:nth-child(1){width:140px;}
+    #comRecruit .rclist_wrap .rclist .item > div:nth-child(2){margin-left:24px;}
+    #comRecruit .rclist_wrap .rclist .item .rctit{font-size:18px;}
+    #comRecruit .consulting_wrap .consulting .thumb{width:105px;height:105px;padding:15px;}
+    #comRecruit .consulting_wrap .consulting .desc{width:calc(100% - 145px);}
+    #comRecruit .consulting_wrap .consulting .desc h4{font-size:18px;margin:0 0 8px;}
+}
+
+@media all and (max-width:480px){
+    #comRecruit .hotrc_wrap{flex-direction:column;}
+    #comRecruit .hotrc_wrap>div+div{margin:16px 0 0;}
+    #comRecruit .search_wrap{padding:16px;}
+    #comRecruit .search_wrap .cate2_wrap>div{flex:1 1 40%;}
+    #comRecruit .search_wrap .cate2_wrap>div:nth-child(3), #comRecruit .search_wrap .cate2_wrap>div:nth-child(5){border-left:none;}
+    #comRecruit .search_wrap .cate2_wrap>div:nth-child(3){border-top:1px solid #ddd;}
+    #comRecruit .search_wrap .choice_wrap{flex-direction:column;}
+    #comRecruit .search_wrap .choice_wrap > div:nth-child(2){width:100%;text-align:center;margin-top:16px;}
+    #comRecruit .rclist_wrap .cnt_wrap{flex-direction:column;}
+    #comRecruit .rclist_wrap .cnt_wrap .cnt{font-size:20px;}
+    #comRecruit .rclist_wrap .cnt_wrap  >div:nth-child(2){text-align:right;margin-top:16px;}
+    #comRecruit .rclist_wrap .rclist .item{flex-direction:column;padding:16px;}
+    #comRecruit .rclist_wrap .rclist .item > div:nth-child(1){width:100%;padding:16px 0 32px;margin-bottom:24px;border-bottom:1px solid #ddd;}
+    #comRecruit .rclist_wrap .rclist .item > div:nth-child(2){margin-left:0;}
+    #comRecruit .rclist_wrap .rclist .item .rcdesc_wrap, #comRecruit .rclist_wrap .rclist .item .cert_wrap{flex-direction:column;}
+    #comRecruit .rclist_wrap .rclist .item .rcdesc_wrap > div:nth-child(2){width:100%;margin-top:8px;}
+    #comRecruit .rclist_wrap .rclist .item .cert_wrap > div:nth-child(2){width:100%;margin-top:16px;text-align:center;}
+    #comRecruit .consulting_wrap .consulting{flex-direction:column;}
+    #comRecruit .consulting_wrap .consulting .thumb{width:125px;height:125px;padding:25px;}
+    #comRecruit .consulting_wrap .consulting .desc{width:calc(100% - 165px);}
+    #comRecruit .consulting_wrap .consulting .desc h4{font-size:18px;margin:8px 0;}
+    #comRecruit .paging_wrap .paging{display:none;}
+    #comRecruit .paging_wrap .mPage{display:block;text-align:center;}
+    #comRecruit .paging_wrap .mPage button{display:inline-block;font-size:14px;border:1px solid #ccc;padding:6px 12px;border-radius:4px;}
+    #comRecruit .paging_wrap .mPage button.disable{background-color:#f1f1f1;color:#b9b9b9;}
+    #comRecruit .paging_wrap .mPage > div{display:inline-block;margin:0 24px;}
+}

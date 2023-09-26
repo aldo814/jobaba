@@ -1,0 +1,17 @@
+.tables-board thead th {border: solid 1px #ccc}
+.tables-board .l_line{border-left: 1px solid #ccc !important}
+.tlt{text-align: left !important}
+.more_wrap th,
+.more_wrap td{padding: 6px 10px !important}
+.agg-box .more_btn {font-size: 16px;text-decoration: underline;margin: 10px 0 10px auto;display: flex;flex-direction: column;align-content: flex-end;align-items: flex-end}
+.agree-modal-cont{position: fixed;background: #fff;z-index: 30;padding: 20px;left: 50%;top: 50%;transform: translate(-50%,-50%);max-width: 972px;width: calc(100% - 40px);max-height: calc(100vh - 50px);overflow-y: auto}
+.overlay{position: fixed;left: 0;top: 0;width: 100%;height: 100vh;background: rgba(0, 0, 0, 0.46);z-index: 14;display: none}
+.w1080{width: 1080px !important;}
+.modal{position: fixed;left: 0;top: 0;width: 100%;height: 100vh;background: rgba(0, 0, 0, 0.46);z-index: 14;display: none}
+.w1080 .popup_body{max-height: calc(100vh - 200px);overflow-y: auto}
+.modal-content .popup_body{padding: 20px}
+.close_pop{display: block;margin: 0 0 10px auto ;display: flex;flex-direction: column;align-items: flex-end;display: none}
+
+@media all and (max-width:1024px){
+	.close_pop{display: flex;}
+}

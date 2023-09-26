@@ -1,0 +1,231 @@
+.container1{max-width: 1080px;width: calc(100% - 40px);margin: auto;}
+.bold{font-weight: bold}
+.tct{text-align: center}
+.trt{text-align: right}
+.underline{text-decoration: underline}
+.f20 {font-size: 20px}
+.flex{display: flex;}
+
+.themaWrap .red{color: #f62525 !important}
+.themaWrap .green{color: #2d8017 !important}
+.themaWrap .blue{color: #1a56c6}
+.themaWrap .bar_list li{position: relative;padding-left: 10px;margin-bottom: 5px}
+.themaWrap .bar_list li:last-child{margin-bottom: 0}
+.themaWrap .bar_list li:before{content: '-';position: absolute;left: 0;top: 0}
+
+.section01{background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221013/section1_bg.png) no-repeat #2b5cbf;padding: 70px 0 30px 0}
+.section01 .imgTit{text-align: center;position: relative;}
+.section01 .cont{background: #fff;max-width: 900px;width: 100%;margin: auto;box-shadow: 5px 5px 0 #c1c1c1;padding: 40px 30px;margin-top: 50px;position: relative;}
+.section01 .cont:before{content: '';display: block;background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221013/section1_img04.png) no-repeat;width: 24px;height: 55px;position: absolute;left:40px;top: -30px}
+.section01 .cont:after{content: '';display: block;background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221013/section1_img04.png) no-repeat;width: 24px;height: 55px;position: absolute;right:40px;top: -30px}
+.section01 .imgTit:before{content: '';display: block;background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221013/section1_img01.png) no-repeat;width: 344px;height: 100px;position: absolute;bottom: -50px;left: -80px}
+.section01 .imgTit:after{content: '';display: block;background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221013/section1_img02.png) no-repeat;width: 296px;height: 122px;position: absolute;bottom: -45px;right: -40px}
+.section01 .cont h3{font-size: 38px;text-align: center;}
+.section01 .cont h3 > span{font-size: 27px}
+.section01 .cont ul{margin-top: 30px}
+.section01 .cont ul li{margin-bottom: 5px}
+.section01 .cont ul li:last-child{margin-bottom: 0}
+.section01 .cont .flex{justify-content: space-between;}
+.section01 .evTip{background: #caedff;box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.36);margin: 20px auto;border-radius: 30px 0 30px 0;padding: 20px 40px;display: flex;max-width: 900px;}
+.section01 .evTip .tit{color: #003281;font-weight: bold;font-size: 24px;text-transform: uppercase;width: 100px}
+.section01 .evTip .desc{width: calc(100% - 100px);}
+.section01 .evTip .desc p {margin-bottom: 3px;font-weight: bold;font-size: 16px;color: #666}
+.section01 .goLink{font-size: 25px;background: #ffdb15;display:inline-block;color: #003281;padding: 10px 25px;border-radius: 30px;font-weight: bold;box-shadow: 0 4px 0 #1c4ba8} 
+
+.section02{background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221013/section2_bg.png) no-repeat #f1f5ff bottom center;padding: 80px 0}
+.section02 h3{text-align: center;display: flex;justify-content: center;align-items: center;margin-bottom: 30px}
+.section02 h3 span{margin-left: 15px;font-size: 60px}
+.section02 .highlight{position: relative;margin-top: 20px;font-size: 30px;display: inline-block;box-shadow: 0 -10px 0 0 inset #ffff83;padding: 0 10px}
+.section02 .tn_wrap{display: flex;position: relative;}
+.section02 .tn_wrap .item{background: #fff;margin-top: 40px;margin-right: 40px;width: calc(50% - 20px);border-radius: 15px;border: 1px solid #333;padding: 40px;position: relative;overflow: hidden}
+.section02 .tn_wrap .item:nth-child(3){margin-right: 0}
+.section02 .tn_wrap .item.active{background: #c0dbf4;border: 1px solid #27709e}
+.section02 .tn_wrap .item .circle{width: 15px;height: 15px;background: #6a6a6a;display: block;border-radius: 50%;position: absolute;}
+.section02 .tn_wrap .item .circle:nth-child(1){top: 20px;left: 20px}
+.section02 .tn_wrap .item .circle:nth-child(2){top: 20px;right: 20px}
+.section02 .tn_wrap .item .circle:nth-child(3){bottom: 20px;left: 20px}
+.section02 .tn_wrap .item .circle:nth-child(4){bottom: 20px;right: 20px}
+.section02 .tn_wrap .item .logo{display: flex;justify-content: space-between;align-items: center;}
+.section02 .tn_wrap .item .logo .tit{font-size: 30px;font-weight: bold;letter-spacing: -1px}
+.section02 .tn_wrap .item .desc{margin: 30px 0 20px;font-size: 20px;letter-spacing: -1px}
+.section02 .tn_wrap .item .intro li{margin-bottom: 15px;display: flex;align-items: center;justify-content: space-between;font-size: 18px}
+.section02 .tn_wrap .item .intro li strong{width: 70px;text-align: center;background: #2547b5;color: #fff;padding: 5px 10px}
+.section02 .tn_wrap .item .intro li span{width: calc(100% - 80px)}
+.section02 .tn_wrap .item:hover .hover{opacity: 1}
+.section02 .tn_wrap .item .hover{background: rgba(25, 94, 148, 0.7);width: 100%;height: 100%;position: absolute;left: 0;top: 0;display: flex;justify-content: center;align-items: center;opacity: 0;transition: all 0.5s}
+.section02 .tn_wrap .item .hover p{font-size: 40px;color: #fff;font-weight: bold;}
+.section02 .tn_wrap .item .hover p:before{content: '';display: block;background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221013/check.png) no-repeat;width: 31px;height: 36px;margin: auto}
+.section02 .tn_wrap  .show_cont{position: absolute;background: #fff;top: 105%;padding: 40px 30px;border-radius: 15px;border: 1px solid #333;width: 100%;font-size: 20px;letter-spacing: -1px;display: none;z-index: 5}
+.section02 .tn_wrap .show_cont .cn_intro{margin-bottom: 40px}
+.section02 .tn_wrap .show_cont .close_btn{font-size: 24px;position: absolute;right: 30px;top: 30px;display: flex;align-items: center;}
+.section02 .tn_wrap .show_cont .close_btn:after{content: '';display: inline-block;background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221013/close_btn.png) no-repeat;width: 21px;height: 21px;margin-left: 6px;margin-top: 3px}
+.section02 .tn_wrap  .show_cont:before{content: '';display: block;background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221013/triangle.png) no-repeat;width: 36px;height: 26px;position: absolute;top: -26px;}
+.section02 .tn_wrap .show_cont:nth-child(4):before{right: 45px}
+.section02 .tn_wrap .show_cont .sc_tit{background: #27709e;display: inline-block;color: #fff;padding: 5px 10px;font-weight: bold;border-radius: 20px;margin-bottom: 15px;font-size: 24px}
+.section02 .tn_wrap .show_cont .sc_top{display: flex;}
+.section02 .tn_wrap .show_cont .flex{justify-content: space-between}
+.section02 .tn_wrap .show_cont .flex > *{width: calc(50% - 30px);}
+.section02 .tn_wrap .show_cont .cn_list li{display: flex;justify-content: space-between;padding-bottom: 15px;margin-bottom: 15px;border-bottom: 1px solid #bbbbbb;font-weight: 20px}
+.section02 .tn_wrap .show_cont .cn_list li:last-child{margin-bottom: 0}
+.section02 .tn_wrap .show_cont .cn_list strong{color: #27709e;font-weight: 500;width: 120px}
+.section02 .tn_wrap .show_cont .cn_list span{width: calc(100% - 130px)}
+.section02 .tn_wrap .show_cont .wf_tit{color: #27709e;font-size: 24px;font-weight: bold;margin-bottom: 10px}
+.section02 .tn_wrap .show_cont .welfare a{display: inline-block;background: #eeeeee;padding: 5px 20px;margin-top: 15px;border-radius: 20px;border: 1px solid #888888}
+.section02 .tn_wrap .show_cont .welfare a:after{content: '';display: block;background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221013/arrow.png) no-repeat;width: 29px;height: 13px;display: inline-block;margin-left: 10px}
+.section02 .tn_wrap .show_cont .job_postWrap{margin: 40px 0 40px  0}
+.section02 .tn_wrap .show_cont .job_post li{padding-bottom: 10px;margin-bottom: 10px;border-bottom: 1px solid #bbbbbb;}
+.section02 .tn_wrap .show_cont .job_post li a{display: flex;justify-content: space-between}
+.section02 .tn_wrap .show_cont .job_post li a:hover .tit{text-decoration: underline}
+.section02 .tn_wrap .show_cont .job_post li:last-child{margin-bottom: 0;}
+.section02 .tn_wrap .show_cont .job_post li .tit{width: calc(100% - 410px);text-overflow: ellipsis;white-space: nowrap;overflow: hidden}
+.section02 .tn_wrap .show_cont .job_post li .ect{display: flex;}
+.section02 .tn_wrap .show_cont .job_post li .ect span{margin-right: 30px}
+.section02 .tn_wrap .show_cont .video{position: relative;padding-top: 56%; width: 100%; height: 0}
+.section02 .tn_wrap .show_cont .video > iframe{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.section02 .tn_wrap .show_cont .quiz{background: #eeeeee;padding: 30px;border-radius: 15px;border: 1px solid #888888}
+.section02 .tn_wrap .show_cont .quiz .view_btn{color: #27709e;margin: 30px 0 0 0;display: inline-block;font-weight: 500}
+.section02 .tn_wrap .show_cont .quiz_area {display: flex;flex-wrap: wrap;}
+.section02 .tn_wrap .show_cont .quiz_area li{width: calc(50% - 5px);margin-right: 10px;margin-top: 10px}
+.section02 .tn_wrap .show_cont .quiz_area li a{color: #888}
+.section02 .tn_wrap .show_cont .quiz_area li.check a{color: #333;font-weight: bold;position: relative;}
+.section02 .tn_wrap .show_cont .quiz_area li.check a:before{content: '';display: block;background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221013/check02.png) no-repeat;width: 22px;height: 25px;position: absolute;left: 0;top: -5px;}
+.section02 .tn_wrap .show_cont .quiz_area li:nth-child(2n){margin-right: 0}
+.section02 .tn_wrap .show_cont .quiz_wrap .sbm_btn{background: #27709e;color: #fff;font-size: 20px;border: 0;padding: 5px 10px;border-radius: 10px;display: inline-block}
+.section02 .tn_wrap .show_cont .top p{margin-bottom: 15px;font-size: 18px;font-weight: bold;display: none}
+.section02 .btn_wrap{margin-top: 50px;} 
+.section02 .btn_wrap .subBtn{background: #fed900;font-size: 35px;padding: 10px 40px;border-radius: 40px;font-weight: 500}
+.ev_foot{background: #1c496e;padding: 40px 0;color: #fff}
+.ev_foot h4{font-size: 24px;margin-bottom: 30px}
+.ev_foot li{font-size: 16px}
+.ev_foot p{position: relative;padding-left: 20px;margin-top: 10px}
+.ev_foot p strong{display: block;margin-top: 5px}
+.ev_foot p:before{content: '※';display: block;position: absolute;left:0;top:0}
+
+.link_service{background: #f1f5ff;padding: 30px 0}
+.link_service h3{font-size: 30px;font-weight: bolder;display: flex;align-items: center;margin-bottom: 30px}
+.link_service h3:after{content: '';display: block;background: url(../resource/images/thema/221013/jobaba_ico.png) no-repeat;width: 41px;height: 49px;margin-left: 15px}
+.link_service .flex > div{padding: 35px 40px;width: 50%}
+.link_service .flex h4{font-size: 24px;font-weight: 500}
+.link_service .flex h4 span{display: inline-block;position: relative;}
+.link_service .flex h4 span:before{content: '';display: block;width: 5px;height: 5px;background: #fff330;border-radius: 50%;margin: auto}
+.link_service .flex p{margin: 15px 0 30px 0;font-size: 14px}
+.link_service .flex .go_link{font-size: 12px;position: relative;display: flex;align-items: center;transition: all 0.5s}
+.link_service .flex .go_link:after{content: '';display: block;background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221013/arrow02.png) no-repeat;width: 29px;height: 10px;margin-left: 5px}
+.link_service .flex > div:nth-child(1){background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221013/link_service01.png) no-repeat #9ee6e2 right 30px center;}
+.link_service .flex > div:nth-child(1) h4{color: #01201f}
+.link_service .flex > div:nth-child(1) p{color: #0a5854}
+.link_service .flex > div:nth-child(2){background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221013/link_service02.png) no-repeat #c8e0fa right 0 bottom;}
+.link_service .flex > div:nth-child(2) h4{color: #060e67}
+.link_service .flex > div:nth-child(2) p{color: #4e5eaf}
+.link_service .flex > div:nth-child(2) .go_link:after{content: '';display: block;background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221013/arrow02.png) no-repeat;width: 29px;height: 10px;margin-left: 5px}
+.link_service .flex > div a:hover .go_link:after,
+.link_service .flex > div a:active .go_link:after,
+.link_service .flex > div a:focus .go_link:after{margin-left: 20px;transition: all 0.3s}
+
+
+@media all and (max-width:1080px){
+	.section01 .imgTit{max-width: 768px;margin: auto;}
+	.section01 .imgTit img{max-width: 100%;}
+	.section01 .imgTit:before{background-size: 250px;width: 250px;height: 73px}
+	.section01 .imgTit:after{background-size: 200px;width: 200px;height: 75px;right: -50px}
+	.section02 .highlight{font-size: 28px}
+}
+
+@media all and (max-width:1024px){
+	.section01 .imgTit{width: 100%}
+	.section01 .imgTit:after,
+	.section01 .imgTit:before{display: none}	
+	
+	.section02 .highlight{box-shadow: none;border-bottom: 7px solid #ffff83;display: inline;font-size: 26px;word-break: keep-all}
+	.section02 .tn_wrap .item{margin-top: 20px;margin-right: 20px;width: calc(50% - 10px)}
+	.tn_area{margin-top: 40px}
+	.section02 .tn_wrap .item .logo .tit{font-size: 22px}
+	.section02 .tn_wrap .item .desc{font-size: 16px}
+	.section02 .tn_wrap .item .intro li{font-size: 16px}
+	.section02 .tn_wrap .show_cont .top {background: #fff}
+	.section02 .tn_wrap .show_cont .top p{display: block;}
+	.section02 .tn_wrap .show_cont {bottom: 0;top: 120px;height: calc(100vh - 200px)}
+	.section02 .tn_wrap .show_cont .inner_cont{max-height: calc(100vh - 200px);height: 100%;overflow-y: auto;padding-bottom: 30px}
+	
+	.link_service .flex{display: block;}
+	.link_service .flex > div{width: 100%}
+}
+
+@media all and (max-width:768px){
+	.f20{font-size: 16px}
+	.section01 .imgTit{max-width: 450px}
+	.section01 .cont h3{font-size: 20px}
+	.section01 .cont h3 > span{font-size: 16px}
+	.section01 .cont{padding: 20px;margin-top: 30px}
+	.section01 .flex{flex-direction: column-reverse;justify-content: center;align-items: center;}
+	.section01 .cont ul li{word-break: keep-all}
+	.section01 .flex img{margin-top: 20px}
+	.section01 .evTip{padding: 20px;align-items: center}
+	.section01 .evTip .tit{font-size: 18px;width: 70px}
+	.section01 .evTip .desc{width: calc(100% - 70px)}
+	.section01 .evTip .desc p{font-size: 14px}
+	.section01 .goLink{font-size: 18px}
+	.section02 .tn_wrap .show_cont{z-index: 999999}
+	.section02 .tn_wrap .show_cont .job_post li a{width: 100%;display: block}
+	.section02 .tn_wrap .show_cont .job_post li .tit{width: 100%;margin-bottom: 5px}
+	.section02 .tn_wrap .show_cont{padding:30px 20px;}
+	.section02 .tn_wrap .show_cont .wf_tit{font-size: 20px}
+	.section02 .tn_wrap .show_cont .flex{flex-direction: column;}
+	.section02 .tn_wrap .show_cont .flex > *{width: 100%;}
+	.section02 .tn_wrap .show_cont .flex > *:nth-child(1){margin-bottom: 20px}
+	.section02 .tn_wrap .show_cont .sc_tit{font-size: 20px;margin-bottom: 10px}
+	.section02 .tn_wrap .show_cont{font-size: 16px}
+	.section02 h3{margin-bottom: 10px}
+	.section02 h3 span{font-size: 26px;margin-left: 10px}
+	.section02 h3 img{width: 100px}
+	.section02{padding: 50px 0}
+	.section02 .highlight{font-size: 18px}
+	.tn_area{margin-top: 30px}
+	.section02 .tn_wrap{display: block;position: static}
+	.section02 .tn_wrap .item{width: 100%;margin-right: 0}
+	.section02 .tn_wrap .show_cont{top: 50%;left: 50%;transform: translate(-50%,-50%);width: calc(100% - 60px)}
+	.section02 .tn_wrap .show_cont .top p{display: block}
+	.section02 .tn_wrap .show_cont{position: fixed;height: calc(100vh - 100px)}
+	.section02 .tn_wrap .show_cont .close_btn{font-size: 16px;}
+	.section02 .tn_wrap .show_cont{font-size: 14px}
+	.section02 .tn_wrap .show_cont .cn_list strong{width: 100px}
+	.section02 .tn_wrap .show_cont .cn_list span{width: calc(100% - 110px)}
+	.section02 .tn_wrap .show_cont .sc_tit{font-size: 16px}
+	.section02 .tn_wrap .show_cont .quiz_wrap .sbm_btn{font-size: 16px}
+	.section02 .tn_wrap .show_cont:before{display: none}
+	.ev_foot{padding: 30px 0}
+	.ev_foot h4{font-size: 22px;margin-bottom: 15px}
+	.ev_foot li,
+	.ev_foot p{font-size: 14px}
+	.link_service .flex > div{padding: 30px 20px}
+	.link_service .flex > div:nth-child(1){background-size: 150px}
+	.link_service .flex h4{font-size: 18px}
+	.link_service .flex p{font-size: 13px}
+	.link_service .flex .go_link{font-size: 11px}
+	.section02 .btn_wrap{margin-top: 20px}
+	.section02 .btn_wrap .subBtn{font-size: 20px}
+}
+
+@media all and (max-width:480px){
+	.section01 .evTip{display: block;}
+	.section01 .evTip .tit,
+	.section01 .evTip .desc{width: 100%}
+	.section01 .evTip .tit br{display: none;}
+	.section01 .evTip .tit{margin-bottom: 10px}
+	
+	.section02 .tn_wrap .item .logo{flex-direction: column-reverse;}
+	.section02 .tn_wrap .item .logo .tit{font-size: 18px;margin-top: 15px}
+	.section02 .tn_wrap .item .hover p{font-size: 25px}
+	.section02 .tn_wrap .item{padding: 20px}
+	.section02 .tn_wrap .item .circle{width: 10px;height: 10px}
+	.section02 .tn_wrap .item .circle:nth-child(1){top: 10px;left: 10px}
+	.section02 .tn_wrap .item .circle:nth-child(2){top: 10px;right: 10px}
+	.section02 .tn_wrap .item .circle:nth-child(3){bottom: 10px;left: 10px}
+	.section02 .tn_wrap .item .circle:nth-child(4){bottom: 10px;right: 10px}
+	.section02 .tn_wrap .item .desc{font-size: 14px;text-align: center;}
+	.section02 .tn_wrap .item .intro li{font-size: 14px;}
+	.section02 .tn_wrap .item .intro li strong{padding: 5px;width: 60px;}
+	.section02 .tn_wrap .item .intro li span{width: calc(100% - 70px)}
+	.link_service h3{font-size: 22px}
+	.link_service .flex > div:nth-child(2){background-size: 400px}
+}

@@ -1,0 +1,723 @@
+@charset "utf-8";
+
+
+/* 
+** Color
+*/
+.bgDarkblue {
+  background-color: #08308c;
+} 
+.bgBlue {
+  background-color: #1d58dd;
+}
+.bgSkyblue {
+  background-color: #0985dc;
+}
+.bgLightblue {
+  background-color: #42a8ef;
+}
+.bgGreen {
+  background-color: #0b998d;
+}
+.bgLightgreen {
+  background-color: #1ec8a2;
+}
+.bgWhiteblue {
+  background-color: #eff4ff;
+}
+.bgWhiteSkyblue {
+  background-color: #ecf7ff;
+}
+.bgWhitegreen {
+  background-color: #f0faf8;
+}
+.borderBlue {
+  border: 2px solid #5a7fd3;
+}
+.borderSkyblue {
+  border: 2px solid #92b4ff;
+}
+.borderGreen {
+  border: 2px solid #90d9d3;
+}
+
+.txtDarkblue {
+  color: #08308c;
+}
+.txtBlue {
+  color: #1d58dd;
+}
+.txtSkyblue {
+  color: #0985dc;
+}
+.txtLightblue {
+  color: #42a8ef;
+}
+.txtGreen {
+  color: #0b998d;
+}
+.txtLightgreen {
+  color: #1ec8a2;
+}
+.txtRed {
+  color: #ff4400;
+}
+/*
+** layout
+*/
+
+.themaWrap {
+  letter-spacing: -0.5px;
+}
+.themaWrap .innerSection {
+  position: relative;
+  max-width: 1410px;
+  padding: 0 20px;
+  height: 100%;
+  margin: 0 auto;
+}
+.themaWrap img {
+  object-fit: cover;
+  height: inherit;
+}
+.employmentProject .employmentWrap:before {
+  content: '';
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209_2/article_01_img.png) no-repeat;
+  width: 389px;
+  height: 314px;
+  position: absolute;
+  right: 0;
+  bottom: -6px;
+  z-index: 1;
+}
+.employmentProject {
+  position: relative;
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209_2/article_bg01.png) top no-repeat;
+  padding: 45px 0 0;
+  background-size: cover;
+  width: 100%;
+  border-top: 5px solid #2055a4;
+}
+.employmentProject .infoWrap h3 {
+  text-align: right;
+}
+.employmentProject .titleWrap {
+  margin-bottom: 60px;
+}
+.employmentProject .titleWrap p {
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 2px 1px 2px rgba(0,0,0,0.41);
+}
+.employmentProject .titleWrap strong {
+  font-weight: 400;
+  color: #fff;
+  font-size: 70px;
+  line-height: 70px;
+  text-shadow: 2px 1px 2px rgba(0,0,0,0.41);
+}
+.employmentProject .titleWrap strong em {
+  font-weight: 600;
+}
+.employmentProject .businessList {
+  max-width: 970px;
+  padding-bottom: 58px;
+}
+.employmentProject .businessList strong {
+  display: block;
+  padding: 16px 0;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  background-color: #2055a4;
+  border-radius: 10px 10px 0 0;
+}
+.employmentProject .businessList ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px 0;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+.employmentPackage {
+  position: relative;
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209_2/article_bg02.png) top no-repeat;
+  padding: 60px 0 0;
+  background-size: cover;
+  width: 100%;
+}
+.employmentPackage .employmentWrap:before {
+  content: '';
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209_2/article_03_img.png) no-repeat;
+  width: 365px;
+  height: 323px;
+  position: absolute;
+  left: -80px;
+  bottom: 0;
+}
+.employmentPackage .titleWrap strong::before {
+  content: "?";
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #fff;
+  background-color: #ff4400;
+  border-radius: 50%;
+}
+.employmentPackage .titleWrap strong {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: #2934c0;
+}
+.employmentPackage .titleWrap p {
+  margin-top: 40px;
+  color: #353577;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 600;
+}
+.employmentPackage .imageWrap {
+  padding-bottom: 140px;
+}
+.employmentPackage .imageWrap > div {
+  display: block;
+  margin-top: 60px;
+  max-width: 1090px;
+  margin-left: auto;
+}
+.employmentPackage .imageWrap > div .linkWrap {
+  text-align: center;
+}
+.employmentPackage .link {
+  text-align: center;
+  display: inline-block;
+  padding: 8px 0;
+  min-width: 408px;
+  color: #fff;
+  font-size: 30px;
+  background-color: #ff4400;
+  border: 1px solid #ff4400;
+  border-radius: 30px;
+}
+.businessPlan {
+  position: relative;
+  padding-bottom: 80px;
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209_2/article_bg03.png) top no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.businessPlan .employmentWrap:before {
+  content: '';
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209_2/article_04_img.png) no-repeat;
+  width: 256px;
+  height: 268px;
+  position: absolute;
+  right: -170px;
+  bottom: -50px;
+}
+.businessPlan .employmentWrap > .titleWrap {
+  margin-bottom: 50px;
+}
+.businessPlan .employmentWrap > .titleWrap strong {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px 0;
+  font-size: 34px;
+  color: #0079ce;
+}
+.businessPlan .employmentWrap > .titleWrap strong::before {
+  content: "";
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209_2/icon_01.png) center no-repeat;
+  display: block;
+  width: 75px;
+  height: 60px;
+}
+.businessPlan .employmentList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 54px 10px;
+  background-color: #fff;
+  border: 10px solid #f7fafc;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.businessPlan .employmentList > strong {
+  padding: 4px 0;
+  min-width: 284px;
+  color: #00447d;
+  font-size: 30px;
+  text-align: center;
+  border: 4px solid #00447d;
+  border-radius: 30px;
+}
+.businessPlan .employmentList ul.service {
+  display: flex;
+  max-width: 862px;
+  width: 100%;
+  margin: 50px 0;
+  justify-content:space-between
+}
+.businessPlan .employmentList ul.service li {
+  position: relative;
+}
+.businessPlan .employmentList ul.service li::after {
+  content: '···';
+  color: #dfdfdf;
+  display: block;
+  position: absolute;
+  font-size: 30px;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+}
+.businessPlan .employmentList ul.service li:last-child::after {
+  content: none;
+}
+.businessPlan .employmentList ul.businessProject {
+  display: flex;
+  width: 100%;
+  gap: 0 30px;
+  padding: 0 80px;
+}
+.businessPlan .employmentList ul.businessProject li {
+  width: 100%;
+}
+.businessPlan ul.businessProject .titleWrap {
+  text-align: center;
+}
+.businessPlan ul.businessProject .titleWrap strong {
+  display: flex;
+  padding: 8px 0;
+  color: #fff;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.businessPlan ul.businessProject .titleWrap strong em {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 4px;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 50%;
+}
+.businessPlan ul.businessProject .titleWrap p {
+  padding: 8px 0;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+}
+.businessPlan ul.businessProject dl {
+  padding-left: 20px;
+  min-height: 320px;
+}
+.businessPlan ul.businessProject dt {
+  padding-top: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.businessPlan ul.businessProject dd {
+  padding-left: 50px;
+  color: #043763;
+  font-size: 18px;
+  font-weight: 400;
+}
+.businessPlan ul.businessProject dd::before {
+  content: "-";
+  margin-left: -10px;
+  margin-right: 5px;
+}
+.businessPlan ul.businessProject dl dt {
+  display: flex;
+  align-items: center;
+}
+.businessPlan ul.businessProject dl span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 50%;
+  text-align: center;
+}
+.educationProgram {
+  position: relative;
+  padding-bottom: 60px;
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209_2/article_bg04.png) top no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.educationProgram .employmentWrap:before {
+  content: '';
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209_2/article_05_img.png) no-repeat;
+  width: 220px;
+  height: 230px;
+  position: absolute;
+  left: -230px;
+  bottom: 0;
+}
+.educationProgram .employmentWrap > .titleWrap {
+  margin-bottom: 50px;
+}
+.educationProgram .employmentWrap > .titleWrap strong {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px 0;
+  font-size: 34px;
+  color: #0079ce;
+}
+.educationProgram .employmentWrap > .titleWrap strong::before {
+  content: "";
+  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2209_2/icon_02.png) center no-repeat;
+  display: block;
+  width: 80px;
+  height: 71px;
+}
+.educationProgram ul.educationList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 0;
+  justify-content: space-between;
+}
+.educationProgram ul.educationList > li:hover {
+  outline: 10px solid #f7fafc;
+  border-radius: 20px;
+  box-shadow: rgb(0 0 0 / 30%) 0px 10px 40px, rgb(0 0 0 / 23%) 0px 6px 20px;
+}
+.educationProgram ul.educationList > li {
+  position: relative;
+  width: calc((100% - 144px) / 4);
+  background-color: #fff;
+  border-radius: 20px;
+}
+.educationProgram ul.educationList .imageWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 85px;
+  margin: 0 30px;
+  border-bottom: 1px solid #e7e7e7;
+}
+.educationProgram ul.educationList .txtWrap {
+  padding: 0 30px;
+  margin: 20px 0;
+}
+.educationProgram ul.educationList .txtWrap strong {
+  color: #08308c;
+  font-size: 22px;
+  font-weight: 600;
+}
+.educationProgram ul.educationList span {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  background-color: #08308c;
+  border-radius: 0 0 20px 20px;
+}
+.educationProgram ul.educationList ul {
+  min-height: 700px;
+  padding: 0 30px;
+  border-radius: 20px 20px 0 0;
+}
+.educationProgram ul.educationList ul li {
+  margin-bottom: 30px;
+}
+.educationProgram ul.educationList ul li strong {
+  color: #08308c;
+  font-size: 18px;
+  font-weight: 600;
+}
+.educationProgram ul.educationList ul li strong::before {
+  content: "◎";
+  margin-left: -10px;
+  margin-right: 5px;
+}
+.educationProgram ul.educationList ul li p {
+  color: #08308c;
+  font-size: 18px;
+  font-weight: 400;
+  word-break: keep-all;
+}
+.educationProgram ul.educationList ul li p.noneBlock {
+  display: inline-block;
+}
+.educationProgram ul.educationList ul li p::before {
+  content: "-";
+  margin-left: -10px;
+  margin-right: 5px;
+}
+.educationProgram ul.educationList ul li p.dashNone::before {
+  content: none;
+}
+.employmentFooter {
+  background-color: #0ca4c5;
+}
+.employmentFooter .titleWrap {
+  padding: 40px 0;
+  text-align: center;
+}
+.employmentFooter .titleWrap p {
+  color: #fff;
+  font-size: 24px;
+}
+@media all and (max-width: 1380px) {
+  .employmentProject .employmentWrap:before,
+  .employmentPackage .employmentWrap:before,
+  .businessPlan .employmentWrap:before,
+  .educationProgram .employmentWrap:before {
+    content: none;
+  }
+  .forMobile {
+    display: none;
+  }
+  .businessPlan .employmentList ul.businessProject {
+    gap: 0 10px;
+    padding: 0;
+  }
+  .businessPlan ul.businessProject .titleWrap strong {
+    font-size: 20px;
+  }
+  .educationProgram ul.educationList > li {
+      width: calc((100% - 60px) / 4);
+  }
+  .educationProgram ul.educationList ul li {
+    margin-bottom: 10px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .employmentProject .infoWrap h3 img {
+    width: 88px;
+  }
+  .employmentProject .titleWrap p {
+    margin-bottom: 15px;
+    font-size: 30px;
+  }
+  .employmentProject .titleWrap strong {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .employmentPackage {
+    padding: 30px 0 0;
+}
+  .employmentPackage .titleWrap strong::before {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .employmentPackage .titleWrap strong {
+    font-size: 24px;
+  }
+  .employmentPackage .titleWrap p {
+    margin-top: 20px;
+    font-size: 18px;
+    word-break: keep-all;
+  }
+  .employmentPackage .imageWrap {
+    padding-bottom: 50px;
+  }
+  .businessPlan .employmentList ul.service li::after {
+    content: none;
+  }
+  .businessPlan .employmentList ul.service {
+    align-items: center;
+    flex-direction: column;
+    gap: 20px 0;
+  }
+  .businessPlan .employmentList ul.businessProject {
+    flex-direction: column;
+    gap: 20px 0;
+    padding: 0;
+  }
+  .educationProgram ul.educationList {
+    gap: 20px 0;
+  }
+  .educationProgram ul.educationList ul {
+    min-height: 580px;
+  }
+  .educationProgram ul.educationList > li {
+    width: calc((100% - 20px) / 2);
+    box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+  }
+  .employmentFooter .titleWrap {
+    padding: 20px 0;
+  }
+  .employmentFooter .titleWrap p {
+    font-size: 18px;
+    word-break: keep-all;
+  }
+}
+
+@media all and (max-width: 820px) {
+  .employmentProject {
+    padding: 20px 0 0;
+  }
+  .employmentProject .titleWrap {
+    margin-bottom: 30px;
+  }
+  .employmentProject .businessList {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .employmentProject .businessList ul {
+    flex-wrap: wrap;
+    gap: 10px 0;
+    text-align: center;
+  }
+  .employmentProject .businessList li {
+    width: calc(100% / 3);
+  }
+  
+}
+
+@media all and (max-width: 768px) {
+  .employmentPackage .titleWrap strong {
+    font-size: 20px;
+    word-break: keep-all;
+  }
+  .employmentPackage .titleWrap p {
+    font-size: 18px;
+  }
+  .employmentProject .titleWrap p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    word-break: keep-all;
+  }
+  .employmentProject .titleWrap strong {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .businessPlan {
+    padding-bottom: 40px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .themaWrap .innerSection {
+    padding: 0 10px;
+  }
+  .employmentProject .businessList li {
+    width: calc(100% / 2);
+  }
+  .educationProgram ul.educationList > li {
+    width: 100%;
+  }
+  .educationProgram ul.educationList .txtWrap strong br {
+    display: none;
+  }
+  .educationProgram ul.educationList ul {
+    min-height: auto;
+  }
+  .educationProgram ul.educationList span {
+    position: static;
+    display: block;
+  }
+  .employmentFooter .titleWrap p {
+    font-size: 16px;
+  }
+  .employmentPackage .imageWrap > div {
+    margin-top: 20px;
+  }
+  .employmentPackage .link {
+    min-width: 100%;
+    font-size: 20px;
+  }
+  .businessPlan .employmentList {
+    padding: 20px 10px;
+  }
+  .businessPlan .employmentWrap > .titleWrap strong::before {
+    background-size: contain;
+    width: 37px;
+    height: 30px;
+  }
+  .businessPlan .employmentWrap > .titleWrap {
+    margin-bottom: 20px;
+  }
+  .businessPlan .employmentWrap > .titleWrap strong {
+    font-size: 20px;
+  }
+  .businessPlan .employmentList > strong {
+    min-width: 100%;
+    font-size: 22px;
+  }
+  .educationProgram .employmentWrap > .titleWrap strong::before {
+    background-size: contain;
+    width: 40px;
+    height: 30px;
+  }
+  .educationProgram .employmentWrap > .titleWrap strong {
+    font-size: 20px;
+  }
+  .educationProgram ul.educationList span {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .employmentPackage .titleWrap strong {
+    font-size: 16px;
+  }
+  .employmentPackage .titleWrap p {
+    font-size: 14px;
+  }
+  .businessPlan ul.businessProject .titleWrap strong em {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+  .businessPlan ul.businessProject .titleWrap strong {
+    font-size: 14px;
+  }
+  .businessPlan ul.businessProject .titleWrap p {
+    font-size: 14px;
+  }
+  .businessPlan ul.businessProject dl {
+    padding: 10px;
+    min-height: auto;
+  }
+  .businessPlan ul.businessProject dt {
+    font-size: 16px;
+  }
+  .businessPlan ul.businessProject dl span {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+  .businessPlan ul.businessProject dd {
+    font-size: 14px;
+  }
+  .educationProgram ul.educationList .txtWrap strong {
+    font-size: 16px;
+  }
+  .educationProgram ul.educationList ul li strong {
+    font-size: 16px;
+  }
+  .educationProgram ul.educationList ul li p {
+    font-size: 14px;
+  }
+}
