@@ -29,6 +29,23 @@
 <body>
     <div id="page-content">
         <div id="event05">
+           <div class="modal fade in">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header header-primary">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+						<h4 class="modal-title" id="loginLayerModalLabel">알림</h4>
+					</div>
+					<div class="modal-body" style="max-height: 751px;">
+						<div class="container-fluid">로그인 후 이용 가능한 서비스입니다. 로그인 페이지로 이동 하시겠습니까?</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal" id="closeBtnLogin">닫기</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal" id="loginBtn" onclick="onNonLogin()">로그인</button>
+					</div>
+				</div>
+			</div>
+		</div>
             <div class="header">
                 <div class="ev05_inner">
                     <div class="img_tit">
@@ -132,7 +149,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#"><span>구직정보 등록하고 경품 받기 →</span></a>
+                        <a href="https://www.jobaba.net/mber/login/chkLogin.do?rtnPath=/mber/myPage/resume/jbhntRegForm.do " target="_blank"><span>구직정보 등록하고 경품 받기 →</span></a>
                     </div>
 
                     <div class="ev_care mt150">
