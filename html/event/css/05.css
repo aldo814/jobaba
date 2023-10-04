@@ -1,21 +1,8 @@
-@font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-font-family: 'BMHANNAPro';
-src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
-font-weight: normal;
-font-style: normal;
-}
 
 
 #event05{overflow: hidden}
 #event05 .ev05_inner{max-width: 900px;width: calc(100% - 40px);margin: auto;}
-#event05 * {font-family: 'GmarketSansMedium' !important;}
+#event05 * {font-family: 'GmarketSans' !important;}
 #event05 .header{padding: 70px 0 380px 0;background: url(../resource/images/eventImg/20230926/header_bg.png) no-repeat;background-size: cover;position: relative;overflow: hidden}
 #event05 .header:before{content: '';display: block;background: url(../resource/images/eventImg/20230926/header_img01.png) no-repeat;width: 292px;height: 330px;position: absolute;left: 50px;bottom: -10px;}
 #event05 .header:after{content: '';display: block;background: url(../resource/images/eventImg/20230926/header_img02.png) no-repeat;width: 322px;height: 293px;right: 50px;bottom: 0;position: absolute}
@@ -97,7 +84,7 @@ font-style: normal;
 #event05 .section04 h3:after{content: '';display: block;background: url(../resource/images/eventImg/20230926/se04_img01.png) no-repeat;width: 174px;height: 235px;position: absolute;left: 620px;bottom: 30px}
 #event05 .section04 .se04_list{margin-top: 50px}
 #event05 .section04 .se04_list p{text-align: center;font-size: 26px;}
-#event05 .section04 .se04_list p strong{margin-top: 15px}
+#event05 .section04 .se04_list p strong{margin-top: 15px;}
 #event05 .section04 .se04_list .item{display: flex;align-items: center;margin-bottom: 40px;justify-content: space-between}
 #event05 .section04 .se04_list .item:last-child{margin-bottom: 0}
 #event05 .section04 .se04_list .item span{width: 140px;height: 140px;border-radius: 50%;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.04);position: relative;}
