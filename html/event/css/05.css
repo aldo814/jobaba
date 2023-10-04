@@ -248,7 +248,7 @@ font-style: normal;
     #event05 .ev_care li{font-size: 14px;padding-left: 30px}
     #event05 .ev_care li:before{background-size: 20px;width: 20px}
     
-    #event05 .ev_care h4{font-size: 18px;max-width: 260px;width: 100%;text-align: center}
+    #event05 .ev_care h4{font-size: 18px;max-width: 270px;width: 100%;text-align: center;padding: 10px}
     
     #event05 .section03 h3{font-size: 18px}
     #event05 .section03 .txt span{font-size: 20px}
