@@ -21,7 +21,7 @@ font-style: normal;
 #event05 .header:after{content: '';display: block;background: url(../resource/images/eventImg/20230926/header_img02.png) no-repeat;width: 322px;height: 293px;right: 50px;bottom: 0;position: absolute}
 #event05 .header .img_tit{text-align: center;}
 #event05 .header .img_tit img{max-width: 100%}
-#event05 .section02{padding: 120px 0 90px 0;position: relative;background: url(../resource/images/eventImg/20230926/se02_bg.png) left -9px top;border-top: 2px solid #01307a;}
+#event05 .section02{padding: 160px 0 110px 0;position: relative;background: url(../resource/images/eventImg/20230926/se02_bg.png) left -9px top;border-top: 2px solid #01307a;}
 #event05 .section02:after{content: '';display: block;background: url(../resource/images/eventImg/20230926/header_img04.png) no-repeat;width: 886px;height: 351px;left: 50%;top: -330px;transform: translateX(-50%);position: absolute;z-index: 88}
 #event05 .section02:before{content: '';display: block;background: url(../resource/images/eventImg/20230926/header_img03.png) no-repeat;position: absolute;width: 886px;height: 351px; left: 50%;top: -353px;transform: translateX(-50%)}
 #event05 .section02 h3{font-size: 60px;text-align: center;color: #6e48d1;line-height: 1.8;padding-left: 100px}
