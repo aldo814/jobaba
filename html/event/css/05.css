@@ -21,7 +21,7 @@ font-style: normal;
 #event05 .header:after{content: '';display: block;background: url(../resource/images/eventImg/20230926/header_img02.png) no-repeat;width: 322px;height: 293px;right: 50px;bottom: 0;position: absolute}
 #event05 .header .img_tit{text-align: center;}
 #event05 .header .img_tit img{max-width: 100%}
-#event05 .section02{padding: 160px 0 110px 0;position: relative;background: url(../resource/images/eventImg/20230926/se02_bg.png) left -9px top;border-top: 2px solid #01307a;}
+#event05 .section02{padding: 160px 0 110px 0;position: relative;background: url(../resource/images/eventImg/20230926/se02_bg.png) left -9px top no-repeat #e1f6df;background-size: cover;border-top: 2px solid #01307a;}
 #event05 .section02:after{content: '';display: block;background: url(../resource/images/eventImg/20230926/header_img04.png) no-repeat;width: 886px;height: 351px;left: 50%;top: -330px;transform: translateX(-50%);position: absolute;z-index: 88}
 #event05 .section02:before{content: '';display: block;background: url(../resource/images/eventImg/20230926/header_img03.png) no-repeat;position: absolute;width: 886px;height: 351px; left: 50%;top: -353px;transform: translateX(-50%)}
 #event05 .section02 h3{font-size: 60px;text-align: center;color: #6e48d1;line-height: 1.8;padding-left: 100px}
@@ -81,7 +81,7 @@ font-style: normal;
 #event05 .ev_care li:nth-child(2){font-size: 26px;color: #6e48d1;font-weight: bold}
 #event05 .ev_care li:before{content: '';display: block;background: url(../resource/images/eventImg/20230926/check.png) no-repeat;width: 30px;height: 27px;left: 0;top: 0;position: absolute;}
 #event05 .ev_care li:last-child{margin-bottom: 0}
-#event05 .section03{background: url(../resource/images/eventImg/20230926/se03_bg.png) no-repeat;padding: 160px 0 100px 0} 
+#event05 .section03{background: url(../resource/images/eventImg/20230926/se03_bg.png) no-repeat;padding: 160px 0 100px 0;background-size: cover} 
 #event05 .section03 h3{text-align: center;color: #fff;max-width: 550px;width: 100%;border: 3px solid #fff;border-radius: 50px;padding: 15px;margin: 0 auto 30px auto;position: relative;font-size: 28px;}
 #event05 .section03 h3:before{content: '';display: block;background: url(../resource/images/eventImg/20230926/se03_img01.png) no-repeat;width: 121px;height: 205px;position: absolute;left: -70px;bottom: -65px}
 #event05 .section03 h3:after{content: '';display: block;background: url(../resource/images/eventImg/20230926/se03_img02.png) no-repeat;width: 356px;height: 94px;position: absolute;left: 50%;transform: translateX(-50%);top: -97px}
