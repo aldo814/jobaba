@@ -12,7 +12,7 @@
 #event05 .section02:after{content: '';display: block;background: url(../resource/images/eventImg/20230926/header_img04.png) no-repeat;width: 886px;height: 351px;left: 50%;top: -330px;transform: translateX(-50%);position: absolute;z-index: 88}
 #event05 .section02:before{content: '';display: block;background: url(../resource/images/eventImg/20230926/header_img03.png) no-repeat;position: absolute;width: 886px;height: 351px; left: 50%;top: -353px;transform: translateX(-50%)}
 #event05 .section02 h3{font-size: 60px;text-align: center;color: #6e48d1;line-height: 1.8;padding-left: 100px}
-#event05 .section02 h3 span{position: relative;background: #fff;border-radius: 50%;padding: 20px 20px;border: 2px solid #000;color: #000;font-family: 'BMHANNAPro' !important}
+#event05 .section02 h3 span{position: relative;background: #fff;border-radius: 50%;padding: 20px 20px;border: 2px solid #000;color: #000;font-family: 'BMHANNA11yrsold' !important}
 #event05 .section02 h3 span:before{content: '';display: block;background: url(../resource/images/eventImg/20230926/se02_tit.png) no-repeat;width: 84px;height: 90px;position: absolute;right: -10px;top: -90px}
 #event05 .section02 .gift_box{background: #bfddbb;border-radius: 10px;padding: 90px 40px 50px 40px;position: relative;}
 #event05 .section02 .gift_box:before{content: '';display: block;background: url(../resource/images/eventImg/20230926/se02_titbf.png) no-repeat;width: 219px;height: 271px;position: absolute;top: -240px;left: 100px}

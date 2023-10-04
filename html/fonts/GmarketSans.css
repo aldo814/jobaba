@@ -2,32 +2,32 @@
     font-family: 'GmarketSans';
     font-weight: 300;
     font-style: normal;
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot');
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot?#iefix') format('embedded-opentype'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf') format("truetype");
+    src: url('GmarketSansLight.eot');
+    src: url('GmarketSansLight.eot?#iefix') format('embedded-opentype'),
+         url('GmarketSansLight.woff2') format('woff2'),
+         url('GmarketSansLight.woff') format('woff'),
+         url('GmarketSansLight.ttf') format("truetype");
     font-display: swap;
 } 
 @font-face {
     font-family: 'GmarketSans';
     font-weight: 500;
     font-style: normal;
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot');
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot?#iefix') format('embedded-opentype'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.ttf') format("truetype");
+    src: url('GmarketSansMedium.eot');
+    src: url('GmarketSansMedium.eot?#iefix') format('embedded-opentype'),
+         url('GmarketSansMedium.woff2') format('woff2'),
+         url('GmarketSansMedium.woff') format('woff'),
+         url('GmarketSansMedium.ttf') format("truetype");
     font-display: swap;
 } 
 @font-face {
     font-family: 'GmarketSans';
     font-weight: 700;
     font-style: normal;
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot');
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot?#iefix') format('embedded-opentype'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.ttf') format("truetype");
+    src: url('GmarketSansBold.eot');
+    src: url('GmarketSansBold.eot?#iefix') format('embedded-opentype'),
+         url('GmarketSansBold.woff2') format('woff2'),
+         url('GmarketSansBold.woff') format('woff'),
+         url('GmarketSansBold.ttf') format("truetype");
     font-display: swap;
 } 
