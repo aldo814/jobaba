@@ -59,9 +59,8 @@ font-style: normal;
 #event05 .section02 .step_div > .item:nth-child(3) .small p{margin-top: 0}
 #event05 .section02 .step_div .big{width: 430px;}
 #event05 .section02 .tit_box.mt150{padding: 90px 35px 90px 60px;position: relative}
-#event05 .section02 .upDate {position: relative;max-width: 710px;margin: 50px auto 0 auto}
-#event05 .section02 .upDate > div{border-radius: 100px;padding: 20px 70px;background: url(../resource/images/eventImg/20230926/ut.png) no-repeat right 60px center #f8fae6;border: 2px dashed #82bbb0;position: relative;font-size: 30px;padding-right: 200px;max-width: 710px;width: 100%;padding-left: 110px}
-#event05 .section02 .upDate:before{display: block;content: '';width: 100%;height: 100%;border-radius: 100px;background: #82bbb0;position: absolute;left: 0;bottom: -10px;}
+#event05 .section02 .upDate {position: relative;margin: 50px auto 0 auto;border-radius: 200px;padding: 20px 70px;background:#f8fae6;border: 2px dashed #82bbb0;position: relative;font-size: 30px;width: 100%;padding-left: 130px;box-shadow: 0px 10px #82bbb0; }
+#event05 .section02 .upDate > div:not(.bg){padding-right: 200px;position: relative;z-index: 2;background: url(../resource/images/eventImg/20230926/ut.png) no-repeat right 0 center }
 #event05 .section02 .upDate strong{font-size: 36px;color: #3b9483;line-height: 1.8}
 #event05 .section02 .upDate span{font-size: 36px}
 #event05 .section02 .upDate em{position: relative;}
@@ -70,14 +69,16 @@ font-style: normal;
 #event05 .section02 .upDate em:nth-child(1):before{content: '';display: block;background: url(../resource/images/eventImg/20230926/ut02.png) no-repeat;width: 321px;height: 14px;position: absolute;left: 0;bottom: -10px;}
 #event05 .section02 .upDate em:last-child:before{content: '';display: block;background: url(../resource/images/eventImg/20230926/ut03.png) no-repeat;width: 285px;height: 9px;position: absolute;left: 0;bottom: -10px;}
 #event05 .section02 .upDate em:last-child:after{content: '';display: block;background: url(../resource/images/eventImg/20230926/ut04.png) no-repeat;width: 33px;height: 36px;position: absolute;left: -40px;top: -10px;}
-#event05 .tit_box a span{display: block;font-size: 40px;color: #fff;max-width: 730px;width: 100%;text-align: center;padding: 15px 50px 15px 132px;background: #6e48d1;border-radius: 50px;position: absolute;left: 50%;transform: translateX(-50%);bottom: -406px;z-index: 5}
+#event05 .section02 .upDate .bg{background: #fff;max-width: 630px;text-align: center;padding: 10px;box-sizing: border-box;margin: 20px auto 0 auto;border-radius: 50px;color: #ff0000;font-size: 20px;width: 100%;}
+#event05 .tit_box a span{display: block;font-size: 40px;color: #fff;max-width: 730px;width: 100%;text-align: center;padding: 15px 50px 15px 132px;background: #6e48d1;border-radius: 50px;position: absolute;left: 50%;transform: translateX(-50%);bottom: -476px;z-index: 5;box-shadow: 0 7px 0 #60c68f}
 #event05 .tit_box a{display: block;position: relative;}
 #event05 .tit_box a span:before{content: '';display: block;background: url(../resource/images/eventImg/20230926/check_btn.png) no-repeat;width: 70px;height: 70px;position: absolute;left: 45px;top: 50%;transform: translateY(-50%);}
-#event05 .tit_box a:after{content: '';display: block;width: 100%;height: 100%;border-radius: 50px;background: #60c68f;position: absolute;top: 323px;left: 50%;height: 91px;max-width: 730px;transform: translateX(-50%)}
+
 
 #event05 .ev_care{background: #fff;border-radius: 15px;padding: 50px 60px;border-radius: 15px;border: 5px solid #e3e3e3;position: relative;}
 #event05 .ev_care h4{font-size: 26px;display: inline-block;border: 2px solid #cecece;border-radius: 30px;padding: 10px 40px;position: absolute;background: #fff;left: 50%;transform: translateX(-50%);top: -31.5px}
 #event05 .ev_care li{font-size: 20px;margin-bottom: 20px;position: relative;padding-left: 40px;word-break: keep-all}
+#event05 .ev_care li:nth-child(2){font-size: 26px;color: #6e48d1;font-weight: bold}
 #event05 .ev_care li:before{content: '';display: block;background: url(../resource/images/eventImg/20230926/check.png) no-repeat;width: 30px;height: 27px;left: 0;top: 0;position: absolute;}
 #event05 .ev_care li:last-child{margin-bottom: 0}
 #event05 .section03{background: url(../resource/images/eventImg/20230926/se03_bg.png) no-repeat;padding: 160px 0 100px 0} 
@@ -126,6 +127,7 @@ font-style: normal;
 #event05 ul li:last-child{margin-bottom: 0;}
 #event05 ul li:before{content: '·';display: block;position: absolute;left: 0;top: 0;}
 
+.mb_show{display: none}
 @media all and (max-width:1400px){
     #event05 .header:before,
     #event05 .header:after{display: none}
@@ -149,9 +151,10 @@ font-style: normal;
     #event05 .section02 .step_div > .item .big{width: calc(65% - 20px);height: auto}
     #event05 .section02 .step_div > .item .big img{height: 100%;width: 100%}
     #event05 .section02 .step_div .small p{font-size: 18px}
-    #event05 .tit_box a span{max-width: 600px; width: 90%;font-size: 28px;bottom: -350px}
+    #event05 .tit_box a span{max-width: 600px; width: 90%;font-size: 28px;bottom: -410px}
     #event05 .tit_box a:after{max-width: 600px;width: 90%;height: 76px;top: 280px}
-    
+    #event05 .section02 .upDate{padding-left: 100px}
+    #event05 .section02 .upDate .bg{font-size: 18px}
     #event05 .section04 h3{font-size: 45px}
     #event05 .section04 h3:after{left: auto;right: 0;bottom: 0}
     #event05 .section02 .upDate p{font-size: 22px}
@@ -189,9 +192,13 @@ font-style: normal;
     #event05 .section02 .tit_box dt{width: 120px }
     
     #event05 .section02 .step_div > .item:nth-child(1):before{top: 20px}
-    #event05 .tit_box a span{bottom: -330px;font-size: 20px;width: 440px;padding: 15px 50px 15px 102px}
+    #event05 .tit_box a span{bottom: -430px;font-size: 20px;width: 440px;padding: 15px 50px 15px 102px}
     #event05 .tit_box a:after{width: 440px;height: 61px;top:275px}
     #event05 .tit_box a span:before{background-size: 30px;width: 30px;height: 30px;left: 70px}
+    #event05 .section02 .upDate{padding: 20px 30px}
+    #event05 .section02 .upDate .bg{width: 80%}
+    #event05 .section02 .upDate > div:not(.bg){padding-right: 100px;background-size: 100px;padding-left: 60px}
+    #event05 .section02 .upDate .bg{word-break: keep-all;font-size: 16px;width: 85%}
     
     #event05 .section03 h3{width: 80%}
     #event05 .section03 h3:before{background-size: 80px;width: 80px;left: -60px}
@@ -213,6 +220,8 @@ font-style: normal;
     #event05 ul li{font-size: 13px}
     
     #event05 .section02 .upDate > div{padding: 20px 40px;padding-right: 150px;padding-left: 100px;background-size: 110px}
+    
+    #event05 .ev_care li:nth-child(2){font-size: 20px}
    
 }
 
@@ -226,7 +235,7 @@ font-style: normal;
     #event05 .section02 h3{padding-left: 0;}
    #event05 .section02 .gift_box > p{font-size: 14px;word-break: keep-all}
     
-    #event05 .tit_box a span{font-size: 22px;padding: 15px 40px 15px 92px;bottom: -310px}
+    #event05 .tit_box a span{font-size: 22px;padding: 15px 40px 15px 92px;bottom: -490px}
     #event05 .tit_box a:after{height: 64px;top: 251px}
     #event05 .tit_box a span:before{left: 50px}
     #event05 .section02 .tit_box h4{margin: -130px auto 30px auto}
@@ -257,6 +266,13 @@ font-style: normal;
     #event05 .section02 .upDate em:nth-child(1):before{background-size: 180px}
     #event05 .section02 .upDate em:last-child:before{background-size: 250px}
     
+    #event05 .section02 .upDate > div:not(.bg){padding-right: 0;background-position: top center;padding-top: 80px;text-align: center;padding-left: 0;background-size: 80px}
+    #event05 .section02 .upDate em:nth-child(1){margin-left: 0}
+    #event05 .section02 .upDate em:last-child{margin-left: 0}
+    #event05 .section02 .upDate .bg{margin: 10px auto;font-size: 14px}
+    
+    .mb_show{display: block}
+    #event05 .ev_care li:nth-child(2){font-size: 18px}
 }
 
 @media all and (max-width:480px){
@@ -295,6 +311,7 @@ font-style: normal;
     
     #event05 .section02 .tit_box dl{font-size: 14px}
     
+    #event05 .section02 .upDate{border-radius: 90px;border-width: 1px;box-shadow: 0 5px 0 #82bbb0}
     #event05 .section02 .upDate > div{padding-left: 0;text-align: center}
     #event05 .section02 .upDate em:last-child:after{display: none}
     #event05 .section02 .upDate em:last-child{margin-left: 0}
@@ -303,5 +320,11 @@ font-style: normal;
     #event05 .section02 .upDate em:nth-child(1):before{background-size: 160px}
     #event05 .section02 .upDate em:last-child:before{background-size: 200px}
     #event05 .section02 .upDate:before{bottom: -5px}
+    #event05 .section02 .upDate > div:not(.bg){background: none !important;padding: 0}
+    #event05 .section02 .upDate .bg{width: 100%}
+    #event05 .tit_box a span{bottom: -330px;box-shadow: 0 4px 0 #60c68f}
+    
+    
+    #event05 .ev_care li:nth-child(2){font-size: 16px}
     
 }
