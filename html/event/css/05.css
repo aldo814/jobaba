@@ -296,12 +296,12 @@ font-style: normal;
     #event05 .section02 .step_div .small p{font-size:14px}
     
     #event05 .section03 .txt{margin: 30px auto 50px auto}
-    #event05 .section03 .txt span{margin-right: 80px;font-size: 18px}
-    #event05 .section03 .g{margin-right: 50px}
+    #event05 .section03 .txt span{margin-right: 20px;font-size: 18px}
+    #event05 .section03 .g{margin-right: 30px;margin-top: 20px}
     #event05 .section03 h3{width: 90%}
     #event05 .section03 h3:after{background-size: 260px;width: 280px;height: 70px;top: -72px}
     #event05 .section03 h3:before{left: -40px;z-index: 5}
-    
+    #event05 .section03 .g + img{margin-top: 0}
     #event05 .section04 h3{font-size: 22px;padding-right: 0}
     #event05 .section04 h3:after{display: none}
     #event05 .section04{padding: 60px 0}
@@ -326,5 +326,5 @@ font-style: normal;
     
     
     #event05 .ev_care li:nth-child(2){font-size: 16px}
-    
+    #event05 .section03 h3{font-size: 15px}
 }
