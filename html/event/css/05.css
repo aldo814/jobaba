@@ -60,7 +60,7 @@
 #event05 .tit_box a span{display: block;font-size: 40px;color: #fff;max-width: 730px;width: 100%;text-align: center;padding: 25px 50px 25px 132px;background: #6e48d1;border-radius: 50px;position: absolute;left: 50%;transform: translateX(-50%);bottom: -476px;z-index: 5;box-shadow: 0 7px 0 #60c68f;font-weight: bold}
 #event05 .tit_box a{display: block;position: relative;}
 #event05 .tit_box a span:before{content: '';display: block;background: url(../resource/images/eventImg/20230926/check_btn.png) no-repeat;width: 70px;height: 70px;position: absolute;left: 45px;top: 50%;transform: translateY(-50%);}
-
+#event05 .section04 .se04_list .item .txt div{display: block !important}
 
 #event05 .ev_care{background: #fff;border-radius: 15px;padding: 50px 60px;border-radius: 15px;border: 5px solid #e3e3e3;position: relative;}
 #event05 .ev_care h4{font-size: 26px;display: inline-block;border: 2px solid #cecece;border-radius: 30px;padding: 10px 40px;position: absolute;background: #fff;left: 50%;transform: translateX(-50%);top: -31.5px}
