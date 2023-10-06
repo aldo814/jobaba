@@ -57,7 +57,7 @@
 #event05 .section02 .upDate em:last-child:before{content: '';display: block;background: url(../resource/images/eventImg/20230926/ut03.png) no-repeat;width: 285px;height: 9px;position: absolute;left: 0;bottom: -10px;}
 #event05 .section02 .upDate em:last-child:after{content: '';display: block;background: url(../resource/images/eventImg/20230926/ut04.png) no-repeat;width: 33px;height: 36px;position: absolute;left: -40px;top: -10px;}
 #event05 .section02 .upDate .bg{background: #fff;max-width: 630px;text-align: center;padding: 10px;box-sizing: border-box;margin: 20px auto 0 auto;border-radius: 50px;color: #ff0000;font-size: 20px;width: 100%;}
-#event05 .tit_box a span{display: block;font-size: 40px;color: #fff;max-width: 730px;width: 100%;text-align: center;padding: 25px 50px 25px 132px;background: #6e48d1;border-radius: 50px;position: absolute;left: 50%;transform: translateX(-50%);bottom: -436px;z-index: 5;box-shadow: 0 7px 0 #60c68f;font-weight: bold}
+#event05 .tit_box a span{display: block;font-size: 40px;color: #fff;max-width: 730px;width: 100%;text-align: center;padding: 25px 50px 25px 132px;background: #6e48d1;border-radius: 50px;position: absolute;left: 50%;transform: translateX(-50%);bottom: -476px;z-index: 5;box-shadow: 0 7px 0 #60c68f;font-weight: bold}
 #event05 .tit_box a{display: block;position: relative;}
 #event05 .tit_box a span:before{content: '';display: block;background: url(../resource/images/eventImg/20230926/check_btn.png) no-repeat;width: 70px;height: 70px;position: absolute;left: 45px;top: 50%;transform: translateY(-50%);}
 
