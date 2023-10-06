@@ -93,14 +93,14 @@
 #event05 .section04 .se04_list .item:nth-child(1) span{background: url(../resource/images/eventImg/20230926/se04_img02.png) no-repeat center #78c1ca;}
 #event05 .section04 .se04_list .item:nth-child(1) span:after{content: '';display: block;width: 30px;height: 2px;border-top: 7px dotted #78c1ca;position: absolute;right: -45px;top: 50%;transform: translateY(-50%)}
 #event05 .section04 .se04_list .item:nth-child(1) span{background: url(../resource/images/eventImg/20230926/se04_img02.png) no-repeat center #78c1ca;}
-#event05 .section04 .se04_list .item:nth-child(1) strong{color: #59a6b0}
+#event05 .section04 .se04_list .item:nth-child(1) strong{color: #59a6b0 !important}
 #event05 .section04 .se04_list .item:nth-child(1) span:after{content: '';display: block;width: 30px;height: 2px;border-top: 7px dotted #78c1ca;position: absolute;right: -45px;top: 50%;transform: translateY(-50%)}
 #event05 .section04 .se04_list .item:nth-child(2) span{background: url(../resource/images/eventImg/20230926/se04_img03.png) no-repeat center #96d05e;}
 #event05 .section04 .se04_list .item:nth-child(2) span:after{content: '';display: block;width: 30px;height: 2px;border-top: 7px dotted #96d05e;position: absolute;right: -45px;top: 50%;transform: translateY(-50%)}
-#event05 .section04 .se04_list .item:nth-child(2) strong{color: #77aa46}
+#event05 .section04 .se04_list .item:nth-child(2) strong{color: #77aa46 !important}
 #event05 .section04 .se04_list .item:nth-child(3) span{background: url(../resource/images/eventImg/20230926/se04_img04.png) no-repeat center #59d4b0;}
-#event05 .section04 .se04_list .item:nth-child(2) strong{color: #77aa46}
-#event05 .section04 .se04_list .item:nth-child(3) strong{color: #3dac8b}
+#event05 .section04 .se04_list .item:nth-child(2) strong{color: #77aa46 !important}
+#event05 .section04 .se04_list .item:nth-child(3) strong{color: #3dac8b !important}
 #event05 .section04 .se04_list .item:nth-child(3) span:after{content: '';display: block;width: 30px;height: 2px;border-top: 7px dotted #59d4b0;position: absolute;right: -45px;top: 50%;transform: translateY(-50%)}
 
 #event05 .section04 .se04_list .item:nth-child(1) .txt:after{content: '';display: block;width: 100%;height: 100%;box-shadow: 0px 0px 50px inset rgba(191, 195, 214, 0.4);background: #fff;position: absolute;left: 0;top: 0;border-radius: 500px;border: 2px dashed #78c1ca;}
