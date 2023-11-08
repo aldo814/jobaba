@@ -102,7 +102,7 @@
 .ei_more > .item:nth-child(2) {border-color: #5cc6c9;}
 .ei_more > .item:nth-child(3) {border-color: #b2d233;}
 .ei_more > .item:nth-child(2):after {border-top-color: #5cc6c9;left: 50%;transform: translateX(-50%)}
-.ei_more > .item:nth-child(3):after{border-top-color: #b2d233;left: auto;right: 170px;}
+.ei_more > .item:nth-child(3):after{border-top-color: #b2d233;left: auto;right: 180px;}
 .ei_more > .item .close_btn{display: block;margin: 0 0 0 auto;background: url(../images/excellCpn/ei_close01.png) no-repeat;width: 32px;height: 32px;text-indent: -9999px;margin-bottom: 20px;}
 .ei_more > .item:nth-child(2) .close_btn{background: url(../images/excellCpn/ei_close02.png) no-repeat;}
 .ei_more > .item:nth-child(3) .close_btn{background: url(../images/excellCpn/ei_close03.png) no-repeat;}
