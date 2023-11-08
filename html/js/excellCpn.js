@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('.e_sumo').SumoSelect({
-        TriggerChangeCombined:false
+        TriggerChangeCombined:true
     });
 
     // .SumoSelect 요소 선택
