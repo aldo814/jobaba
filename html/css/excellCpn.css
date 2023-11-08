@@ -438,4 +438,6 @@
     .ec_bt .txt p{font-size: 18px}
     .ec_bt .txt p span{display: block;}
     .ee_cont .ee_search .radio .text{font-size: 12px}
+    .SumoSelect>.optWrapper.multiple>.MultiControls>p{font-size: 14px;}
+    .SumoSelect>.CaptionCont>span.placeholder{font-size: 14px}
 }
