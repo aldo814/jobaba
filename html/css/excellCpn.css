@@ -46,7 +46,7 @@ input {
 .ee_cont{background: #f6f6f6;padding: 35px 25px;border: 1px solid #d7dce5;margin: 50px auto 0 auto}
 .ee_cont .ee_search{display: flex;align-items: center;margin-bottom: 15px}
 .ee_cont .ee_search .SumoSelect{border: 1px solid #000;color: #666666;font-size: 16px;width: 220px;font-family: 'Noto Sans KR' !important}
-.ee_cont .ee_search .SumoSelect>.CaptionCont {border: 0;padding: 9px 15px;}
+.ee_cont .ee_search .SumoSelect>.CaptionCont {border: 0;padding: 10px 15px;}
 .ee_cont .ee_search .SumoSelect>.CaptionCont>label{right: 8px}
 .ee_cont .ee_search .SumoSelect>.CaptionCont>label>i{background: #fcfcfc;border: 1px solid #c5c5c5;border-radius: 3px;}
 .ee_cont .ee_search .SumoSelect>.CaptionCont.on>label>i{background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAYAAAD+Bd/7AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAABMSURBVAiZfc0xDkAAFIPhd2Kr1WRjcAExuIgzGUTIZ/AkImjSofnbNBAfHvzAHjOKNzhiQ42IDFXCDivaaxAJd0xYshT3QqBxqnxeHvhunpu23xnmAAAAAElFTkSuQmCC') no-repeat center #38bab2;border: 1px solid #38bab2}
@@ -55,9 +55,9 @@ input {
 .ee_cont .SumoSelect>.optWrapper>.options li.opt{padding: 7px 15px;font-size: 14px;border-bottom: 1px solid #f5f5f5;}
 .ee_cont .SumoSelect>.optWrapper>.options li.group>label{padding: 9px 15px;color: #000;font-weight: 500;font-size: 14px;}
 .ee_cont .ee_search .SumoSelect.checkd i{background: #38bab2 url(https://www.jobaba.net/resource/images/member/ico_check.png) 50% 50% no-repeat !important;border: 0 !important;background-size: 8px !important}
-.ee_cont .ee_search input[type="text"]{border: 1px solid #000;padding: 11px 15px;font-family: 'Noto Sans KR';width: 550px;margin: 0 15px;}
+.ee_cont .ee_search input[type="text"]{border: 1px solid #000;padding: 10px 15px;font-family: 'Noto Sans KR';width: 550px;margin: 0 15px;font-size: 16px}
 .ee_cont .ee_search input[type="text"]::placeholder{color: #666666;}
-.ee_cont .ee_search input[type="submit"]{padding: 9px 50px;color: #fff;border: 0;background: #ff6163;font-weight: 500;font-size: 16px;font-family: 'Noto Sans KR' !important;margin-right: 20px}
+.ee_cont .ee_search input[type="submit"]{padding: 10px 50px;color: #fff;border: 0;background: #ff6163;font-weight: 500;font-size: 16px;font-family: 'Noto Sans KR' !important;margin-right: 20px}
 .ee_cont .ee_search .radio{margin:auto  0 }
 .ee_cont .ee_search .radio .text{font-size: 16px;color: #666666;}
 .ee_cont .ee_list{display: flex;flex-wrap: wrap;}
