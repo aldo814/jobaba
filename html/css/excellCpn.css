@@ -57,7 +57,7 @@ input {
 .ee_cont .ee_search .SumoSelect.checkd i{background: #38bab2 url(https://www.jobaba.net/resource/images/member/ico_check.png) 50% 50% no-repeat !important;border: 0 !important;background-size: 8px !important}
 .ee_cont .ee_search input[type="text"]{border: 1px solid #000;padding: 10px 15px;font-family: 'Noto Sans KR';width: 550px;margin: 0 15px;font-size: 16px}
 .ee_cont .ee_search input[type="text"]::placeholder{color: #666666;}
-.ee_cont .ee_search input[type="submit"]{padding: 10px 50px;color: #fff;border: 0;background: #ff6163;font-weight: 500;font-size: 16px;font-family: 'Noto Sans KR' !important;margin-right: 20px}
+.ee_cont .ee_search input[type="submit"]{padding: 10px 50px;color: #fff;border: 0;background: #ff6163;font-weight: 500;font-size: 16px;font-family: 'Noto Sans KR' !important;margin-right: 20px;border: 1px solid #ff6163}
 .ee_cont .ee_search .radio{margin:auto  0 }
 .ee_cont .ee_search .radio .text{font-size: 16px;color: #666666;}
 .ee_cont .ee_list{display: flex;flex-wrap: wrap;}
@@ -248,8 +248,8 @@ input {
     
     .ee_cont .ee_search{flex-wrap: wrap;margin-bottom: 0}
     .ee_cont .ee_search .radio{width: 100%;margin-top: 15px}
-    .ee_cont .ee_search input[type="submit"]{margin-right: 0;padding: 9px 30px}
-    .ee_cont .ee_search input[type="text"]{width: calc(100% - 330px);margin: 0 10px}
+    .ee_cont .ee_search input[type="submit"]{margin-right: 0;padding: 10px 30px}
+    .ee_cont .ee_search input[type="text"]{width: calc(100% - 332px);margin: 0 10px}
     
     .ee_cont .ee_list{display: block;}
     .ee_cont .ee_list .item{width: 100%;margin-right: 0}
@@ -385,7 +385,7 @@ input {
     .ec_intro .ei_wrap .item:nth-child(3) .desc:after{background-size: 80px;height: 130px}
     
     .ee_cont .ee_search .SumoSelect{width: 100%;margin-bottom: 10px;}
-    .ee_cont .ee_search input[type="text"]{width: calc(100% - 100px);margin-left: 0}
+    .ee_cont .ee_search input[type="text"]{width: calc(100% - 102px);margin-left: 0}
     
     .ec_guide h3{font-size: 25px}
     .ec_guide .addTxt{font-size: 14px}
@@ -447,4 +447,7 @@ input {
     .ee_cont .ee_search .radio .text{font-size: 12px}
     .SumoSelect>.optWrapper.multiple>.MultiControls>p{font-size: 14px;}
     .SumoSelect>.CaptionCont>span.placeholder{font-size: 14px}
+    .ee_cont .ee_search input[type="submit"]{padding: 8px 10px}
+    .ee_cont .ee_search input[type="text"]{width: calc(100% - 58px);padding: 8px 10px}
+    .ee_cont .ee_search .SumoSelect>.CaptionCont{padding: 8px 10px}
 }
