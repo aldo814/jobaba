@@ -1,6 +1,8 @@
 $(document).ready(function () {
     $('.e_sumo').SumoSelect({
-        TriggerChangeCombined:true
+        okCancelInMulti: true,
+        TriggerChangeCombined: true,
+        forceCustomRendering: true
     });
 
     // .SumoSelect 요소 선택
