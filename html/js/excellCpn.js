@@ -1,28 +1,18 @@
 $(document).ready(function () {
     $('.e_sumo').SumoSelect({
-        okCancelInMulti: true,
         TriggerChangeCombined: true,
-        forceCustomRendering: true
+        forceCustomRendering: true,
+        placeholder: '지역'
     });
 
     // .SumoSelect 요소 선택
     var sumoSelect = $(".SumoSelect");
 
     // 페이지 로드 시 초기 검사
-    var selectedOptionText = sumoSelect.find(".CaptionCont span").text();
-    if (selectedOptionText !== " 지역") {
-        sumoSelect.addClass("checkd");
+    var selectedOptionText = sumoSelect.find(".options li.opt  label").text();
+    if (selectedOptionText !== "지역") {
+        $(this).addClass('dd')
     }
-
-    // "지역" 클릭 시 클래스 제거
-    sumoSelect.on("click", function () {
-        var selectedOptionText = sumoSelect.find(".CaptionCont span").text();
-        if (selectedOptionText === " 지역") {
-            sumoSelect.removeClass("checkd");
-        } else {
-            sumoSelect.addClass("checkd");
-        }
-    });
 
 
     $('.ei_wrap .item a').click(function (e) {
