@@ -94,8 +94,8 @@
 .ec_bt .txt p strong{font-weight: bold;}
 .ec_bt .txt p span{color: #3da8a2;font-weight: bold;}
 
-.ei_more {margin-top: 30px;}
-.ei_more > .item{background: #fff;padding: 40px 60px 80px 60px;border-radius: 10px;border: 1px solid #ddd;border-top: 20px solid #ddd;box-sizing: border-box;position: relative;display: none}
+.ei_more {}
+.ei_more > .item{background: #fff;padding: 40px 60px 80px 60px;border-radius: 10px;border: 1px solid #ddd;border-top: 20px solid #ddd;box-sizing: border-box;position: relative;display: none;margin-top: 30px;}
 .ei_more > .item:after{content: '';display: inline-block;border: 30px solid transparent;border-top-color: #f9ac4f;border-right-width: 18px;border-left-width: 18px;position: absolute;left: 170px;top: 0;}
 .ei_more > .item:nth-child(1) {border-color: #f9ac4f;}
 .ei_more > .item:nth-child(2) {border-color: #5cc6c9;}
@@ -368,7 +368,7 @@
     .ec_intro .ei_wrap .item .tit{font-size: 18px;padding: 15px 10px;border-radius: 15px}
     .ec_intro .ei_wrap .item .desc{font-size: 22px}
     .ec_intro .ei_wrap .item a{font-size: 16px}
-    .ec_intro .ei_wrap .item .desc:after{margin: 30xp auto 20px auto}
+    .ec_intro .ei_wrap .item .desc:after{margin: 30px auto 20px auto}
     .ec_intro .ei_wrap .item:nth-child(1) .desc:after{background-size: 80px;height: 130px}
     .ec_intro .ei_wrap .item:nth-child(2) .desc:after{background-size: 80px;height: 130px}
     .ec_intro .ei_wrap .item:nth-child(3) .desc:after{background-size: 80px;height: 130px}
@@ -416,5 +416,21 @@
 }
 
 @media all and (max-width:480px){
-    
+    .ec_top .txt .tit, .ec_top .txt .tit span{font-size: 22px}
+    .ec_top .txt .desc{font-size: 14px}
+    .ec_tit{font-size: 22px;margin-bottom: 20px}
+    .ec_intro .ei_wrap .item{padding: 20px;}
+    .ec_intro .ei_wrap .item .tit{font-size: 16px;padding: 10px;margin-bottom: 20px}
+    .ec_intro .ei_wrap .item .desc:after{background-size: 50px !important;height: 90px !important}
+    .ec_intro .ei_wrap .item .desc{font-size: 16px}
+    .ec_intro .ei_wrap .item a{font-size: 14px;padding: 10px;}
+    .ec_employ .ee_link a{font-size: 14px;}
+    .ee_cont .ee_search input[type="submit"]{font-size: 14px}
+    .SumoSelect>.CaptionCont>span{font-size: 14px}
+    .ee_cont .ee_search input[type="text"]{font-size: 14px;padding: 8px 15px}
+    .ec_des .ed_top h3{font-size: 16px;word-break: keep-all}
+    .ec_des .ed_top h3 .black{display: block;}
+    .ec_guide h3,
+    .ec_bt .txt p{font-size: 18px}
+    .ec_bt .txt p span{display: block;}
 }
