@@ -1,3 +1,4 @@
+.ec_wrap{overflow: hidden}
 .ec_top{background: url(../images/excellCpn/ec_top.png) no-repeat center;height: 390px;box-sizing: border-box;padding: 70px 0}
 .ec_top *{font-family: 'GmarketSans' !important }
 .ec_top .ec_inner{position: relative;max-width: 1080px;width: calc(100% - 40px);margin: auto;}
@@ -253,7 +254,7 @@
     
     .ec_intro {position: relative}
     .ec_intro .innerSection > .appGo{display: none !important}
-    .ei_more > .item.show{position: fixed;left: 0;top: 0;width: 100%;height: 100%;padding: 30px 20px;z-index: 5;border-left: 0;border-right: 0;border-bottom: 0;border-radius: 0}
+    .ei_more > .item.show{position: fixed;left: 0;top: 0;width: 100%;height: 100%;padding: 30px 20px;z-index: 5;border-left: 0;border-right: 0;border-bottom: 0;border-radius: 0;margin-top: 0}
     .ei_more > .item.show .inner{overflow-y: auto;height: calc(100vh - 300px)}
     .ec_intro  .item.show .appGo{margin: 40px auto 0 auto;width: 460px;padding: 20px 20px 20px 60px;display: flex !important}
     .ec_intro  .item.show .appGo img{width: 180px}
@@ -433,4 +434,5 @@
     .ec_guide h3,
     .ec_bt .txt p{font-size: 18px}
     .ec_bt .txt p span{display: block;}
+    .ee_cont .ee_search .radio .text{font-size: 12px}
 }
