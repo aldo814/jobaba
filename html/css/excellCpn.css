@@ -1,4 +1,7 @@
-
+input {
+   -webkit-appearance: none;
+   -webkit-border-radius: 0;
+}
 .ec_top{background: url(../images/excellCpn/ec_top.png) no-repeat center;height: 390px;box-sizing: border-box;padding: 70px 0}
 .ec_top *{font-family: 'GmarketSans' !important }
 .ec_top .ec_inner{position: relative;max-width: 1080px;width: calc(100% - 40px);margin: auto;}
