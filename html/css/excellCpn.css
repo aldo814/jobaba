@@ -424,6 +424,8 @@ input {
     .ee_cont .ee_list .item .name{margin-right: 0;margin-bottom: 10px;font-size: 16px}
     .ee_cont .ee_list .item img{max-width: 150px}
     
+    .SumoSelect>.optWrapper.multiple.isFloating>.options li.opt{padding-left: 50px}
+    
 }
 
 @media all and (max-width:480px){
