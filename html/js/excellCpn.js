@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    $('.e_sumo').SumoSelect();
+    $('.e_sumo').SumoSelect({
+        TriggerChangeCombined:false
+    });
 
     // .SumoSelect 요소 선택
     var sumoSelect = $(".SumoSelect");
