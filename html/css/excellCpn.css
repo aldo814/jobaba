@@ -6,7 +6,10 @@ input {
 .ec_top *{font-family: 'GmarketSans' !important }
 .ec_top .ec_inner{position: relative;max-width: 1080px;width: calc(100% - 40px);margin: auto;}
 .ec_top .ec_inner:after{content: '';display: block;background: url(../images/excellCpn/ec_top_img.png) no-repeat;width: 495px;height: 297px;position: absolute;right: 30px;top: -20px}
+.SumoSelect .select-all.partial>span i, .SumoSelect .select-all.selected>span i, .SumoSelect>.optWrapper.multiple>.options li.opt.selected span i{background-color: #31978f}
+.SumoSelect .select-all>span i, .SumoSelect>.optWrapper.multiple>.options li.opt span i{background: #fcfcfc;border: 1px solid #c5c5c5;box-shadow:none}
 .ec_top .txt{}
+.SumoSelect .select-all{height: auto;padding: 10px 15px;}
 .ec_top .txt .tit{font-size: 50px;font-weight: bold;color: #000000;margin-bottom: 10px}
 .ec_top .txt .tit span{font-size: 50px;font-weight: bold;color: #31978f}
 .ec_top .txt .desc{font-size: 24px;line-height: 1.5;font-weight: 500}
@@ -46,6 +49,7 @@ input {
 .ee_cont .ee_search .SumoSelect>.CaptionCont {border: 0;padding: 9px 15px;}
 .ee_cont .ee_search .SumoSelect>.CaptionCont>label{right: 8px}
 .ee_cont .ee_search .SumoSelect>.CaptionCont>label>i{background: #fcfcfc;border: 1px solid #c5c5c5;border-radius: 3px;}
+.ee_cont .ee_search .SumoSelect>.CaptionCont.on>label>i{background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAYAAAD+Bd/7AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAABMSURBVAiZfc0xDkAAFIPhd2Kr1WRjcAExuIgzGUTIZ/AkImjSofnbNBAfHvzAHjOKNzhiQ42IDFXCDivaaxAJd0xYshT3QqBxqnxeHvhunpu23xnmAAAAAElFTkSuQmCC') no-repeat center #38bab2}
 .ee_cont .ee_search .SumoSelect.open>.optWrapper{top:100%;border: 1px solid #000;border-radius: 0;width: calc(100% + 2px);left: -1px}
 .SumoSelect>.CaptionCont>span.placeholder{font-style: normal;color: #000;font-family: 'Noto Sans KR';font-size: 16px}
 .ee_cont .SumoSelect>.optWrapper>.options li.opt{padding: 7px 15px;font-size: 14px;border-bottom: 1px solid #f5f5f5;}

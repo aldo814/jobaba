@@ -2,17 +2,27 @@ $(document).ready(function () {
     $('.e_sumo').SumoSelect({
         TriggerChangeCombined: true,
         forceCustomRendering: true,
-        placeholder: '지역'
+        placeholder: '지역',
+        //selectAll: true 전체선택
     });
 
-    // .SumoSelect 요소 선택
-    var sumoSelect = $(".SumoSelect");
-
-    // 페이지 로드 시 초기 검사
-    var selectedOptionText = sumoSelect.find(".options li.opt  label").text();
-    if (selectedOptionText !== "지역") {
-        $(this).addClass('dd')
+    if ($('.opt').hasClass('selected')) {
+        // 'CaptionCont' 요소에 'addClass' 클래스를 추가
+        $('.CaptionCont').addClass('on');
+    } else{
+         $('.CaptionCont').removeClass('on');
     }
+
+    $('.ee_search .SumoSelect').click(function(){
+           if ($('.opt').hasClass('selected')) {
+        // 'CaptionCont' 요소에 'addClass' 클래스를 추가
+        $('.CaptionCont').addClass('on');
+    } else{
+        $('.CaptionCont').removeClass('on');
+    }
+
+    });
+
 
 
     $('.ei_wrap .item a').click(function (e) {
