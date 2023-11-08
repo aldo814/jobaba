@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Document</title>
+
+    <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-2.2.4.js"></script>
+    <!--//폰트 임시추가 적용X-->
+    <!-- 잡아바 css-->
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css?v=20220824_1">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css?20200528">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/fullcalendar.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
+
+    <!-- ai면접 -->
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/fonts.css">
+
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/pe-icon-7-stroke.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/adminDetail.css">
+    <!--
+	<link type="text/css" rel="stylesheet" href="/resource/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="/resource/css/pe-icon-7-stroke.css">
+	<link type="text/css" rel="stylesheet" href="/resource/css/adminDetail.css">
+	 -->
+
+    <!-- 신규 2020 CSS -->
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css?v=20220628">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css?v=20220901">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css?v=20230427">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+    <link rel="stylesheet" href="https://www.jobaba.net/resource/css/new/allnew_ia.css?v=20220628">
+    <link rel="stylesheet" href="https://www.jobaba.net/resource/css/main/renewMain02.css">
+    <!--//잡아바 기존 css-->
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+
+
+
+
+    <!--추가 css-->
+    <link rel="stylesheet" href="css/sumoselect.min.css">
+    <link rel="stylesheet" href="css/excellCpn.css">
+    <!--//추가 css-->
+    <!--추가 js-->
+    <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/bxslider/slick.js" class="__web-inspector-hide-shortcut__"></script>
+    <script src="js/jquery.sumoselect.min.js"></script>
+    <script src="js/excellCpn.js"></script>
+    <!--//추가 js-->
+</head>
+
+<body>
+    <div class="ec_wrap">
+        <div class="ec_top">
+            <div class="ec_inner">
+                <div class="txt">
+                    <h3 class="tit">
+                        경기도 <span>일자리 우수기업</span>
+                    </h3>
+                    <p class="desc">
+                        경기도 <span>일자리 우수기업</span>은 어디?<br>
+                        <span>근로자 고용안정</span> 및 <span>일자리 창출</span>에 기여한<br>
+                        <span>우수 중소기업</span>을 잡아바에서 확인해 보세요.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="ec_intro">
+            <div class="innerSection">
+                <h3 class="ec_tit">경기도 <span>일자리 우수기업</span> 사업 소개</h3>
+                <div class="ei_wrap">
+                    <div class="item">
+                        <h4 class="tit">신청대상</h4>
+                        <p class="desc">어떤 기업이<br>
+                            <strong>신청</strong> 가능한가요?
+                        </p>
+                        <a href="javascript:void(0);" rel="more01">자세히 보기→</a>
+                    </div>
+                    <div class="item">
+                        <h4 class="tit">인센티브(29가지)</h4>
+                        <p class="desc">어떤 <strong>혜택</strong>을<br>
+                            받을 수 있나요?</p>
+                        <a href="javascript:void(0);" rel="more02">자세히 보기→</a>
+                    </div>
+                    <div class="item">
+                        <h4 class="tit">고용환경개선사업</h4>
+                        <p class="desc"><strong>별도</strong>로 <strong>신청</strong>을 <br>해야하나요?</p>
+                        <a href="javascript:void(0);" rel="more03">자세히 보기→</a>
+                    </div>
+                </div>
+                <div class="ei_more">
+                    <div class="item" id="more01">
+                        <a href="javascript:void(0);" class="close_btn">닫기</a>
+                        <div class="inner">
+                            <h4>신청대상</h4>
+                            <p class="f28 pl30">다음 2가지 조건을 모두 충족하는 기업</p>
+                            <div class="bg_gray mt20">
+                                <ul class="num_list">
+                                    <li class="f28">공고일 기준 도내 3년 이상 소재 및 결산한 중소기업으로서 고용증가율, 근무환경,
+                                        기업성장성이 우수한 기업</li>
+                                    <li class="f28">
+                                        고용증가 요건 중 1개 이상 충족한 기업
+                                        <ul class="dot_list mt10">
+                                            <li class="f24">최근 1년간 근로자 평균 고용증가율이 5%이상이면서 평균 고용증가 인원이 3명 이상인 기업</li>
+                                            <li class="f24">최근 1년간 고용증가 인원이 5명 이상인 기업</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h4 class="mt30">신청제외대상</h4>
+                            <ul class="dot_list">
+                                <li class="f28">공고일 현재 지방세 체납기업</li>
+                                <li class="f28">금융기관과 정상적인 거래를 할 수 없는 기업</li>
+                                <li class="f28">게임,도박,유흥 등 사행성 불건전 소비 업종의 기업</li>
+                                <li class="f28">민원야기, 임금체불, 환경오염, 불법공장 등 사회적 물의를 빚는 기업</li>
+                            </ul>
+                            <h4 class="mt30">인증기간</h4>
+                            <ul class="dot_list">
+                                <li class="f28">인증일로부터 2년(인증요건 지속 충족 시 1회에 한해 2년 연장 가능)
+                                    <ul class="rf_mark mt10">
+                                        <li class="orange f24">인증취소 : 거짓이나 그 밖의 부정한 방법으로 인증을 받은 경우 인증 당시의 근로자 인원보다 감소하여
+                                            일자리 우수기업으로 적합하지 아니한 경우 (인증기업 근로자 수 현황조사 결과 활용)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h4 class="mt30">신청절차</h4>
+                            <div class="process">
+                                <div class="item">
+                                    <p>신청 및 접수</p>
+                                </div>
+                                <div class="arrow">다음</div>
+                                <div class="item">
+                                    <p>서류심사</p>
+                                </div>
+                                <div class="arrow">다음</div>
+                                <div class="item">
+                                    <p>현장심사</p>
+                                </div>
+                                <div class="arrow">다음</div>
+                                <div class="item">
+                                    <p>심의위원회<br>
+                                        및 선정</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://apply.jobaba.net/ " class="appGo" target="_blank">
+                            <div class="left">
+                                <img src="images/excellCpn/app_logo.png" alt="잡아바 어플라이">
+                                <p>(단, 신청기간에 한함 / 연 1회)</p>
+
+                            </div>
+                            <span class="circle">
+                                온라인<br>
+                                신청접수
+                            </span>
+                        </a>
+                    </div>
+                    <div class="item" id="more02">
+                        <a href="javascript:void(0);" class="close_btn">닫기</a>
+                        <div class="inner">
+                        <div class="ei_table">
+                            <table>
+                                <caption>인센티브</caption>
+                                <colgroup>
+                                    <col style="width: 10%">
+                                    <col style="width: 30%">
+                                    <col>
+                                </colgroup>
+                                <thead class="bg_yellow">
+                                    <tr>
+                                        <th scope="col" colspan="2" class="f22">구분</th>
+                                        <th scope="col" class="f22">지원내용</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="bg_blue01 f28" rowspan="5" scope="row">
+                                            경기도
+                                        </th>
+                                        <th class="f28 bg_blue02" scope="row">일자리 경제정책과</th>
+                                        <td>
+                                            <ul class="dot_list">
+                                                <li class="f24">일자리 우수기업 인증서 및 현판 교부</li>
+                                                <li class="f24">일자리 우수기업마크 기업 홍보물에 사용권 부여</li>
+                                                <li class="f24">일자리우수기업 고용환경개선 지원</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="f28 bg_blue02" scope="row">특화기업 지원과</th>
+                                        <td>
+                                            <ul class="dot_list">
+                                                <li class="f24">소규모 근로환경 개선사업 신청시 가점 부여(3점)</li>
+                                                <li class="f24">중소기업육성자금 신청時 가점 부여(5점)</li>
+                                                <li class="f24">중소기업육성자금 신청時 금리(0.2% 인하)우대</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="f28 bg_blue02" scope="row">외교통상과</th>
+                                        <td>
+                                            <ul class="dot_list">
+                                                <li class="f24">해외마케팅 지원 사업 신청時 가점 부여(3점)</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="f28 bg_blue02" scope="row">과학기술과</th>
+                                        <td>
+                                            <ul class="dot_list">
+                                                <li class="f24">경기도 기술개발사업 신청時 가점 부여(2점)</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="f28 bg_blue02" scope="row">세정과</th>
+                                        <td>
+                                            <ul class="dot_list">
+                                                <li class="f24">경기도 유공납세자 선정 우대(유공납세자 혜택)
+                                                    <ul class="bar_list pl20 mt10">
+                                                        <li>아주대 분당차병원 등 20개 의료기관 종합검진 할인(대표자)</li>
+                                                        <li>도 금고(농협,국민)여신금리 우대(사업자)</li>
+                                                        <li>지방세 세무조사 유예(3년)☞경기도 세무조사 규정에 따름
+                                                            <ul class="pl10 rf_mark mt10">
+                                                                <li class="f18">지방세 체납액이 있거나 탈세정보가 포착된 경우와 연간 도급가액 100억원 이상을
+                                                                    시공하는 건설업 법인 및 종업원 수가 50명을 초과하는 법인 제외</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>시군 공영주차장 주차 요금 감면(시군별 상이)</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" colspan="2" class="bg_blue02 f28">경기도경제과학진흥원</th>
+                                        <td>
+                                            <ul class="dot_list">
+                                                <li class="f24">중소기업 개발생산판로 지원사업 신청時 가점부여(2점)</li>
+                                                <li class="f24">우수기업 선정 및 홍보 사업 신청時 가점부여(2점)</li>
+                                                <li class="f24">여성기업 맞춤형 지원사업 신청時 가점부여(2점)</li>
+                                                <li class="f24">경기도 유망중소기업 인증 사업 신청時 가점부여(2점)</li>
+                                                <li class="f24">스타기업 선정時 가점 부여(1점)</li>
+                                                <li class="f24">디자인개발지원사업 신청時 가점부여(2점)</li>
+                                                <li class="f24">유망환경기업 선정時 가점 부여(0.5점)</li>
+                                                <li class="f24">해외 전시회 경기도 단체관 신청時 가점 부여(3점)</li>
+                                                <li class="f24">해외 통상촉진단 신청時 가점부여(3점)</li>
+                                                <li class="f24">해외 G-Fair 사업 신청時 가점부여(3점)</li>
+                                                <li class="f24">해외 전시회 개별 참가기업 신청時 가점부여(3점)</li>
+                                                <li class="f24">R&D센터, 광교비지니스센터 입주심사時 가점부여(5점)</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" colspan="2" class="bg_blue02 f28">경기도테크노파크</th>
+                                        <td>
+                                            <ul class="dot_list">
+                                                <li class="f24">기술닥터사업 기업부담금 감면(0.5%)</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" colspan="2" class="bg_blue02 f28">경기신용보증재단</th>
+                                        <td>
+                                            <ul class="dot_list">
+                                                <li class="f24">보증평가 가산점 부여(신용평가시 1점) 및 보증요율인하(0.2%)</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" colspan="2" class="bg_blue02 f28">한국은행</th>
+                                        <td>
+                                            <ul class="dot_list">
+                                                <li class="f24">한국은행 경기본부 중소기업 지원자금 우선지원</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" colspan="2" class="bg_blue02 f28">한국무역협회 경기지부</th>
+                                        <td>
+                                            <ul class="dot_list">
+                                                <li class="f24">무역기금 융자사업 신청時가점 부여(5점)</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" colspan="2" class="bg_blue02 f28">경기도일자리재단</th>
+                                        <td>
+                                            <ul class="dot_list">
+                                                <li class="f24">잡아바“탐나는 기업”기업콘텐츠 제작ㆍ홍보</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        </div>
+                         <a href="https://apply.jobaba.net/ " class="appGo" target="_blank">
+                    <div class="left">
+                        <img src="images/excellCpn/app_logo.png" alt="잡아바 어플라이">
+                    <p>(단, 신청기간에 한함 / 연 1회)</p>
+                   
+                    </div>
+                    <span class="circle">
+                       온라인<br>
+                       신청접수 
+                    </span>
+                </a>
+                    </div>
+                    <div class="item" id="more03">
+                        <a href="javascript:void(0);" class="close_btn">닫기</a>
+                        <div class="inner">
+                        <h4>신청대상</h4>
+                        <p class="f28 pl30">다음 3가지 조건을 모두 충족하는 기업</p>
+                        <div class="bg_gray mt20">
+                            <ul class="num_list">
+                                <li class="f28">고용환경개선사업 공고일 현재「경기도 일자리 우수기업」인증기업</li>
+                                <li class="f28">고용환경개선사업 자부담 비율20%이상인 기업</li>
+                                <li class="f28">동일 공사에 대해 타 기관으로부터 중복지원을 받지 않은 기업</li>
+                            </ul>
+                        </div>
+                        <h4 class="mt30">
+                            신청접수
+                        </h4>
+                        <ul class="dot_list pl30">
+                            <li class="f28">신청기간 : 연 1회 실시 / 경기도일자리재단 또는 잡아바 홈페이지 참고</li>
+                        </ul>
+                        <h4 class="mt30">지원범위</h4>
+                        <div class="ei_table">
+                            <table>
+                                <caption>지원범위</caption>
+                                <colgroup>
+                                    <col style="width: 20%">
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="f22 bg_gr">구분</th>
+                                        <th scope="col" class="f22 bg_gr">지원범위</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="f28 tct">작업환경</td>
+                                        <td class="f24">노후 작업장 개보수, 사무공간 인테리어 등</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="f28 tct">복지환경</td>
+                                        <td class="f24">기숙사, 구내식당, 교육시설, 체력단련시설, 보육시설, 휴게공간, 화장실, 샤워장,
+                                            탈의실 등 개보수</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <ul class="rf_mark pl30">
+                                                <li class="green f22">
+                                                    자산으로 등록되는 시설 및 장비,단순 바닥공사 및 조명교체 등은 지원 불가
+                                                </li>
+                                                <li class="green f22">환경개선 분야와 직접적으로 관련이 없거나, 공사비용이 아닌 예산<br>
+                                                    (부지 및 건물 매입비, 장비구입 및 임차료, 소모품구입 등)지원불가</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h4 class="mt30">신청절차</h4>
+                        <div class="process02">
+                            <div class="item">
+                                <p>공고ㆍ접수</p>
+                            </div>
+                            <div class="arrow"></div>
+                            <div class="item">
+                                <p>서류심사<br>
+                                    및 감리</p>
+                            </div>
+                            <div class="arrow"></div>
+                            <div class="item">
+                                <p>현지실태<br>
+                                    조사</p>
+                            </div>
+                            <div class="arrow"></div>
+                            <div class="item">
+                                <p>심의위원회<br>
+                                    및 선정</p>
+                            </div>
+                            <div class="arrow"></div>
+                            <div class="item">
+                                <p>환경개선공사<br>
+                                    및<br>
+                                    지원금 지급</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://apply.jobaba.net/ " class="appGo" target="_blank">
+                    <div class="left">
+                        <img src="images/excellCpn/app_logo.png" alt="잡아바 어플라이">
+                    <p>(단, 신청기간에 한함 / 연 1회)</p>
+                   
+                    </div>
+                    <span class="circle">
+                       온라인<br>
+                       신청접수 
+                    </span>
+                </a>
+                    </div>
+                     
+                </div>
+                <a href="https://apply.jobaba.net/ " class="appGo" target="_blank">
+                    <div class="left">
+                        <img src="images/excellCpn/app_logo.png" alt="잡아바 어플라이">
+                        <p>(단, 신청기간에 한함 / 연 1회)</p>
+
+                    </div>
+                    <span class="circle">
+                        온라인<br>
+                        신청접수
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="innerSection">
+            <div class="ec_employ">
+                <h3 class="ec_tit">
+                    <span>일자리 우수기업</span>을 만나보세요
+                </h3>
+                <div class="ee_link">
+                    <a href="#">
+                        경기도 일자리 우수기업<br>
+                        채용관 바로가기 →
+                    </a>
+                </div>
+                <div class="ee_cont">
+                    <!--검색-->
+                    <div class="ee_search">
+                        <select class="e_sumo">
+                            <option>지역</option>
+                            <optgroup label="남부">
+                                <option>과천시</option>
+                                <option>광명시</option>
+                                <option>광주시</option>
+                            </optgroup>
+                            <optgroup label="북부">
+                                <option>가평군</option>
+                                <option>고양시</option>
+                            </optgroup>
+                        </select>
+                        <input type="text" placeholder="검색어를 입력해 주세요.">
+                        <input type="submit" value="검색">
+                        <div class="radio">
+                            <label for="ing"><input type="checkbox" id="ing" name="ing"><span class="text"><i></i>채용중 기업만 보기</span></label>
+                        </div>
+                    </div>
+                    <!--//검색-->
+
+                    <!--리스트-->
+                    <div class="ee_list">
+                        <div class="item">
+                            <div class="cert">
+                                <img src="images/excellCpn/ee_cert.png" alt="2023">
+                            </div>
+                            <div class="ing">
+                                <a href="#">
+                                    채용중
+                                </a>
+                            </div>
+                            <div class="top">
+                                <p class="name">(주테키스트)</p>
+                                <div class="img"><img src="images/excellCpn/ee_sp_logo.png" alt="테키스트"></div>
+                            </div>
+                            <dl>
+                                <dt>업종</dt>
+                                <dd>사업 지원 및 임기타 기계 및 장비 제조업(C29) 대 서비스업 </dd>
+                            </dl>
+                            <dl>
+                                <dt>사업/제품</dt>
+                                <dd>chiller,pump rack,valve </dd>
+                            </dl>
+                            <dl>
+                                <dt>주소</dt>
+                                <dd>경기도 안성시 원곡면 지문로 51-12</dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <div class="cert">
+                                <img src="images/excellCpn/ee_cert.png" alt="2023">
+                            </div>
+                            <div class="ing">
+                                <a href="#">
+                                    채용중
+                                </a>
+                            </div>
+                            <div class="top">
+                                <p class="name">(주테키스트)</p>
+                                <div class="img"><img src="images/excellCpn/ee_sp_logo.png" alt="테키스트"></div>
+                            </div>
+                            <dl>
+                                <dt>업종</dt>
+                                <dd>사업 지원 및 임기타 기계 및 장비 제조업(C29) 대 서비스업 </dd>
+                            </dl>
+                            <dl>
+                                <dt>사업/제품</dt>
+                                <dd>chiller,pump rack,valve </dd>
+                            </dl>
+                            <dl>
+                                <dt>주소</dt>
+                                <dd>경기도 안성시 원곡면 지문로 51-12</dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <div class="cert">
+                                <img src="images/excellCpn/ee_cert.png" alt="2023">
+                            </div>
+                            <div class="ing">
+                                <a href="#">
+                                    채용중
+                                </a>
+                            </div>
+                            <div class="top">
+                                <p class="name">(주테키스트)</p>
+                                <div class="img"><img src="images/excellCpn/ee_sp_logo.png" alt="테키스트"></div>
+                            </div>
+                            <dl>
+                                <dt>업종</dt>
+                                <dd>사업 지원 및 임기타 기계 및 장비 제조업(C29) 대 서비스업 </dd>
+                            </dl>
+                            <dl>
+                                <dt>사업/제품</dt>
+                                <dd>chiller,pump rack,valve </dd>
+                            </dl>
+                            <dl>
+                                <dt>주소</dt>
+                                <dd>경기도 안성시 원곡면 지문로 51-12</dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <div class="cert">
+                                <img src="images/excellCpn/ee_cert.png" alt="2023">
+                            </div>
+                            <div class="ing">
+                                <a href="#">
+                                    채용중
+                                </a>
+                            </div>
+                            <div class="top">
+                                <p class="name">(주테키스트)</p>
+                                <div class="img"><img src="images/excellCpn/ee_sp_logo.png" alt="테키스트"></div>
+                            </div>
+                            <dl>
+                                <dt>업종</dt>
+                                <dd>사업 지원 및 임기타 기계 및 장비 제조업(C29) 대 서비스업 </dd>
+                            </dl>
+                            <dl>
+                                <dt>사업/제품</dt>
+                                <dd>chiller,pump rack,valve </dd>
+                            </dl>
+                            <dl>
+                                <dt>주소</dt>
+                                <dd>경기도 안성시 원곡면 지문로 51-12</dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <div class="cert">
+                                <img src="images/excellCpn/ee_cert.png" alt="2023">
+                            </div>
+                            <div class="ing">
+                                <a href="#">
+                                    채용중
+                                </a>
+                            </div>
+                            <div class="top">
+                                <p class="name">(주테키스트)</p>
+                                <div class="img"><img src="images/excellCpn/ee_sp_logo.png" alt="테키스트"></div>
+                            </div>
+                            <dl>
+                                <dt>업종</dt>
+                                <dd>사업 지원 및 임기타 기계 및 장비 제조업(C29) 대 서비스업 </dd>
+                            </dl>
+                            <dl>
+                                <dt>사업/제품</dt>
+                                <dd>chiller,pump rack,valve </dd>
+                            </dl>
+                            <dl>
+                                <dt>주소</dt>
+                                <dd>경기도 안성시 원곡면 지문로 51-12</dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <div class="cert">
+                                <img src="images/excellCpn/ee_cert.png" alt="2023">
+                            </div>
+                            <div class="ing">
+                                <a href="#">
+                                    채용중
+                                </a>
+                            </div>
+                            <div class="top">
+                                <p class="name">(주테키스트)</p>
+                                <div class="img"><img src="images/excellCpn/ee_sp_logo.png" alt="테키스트"></div>
+                            </div>
+                            <dl>
+                                <dt>업종</dt>
+                                <dd>사업 지원 및 임기타 기계 및 장비 제조업(C29) 대 서비스업 </dd>
+                            </dl>
+                            <dl>
+                                <dt>사업/제품</dt>
+                                <dd>chiller,pump rack,valve </dd>
+                            </dl>
+                            <dl>
+                                <dt>주소</dt>
+                                <dd>경기도 안성시 원곡면 지문로 51-12</dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <div class="cert">
+                                <img src="images/excellCpn/ee_cert.png" alt="2023">
+                            </div>
+                            <div class="ing">
+                                <a href="#">
+                                    채용중
+                                </a>
+                            </div>
+                            <div class="top">
+                                <p class="name">(주테키스트)</p>
+                                <div class="img"><img src="images/excellCpn/ee_sp_logo.png" alt="테키스트"></div>
+                            </div>
+                            <dl>
+                                <dt>업종</dt>
+                                <dd>사업 지원 및 임기타 기계 및 장비 제조업(C29) 대 서비스업 </dd>
+                            </dl>
+                            <dl>
+                                <dt>사업/제품</dt>
+                                <dd>chiller,pump rack,valve </dd>
+                            </dl>
+                            <dl>
+                                <dt>주소</dt>
+                                <dd>경기도 안성시 원곡면 지문로 51-12</dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <div class="cert">
+                                <img src="images/excellCpn/ee_cert.png" alt="2023">
+                            </div>
+                            <div class="ing">
+                                <a href="#">
+                                    채용중
+                                </a>
+                            </div>
+                            <div class="top">
+                                <p class="name">(주테키스트)</p>
+                                <div class="img"><img src="images/excellCpn/ee_sp_logo.png" alt="테키스트"></div>
+                            </div>
+                            <dl>
+                                <dt>업종</dt>
+                                <dd>사업 지원 및 임기타 기계 및 장비 제조업(C29) 대 서비스업 </dd>
+                            </dl>
+                            <dl>
+                                <dt>사업/제품</dt>
+                                <dd>chiller,pump rack,valve </dd>
+                            </dl>
+                            <dl>
+                                <dt>주소</dt>
+                                <dd>경기도 안성시 원곡면 지문로 51-12</dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <div class="cert">
+                                <img src="images/excellCpn/ee_cert.png" alt="2023">
+                            </div>
+                            <div class="ing">
+                                <a href="#">
+                                    채용중
+                                </a>
+                            </div>
+                            <div class="top">
+                                <p class="name">(주테키스트)</p>
+                                <div class="img"><img src="images/excellCpn/ee_sp_logo.png" alt="테키스트"></div>
+                            </div>
+                            <dl>
+                                <dt>업종</dt>
+                                <dd>사업 지원 및 임기타 기계 및 장비 제조업(C29) 대 서비스업 </dd>
+                            </dl>
+                            <dl>
+                                <dt>사업/제품</dt>
+                                <dd>chiller,pump rack,valve </dd>
+                            </dl>
+                            <dl>
+                                <dt>주소</dt>
+                                <dd>경기도 안성시 원곡면 지문로 51-12</dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <div class="cert">
+                                <img src="images/excellCpn/ee_cert.png" alt="2023">
+                            </div>
+                            <div class="ing">
+                                <a href="#">
+                                    채용중
+                                </a>
+                            </div>
+                            <div class="top">
+                                <p class="name">(주테키스트)</p>
+                                <div class="img"><img src="images/excellCpn/ee_sp_logo.png" alt="테키스트"></div>
+                            </div>
+                            <dl>
+                                <dt>업종</dt>
+                                <dd>사업 지원 및 임기타 기계 및 장비 제조업(C29) 대 서비스업 </dd>
+                            </dl>
+                            <dl>
+                                <dt>사업/제품</dt>
+                                <dd>chiller,pump rack,valve </dd>
+                            </dl>
+                            <dl>
+                                <dt>주소</dt>
+                                <dd>경기도 안성시 원곡면 지문로 51-12</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!--//리스트-->
+                </div>
+
+                <!--paging-->
+                <span class="totalPageCount" style="display: none;">1</span>
+                <div class="pagination_wrap">
+                    <div class="mo_paging">
+                        <p class="active_txt"><span class="cut">1</span> / <span>17</span></p><button onclick="onPaginationLink(2); return false;">다음</button>
+                    </div>
+                    <ul class="pagination list-paging">
+                        <li class="paginate_button end btn_first only-pc"><a href="#none">&lt;&lt;</a></li>
+                        <li class="paginate_button previous btn_prev"><a href="#none">&lt;</a></li>
+                        <li class="paginate_button active list"><a href="#none">1</a></li>
+                        <li class="paginate_button list"><a href="#none">2</a></li>
+                        <li class="paginate_button list"><a href="#none">3</a></li>
+                        <li class="paginate_button list"><a href="#none">4</a></li>
+                        <li class="paginate_button list"><a href="#none">5</a></li>
+                        <li class="paginate_button list"><a href="#none">6</a></li>
+                        <li class="paginate_button list"><a href="#none">7</a></li>
+                        <li class="paginate_button list"><a href="#none">8</a></li>
+                        <li class="paginate_button list"><a href="#none">9</a></li>
+                        <li class="paginate_button list"><a href="#none">10</a></li>
+                        <li class="paginate_button next btn_next"><a href="#none">&gt;</a></li>
+                        <li class="paginate_button end btn_end only-pc"><a href="#none">&gt;&gt;</a></li>
+
+                    </ul>
+                </div>
+                <!--//paging-->
+            </div>
+
+            <div class="ec_des">
+                <div class="ed_top">
+                    <h3>
+                        <span class="black">현재 채용중!</span>
+                        <span class="red">2,059</span><span class="cyan">건의 일자리 우수기업 채용공고</span>를 확인해 보세요.
+                    </h3>
+                    <a href="#">전체 채용공고 보러가기</a>
+                </div>
+                <h3 class="hot_tit">
+                    <span class="red">HOT</span> 채용공고
+                </h3>
+                <div class="ed_list">
+                    <div class="item">
+                        <div class="left_area">
+                            <div class="logo">
+                                <p class="">(주)케이피아이</p>
+                            </div>
+                            <div class="bottom">
+                                <p class="name"></p>
+                            </div>
+                        </div>
+                        <div class="right_area">
+                            <div class="top">
+                                <div class="tit_wrap">
+                                    <button class="like" return="" false="" tabindex="0">관심공고 등록</button>
+                                    <p class="tit">주식회사케이피아이 신입사원 모집 (CAD, 설계 연구원)</p>
+                                </div>
+                                <p class="cate">기계ㆍ금속 제도사(캐드원)
+                                </p>
+                                <div class="etc">
+                                    <span>3000 ~ 4000 만원</span>
+                                    <span>정규직</span>
+                                    <span>신입/경력</span>
+                                    <span>고졸,대졸(2~3년)</span>
+                                </div>
+                                <p class="area"><span>안성시</span>
+                                </p>
+                                <p class="d-day">D-15</p>
+                                <p class="date">~ 2023.12.01(금)</p>
+
+                            </div>
+                            <div class="bottom">
+                                <div class="cert">
+                                </div>
+                                <div class="support">
+                                    <button type="button" tabindex="0" class="border_btn">기업콘텐츠 보기</button>
+                                    <button type="button" tabindex="0" class="bc_btn">상세보기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="left_area">
+                            <div class="logo">
+                                <p class="">(주)케이피아이</p>
+                            </div>
+                            <div class="bottom">
+                                <p class="name"></p>
+                            </div>
+                        </div>
+                        <div class="right_area">
+                            <div class="top">
+                                <div class="tit_wrap">
+                                    <button class="like" return="" false="" tabindex="0">관심공고 등록</button>
+                                    <p class="tit">주식회사케이피아이 신입사원 모집 (CAD, 설계 연구원)</p>
+                                </div>
+                                <p class="cate">기계ㆍ금속 제도사(캐드원)
+                                </p>
+                                <div class="etc">
+                                    <span>3000 ~ 4000 만원</span>
+                                    <span>정규직</span>
+                                    <span>신입/경력</span>
+                                    <span>고졸,대졸(2~3년)</span>
+                                </div>
+                                <p class="area"><span>안성시</span>
+                                </p>
+                                <p class="d-day">D-15</p>
+                                <p class="date">~ 2023.12.01(금)</p>
+
+                            </div>
+                            <div class="bottom">
+                                <div class="cert">
+                                </div>
+                                <div class="support">
+                                    <button type="button" tabindex="0" class="border_btn">기업콘텐츠 보기</button>
+                                    <button type="button" tabindex="0" class="bc_btn">상세보기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="left_area">
+                            <div class="logo">
+                                <p class="">(주)케이피아이</p>
+                            </div>
+                            <div class="bottom">
+                                <p class="name"></p>
+                            </div>
+                        </div>
+                        <div class="right_area">
+                            <div class="top">
+                                <div class="tit_wrap">
+                                    <button class="like" return="" false="" tabindex="0">관심공고 등록</button>
+                                    <p class="tit">주식회사케이피아이 신입사원 모집 (CAD, 설계 연구원)</p>
+                                </div>
+                                <p class="cate">기계ㆍ금속 제도사(캐드원)
+                                </p>
+                                <div class="etc">
+                                    <span>3000 ~ 4000 만원</span>
+                                    <span>정규직</span>
+                                    <span>신입/경력</span>
+                                    <span>고졸,대졸(2~3년)</span>
+                                </div>
+                                <p class="area"><span>안성시</span>
+                                </p>
+                                <p class="d-day">D-15</p>
+                                <p class="date">~ 2023.12.01(금)</p>
+
+                            </div>
+                            <div class="bottom">
+                                <div class="cert">
+                                </div>
+                                <div class="support">
+                                    <button type="button" tabindex="0" class="border_btn">기업콘텐츠 보기</button>
+                                    <button type="button" tabindex="0" class="bc_btn">상세보기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ec_guide">
+                <h3>성공적인 취업을 위한 잡아바 활용가이드</h3>
+                <p class="addTxt">성공적인 취업을 위한 잡아바 활용가이드</p>
+                <div class="eg_wrap">
+                    <a href="https://www.jobaba.net/auland/mainList.do" target="_blank">
+                        <span class="img01"></span>
+                        <p>취업진로 진단검사</p>
+                    </a>
+                    <a href="https://www.jobaba.net/introduction/mainList.do" target="_blank">
+                        <span class="img02"></span>
+                        <p>자기소개서 첨삭</p>
+                    </a>
+                    <a href="https://www.jobaba.net/interview/mainList.do" target="_blank">
+                        <span class="img03"></span>
+                        <p>AI 역량검사</p>
+                    </a>
+                    <a href="https://www.jobaba.net/psychology/mainList.do" target="_blank">
+                        <span class="img04"></span>
+                        <p>취업/진로 컨설팅</p>
+                    </a>
+                    <a href="https://www.jobaba.net/jobInfoNcs/jobInfoNcsMain.do" target="_blank">
+                        <span class="img05"></span>
+                        <p>NCS직업역량진단</p>
+                    </a>
+                    <a href="https://youthedu.jobaba.net/main/index.jsp" target="_blank">
+                        <span class="img06"></span>
+                        <p>잡아바러닝센터</p>
+                    </a>
+                    <a href="https://www.jobaba.net/empmn/desEntNew.do" target="_blank">
+                        <span class="img07"></span>
+                        <p>탐나는 기업관</p>
+                    </a>
+                    <a href="https://www.jobaba.net/entCntnts/exhb/exhbViewNew.do?seq=34&exhbType=1" target="_blank">
+                        <span class="img08"></span>
+                        <p>상시 채용관</p>
+                    </a>
+                    <a href="https://www.jobaba.net/sprtPlcy/info/list2020.do" target="_blank">
+                        <span class="img09"></span>
+                        <p>지원정책 안내</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="ec_bt">
+            <div class="innerSection">
+                <div class="bb">
+                    <p>성공적인 취업을 위해<br>
+                        <strong>잡아바가 구직자 여러분들과 함께합니다.</strong>
+                    </p>
+                </div>
+                <div class="txt">
+                    <p><strong>취업</strong>은 혼자 준비하는 게 아니야! <span>당신의 취업 메이트</span></p>
+                    <img src="images/excellCpn/job_logo.png" alt="잡아바">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
